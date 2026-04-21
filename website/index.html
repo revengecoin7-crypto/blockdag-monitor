@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockDAG Monitor — Promise Tracker</title>
+  <meta name="description" content="Independent tracker of BlockDAG Network's promises vs reality. See what was announced, what was delivered, and what was silently dropped." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-icon">⛏️</span>
+          <div>
+            <div class="logo-name">BlockDAG Monitor</div>
+            <div class="logo-sub">Independent Promise Tracker</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#tracker" class="nav-link">Tracker</a>
+          <a href="#timeline" class="nav-link">Timeline</a>
+          <a href="#evidence" class="nav-link">Evidence</a>
+          <a href="#about" class="nav-link">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">🔍 Community-driven transparency</div>
+      <h1 class="hero-title">BlockDAG said it.<br />Did they do it?</h1>
+      <p class="hero-subtitle">We tracked every official promise made by BlockDAG Network in their Telegram channel — 307,926 messages, 30,488 from BlockDAG Network itself. Here's what they said, and what actually happened.</p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-number" id="stat-total">15</div>
+          <div class="stat-label">Promises tracked</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number text-green" id="stat-kept">2</div>
+          <div class="stat-label">Kept</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number text-red" id="stat-broken">10</div>
+          <div class="stat-label">Broken / Delayed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number text-yellow" id="stat-pending">3</div>
+          <div class="stat-label">Pending</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number text-red" id="stat-percent">13%</div>
+          <div class="stat-label">Delivery rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tracker">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Promise Tracker</h2>
+        <p class="section-sub">All promises sourced directly from official BlockDAG Network Telegram messages.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="broken">❌ Broken</button>
+        <button class="filter-btn" data-filter="kept">✅ Kept</button>
+        <button class="filter-btn" data-filter="pending">⏳ Pending</button>
+        <button class="filter-btn" data-filter="misleading">⚠️ Misleading</button>
+      </div>
+
+      <div class="promise-grid" id="promise-grid"></div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Timeline of Events</h2>
+        <p class="section-sub">How BlockDAG's promises shifted over time.</p>
+      </div>
+      <div class="timeline" id="timeline-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="evidence">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Direct Quotes</h2>
+        <p class="section-sub">Word-for-word from the official BlockDAG Network Telegram channel.</p>
+      </div>
+      <div class="quotes-grid" id="quotes-grid"></div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="about">
+    <div class="container">
+      <div class="about-box">
+        <h2 class="section-title">About This Site</h2>
+        <p>This site was built by a community member who was tired of seeing promises made and not kept. All data is sourced from <strong>307,926 public Telegram messages</strong> from the official BlockDAG Network channel, spanning <strong>February 18 – April 20, 2026</strong>.</p>
+        <p>We have <strong>no affiliation with BlockDAG</strong>. We are not financial advisors. This is not financial advice. This is a transparency resource.</p>
+        <p>If you believe any information here is incorrect, or if you have evidence that a promise was fulfilled, please reach out. We want to be accurate.</p>
+        <div class="disclaimer">
+          ⚠️ <strong>This site is for informational purposes only.</strong> Always do your own research before making any investment decisions.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">⛏️ BlockDAG Monitor</div>
+        <div class="footer-note">Data sourced from public Telegram messages · Last updated: April 20, 2026</div>
+        <div class="footer-note">www.blockdagmonitor.com</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
