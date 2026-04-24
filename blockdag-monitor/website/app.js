@@ -76,20 +76,23 @@ function renderCategories() {
       const brokenPct = Math.round(broken    / c.total * 100);
       const keptPct   = Math.round(c.kept    / c.total * 100);
       const pendPct   = Math.round(c.pending  / c.total * 100);
-      const icon = CAT_ICON[cat] || '📌';
       const url = `tracker.html?category=${encodeURIComponent(cat)}`;
+      const accent = broken > c.kept
+        ? 'rgba(255,59,59,0.7)'
+        : c.kept > 0
+          ? 'rgba(0,229,160,0.7)'
+          : 'rgba(240,192,48,0.5)';
       const statusLine = [
         broken    ? `<span class="cat-pill cat-pill--red">${broken} broken</span>` : '',
         c.kept    ? `<span class="cat-pill cat-pill--green">${c.kept} kept</span>` : '',
         c.pending ? `<span class="cat-pill cat-pill--yellow">${c.pending} pending</span>` : '',
       ].filter(Boolean).join('');
       return `
-        <a href="${url}" class="cat-card">
+        <a href="${url}" class="cat-card" style="--cat-accent:${accent}">
           <div class="cat-card-top">
-            <div class="cat-icon">${icon}</div>
+            <div class="cat-name">${cat}</div>
             <div class="cat-count">${c.total}</div>
           </div>
-          <div class="cat-name">${cat}</div>
           <div class="cat-pills">${statusLine}</div>
           <div class="cat-bar">
             <div class="cat-bar-fill cat-bar-fill--red"    style="width:${brokenPct}%"></div>
@@ -99,7 +102,6 @@ function renderCategories() {
           <div class="cat-arrow">View all ${c.total} promises →</div>
         </a>
       `;
-      /* cat-pill labels already use plain English: "X broken", "X kept", "X pending" */
     }).join('');
   }
 }
