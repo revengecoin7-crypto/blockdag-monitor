@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockDAG Monitor — Home</title>
+  <meta name="description" content="Independent tracker of BlockDAG Network's promises vs reality." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <div class="logo-mark"><div class="logo-mark-diamond"></div></div>
+          <div>
+            <div class="logo-name">BlockDAG<span class="logo-name-dim"> Monitor</span></div>
+            <div class="logo-sub">Independent Promise Tracker</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="tracker.html" class="nav-link">Tracker</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="timeline.html" class="nav-link">Timeline</a>
+          <a href="investigation.html" class="nav-link">Investigation</a>
+          <a href="evidence.html" class="nav-link">Evidence</a>
+          <a href="sources.html" class="nav-link">Sources</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero-full">
+    <canvas id="beams-canvas" class="beams-canvas"></canvas>
+    <div class="hero-full-overlay"></div>
+
+    <div class="hero-full-content">
+      <div class="hero-badge">🔍 Community-driven transparency</div>
+
+      <h1 class="hero-full-title">
+        BlockDAG said it.<br />
+        <em>Did they do it?</em>
+      </h1>
+
+      <p class="hero-full-sub">
+        We cross-referenced 307,926 Telegram messages, X/Twitter, their website,
+        CoinMarketCap, Medium, and an independent DL News investigation.
+      </p>
+
+      <div class="hero-cta-row">
+        <a href="tracker.html" class="btn-primary">
+          View All 48 Promises <span class="btn-arrow">→</span>
+        </a>
+        <a href="investigation.html" class="btn-outline">Read Investigation</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── BELOW HERO ── -->
+  <div class="below-hero">
+    <div class="container">
+
+      <!-- Metrics strip -->
+      <div class="metrics-strip reveal" id="metrics-strip">
+        <div class="metric-cell" style="--mc: var(--cyan)">
+          <div class="metric-value" data-count="48">0</div>
+          <div class="metric-label">Promises tracked</div>
+          <div class="metric-detail">From Telegram, X, website &amp; more</div>
+        </div>
+        <div class="metric-cell" style="--mc: var(--red)">
+          <div class="metric-value metric-value--red" data-count="43">0</div>
+          <div class="metric-label">Broken or misleading</div>
+          <div class="metric-detail">89.6% failure rate</div>
+        </div>
+        <div class="metric-cell" style="--mc: var(--green)">
+          <div class="metric-value metric-value--green" data-count="2">0</div>
+          <div class="metric-label">Actually kept</div>
+          <div class="metric-detail">Mainnet + first claim batch</div>
+        </div>
+        <div class="metric-cell" style="--mc: var(--red)">
+          <div class="metric-value metric-value--red metric-value--small">−99.7%</div>
+          <div class="metric-label">Price vs promise</div>
+          <div class="metric-detail">$0.05 promised → $0.0001554</div>
+        </div>
+      </div>
+
+      <!-- Investigation highlight -->
+      <a href="investigation.html" class="inv-highlight reveal">
+        <div class="inv-highlight-left">
+          <div class="inv-highlight-tag">🗞️ DL News Investigation — April 2026</div>
+          <div class="inv-highlight-title">Inside BlockDAG's $442M crypto maze of missing miners, unpaid employees, and breached contracts</div>
+        </div>
+        <div class="inv-highlight-right">
+          <div class="inv-highlight-stats">
+            <div class="inv-hs"><span class="inv-hs-num">$5M+</span><span class="inv-hs-lab">Unpaid miners</span></div>
+            <div class="inv-hs"><span class="inv-hs-num">24</span><span class="inv-hs-lab">Staff unpaid</span></div>
+            <div class="inv-hs"><span class="inv-hs-num">3</span><span class="inv-hs-lab">Sport sponsors unpaid</span></div>
+          </div>
+          <span class="inv-highlight-cta">Read full investigation →</span>
+        </div>
+      </a>
+
+      <!-- Nav cards 2×2 -->
+      <div class="nav-grid-2x2">
+        <a href="tracker.html" class="nav-card-large reveal">
+          <div class="nav-card-l-top">
+            <span class="nav-card-l-icon">📋</span>
+            <span class="nav-card-l-badge nav-card-l-badge--cyan">48 promises</span>
+          </div>
+          <div class="nav-card-l-title">Promise Tracker</div>
+          <div class="nav-card-l-desc">Every promise tracked with status, source quotes, and the gap between what was said and what happened.</div>
+          <div class="nav-card-l-arrow">View tracker →</div>
+        </a>
+
+        <a href="timeline.html" class="nav-card-large reveal reveal-delay-1">
+          <div class="nav-card-l-top">
+            <span class="nav-card-l-icon">📅</span>
+            <span class="nav-card-l-badge nav-card-l-badge--cyan">52 events</span>
+          </div>
+          <div class="nav-card-l-title">Timeline</div>
+          <div class="nav-card-l-desc">A chronological record of how BlockDAG's promises shifted, disappeared, and were replaced over 450 days.</div>
+          <div class="nav-card-l-arrow">View timeline →</div>
+        </a>
+
+        <a href="evidence.html" class="nav-card-large reveal reveal-delay-2">
+          <div class="nav-card-l-top">
+            <span class="nav-card-l-icon">💬</span>
+            <span class="nav-card-l-badge nav-card-l-badge--cyan">38 quotes</span>
+          </div>
+          <div class="nav-card-l-title">Direct Quotes</div>
+          <div class="nav-card-l-desc">Word-for-word statements from BlockDAG's official Telegram, X/Twitter, and website — in their own words.</div>
+          <div class="nav-card-l-arrow">View quotes →</div>
+        </a>
+
+        <a href="categories.html" class="nav-card-large reveal reveal-delay-3">
+          <div class="nav-card-l-top">
+            <span class="nav-card-l-icon">🗂️</span>
+            <span class="nav-card-l-badge nav-card-l-badge--cyan">18 categories</span>
+          </div>
+          <div class="nav-card-l-title">Browse by Category</div>
+          <div class="nav-card-l-desc">From exchange listings and mining hardware to sponsorships and funding — explore promises by topic.</div>
+          <div class="nav-card-l-arrow">View categories →</div>
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><span class="footer-logo-mark"><span class="footer-logo-diamond"></span></span>BlockDAG<span class="footer-logo-dim"> Monitor</span></div>
+        <div class="footer-note">Data sourced from Telegram, X/Twitter, CoinMarketCap, DL News, Reddit, LinkedIn &amp; more · Last updated: April 23, 2026</div>
+        <div class="footer-note">www.blockdagmonitor.com</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
