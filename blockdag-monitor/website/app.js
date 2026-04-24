@@ -593,12 +593,113 @@ function animateCounter(el, target, duration) {
   els.forEach(function(el) { obs.observe(el); });
 })();
 
+function renderTrackerSummary() {
+  const el = document.getElementById('tracker-summary');
+  if (!el) return;
+  const broken = PROMISES.filter(p => p.status === 'broken').length;
+  const kept = PROMISES.filter(p => p.status === 'kept').length;
+  const pending = PROMISES.filter(p => p.status === 'pending').length;
+  const misleading = PROMISES.filter(p => p.status === 'misleading').length;
+  const total = PROMISES.length;
+  const rate = Math.round(kept / total * 100);
+  el.innerHTML = `
+    <div class="summary-strip summary-strip--cyan">
+      <div class="summary-left">
+        <div class="summary-badge">📊 Tracker Summary</div>
+        <h2 class="summary-title">Every promise.<br>Every result.</h2>
+        <p class="summary-text">Of ${total} promises tracked, only ${kept} were actually kept. The rest were broken, misleading, or remain undelivered.</p>
+        <div class="summary-stat">
+          <span class="summary-num">${rate}%</span>
+          <span class="summary-lab">delivery rate<br>across all tracked promises</span>
+        </div>
+      </div>
+      <div class="summary-right">
+        <div class="summary-table-header">Promise breakdown</div>
+        <div class="summary-row"><span class="summary-row-label">🔵 Total tracked</span><span class="summary-row-val summary-row-val--cyan">${total}</span></div>
+        <div class="summary-row"><span class="summary-row-label">✕ Broken</span><span class="summary-row-val summary-row-val--red">${broken}</span></div>
+        <div class="summary-row"><span class="summary-row-label">! Misleading</span><span class="summary-row-val summary-row-val--orange">${misleading}</span></div>
+        <div class="summary-row"><span class="summary-row-label">✓ Kept</span><span class="summary-row-val summary-row-val--green">${kept}</span></div>
+        <div class="summary-row"><span class="summary-row-label">… Pending</span><span class="summary-row-val summary-row-val--yellow">${pending}</span></div>
+      </div>
+    </div>
+  `;
+}
+
+function renderTimelineSummary() {
+  const el = document.getElementById('timeline-summary');
+  if (!el) return;
+  const counts = {};
+  TIMELINE_EVENTS.forEach(e => { counts[e.type] = (counts[e.type] || 0) + 1; });
+  const total = TIMELINE_EVENTS.length;
+  const broken = counts.broken || 0;
+  el.innerHTML = `
+    <div class="summary-strip summary-strip--neutral">
+      <div class="summary-left">
+        <div class="summary-badge">📅 Timeline Summary</div>
+        <h2 class="summary-title">How it all<br>played out.</h2>
+        <p class="summary-text">${total} events documenting how BlockDAG's commitments were made, repeatedly delayed, and quietly dropped.</p>
+        <div class="summary-stat">
+          <span class="summary-num">${broken}</span>
+          <span class="summary-lab">broken promise<br>events documented</span>
+        </div>
+      </div>
+      <div class="summary-right">
+        <div class="summary-table-header">Events by type</div>
+        ${counts.broken     ? `<div class="summary-row"><span class="summary-row-label">🔴 Broken promises</span><span class="summary-row-val summary-row-val--red">${counts.broken}</span></div>` : ''}
+        ${counts.promise    ? `<div class="summary-row"><span class="summary-row-label">🔵 They promised</span><span class="summary-row-val summary-row-val--cyan">${counts.promise}</span></div>` : ''}
+        ${counts.misleading ? `<div class="summary-row"><span class="summary-row-label">🟠 Misleading</span><span class="summary-row-val summary-row-val--orange">${counts.misleading}</span></div>` : ''}
+        ${counts.kept       ? `<div class="summary-row"><span class="summary-row-label">🟢 Kept</span><span class="summary-row-val summary-row-val--green">${counts.kept}</span></div>` : ''}
+        ${counts.partial    ? `<div class="summary-row"><span class="summary-row-label">🟡 Partial delivery</span><span class="summary-row-val summary-row-val--yellow">${counts.partial}</span></div>` : ''}
+        ${counts.promo      ? `<div class="summary-row"><span class="summary-row-label">📣 Promotional</span><span class="summary-row-val summary-row-val--orange">${counts.promo}</span></div>` : ''}
+        ${counts.warning    ? `<div class="summary-row"><span class="summary-row-label">⚠️ Warnings</span><span class="summary-row-val summary-row-val--white">${counts.warning}</span></div>` : ''}
+        ${counts.note       ? `<div class="summary-row"><span class="summary-row-label">📌 Notes</span><span class="summary-row-val summary-row-val--white">${counts.note}</span></div>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+function renderEvidenceSummary() {
+  const el = document.getElementById('evidence-summary');
+  if (!el) return;
+  const counts = {};
+  NOTABLE_QUOTES.forEach(q => { counts[q.tag] = (counts[q.tag] || 0) + 1; });
+  const total = NOTABLE_QUOTES.length;
+  const negative = (counts.broken || 0) + (counts.misleading || 0) + (counts['fine-print'] || 0) + (counts.investigation || 0);
+  el.innerHTML = `
+    <div class="summary-strip summary-strip--orange">
+      <div class="summary-left">
+        <div class="summary-badge">💬 Evidence Summary</div>
+        <h2 class="summary-title">Their words.<br>Verbatim.</h2>
+        <p class="summary-text">${total} quotes sourced directly from official BlockDAG communications — Telegram, X/Twitter, and their own website. Unedited.</p>
+        <div class="summary-stat">
+          <span class="summary-num">${negative}</span>
+          <span class="summary-lab">broken, misleading<br>or damning quotes</span>
+        </div>
+      </div>
+      <div class="summary-right">
+        <div class="summary-table-header">Quotes by type</div>
+        ${counts.promise       ? `<div class="summary-row"><span class="summary-row-label">🔵 They promised this</span><span class="summary-row-val summary-row-val--cyan">${counts.promise}</span></div>` : ''}
+        ${counts.broken        ? `<div class="summary-row"><span class="summary-row-label">🔴 Broken promise</span><span class="summary-row-val summary-row-val--red">${counts.broken}</span></div>` : ''}
+        ${counts.misleading    ? `<div class="summary-row"><span class="summary-row-label">🟠 Misleading claim</span><span class="summary-row-val summary-row-val--orange">${counts.misleading}</span></div>` : ''}
+        ${counts.claim         ? `<div class="summary-row"><span class="summary-row-label">📢 Their claim</span><span class="summary-row-val summary-row-val--cyan">${counts.claim}</span></div>` : ''}
+        ${counts.promo         ? `<div class="summary-row"><span class="summary-row-label">📣 Promotional</span><span class="summary-row-val summary-row-val--orange">${counts.promo}</span></div>` : ''}
+        ${counts.investigation ? `<div class="summary-row"><span class="summary-row-label">📰 Investigation finding</span><span class="summary-row-val summary-row-val--red">${counts.investigation}</span></div>` : ''}
+        ${counts['fine-print'] ? `<div class="summary-row"><span class="summary-row-label">🔍 Fine print</span><span class="summary-row-val summary-row-val--red">${counts['fine-print']}</span></div>` : ''}
+        ${counts.community     ? `<div class="summary-row"><span class="summary-row-label">💬 Community reaction</span><span class="summary-row-val summary-row-val--yellow">${counts.community}</span></div>` : ''}
+      </div>
+    </div>
+  `;
+}
+
 /* Auto-render whatever is on this page */
 renderStats();
 renderCategories();
+renderTrackerSummary();
 renderPromises(urlFilter, urlCategory);
+renderTimelineSummary();
 renderTimeline();
 renderInvestigation();
+renderEvidenceSummary();
 renderQuotes();
 renderSources();
 
