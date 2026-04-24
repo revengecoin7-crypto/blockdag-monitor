@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockDAG Monitor — Promise Tracker</title>
+  <meta name="description" content="All 48 promises made by BlockDAG Network tracked with status and source quotes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <div class="logo-mark"><div class="logo-mark-diamond"></div></div>
+            <div>
+              <div class="logo-name">BlockDAG<span class="logo-name-dim"> Monitor</span></div>
+              <div class="logo-sub">Independent Promise Tracker</div>
+            </div>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="tracker.html" class="nav-link">Tracker</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="timeline.html" class="nav-link">Timeline</a>
+          <a href="investigation.html" class="nav-link">Investigation</a>
+          <a href="evidence.html" class="nav-link">Evidence</a>
+          <a href="sources.html" class="nav-link">Sources</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <a href="categories.html" id="tracker-back" class="back-link" style="display:none;">← Back to categories</a>
+        <div class="page-hero-badge">📋 Promise Tracker</div>
+        <h1 class="page-hero-title" id="tracker-heading">Every promise. Every result.</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div id="tracker-summary"></div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="broken">✕ Broken</button>
+        <button class="filter-btn" data-filter="kept">✓ Kept</button>
+        <button class="filter-btn" data-filter="pending">… Pending</button>
+        <button class="filter-btn" data-filter="misleading">! Misleading</button>
+      </div>
+
+      <div class="promise-table">
+        <div class="promise-table-header">
+          <span>#</span>
+          <span>Promise</span>
+          <span>Category</span>
+          <span>Promised</span>
+          <span>Status</span>
+        </div>
+        <div id="promise-table"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><span class="footer-logo-mark"><span class="footer-logo-diamond"></span></span>BlockDAG<span class="footer-logo-dim"> Monitor</span></div>
+        <div class="footer-note">Data sourced from Telegram, X/Twitter, CoinMarketCap, DL News, Reddit, LinkedIn & more · Last updated: April 23, 2026</div>
+        <div class="footer-note">www.blockdagmonitor.com</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
