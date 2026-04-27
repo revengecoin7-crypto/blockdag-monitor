@@ -1065,6 +1065,19 @@ body.home-page {
 .summary-row-val--cyan   { color: var(--cyan); }
 .summary-row-val--white  { color: rgba(255,255,255,0.7); }
 
+/* NEW badge */
+.badge-new {
+  display: inline-block;
+  font-size: 9px; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(0,229,160,0.15);
+  border: 1px solid rgba(0,229,160,0.4);
+  color: var(--green);
+  padding: 2px 7px; border-radius: 999px;
+  vertical-align: middle; margin-left: 8px;
+  line-height: 1.6;
+}
+
 @media (max-width: 900px) {
   .summary-strip { grid-template-columns: 1fr; }
   .summary-left { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.06); }

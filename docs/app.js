@@ -116,7 +116,7 @@ function renderPromises(filter, category) {
   table.innerHTML = items.map((p, i) => `
     <div class="promise-row promise-row--${p.status}" onclick="toggleDetail(this)">
       <div class="pr-num ${p.status}">${i + 1}</div>
-      <div class="pr-title">${p.title}</div>
+      <div class="pr-title">${p.title}${p.isNew ? '<span class="badge-new">New</span>' : ''}</div>
       <div class="pr-cat">${p.category}</div>
       <div class="pr-date">${p.promised}</div>
       <div><span class="pr-status ${p.status}">${STATUS_ICON[p.status]} ${STATUS_LABEL[p.status]}</span></div>
@@ -185,7 +185,7 @@ function renderTimeline() {
       +   '</div>'
       +   '<span class="tl-date">' + e.date + '</span>'
       + '</div>'
-      + '<div class="tl-text">' + e.text + '</div>'
+      + '<div class="tl-text">' + e.text + (e.isNew ? '<span class="badge-new">New</span>' : '') + '</div>'
       + '</div>';
   }).join('');
 }
