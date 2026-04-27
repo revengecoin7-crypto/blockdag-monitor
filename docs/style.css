@@ -1080,14 +1080,21 @@ body.home-page {
 .footer-top { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 16px; }
 .footer-social { display: flex; align-items: center; gap: 10px; }
 .footer-social-link {
-  display: flex; align-items: center; gap: 7px;
-  font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.4);
-  text-decoration: none; letter-spacing: 0.04em;
-  padding: 7px 14px; border-radius: 999px;
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
   transition: all 0.2s;
 }
-.footer-social-link:hover { color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.25); background: rgba(255,255,255,0.05); }
+.footer-social-link:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.25);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.footer-social-link svg { width: 16px; height: 16px; fill: currentColor; }
 .footer-bottom { display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .footer-logo {
   display: flex; align-items: center; gap: 10px;
