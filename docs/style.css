@@ -1076,7 +1076,17 @@ body.home-page {
   padding: 32px 0;
   background: #000;
 }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.footer-social { display: flex; align-items: center; gap: 12px; }
+.footer-social-link {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.35);
+  text-decoration: none; letter-spacing: 0.04em;
+  padding: 6px 12px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.2s;
+}
+.footer-social-link:hover { color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
 .footer-logo {
   display: flex; align-items: center; gap: 10px;
   font-family: var(--font-body);
