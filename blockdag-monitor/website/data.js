@@ -618,6 +618,45 @@ const PROMISES = [
     ]
   },
   {
+    id: 48,
+    category: "Marketing",
+    status: "misleading",
+    title: "225X potential at $0.000000796 — new 'final chance' push",
+    promised: "April 24, 2026",
+    reality: "BlockDAG launched another aggressive 'final chance' marketing push claiming 225X potential at $0.000000796 per BDAG. The promised launch price was $0.05. The actual price at this point was a fraction of that. '225X' would still only bring investors to $0.00018 — far below the $0.05 originally promised.",
+    quotes: [
+      { date: "Apr 24, 2026", text: "🚨 FINAL PRICE — $0.000000796 BDAG | 225X POTENTIAL | 5 DAYS ONLY 🚨" },
+      { date: "Apr 24, 2026", text: "POWER AFTERSALE ENDING IN 3 DAYS. BATCH 4 CLAIMS IN 3 DAYS. LAST CHANCE TO POWER UP." },
+      { date: "Apr 24, 2026", text: "BUILT FOR LEADERS. DESIGNED TO DOMINATE. LET'S GO BlockDAG! 🚀" }
+    ]
+  },
+  {
+    id: 49,
+    category: "Product",
+    status: "misleading",
+    title: "All utilities live now — DeFi, staking, NFT marketplace, dApps",
+    promised: "April 24, 2026",
+    reality: "BlockDAG claimed 'ALL LIVE NOW: DeFi Lending dashboard, staking analytics, dev hub + IDE, NFT marketplace, Escrow, dApps!' On the same day (April 27) they admitted the staking contract was 'under maintenance'. Multiple features had been promised since February 19, 2026.",
+    quotes: [
+      { date: "Apr 24, 2026", text: "ALL LIVE NOW: DeFi Lending dashboard, staking analytics, dev hub + IDE, NFT marketplace, Escrow, dApps!" },
+      { date: "Apr 27, 2026", text: "Staking contract is under maintenance and shipping will also commence soon." }
+    ]
+  },
+  {
+    id: 50,
+    category: "Staking",
+    status: "broken",
+    title: "Staking contract still under maintenance — April 27",
+    promised: "February 19, 2026",
+    reality: "Staking was promised live on February 19, 2026. On April 6 it went 'under maintenance until after Easter'. On April 27 — 67 days after the original promise — staking is still under maintenance with no delivery date given.",
+    quotes: [
+      { date: "Feb 19, 2026", text: "Staking & Earn contract goes live on the website — Feb 19." },
+      { date: "Apr 6, 2026", text: "Staking contract under maintenance until after the Easter break." },
+      { date: "Apr 27, 2026", text: "Staking contract is under maintenance and shipping will also commence soon." },
+      { date: "Apr 27, 2026", text: "There will be an update once staking website is sorted." }
+    ]
+  },
+  {
     id: 47,
     category: "Marketing",
     status: "misleading",
@@ -681,6 +720,11 @@ const TIMELINE_EVENTS = [
   { date: "Apr 21, 2026", type: "partial", text: "BDAG lists on BingX — first actual Tier 1 exchange. 7 weeks after the promised March 4 listing date." },
   { date: "Apr 23, 2026", type: "broken", text: "DL News publishes full investigation: '$442M crypto maze of missing miners, unpaid employees, and breached contracts.' Current price: $0.0001554 — down 99.7% from promised $0.05 launch price. Market cap: $5.65M vs promised $1B." },
   { date: "Apr 24, 2026", type: "partial", text: "BDAG lists on Gate.io — delayed 3 days from the originally promised April 21 date." },
+  { date: "Apr 24, 2026", type: "misleading", text: "'225X POTENTIAL | 5 DAYS ONLY' — new 'final chance' marketing push at $0.000000796. Claimed 'ALL LIVE NOW: DeFi, staking, NFT marketplace, dApps' — same day staking was still under maintenance." },
+  { date: "Apr 24, 2026", type: "promise", text: "CEO promises to provide 'complete details about the casino before May 7.' Batch 4 claims confirmed for April 27." },
+  { date: "Apr 26, 2026", type: "promise", text: "BingX & Gate.io integrations confirmed as 'in final stage'. Miner shipping: 'will commence soon' — no specific date." },
+  { date: "Apr 27, 2026", type: "broken", text: "Staking contract still 'under maintenance' — 67 days after it was promised live on February 19. CEO AMA scheduled to 'address all issues'." },
+  { date: "Apr 27, 2026", type: "partial", text: "Batch 4 claims go live — delivered on the promised date. However staking, miner shipping, and exchange deposits remain unresolved." },
   { date: "May 7, 2026", type: "promise", text: "BlockDAG Casino launch promised. Partnership with Betski (iGaming) announced." },
   { date: "May 2026", type: "promise", text: "Website roadmap: DEX activation (Uniswap, PancakeSwap, Hyperliquid) + LP incentives. Originally promised for Day 1 (March 4)." },
   { date: "Jun 16, 2026", type: "promise", text: "X10 miners now scheduled to ship. Original promise was February–April 2026." },
