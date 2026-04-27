@@ -693,8 +693,36 @@ function renderEvidenceSummary() {
   `;
 }
 
+function renderHomeUpdates() {
+  const newList = document.getElementById('home-new-list');
+  const pendingList = document.getElementById('home-pending-list');
+
+  if (newList) {
+    const newItems = PROMISES.filter(p => p.isNew);
+    const metaColor = { broken: 'red', misleading: 'orange', kept: 'green', pending: 'yellow' };
+    const metaLabel = { broken: 'Broken', misleading: 'Misleading', kept: 'Kept', pending: 'Pending' };
+    newList.innerHTML = newItems.map(p => `
+      <a href="tracker.html" class="home-update-item">
+        <div class="home-update-item-title">${p.title}</div>
+        <span class="home-update-item-meta home-update-item-meta--${metaColor[p.status]}">${metaLabel[p.status]}</span>
+      </a>
+    `).join('');
+  }
+
+  if (pendingList) {
+    const pending = PROMISES.filter(p => p.status === 'pending');
+    pendingList.innerHTML = pending.map(p => `
+      <a href="tracker.html?filter=pending" class="home-update-item">
+        <div class="home-update-item-title">${p.title}</div>
+        <span class="home-update-item-meta home-update-item-meta--yellow">${p.promised}</span>
+      </a>
+    `).join('');
+  }
+}
+
 /* Auto-render whatever is on this page */
 renderStats();
+renderHomeUpdates();
 renderCategories();
 renderTrackerSummary();
 renderPromises(urlFilter, urlCategory);

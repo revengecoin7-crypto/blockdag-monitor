@@ -1065,6 +1065,71 @@ body.home-page {
 .summary-row-val--cyan   { color: var(--cyan); }
 .summary-row-val--white  { color: rgba(255,255,255,0.7); }
 
+/* ── HOME UPDATES GRID ── */
+.home-updates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+.home-update-panel {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.home-update-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.home-update-badge {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; padding: 4px 10px; border-radius: 999px;
+}
+.home-update-badge--green {
+  background: rgba(0,229,160,0.12);
+  border: 1px solid rgba(0,229,160,0.3);
+  color: var(--green);
+}
+.home-update-badge--yellow {
+  background: rgba(240,192,48,0.12);
+  border: 1px solid rgba(240,192,48,0.3);
+  color: var(--yellow);
+}
+.home-update-all {
+  font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.3);
+  text-decoration: none; letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.home-update-all:hover { color: rgba(255,255,255,0.7); }
+.home-update-list { display: flex; flex-direction: column; }
+.home-update-item {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 12px; padding: 14px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.home-update-item:last-child { border-bottom: none; }
+.home-update-item:hover { background: rgba(255,255,255,0.04); }
+.home-update-item-title {
+  font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7);
+  line-height: 1.5; flex: 1;
+}
+.home-update-item-meta {
+  font-size: 10px; font-weight: 700; flex-shrink: 0;
+  padding: 3px 8px; border-radius: 999px; margin-top: 2px;
+}
+.home-update-item-meta--green { background: rgba(0,229,160,0.12); color: var(--green); }
+.home-update-item-meta--yellow { background: rgba(240,192,48,0.12); color: var(--yellow); }
+.home-update-item-meta--red { background: rgba(255,59,59,0.12); color: var(--red); }
+.home-update-item-meta--orange { background: rgba(255,122,32,0.12); color: var(--orange); }
+
+@media (max-width: 700px) {
+  .home-updates-grid { grid-template-columns: 1fr; }
+}
+
 /* NEW badge */
 .badge-new {
   display: inline-block;
