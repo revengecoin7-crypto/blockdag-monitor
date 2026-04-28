@@ -473,7 +473,7 @@ const urlCategory= urlParams.get('category') || null;
   const ANGLE_DEG = -42;
   const ANGLE_RAD = (ANGLE_DEG * Math.PI) / 180;
 
-  const beams = Array.from({ length: 14 }, function(_, i) {
+  const beams = Array.from({ length: 7 }, function(_, i) {
     return {
       x: (i / 13) * 1.6 - 0.3,   // 0–1 as fraction of width, slightly outside
       width: 1 + Math.random() * 3,
@@ -539,9 +539,12 @@ const urlCategory= urlParams.get('category') || null;
       ctx.restore();
     });
 
-    requestAnimationFrame(draw);
+    if (!document.hidden) requestAnimationFrame(draw);
   }
   requestAnimationFrame(draw);
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) requestAnimationFrame(draw);
+  });
 })();
 
 /* ── METRICS STRIP COUNTERS ── */
