@@ -123,6 +123,7 @@ function renderPromises(filter, category) {
     </div>
     <div class="promise-detail">
       <div class="promise-detail-text">${p.reality}</div>
+      <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent('BlockDAG promised: "' + p.title + '"\nStatus: ' + STATUS_LABEL[p.status] + '\n\nSee all 51 promises: blockdagexposed.com\n#BlockDAG #BDAG #DYOR')}" target="_blank" rel="noopener noreferrer" class="share-btn">Share on X →</a>
       ${p.quotes.length ? `
         <div class="promise-detail-toggle" onclick="event.stopPropagation(); toggleQuotesInDetail(this)">
           ▶ Show ${p.quotes.length} source quote${p.quotes.length > 1 ? 's' : ''}
@@ -720,9 +721,93 @@ function renderHomeUpdates() {
   }
 }
 
+/* ── PRICE TICKER ── */
+(function() {
+  const ticker = document.createElement('div');
+  ticker.className = 'price-ticker';
+  ticker.innerHTML = `
+    <div class="ticker-inner">
+      <span class="ticker-label">BDAG Live</span>
+      <span class="ticker-price" id="ticker-price">…</span>
+      <span id="ticker-change" class="ticker-change--down"></span>
+      <span class="ticker-sep">|</span>
+      <span class="ticker-label">Promised</span>
+      <span class="ticker-promised">$0.05</span>
+      <span class="ticker-sep">|</span>
+      <span class="ticker-label">Below promise</span>
+      <span class="ticker-down" id="ticker-down">…</span>
+    </div>`;
+  document.body.insertBefore(ticker, document.body.firstChild);
+
+  fetch('https://api.coingecko.com/api/v3/simple/price?ids=blockdag&vs_currencies=usd&include_24hr_change=true')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      const price = d.blockdag && d.blockdag.usd;
+      const change = d.blockdag && d.blockdag.usd_24h_change;
+      if (!price) return;
+      document.getElementById('ticker-price').textContent = '$' + price.toFixed(8);
+      if (change !== undefined) {
+        const el = document.getElementById('ticker-change');
+        el.textContent = (change >= 0 ? '+' : '') + change.toFixed(2) + '%';
+        el.className = 'ticker-change--' + (change >= 0 ? 'up' : 'down');
+      }
+      const pct = ((price - 0.05) / 0.05 * 100).toFixed(1);
+      document.getElementById('ticker-down').textContent = pct + '%';
+    })
+    .catch(function() {
+      document.getElementById('ticker-price').textContent = 'Unavailable';
+    });
+})();
+
+/* ── COUNTDOWN ── */
+function renderCountdown() {
+  const timer = document.getElementById('countdown-timer');
+  if (!timer) return;
+  const target = new Date('2026-05-07T00:00:00');
+  function tick() {
+    const diff = target - new Date();
+    if (diff <= 0) {
+      timer.innerHTML = '<span class="countdown-expired">DEADLINE PASSED ❌</span>';
+      return;
+    }
+    const d = Math.floor(diff / 864e5);
+    const h = Math.floor(diff % 864e5 / 36e5);
+    const m = Math.floor(diff % 36e5 / 6e4);
+    const s = Math.floor(diff % 6e4 / 1e3);
+    document.getElementById('cd-days').textContent = String(d).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(m).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(s).padStart(2,'0');
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+
+/* ── SEARCH ── */
+function initSearch() {
+  const input = document.getElementById('promise-search');
+  const countEl = document.getElementById('search-count');
+  if (!input) return;
+  input.addEventListener('input', function() {
+    const q = this.value.toLowerCase().trim();
+    const rows = document.querySelectorAll('.promise-row');
+    let visible = 0;
+    rows.forEach(function(row) {
+      const detail = row.nextElementSibling;
+      const text = row.textContent.toLowerCase();
+      const show = !q || text.includes(q);
+      row.style.display = show ? '' : 'none';
+      if (detail) detail.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (countEl) countEl.textContent = q ? visible + ' result' + (visible !== 1 ? 's' : '') + ' for "' + this.value + '"' : '';
+  });
+}
+
 /* Auto-render whatever is on this page */
 renderStats();
 renderHomeUpdates();
+renderCountdown();
 renderCategories();
 renderTrackerSummary();
 renderPromises(urlFilter, urlCategory);
@@ -732,6 +817,7 @@ renderInvestigation();
 renderEvidenceSummary();
 renderQuotes();
 renderSources();
+initSearch();
 
 /* Apply active filter button + category heading on tracker page */
 if (document.getElementById('promise-table')) {
