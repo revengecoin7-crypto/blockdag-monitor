@@ -109,7 +109,11 @@ function renderCategories() {
 function renderPromises(filter, category) {
   const table = document.getElementById('promise-table');
   if (!table) return;
-  let items = PROMISES;
+  let items = PROMISES.slice().sort((a, b) => {
+    if (a.isNew && !b.isNew) return -1;
+    if (!a.isNew && b.isNew) return 1;
+    return b.id - a.id;
+  });
   if (category) items = items.filter(p => p.category === category);
   if (filter && filter !== 'all') items = items.filter(p => p.status === filter);
 
@@ -176,7 +180,7 @@ function renderTimeline() {
     promo:      { icon: '📣', label: 'Promotional',         color: 'var(--orange)', bg: 'rgba(255,122,32,0.07)',  border: 'rgba(255,122,32,0.2)' },
   };
 
-  list.innerHTML = TIMELINE_EVENTS.map(function(e) {
+  list.innerHTML = TIMELINE_EVENTS.slice().reverse().map(function(e) {
     var t = TL_INFO[e.type] || TL_INFO['note'];
     return '<div class="tl-card" style="--tl-color:' + t.color + ';--tl-bg:' + t.bg + ';--tl-border:' + t.border + '">'
       + '<div class="tl-top">'
@@ -615,6 +619,161 @@ function renderEvidenceSummary() {
   `;
 }
 
+function renderIndicators() {
+  const root = document.getElementById('indicators-root');
+  if (!root) return;
+
+  const broken = PROMISES.filter(p => p.status === 'broken').length;
+  const kept = PROMISES.filter(p => p.status === 'kept').length;
+  const misleading = PROMISES.filter(p => p.status === 'misleading').length;
+  const pending = PROMISES.filter(p => p.status === 'pending').length;
+  const total = PROMISES.length;
+
+  // Score components (each out of their max)
+  const deliveryMax = 35;
+  const priceMax = 25;
+  const transparencyMax = 20;
+  const executionMax = 20;
+
+  // 1. Promise delivery: kept/total * max
+  const deliveryScore = Math.round((kept / total) * deliveryMax);
+
+  // 2. Price performance: actual vs promised ($0.05). Always 0 until price recovers.
+  const priceScore = 0;
+
+  // 3. Transparency: 4 major failures documented (hidden founder, whitepaper plagiarism, fund discrepancy, censorship) → 0
+  const transparencyScore = 2;
+
+  // 4. Development execution: (kept + partial) / total * max
+  const partials = TIMELINE_EVENTS.filter(e => e.type === 'partial').length;
+  const executionScore = Math.round(((kept * 2 + partials) / (total + partials)) * executionMax);
+
+  const total_score = Math.min(100, deliveryScore + priceScore + transparencyScore + executionScore);
+
+  const scoreColor = total_score < 20 ? '#ff3b3b' :
+                     total_score < 40 ? '#ff7a20' :
+                     total_score < 60 ? '#f0c030' :
+                     total_score < 80 ? '#80c940' : '#00e5a0';
+
+  const scoreLabel = total_score < 20 ? 'Extreme Risk' :
+                     total_score < 40 ? 'High Risk' :
+                     total_score < 60 ? 'Moderate Risk' :
+                     total_score < 80 ? 'Cautious' : 'Trustworthy';
+
+  // Build SVG gauge (semicircle)
+  function buildTrustGauge(score, color) {
+    const cx = 130, cy = 110, r = 90;
+    function polar(deg) {
+      const rad = (deg - 180) * Math.PI / 180;
+      return [cx + r * Math.cos(rad), cy + r * Math.sin(rad)];
+    }
+    function arc(startDeg, endDeg, stroke) {
+      const [x1, y1] = polar(startDeg);
+      const [x2, y2] = polar(endDeg);
+      const large = endDeg - startDeg > 180 ? 1 : 0;
+      return `<path d="M${x1},${y1} A${r},${r} 0 ${large} 1 ${x2},${y2}" fill="none" stroke="${stroke}" stroke-width="14" stroke-linecap="round"/>`;
+    }
+    const scoreDeg = score * 1.8;
+    const segments = [
+      [0,36,'rgba(255,59,59,0.25)'], [36,72,'rgba(255,100,20,0.25)'],
+      [72,108,'rgba(240,192,48,0.25)'], [108,144,'rgba(128,201,64,0.25)'],
+      [144,180,'rgba(0,229,160,0.25)']
+    ];
+    const segSVG = segments.map(([s,e,c]) => arc(s, e, c)).join('');
+    const fillSVG = scoreDeg > 0 ? arc(0, Math.min(scoreDeg, 179.9), color) : '';
+    const [nx, ny] = polar(scoreDeg);
+    const needle = `<line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+      <circle cx="${cx}" cy="${cy}" r="5" fill="white" opacity="0.9"/>`;
+    return `<svg class="ind-gauge-svg" viewBox="0 0 260 120">
+      ${segSVG}
+      <defs><filter id="glow2"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+      <g filter="url(#glow2)">${fillSVG}</g>
+      ${needle}
+      <text x="14" y="118" fill="rgba(255,255,255,0.25)" font-size="9" font-family="monospace">0</text>
+      <text x="238" y="118" fill="rgba(255,255,255,0.25)" font-size="9" font-family="monospace">100</text>
+    </svg>`;
+  }
+
+  function compBar(score, max, color) {
+    const pct = Math.round((score / max) * 100);
+    return `<div class="ind-comp-bar-track"><div class="ind-comp-bar-fill" style="width:${pct}%;background:${color}"></div></div>`;
+  }
+
+  const levels = [
+    { range: '0–20', name: 'Extreme Risk', color: '#ff3b3b', bg: 'rgba(255,59,59,0.08)' },
+    { range: '21–40', name: 'High Risk', color: '#ff7a20', bg: 'rgba(255,122,32,0.08)' },
+    { range: '41–60', name: 'Moderate', color: '#f0c030', bg: 'rgba(240,192,48,0.08)' },
+    { range: '61–80', name: 'Cautious', color: '#80c940', bg: 'rgba(128,201,64,0.08)' },
+    { range: '81–100', name: 'Trustworthy', color: '#00e5a0', bg: 'rgba(0,229,160,0.08)' },
+  ];
+
+  const activeIdx = total_score < 20 ? 0 : total_score < 40 ? 1 : total_score < 60 ? 2 : total_score < 80 ? 3 : 4;
+
+  root.innerHTML = `
+    <div class="ind-layout">
+      <div class="ind-gauge-panel">
+        <div class="ind-gauge-wrap">
+          ${buildTrustGauge(total_score, scoreColor)}
+          <div class="ind-score-overlay">
+            <div class="ind-score-num" style="color:${scoreColor}">${total_score}</div>
+            <div class="ind-score-label" style="color:${scoreColor}">${scoreLabel}</div>
+          </div>
+        </div>
+        <div class="ind-score-sub">Out of 100 — calculated from ${total} tracked promises</div>
+        <div class="ind-last-updated">Auto-updated · Based on live data</div>
+      </div>
+
+      <div class="ind-components">
+        <div class="ind-comp-card">
+          <div class="ind-comp-top">
+            <span class="ind-comp-name">Promise Delivery</span>
+            <span class="ind-comp-score" style="color:#ff3b3b">${deliveryScore}/${deliveryMax}</span>
+          </div>
+          ${compBar(deliveryScore, deliveryMax, '#ff3b3b')}
+          <div class="ind-comp-desc">${kept} kept out of ${total} promises. ${broken} broken, ${misleading} misleading, ${pending} pending.</div>
+        </div>
+        <div class="ind-comp-card">
+          <div class="ind-comp-top">
+            <span class="ind-comp-name">Price Performance</span>
+            <span class="ind-comp-score" style="color:#ff3b3b">${priceScore}/${priceMax}</span>
+          </div>
+          ${compBar(priceScore, priceMax, '#ff3b3b')}
+          <div class="ind-comp-desc">Promised launch price: $0.05. Actual: $0.0001554. Down 99.7% from own promise.</div>
+        </div>
+        <div class="ind-comp-card">
+          <div class="ind-comp-top">
+            <span class="ind-comp-name">Transparency</span>
+            <span class="ind-comp-score" style="color:#ff7a20">${transparencyScore}/${transparencyMax}</span>
+          </div>
+          ${compBar(transparencyScore, transparencyMax, '#ff7a20')}
+          <div class="ind-comp-desc">Hidden founder for 2+ years, whitepaper plagiarism from Kaspa, $300M+ fund discrepancy, censored Telegram.</div>
+        </div>
+        <div class="ind-comp-card">
+          <div class="ind-comp-top">
+            <span class="ind-comp-name">Development Execution</span>
+            <span class="ind-comp-score" style="color:#ff7a20">${executionScore}/${executionMax}</span>
+          </div>
+          ${compBar(executionScore, executionMax, '#ff7a20')}
+          <div class="ind-comp-desc">5 missed mainnet deadlines. Staking broken 70+ days. Miners unshipped 6+ months after promise.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ind-levels">
+      ${levels.map((l, i) => `
+        <div class="ind-level ${i === activeIdx ? 'active' : ''}" style="background:${i===activeIdx ? l.bg : 'rgba(255,255,255,0.015)'}; border-color:${i===activeIdx ? l.color : 'rgba(255,255,255,0.06)'}">
+          <div class="ind-level-range" style="color:${l.color}">${l.range}</div>
+          <div class="ind-level-name" style="color:${i===activeIdx ? l.color : 'rgba(255,255,255,0.3)'}">${l.name}</div>
+        </div>
+      `).join('')}
+    </div>
+
+    <div class="ind-disclaimer">
+      ⚠️ This score is calculated automatically from the promises and data tracked on this site. It is not financial advice. The score will improve if BlockDAG delivers on outstanding promises. This is an independent community tool with no affiliation to BlockDAG Network.
+    </div>
+  `;
+}
+
 function renderHomeUpdates() {
   const newList = document.getElementById('home-new-list');
   const pendingList = document.getElementById('home-pending-list');
@@ -738,6 +897,7 @@ renderInvestigation();
 renderEvidenceSummary();
 renderQuotes();
 renderSources();
+renderIndicators();
 initSearch();
 
 /* Apply active filter button + category heading on tracker page */

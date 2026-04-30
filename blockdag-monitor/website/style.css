@@ -973,6 +973,104 @@ body.home-page {
   .about-layout { grid-template-columns: 1fr; }
 }
 
+/* ── TRUST SCORE / INDICATORS ── */
+.ind-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+.ind-gauge-panel {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 24px;
+  padding: 40px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center;
+}
+.ind-gauge-wrap { position: relative; width: 260px; margin: 0 auto 24px; }
+.ind-gauge-svg { width: 100%; }
+.ind-score-overlay {
+  position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center;
+}
+.ind-score-num {
+  font-family: var(--font-mono);
+  font-size: 52px; font-weight: 800; line-height: 1;
+}
+.ind-score-label {
+  font-size: 13px; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase; margin-top: 4px;
+}
+.ind-score-sub {
+  font-size: 11px; color: rgba(255,255,255,0.35);
+  margin-top: 4px; letter-spacing: 0.03em;
+}
+.ind-last-updated {
+  font-size: 10px; color: rgba(255,255,255,0.25);
+  margin-top: 16px; font-weight: 600;
+}
+
+/* Component cards */
+.ind-components { display: flex; flex-direction: column; gap: 14px; }
+.ind-comp-card {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px; padding: 20px 22px;
+}
+.ind-comp-top {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ind-comp-name {
+  font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.7);
+}
+.ind-comp-score {
+  font-family: var(--font-mono); font-size: 13px; font-weight: 800;
+}
+.ind-comp-bar-track {
+  height: 6px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;
+}
+.ind-comp-bar-fill {
+  height: 100%; border-radius: 99px; transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+.ind-comp-desc {
+  font-size: 11px; color: rgba(255,255,255,0.3);
+  margin-top: 8px; line-height: 1.5;
+}
+
+/* Risk levels */
+.ind-levels {
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: 8px; margin-bottom: 32px;
+}
+.ind-level {
+  border-radius: 12px; padding: 14px 10px; text-align: center;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.ind-level.active { border-width: 2px; }
+.ind-level-range {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 700;
+  margin-bottom: 4px;
+}
+.ind-level-name {
+  font-size: 10px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.ind-disclaimer {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px; padding: 20px 24px;
+  font-size: 12px; color: rgba(255,255,255,0.3); line-height: 1.7;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .ind-layout { grid-template-columns: 1fr; }
+  .ind-levels { grid-template-columns: repeat(3, 1fr); }
+}
+
 /* ── PRICE TICKER ── */
 .price-ticker {
   background: #050d14;
