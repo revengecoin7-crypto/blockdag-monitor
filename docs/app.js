@@ -568,12 +568,12 @@ function renderTimelineSummary() {
         <p class="summary-text">${total} events documenting how BlockDAG's commitments were made, repeatedly delayed, and quietly dropped.</p>
         <div class="summary-stat">
           <span class="summary-num">${broken}</span>
-          <span class="summary-lab">broken promise<br>events documented</span>
+          <span class="summary-lab">broken deadline<br>events in timeline</span>
         </div>
       </div>
       <div class="summary-right">
-        <div class="summary-table-header">Events by type</div>
-        ${counts.broken     ? `<div class="summary-row"><span class="summary-row-label">🔴 Broken promises</span><span class="summary-row-val summary-row-val--red">${counts.broken}</span></div>` : ''}
+        <div class="summary-table-header">Timeline events by type (≠ promise count)</div>
+        ${counts.broken     ? `<div class="summary-row"><span class="summary-row-label">🔴 Broken deadline events</span><span class="summary-row-val summary-row-val--red">${counts.broken}</span></div>` : ''}
         ${counts.promise    ? `<div class="summary-row"><span class="summary-row-label">🔵 They promised</span><span class="summary-row-val summary-row-val--cyan">${counts.promise}</span></div>` : ''}
         ${counts.misleading ? `<div class="summary-row"><span class="summary-row-label">🟠 Misleading</span><span class="summary-row-val summary-row-val--orange">${counts.misleading}</span></div>` : ''}
         ${counts.kept       ? `<div class="summary-row"><span class="summary-row-label">🟢 Kept</span><span class="summary-row-val summary-row-val--green">${counts.kept}</span></div>` : ''}
