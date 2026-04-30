@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5YT0HDKHY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J5YT0HDKHY');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockDAG Exposed — Community Petition</title>
+  <meta name="description" content="Sign the community petition against BlockDAG Network. If this project is proven to be fraudulent, your data will be used to support a collective legal claim." />
+  <meta name="keywords" content="BlockDAG petition, BDAG legal claim, BlockDAG scam claim, BlockDAG investors" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://blockdagexposed.com/petition.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BlockDAG Exposed" />
+  <meta property="og:url" content="https://blockdagexposed.com/petition.html" />
+  <meta property="og:title" content="BlockDAG Community Petition — Sign for Collective Action" />
+  <meta property="og:description" content="Sign the community petition. If BlockDAG is proven fraudulent, your data will support a collective legal claim." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@blockdagmonitor" />
+  <meta name="twitter:title" content="BlockDAG Community Petition" />
+  <meta name="twitter:description" content="Sign the community petition. If BlockDAG is proven fraudulent, your data will support a collective legal claim." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <div class="logo-mark"><div class="logo-mark-diamond"></div></div>
+            <div>
+              <div class="logo-name">BlockDAG<span class="logo-name-dim"> Exposed</span></div>
+              <div class="logo-sub">Independent Promise Tracker</div>
+            </div>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="tracker.html" class="nav-link">Tracker</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="timeline.html" class="nav-link">Timeline</a>
+          <a href="investigation.html" class="nav-link">Investigation</a>
+          <a href="evidence.html" class="nav-link">Evidence</a>
+          <a href="indicators.html" class="nav-link">Trust Score</a>
+          <a href="petition.html" class="nav-link active">Petition</a>
+          <a href="sources.html" class="nav-link">Sources</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero page-hero--red">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="page-hero-badge page-hero-badge--red">✊ Community Petition</div>
+        <h1 class="page-hero-title">Stand up. Be counted.</h1>
+        <p class="page-hero-sub">If BlockDAG Network is proven to have defrauded investors, this petition will support a collective legal claim. Your signature matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Signature counter -->
+      <div class="petition-counter-strip">
+        <div class="petition-counter-left">
+          <div class="petition-counter-num" id="sig-count">0</div>
+          <div class="petition-counter-label">people have signed</div>
+        </div>
+        <div class="petition-counter-bar-wrap">
+          <div class="petition-counter-bar" id="sig-bar"></div>
+        </div>
+        <div class="petition-counter-goal">Goal: 1,000</div>
+      </div>
+
+      <div class="petition-layout">
+
+        <!-- Left: petition statement + form -->
+        <div class="petition-main">
+          <div class="petition-statement">
+            <h2 class="petition-statement-title">What you are signing</h2>
+            <p>By signing this petition, I confirm that I invested in BlockDAG Network (BDAG) and that my investment was influenced by official promises that were not delivered.</p>
+            <p>I authorize the use of my first name and country to be displayed publicly as part of this community petition. My email address will never be shared publicly and will only be used to confirm the validity of my signature and to contact me in the event of collective legal proceedings.</p>
+            <p>If BlockDAG Network is found to have engaged in fraudulent or deceptive practices, I consent to my details being included in a collective legal claim filing.</p>
+            <div class="petition-statement-disclaimer">
+              ⚠️ This petition does not constitute legal representation. Signing does not guarantee participation in any legal proceedings. All data is stored securely and handled in accordance with GDPR.
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="petition-form-wrap">
+            <h2 class="petition-form-title">Sign the petition</h2>
+            <div id="petition-success" class="petition-success hidden">
+              ✓ Your signature has been recorded. Thank you for standing up.
+            </div>
+            <div id="petition-error" class="petition-error hidden">
+              Something went wrong. Please try again.
+            </div>
+            <form id="petition-form" class="petition-form">
+              <div class="petition-field">
+                <label class="petition-label">Full name <span class="petition-required">*</span></label>
+                <input type="text" id="p-name" class="petition-input" placeholder="Your full name" required maxlength="100" />
+              </div>
+              <div class="petition-field">
+                <label class="petition-label">Email address <span class="petition-required">*</span></label>
+                <input type="email" id="p-email" class="petition-input" placeholder="your@email.com" required />
+                <div class="petition-hint">Not shown publicly. Used only for verification and legal proceedings.</div>
+              </div>
+              <div class="petition-field">
+                <label class="petition-label">Country <span class="petition-required">*</span></label>
+                <select id="p-country" class="petition-input" required>
+                  <option value="">Select your country</option>
+                  <option>Afghanistan</option><option>Albania</option><option>Algeria</option><option>Argentina</option><option>Australia</option><option>Austria</option><option>Belgium</option><option>Brazil</option><option>Bulgaria</option><option>Canada</option><option>Chile</option><option>China</option><option>Colombia</option><option>Croatia</option><option>Czech Republic</option><option>Denmark</option><option>Egypt</option><option>Estonia</option><option>Finland</option><option>France</option><option>Germany</option><option>Greece</option><option>Hong Kong</option><option>Hungary</option><option>India</option><option>Indonesia</option><option>Ireland</option><option>Israel</option><option>Italy</option><option>Japan</option><option>Jordan</option><option>Kazakhstan</option><option>Kenya</option><option>Latvia</option><option>Lithuania</option><option>Luxembourg</option><option>Malaysia</option><option>Mexico</option><option>Morocco</option><option>Netherlands</option><option>New Zealand</option><option>Nigeria</option><option>Norway</option><option>Pakistan</option><option>Philippines</option><option>Poland</option><option>Portugal</option><option>Romania</option><option>Russia</option><option>Saudi Arabia</option><option>Singapore</option><option>Slovakia</option><option>Slovenia</option><option>South Africa</option><option>South Korea</option><option>Spain</option><option>Sweden</option><option>Switzerland</option><option>Taiwan</option><option>Thailand</option><option>Turkey</option><option>Ukraine</option><option>United Arab Emirates</option><option>United Kingdom</option><option>United States</option><option>Vietnam</option><option>Other</option>
+                </select>
+              </div>
+              <div class="petition-field">
+                <label class="petition-label">Amount invested (USD) <span class="petition-optional">optional</span></label>
+                <input type="number" id="p-amount" class="petition-input" placeholder="e.g. 500" min="0" max="10000000" />
+                <div class="petition-hint">Approximate amount. Helps document the total community impact.</div>
+              </div>
+              <div class="petition-field">
+                <label class="petition-checkbox-wrap">
+                  <input type="checkbox" id="p-agree" required />
+                  <span class="petition-checkbox-label">I confirm the above statement is true and I agree to the terms of this petition.</span>
+                </label>
+              </div>
+              <button type="submit" class="petition-submit" id="petition-submit-btn">
+                Sign the Petition
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: recent signatures -->
+        <div class="petition-sidebar">
+          <h3 class="petition-sidebar-title">Recent signatures</h3>
+          <div id="petition-signatures-list" class="petition-signatures-list">
+            <div class="petition-sig-loading">Loading signatures...</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-logo"><span class="footer-logo-mark"><span class="footer-logo-diamond"></span></span>BlockDAG<span class="footer-logo-dim"> Exposed</span></div>
+          <div class="footer-social">
+            <a href="https://x.com/blockdagmonitor" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X / Twitter"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://t.me/blockdagexposed" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Telegram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-note">Data sourced from Telegram, X/Twitter, CoinMarketCap, DL News, Reddit, LinkedIn &amp; more · Last updated: April 30, 2026</div>
+          <div class="footer-note">www.blockdagexposed.com</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getFirestore, collection, addDoc, getDocs, onSnapshot, query, orderBy, limit, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
+      authDomain: "blockdag-exposed.firebaseapp.com",
+      projectId: "blockdag-exposed",
+      storageBucket: "blockdag-exposed.firebasestorage.app",
+      messagingSenderId: "867203959601",
+      appId: "1:867203959601:web:e31c472057f118f9aa3e10"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const sigCol = collection(db, 'signatures');
+
+    // Live counter
+    onSnapshot(sigCol, (snap) => {
+      const count = snap.size;
+      document.getElementById('sig-count').textContent = count.toLocaleString();
+      const pct = Math.min((count / 1000) * 100, 100);
+      document.getElementById('sig-bar').style.width = pct + '%';
+    });
+
+    // Load recent signatures
+    async function loadSignatures() {
+      const q = query(sigCol, orderBy('timestamp', 'desc'), limit(20));
+      const snap = await getDocs(q);
+      const list = document.getElementById('petition-signatures-list');
+      if (snap.empty) {
+        list.innerHTML = '<div class="petition-sig-loading">No signatures yet. Be the first.</div>';
+        return;
+      }
+      list.innerHTML = snap.docs.map(doc => {
+        const d = doc.data();
+        const name = d.name || 'Anonymous';
+        const country = d.country || '';
+        const amount = d.amount ? ' · $' + Number(d.amount).toLocaleString() : '';
+        const time = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) : '';
+        return `<div class="petition-sig-item">
+          <div class="petition-sig-name">${name}</div>
+          <div class="petition-sig-meta">${country}${amount} <span class="petition-sig-date">${time}</span></div>
+        </div>`;
+      }).join('');
+    }
+    loadSignatures();
+
+    // Submit form
+    document.getElementById('petition-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('petition-submit-btn');
+      btn.disabled = true;
+      btn.textContent = 'Signing...';
+
+      const name = document.getElementById('p-name').value.trim();
+      const email = document.getElementById('p-email').value.trim().toLowerCase();
+      const country = document.getElementById('p-country').value;
+      const amount = document.getElementById('p-amount').value || null;
+
+      try {
+        await addDoc(sigCol, {
+          name,
+          email,
+          country,
+          amount: amount ? Number(amount) : null,
+          timestamp: serverTimestamp()
+        });
+        document.getElementById('petition-success').classList.remove('hidden');
+        document.getElementById('petition-form').classList.add('hidden');
+        loadSignatures();
+      } catch (err) {
+        document.getElementById('petition-error').classList.remove('hidden');
+        btn.disabled = false;
+        btn.textContent = 'Sign the Petition';
+      }
+    });
+  </script>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

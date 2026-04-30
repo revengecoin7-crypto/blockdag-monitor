@@ -973,6 +973,94 @@ body.home-page {
   .about-layout { grid-template-columns: 1fr; }
 }
 
+/* ── PETITION ── */
+.petition-counter-strip {
+  display: flex; align-items: center; gap: 20px;
+  background: rgba(255,59,59,0.06); border: 1px solid rgba(255,59,59,0.2);
+  border-radius: 16px; padding: 20px 28px; margin-bottom: 40px;
+}
+.petition-counter-num {
+  font-family: var(--font-mono); font-size: 40px; font-weight: 800;
+  color: var(--red); line-height: 1; white-space: nowrap;
+  text-shadow: 0 0 24px rgba(255,59,59,0.4);
+}
+.petition-counter-label { font-size: 12px; color: rgba(255,255,255,0.4); font-weight: 600; white-space: nowrap; }
+.petition-counter-bar-wrap { flex: 1; height: 8px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden; }
+.petition-counter-bar { height: 100%; background: var(--red); border-radius: 99px; width: 0%; transition: width 1s ease; }
+.petition-counter-goal { font-size: 11px; color: rgba(255,255,255,0.3); font-weight: 700; white-space: nowrap; }
+
+.petition-layout { display: grid; grid-template-columns: 1fr 340px; gap: 32px; align-items: start; }
+
+.petition-statement {
+  background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px; padding: 28px; margin-bottom: 28px;
+}
+.petition-statement-title { font-family: var(--font-display); font-style: italic; font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 16px; }
+.petition-statement p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 12px; }
+.petition-statement p:last-of-type { margin-bottom: 0; }
+.petition-statement-disclaimer {
+  font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.6;
+  background: rgba(240,192,48,0.05); border: 1px solid rgba(240,192,48,0.15);
+  border-radius: 10px; padding: 12px 14px; margin-top: 16px;
+}
+
+.petition-form-wrap { background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 28px; }
+.petition-form-title { font-family: var(--font-display); font-style: italic; font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 20px; }
+.petition-form { display: flex; flex-direction: column; gap: 16px; }
+.petition-field { display: flex; flex-direction: column; gap: 6px; }
+.petition-label { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.6); letter-spacing: 0.03em; }
+.petition-required { color: var(--red); }
+.petition-optional { color: rgba(255,255,255,0.25); font-weight: 600; font-size: 10px; }
+.petition-input {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px; padding: 11px 14px; color: #fff; font-size: 14px;
+  font-family: var(--font-body); outline: none; transition: border-color 0.2s;
+  width: 100%; box-sizing: border-box;
+}
+.petition-input:focus { border-color: rgba(255,59,59,0.5); background: rgba(255,255,255,0.07); }
+.petition-input option { background: #0d1b2a; color: #fff; }
+.petition-hint { font-size: 11px; color: rgba(255,255,255,0.25); line-height: 1.5; }
+.petition-checkbox-wrap { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; }
+.petition-checkbox-wrap input[type="checkbox"] { margin-top: 2px; flex-shrink: 0; accent-color: var(--red); width: 16px; height: 16px; }
+.petition-checkbox-label { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+.petition-submit {
+  background: var(--red); color: #fff; border: none; border-radius: 10px;
+  padding: 14px; font-size: 15px; font-weight: 800; font-family: var(--font-body);
+  cursor: pointer; transition: all 0.2s; margin-top: 4px;
+  text-shadow: 0 0 20px rgba(255,59,59,0.5);
+}
+.petition-submit:hover { background: #ff1a1a; transform: translateY(-1px); }
+.petition-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+.petition-success {
+  background: rgba(0,229,160,0.1); border: 1px solid rgba(0,229,160,0.3);
+  color: var(--green); border-radius: 10px; padding: 16px; font-weight: 700;
+  font-size: 14px; margin-bottom: 16px;
+}
+.petition-error {
+  background: rgba(255,59,59,0.1); border: 1px solid rgba(255,59,59,0.3);
+  color: var(--red); border-radius: 10px; padding: 16px; font-weight: 700;
+  font-size: 14px; margin-bottom: 16px;
+}
+
+.petition-sidebar {
+  background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px; padding: 24px; position: sticky; top: 80px;
+}
+.petition-sidebar-title { font-size: 13px; font-weight: 800; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+.petition-signatures-list { display: flex; flex-direction: column; gap: 2px; max-height: 500px; overflow-y: auto; }
+.petition-sig-item { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.petition-sig-item:last-child { border-bottom: none; }
+.petition-sig-name { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.8); }
+.petition-sig-meta { font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 2px; }
+.petition-sig-date { color: rgba(255,255,255,0.2); }
+.petition-sig-loading { font-size: 12px; color: rgba(255,255,255,0.3); padding: 12px 0; }
+
+@media (max-width: 900px) {
+  .petition-layout { grid-template-columns: 1fr; }
+  .petition-sidebar { position: static; }
+  .petition-counter-strip { flex-wrap: wrap; }
+}
+
 /* ── TRUST SCORE / INDICATORS ── */
 .ind-layout {
   display: grid;
