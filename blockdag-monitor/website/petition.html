@@ -91,7 +91,7 @@
           <div class="petition-statement">
             <h2 class="petition-statement-title">What you are signing</h2>
             <p>By signing this petition, I confirm that I invested in BlockDAG Network (BDAG) and that my investment was influenced by official promises that were not delivered.</p>
-            <p>I authorize the use of my first name and country to be displayed publicly as part of this community petition. My email address will never be shared publicly and will only be used to confirm the validity of my signature and to contact me in the event of collective legal proceedings.</p>
+            <p>Your personal details will never be shown publicly. Your name, email and country are stored securely and will only be used to verify your signature and to contact you in the event of collective legal proceedings.</p>
             <p>If BlockDAG Network is found to have engaged in fraudulent or deceptive practices, I consent to my details being included in a collective legal claim filing.</p>
             <div class="petition-statement-disclaimer">
               ⚠️ This petition does not constitute legal representation. Signing does not guarantee participation in any legal proceedings. All data is stored securely and handled in accordance with GDPR.
@@ -142,11 +142,16 @@
           </div>
         </div>
 
-        <!-- Right: recent signatures -->
+        <!-- Right: privacy notice -->
         <div class="petition-sidebar">
-          <h3 class="petition-sidebar-title">Recent signatures</h3>
-          <div id="petition-signatures-list" class="petition-signatures-list">
-            <div class="petition-sig-loading">Loading signatures...</div>
+          <h3 class="petition-sidebar-title">Your privacy</h3>
+          <div style="display:flex;flex-direction:column;gap:14px;margin-top:4px;">
+            <div class="petition-privacy-item">🔒 Your name is never shown publicly</div>
+            <div class="petition-privacy-item">📧 Your email is used only for verification and legal proceedings</div>
+            <div class="petition-privacy-item">🌍 Your country is stored but not displayed</div>
+            <div class="petition-privacy-item">💰 Your investment amount is optional and private</div>
+            <div class="petition-privacy-item">🗑️ You can request deletion of your data at any time by contacting us via X or Telegram</div>
+            <div class="petition-privacy-item">⚖️ Data is handled in accordance with GDPR</div>
           </div>
         </div>
 
@@ -175,7 +180,7 @@
   <!-- Firebase -->
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
-    import { getFirestore, collection, addDoc, getDocs, onSnapshot, query, orderBy, limit, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+    import { getFirestore, collection, addDoc, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
     const firebaseConfig = {
       apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
@@ -198,28 +203,6 @@
       document.getElementById('sig-bar').style.width = pct + '%';
     });
 
-    // Load recent signatures
-    async function loadSignatures() {
-      const q = query(sigCol, orderBy('timestamp', 'desc'), limit(20));
-      const snap = await getDocs(q);
-      const list = document.getElementById('petition-signatures-list');
-      if (snap.empty) {
-        list.innerHTML = '<div class="petition-sig-loading">No signatures yet. Be the first.</div>';
-        return;
-      }
-      list.innerHTML = snap.docs.map(doc => {
-        const d = doc.data();
-        const name = d.name || 'Anonymous';
-        const country = d.country || '';
-        const amount = d.amount ? ' · $' + Number(d.amount).toLocaleString() : '';
-        const time = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) : '';
-        return `<div class="petition-sig-item">
-          <div class="petition-sig-name">${name}</div>
-          <div class="petition-sig-meta">${country}${amount} <span class="petition-sig-date">${time}</span></div>
-        </div>`;
-      }).join('');
-    }
-    loadSignatures();
 
     // Submit form
     document.getElementById('petition-form').addEventListener('submit', async (e) => {
@@ -243,7 +226,6 @@
         });
         document.getElementById('petition-success').classList.remove('hidden');
         document.getElementById('petition-form').classList.add('hidden');
-        loadSignatures();
       } catch (err) {
         document.getElementById('petition-error').classList.remove('hidden');
         btn.disabled = false;

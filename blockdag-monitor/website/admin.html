@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — BlockDAG Exposed</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #060d14; color: #fff; font-family: Manrope, sans-serif; min-height: 100vh; }
+    .admin-login {
+      display: flex; align-items: center; justify-content: center; min-height: 100vh;
+    }
+    .admin-login-box {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px; padding: 40px; width: 360px; text-align: center;
+    }
+    .admin-login-title { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .admin-login-sub { font-size: 13px; color: rgba(255,255,255,0.35); margin-bottom: 24px; }
+    .admin-input {
+      width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px; padding: 12px 14px; color: #fff; font-size: 14px;
+      font-family: Manrope, sans-serif; outline: none; margin-bottom: 12px;
+    }
+    .admin-input:focus { border-color: rgba(0,212,255,0.4); }
+    .admin-btn {
+      width: 100%; background: #00d4ff; color: #000; border: none; border-radius: 10px;
+      padding: 13px; font-size: 14px; font-weight: 800; cursor: pointer; font-family: Manrope, sans-serif;
+    }
+    .admin-btn:hover { background: #00bde8; }
+    .admin-error { color: #ff3b3b; font-size: 12px; margin-top: 10px; }
+
+    .admin-wrap { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+    .admin-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
+    .admin-header-title { font-size: 24px; font-weight: 800; }
+    .admin-logout { font-size: 12px; color: rgba(255,255,255,0.4); cursor: pointer; font-weight: 700; background: none; border: none; color: rgba(255,255,255,0.4); }
+    .admin-logout:hover { color: #fff; }
+
+    .admin-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+    .admin-tab {
+      padding: 8px 18px; border-radius: 999px; font-size: 13px; font-weight: 700;
+      cursor: pointer; border: 1px solid rgba(255,255,255,0.1); background: transparent; color: rgba(255,255,255,0.4);
+    }
+    .admin-tab.active { background: rgba(0,212,255,0.15); border-color: rgba(0,212,255,0.4); color: #00d4ff; }
+
+    .admin-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+    .admin-stat-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 20px; }
+    .admin-stat-num { font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 800; color: #00d4ff; }
+    .admin-stat-label { font-size: 11px; color: rgba(255,255,255,0.35); margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    .admin-table-wrap { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; overflow: hidden; }
+    .admin-table-header { display: grid; grid-template-columns: 2fr 2fr 1fr 1fr 1fr; gap: 12px; padding: 12px 20px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .admin-table-header span { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.3); }
+    .admin-table-row { display: grid; grid-template-columns: 2fr 2fr 1fr 1fr 1fr; gap: 12px; padding: 13px 20px; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: center; }
+    .admin-table-row:last-child { border-bottom: none; }
+    .admin-table-row:hover { background: rgba(255,255,255,0.02); }
+    .admin-cell { font-size: 13px; color: rgba(255,255,255,0.7); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .admin-cell-mono { font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+    .admin-loading { padding: 40px; text-align: center; color: rgba(255,255,255,0.3); font-size: 14px; }
+    .admin-export-btn {
+      padding: 8px 16px; border-radius: 8px; font-size: 12px; font-weight: 700;
+      background: rgba(0,212,255,0.1); border: 1px solid rgba(0,212,255,0.3); color: #00d4ff;
+      cursor: pointer; font-family: Manrope, sans-serif;
+    }
+    .admin-export-btn:hover { background: rgba(0,212,255,0.2); }
+    .admin-brevo-link {
+      display: inline-flex; align-items: center; gap: 8px; padding: 14px 20px;
+      background: rgba(9,179,98,0.1); border: 1px solid rgba(9,179,98,0.3);
+      border-radius: 14px; color: #09b362; font-weight: 700; font-size: 14px;
+      text-decoration: none; margin-top: 16px;
+    }
+    .admin-brevo-link:hover { background: rgba(9,179,98,0.2); }
+  </style>
+</head>
+<body>
+
+  <!-- Login screen -->
+  <div class="admin-login" id="admin-login">
+    <div class="admin-login-box">
+      <div class="admin-login-title">BlockDAG Exposed</div>
+      <div class="admin-login-sub">Admin toegang</div>
+      <input type="password" id="admin-pw" class="admin-input" placeholder="Wachtwoord" />
+      <button class="admin-btn" onclick="checkPassword()">Inloggen</button>
+      <div class="admin-error" id="admin-error"></div>
+    </div>
+  </div>
+
+  <!-- Admin panel (hidden until login) -->
+  <div class="admin-wrap" id="admin-panel" style="display:none;">
+    <div class="admin-header">
+      <div class="admin-header-title">Admin Dashboard</div>
+      <button class="admin-logout" onclick="logout()">Uitloggen</button>
+    </div>
+
+    <div class="admin-tabs">
+      <button class="admin-tab active" onclick="showTab('petitions')">Petitie handtekeningen</button>
+      <button class="admin-tab" onclick="showTab('newsletter')">Nieuwsbrief</button>
+    </div>
+
+    <!-- Petitions tab -->
+    <div id="tab-petitions">
+      <div class="admin-stats">
+        <div class="admin-stat-card">
+          <div class="admin-stat-num" id="admin-total">0</div>
+          <div class="admin-stat-label">Totaal handtekeningen</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-num" id="admin-total-amount">$0</div>
+          <div class="admin-stat-label">Totaal geïnvesteerd</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-num" id="admin-countries">0</div>
+          <div class="admin-stat-label">Landen vertegenwoordigd</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-num" id="admin-today">0</div>
+          <div class="admin-stat-label">Vandaag toegevoegd</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <div style="font-size:13px;color:rgba(255,255,255,0.4);" id="admin-list-count"></div>
+        <button class="admin-export-btn" onclick="exportCSV()">Export als CSV</button>
+      </div>
+
+      <div class="admin-table-wrap">
+        <div class="admin-table-header">
+          <span>Naam</span>
+          <span>Email</span>
+          <span>Land</span>
+          <span>Bedrag ($)</span>
+          <span>Datum</span>
+        </div>
+        <div id="admin-signatures-list">
+          <div class="admin-loading">Laden...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter tab -->
+    <div id="tab-newsletter" style="display:none;">
+      <div style="padding:32px;text-align:center;">
+        <div style="font-size:16px;color:rgba(255,255,255,0.6);margin-bottom:20px;line-height:1.7;">
+          De nieuwsbrief abonnees staan in Brevo.<br>Klik hieronder om ze te bekijken.
+        </div>
+        <a href="https://app.brevo.com/contact/list" target="_blank" class="admin-brevo-link">
+          Open Brevo contactenlijst →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const PASS = 'Holisan-1983';
+    let allSignatures = [];
+
+    function checkPassword() {
+      const pw = document.getElementById('admin-pw').value;
+      if (pw === PASS) {
+        document.getElementById('admin-login').style.display = 'none';
+        document.getElementById('admin-panel').style.display = 'block';
+        loadAdminData();
+      } else {
+        document.getElementById('admin-error').textContent = 'Verkeerd wachtwoord.';
+      }
+    }
+
+    document.getElementById('admin-pw').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') checkPassword();
+    });
+
+    function logout() {
+      document.getElementById('admin-login').style.display = 'flex';
+      document.getElementById('admin-panel').style.display = 'none';
+      document.getElementById('admin-pw').value = '';
+    }
+
+    function showTab(tab) {
+      document.getElementById('tab-petitions').style.display = tab === 'petitions' ? 'block' : 'none';
+      document.getElementById('tab-newsletter').style.display = tab === 'newsletter' ? 'block' : 'none';
+      document.querySelectorAll('.admin-tab').forEach((t, i) => {
+        t.classList.toggle('active', (i === 0 && tab === 'petitions') || (i === 1 && tab === 'newsletter'));
+      });
+    }
+
+    function exportCSV() {
+      const rows = [['Naam', 'Email', 'Land', 'Bedrag ($)', 'Datum']];
+      allSignatures.forEach(d => {
+        rows.push([
+          d.name || '', d.email || '', d.country || '',
+          d.amount || '', d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('nl-NL') : ''
+        ]);
+      });
+      const csv = rows.map(r => r.map(v => '"' + String(v).replace(/"/g, '""') + '"').join(',')).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'petition_signatures_' + new Date().toISOString().slice(0,10) + '.csv';
+      a.click();
+    }
+  </script>
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getFirestore, collection, onSnapshot, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
+      authDomain: "blockdag-exposed.firebaseapp.com",
+      projectId: "blockdag-exposed",
+      storageBucket: "blockdag-exposed.firebasestorage.app",
+      messagingSenderId: "867203959601",
+      appId: "1:867203959601:web:e31c472057f118f9aa3e10"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    window.loadAdminData = function() {
+      const q = query(collection(db, 'signatures'), orderBy('timestamp', 'desc'));
+      onSnapshot(q, (snap) => {
+        const docs = snap.docs.map(d => d.data());
+        window.allSignatures = docs;
+
+        const total = docs.length;
+        const totalAmount = docs.reduce((s, d) => s + (Number(d.amount) || 0), 0);
+        const countries = new Set(docs.map(d => d.country).filter(Boolean)).size;
+        const today = docs.filter(d => {
+          if (!d.timestamp) return false;
+          const t = d.timestamp.toDate();
+          const now = new Date();
+          return t.toDateString() === now.toDateString();
+        }).length;
+
+        document.getElementById('admin-total').textContent = total;
+        document.getElementById('admin-total-amount').textContent = '$' + totalAmount.toLocaleString();
+        document.getElementById('admin-countries').textContent = countries;
+        document.getElementById('admin-today').textContent = today;
+        document.getElementById('admin-list-count').textContent = total + ' handtekeningen';
+
+        const list = document.getElementById('admin-signatures-list');
+        if (docs.length === 0) {
+          list.innerHTML = '<div class="admin-loading">Nog geen handtekeningen.</div>';
+          return;
+        }
+        list.innerHTML = docs.map(d => {
+          const date = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('nl-NL') : '';
+          return `<div class="admin-table-row">
+            <div class="admin-cell">${d.name || ''}</div>
+            <div class="admin-cell admin-cell-mono">${d.email || ''}</div>
+            <div class="admin-cell">${d.country || ''}</div>
+            <div class="admin-cell admin-cell-mono">${d.amount ? '$' + Number(d.amount).toLocaleString() : ''}</div>
+            <div class="admin-cell">${date}</div>
+          </div>`;
+        }).join('');
+      });
+    };
+  </script>
+</body>
+</html>
