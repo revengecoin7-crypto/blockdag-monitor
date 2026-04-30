@@ -115,11 +115,11 @@
               <div class="about-number-label">Telegram messages analyzed</div>
             </div>
             <div class="about-number-item">
-              <div class="about-number">48</div>
+              <div class="about-number">55</div>
               <div class="about-number-label">Promises tracked</div>
             </div>
             <div class="about-number-item">
-              <div class="about-number">52</div>
+              <div class="about-number">60</div>
               <div class="about-number-label">Timeline events documented</div>
             </div>
             <div class="about-number-item">
@@ -132,6 +132,66 @@
       </div>
     </div>
   </section>
+
+  <!-- Ideas form -->
+  <section class="section section-dark">
+    <div class="container">
+      <div style="max-width:600px;margin:0 auto;">
+        <div style="font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:12px;">Community feedback</div>
+        <h2 style="font-family:var(--font-display);font-style:italic;font-size:26px;font-weight:800;color:#fff;margin-bottom:10px;">Got an idea for the website?</h2>
+        <p style="font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:28px;line-height:1.7;">Missing a feature, spotted an error, or have a suggestion? Let us know. Every idea is read.</p>
+        <div id="idea-success" class="petition-success hidden">Thanks! Your idea has been received.</div>
+        <div id="idea-error" class="petition-error hidden">Something went wrong. Please try again.</div>
+        <form id="idea-form" style="display:flex;flex-direction:column;gap:14px;">
+          <div class="petition-field">
+            <label class="petition-label">Your idea or suggestion <span class="petition-required">*</span></label>
+            <textarea id="idea-text" class="petition-input" rows="4" placeholder="Describe your idea..." required maxlength="1000" style="resize:vertical;"></textarea>
+          </div>
+          <div class="petition-field">
+            <label class="petition-label">Name <span class="petition-optional">optional</span></label>
+            <input type="text" id="idea-name" class="petition-input" placeholder="Your name" maxlength="100" />
+          </div>
+          <div class="petition-field">
+            <label class="petition-label">Email <span class="petition-optional">optional, for follow-up</span></label>
+            <input type="email" id="idea-email" class="petition-input" placeholder="your@email.com" />
+          </div>
+          <button type="submit" id="idea-submit" class="petition-submit" style="background:var(--cyan);color:#000;">Submit idea</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+    const app = initializeApp({
+      apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
+      authDomain: "blockdag-exposed.firebaseapp.com",
+      projectId: "blockdag-exposed",
+      storageBucket: "blockdag-exposed.firebasestorage.app",
+      messagingSenderId: "867203959601",
+      appId: "1:867203959601:web:e31c472057f118f9aa3e10"
+    });
+    const db = getFirestore(app);
+    document.getElementById('idea-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('idea-submit');
+      btn.disabled = true; btn.textContent = 'Sending...';
+      try {
+        await addDoc(collection(db, 'ideas'), {
+          text: document.getElementById('idea-text').value.trim(),
+          name: document.getElementById('idea-name').value.trim() || 'Anonymous',
+          email: document.getElementById('idea-email').value.trim() || '',
+          timestamp: serverTimestamp()
+        });
+        document.getElementById('idea-success').classList.remove('hidden');
+        document.getElementById('idea-form').classList.add('hidden');
+      } catch(err) {
+        document.getElementById('idea-error').classList.remove('hidden');
+        btn.disabled = false; btn.textContent = 'Submit idea';
+      }
+    });
+  </script>
 
   <footer class="site-footer">
     <div class="container">

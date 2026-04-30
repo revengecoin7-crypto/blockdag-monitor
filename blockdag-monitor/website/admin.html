@@ -96,6 +96,7 @@
 
     <div class="admin-tabs">
       <button class="admin-tab active" onclick="showTab('petitions')">Petitie handtekeningen</button>
+      <button class="admin-tab" onclick="showTab('ideas')">Ideeën</button>
       <button class="admin-tab" onclick="showTab('newsletter')">Nieuwsbrief</button>
     </div>
 
@@ -134,6 +135,24 @@
           <span>Datum</span>
         </div>
         <div id="admin-signatures-list">
+          <div class="admin-loading">Laden...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ideas tab -->
+    <div id="tab-ideas" style="display:none;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <div style="font-size:13px;color:rgba(255,255,255,0.4);" id="admin-ideas-count"></div>
+      </div>
+      <div class="admin-table-wrap">
+        <div class="admin-table-header" style="grid-template-columns:3fr 1fr 2fr 1fr;">
+          <span>Idee</span>
+          <span>Naam</span>
+          <span>Email</span>
+          <span>Datum</span>
+        </div>
+        <div id="admin-ideas-list">
           <div class="admin-loading">Laden...</div>
         </div>
       </div>
@@ -179,9 +198,14 @@
 
     function showTab(tab) {
       document.getElementById('tab-petitions').style.display = tab === 'petitions' ? 'block' : 'none';
+      document.getElementById('tab-ideas').style.display = tab === 'ideas' ? 'block' : 'none';
       document.getElementById('tab-newsletter').style.display = tab === 'newsletter' ? 'block' : 'none';
       document.querySelectorAll('.admin-tab').forEach((t, i) => {
-        t.classList.toggle('active', (i === 0 && tab === 'petitions') || (i === 1 && tab === 'newsletter'));
+        t.classList.toggle('active',
+          (i === 0 && tab === 'petitions') ||
+          (i === 1 && tab === 'ideas') ||
+          (i === 2 && tab === 'newsletter')
+        );
       });
     }
 
@@ -206,6 +230,7 @@
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
     import { getFirestore, collection, onSnapshot, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
+
     const firebaseConfig = {
       apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
       authDomain: "blockdag-exposed.firebaseapp.com",
@@ -219,6 +244,24 @@
     const db = getFirestore(app);
 
     window.loadAdminData = function() {
+      // Load ideas
+      const ideasQ = query(collection(db, 'ideas'), orderBy('timestamp', 'desc'));
+      onSnapshot(ideasQ, (snap) => {
+        document.getElementById('admin-ideas-count').textContent = snap.size + ' ideeën';
+        const list = document.getElementById('admin-ideas-list');
+        if (snap.empty) { list.innerHTML = '<div class="admin-loading">Nog geen ideeën.</div>'; return; }
+        list.innerHTML = snap.docs.map(doc => {
+          const d = doc.data();
+          const date = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('nl-NL') : '';
+          return `<div class="admin-table-row" style="grid-template-columns:3fr 1fr 2fr 1fr;">
+            <div class="admin-cell" style="white-space:normal;line-height:1.5;">${d.text || ''}</div>
+            <div class="admin-cell">${d.name || ''}</div>
+            <div class="admin-cell admin-cell-mono">${d.email || ''}</div>
+            <div class="admin-cell">${date}</div>
+          </div>`;
+        }).join('');
+      });
+
       const q = query(collection(db, 'signatures'), orderBy('timestamp', 'desc'));
       onSnapshot(q, (snap) => {
         const docs = snap.docs.map(d => d.data());
