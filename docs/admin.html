@@ -127,11 +127,12 @@
       </div>
 
       <div class="admin-table-wrap">
-        <div class="admin-table-header">
+        <div class="admin-table-header" style="grid-template-columns:1.5fr 1.5fr 0.8fr 0.8fr 1fr 0.8fr;">
           <span>Naam</span>
           <span>Email</span>
           <span>Land</span>
           <span>Bedrag ($)</span>
+          <span>TX Hash (verified)</span>
           <span>Datum</span>
         </div>
         <div id="admin-signatures-list">
@@ -290,11 +291,13 @@
         }
         list.innerHTML = docs.map(d => {
           const date = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('nl-NL') : '';
-          return `<div class="admin-table-row">
+          const txDisplay = d.txhash ? `<span style="color:${d.txVerified ? '#00e5a0' : '#ff7a20'}">${d.txVerified ? '✓' : '?'} ${d.txValue ? d.txValue + ' ' + d.txCoin : ''} ${d.chain ? '(' + d.chain.toUpperCase() + ')' : ''}</span>` : '';
+          return `<div class="admin-table-row" style="grid-template-columns:1.5fr 1.5fr 0.8fr 0.8fr 1fr 0.8fr;">
             <div class="admin-cell">${d.name || ''}</div>
-            <div class="admin-cell admin-cell-mono">${d.email || ''}</div>
+            <div class="admin-cell admin-cell-mono" style="font-size:11px;">${d.email || ''}</div>
             <div class="admin-cell">${d.country || ''}</div>
             <div class="admin-cell admin-cell-mono">${d.amount ? '$' + Number(d.amount).toLocaleString() : ''}</div>
+            <div class="admin-cell admin-cell-mono" style="font-size:11px;">${txDisplay}</div>
             <div class="admin-cell">${date}</div>
           </div>`;
         }).join('');

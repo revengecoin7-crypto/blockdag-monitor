@@ -125,9 +125,26 @@
                 </select>
               </div>
               <div class="petition-field">
+                <label class="petition-label">Blockchain used <span class="petition-optional">optional, for transaction verification</span></label>
+                <select id="p-chain" class="petition-input">
+                  <option value="">Select blockchain</option>
+                  <option value="bsc">BSC (paid with BNB)</option>
+                  <option value="eth">Ethereum (paid with ETH)</option>
+                </select>
+              </div>
+              <div class="petition-field">
+                <label class="petition-label">Transaction hash <span class="petition-optional">optional</span></label>
+                <div style="display:flex;gap:8px;">
+                  <input type="text" id="p-txhash" class="petition-input" placeholder="0x..." maxlength="66" style="flex:1;" />
+                  <button type="button" id="p-verify-btn" class="petition-submit" style="width:auto;padding:0 16px;font-size:12px;white-space:nowrap;" onclick="verifyTx()">Verify</button>
+                </div>
+                <div class="petition-hint">Your TX hash from BSCScan or Etherscan. Used to verify your actual investment on-chain.</div>
+                <div id="p-verify-result" style="display:none;margin-top:8px;padding:10px 14px;border-radius:8px;font-size:13px;font-weight:700;"></div>
+              </div>
+              <div class="petition-field">
                 <label class="petition-label">Amount invested (USD) <span class="petition-optional">optional</span></label>
-                <input type="number" id="p-amount" class="petition-input" placeholder="e.g. 500" min="0" max="10000000" />
-                <div class="petition-hint">Approximate amount. Helps document the total community impact.</div>
+                <input type="number" id="p-amount" class="petition-input" placeholder="Auto-filled after verification, or enter manually" min="0" max="10000000" />
+                <div class="petition-hint">Helps document the total community impact.</div>
               </div>
               <div class="petition-field">
                 <label class="petition-checkbox-wrap">
@@ -182,6 +199,73 @@
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
     import { getFirestore, collection, addDoc, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
+    // TX verification
+    window.verifyTx = async function() {
+      const txhash = document.getElementById('p-txhash').value.trim();
+      const chain = document.getElementById('p-chain').value;
+      const result = document.getElementById('p-verify-result');
+      const btn = document.getElementById('p-verify-btn');
+
+      if (!txhash || !txhash.startsWith('0x')) {
+        result.style.display = 'block';
+        result.style.background = 'rgba(255,59,59,0.1)';
+        result.style.border = '1px solid rgba(255,59,59,0.3)';
+        result.style.color = '#ff3b3b';
+        result.textContent = 'Please enter a valid transaction hash starting with 0x.';
+        return;
+      }
+      if (!chain) {
+        result.style.display = 'block';
+        result.style.background = 'rgba(255,59,59,0.1)';
+        result.style.border = '1px solid rgba(255,59,59,0.3)';
+        result.style.color = '#ff3b3b';
+        result.textContent = 'Please select a blockchain first.';
+        return;
+      }
+
+      btn.textContent = 'Verifying...';
+      btn.disabled = true;
+
+      const apiUrl = chain === 'bsc'
+        ? `https://api.bscscan.com/api?module=proxy&action=eth_getTransactionByHash&txhash=${txhash}`
+        : `https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=${txhash}`;
+
+      try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+        const tx = data.result;
+
+        if (!tx) {
+          result.style.display = 'block';
+          result.style.background = 'rgba(255,59,59,0.1)';
+          result.style.border = '1px solid rgba(255,59,59,0.3)';
+          result.style.color = '#ff3b3b';
+          result.textContent = 'Transaction not found. Please check the hash and selected blockchain.';
+        } else {
+          const valueWei = parseInt(tx.value, 16);
+          const valueCoin = (valueWei / 1e18).toFixed(6);
+          const coinName = chain === 'bsc' ? 'BNB' : 'ETH';
+          result.style.display = 'block';
+          result.style.background = 'rgba(0,229,160,0.1)';
+          result.style.border = '1px solid rgba(0,229,160,0.3)';
+          result.style.color = '#00e5a0';
+          result.textContent = `✓ Verified: ${valueCoin} ${coinName} paid on ${chain.toUpperCase()}`;
+          document.getElementById('p-txhash').dataset.verified = 'true';
+          document.getElementById('p-txhash').dataset.value = valueCoin;
+          document.getElementById('p-txhash').dataset.coin = coinName;
+        }
+      } catch(e) {
+        result.style.display = 'block';
+        result.style.background = 'rgba(255,59,59,0.1)';
+        result.style.border = '1px solid rgba(255,59,59,0.3)';
+        result.style.color = '#ff3b3b';
+        result.textContent = 'Could not reach blockchain API. Please try again.';
+      }
+
+      btn.textContent = 'Verify';
+      btn.disabled = false;
+    };
+
     const firebaseConfig = {
       apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
       authDomain: "blockdag-exposed.firebaseapp.com",
@@ -217,11 +301,23 @@
       const amount = document.getElementById('p-amount').value || null;
 
       try {
+        const txEl = document.getElementById('p-txhash');
+        const txhash = txEl.value.trim() || null;
+        const txVerified = txEl.dataset.verified === 'true';
+        const txValue = txEl.dataset.value || null;
+        const txCoin = txEl.dataset.coin || null;
+        const chain = document.getElementById('p-chain').value || null;
+
         await addDoc(sigCol, {
           name,
           email,
           country,
           amount: amount ? Number(amount) : null,
+          txhash: txhash,
+          txVerified: txVerified,
+          txValue: txValue ? Number(txValue) : null,
+          txCoin: txCoin,
+          chain: chain,
           timestamp: serverTimestamp()
         });
         document.getElementById('petition-success').classList.remove('hidden');
