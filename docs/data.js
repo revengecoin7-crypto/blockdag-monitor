@@ -832,6 +832,48 @@ const SOURCES = [
     description: "Official company page. Lists 11–50 employees. Crunchbase data via LinkedIn shows '$433M raised' via ICO (March 29, 2024) — contradicted by CEO's own statement of ~$200M and ZachXBT's on-chain analysis showing under $100M.",
     url: "https://www.linkedin.com/company/blockdag-network/",
     label: "linkedin.com/company/blockdag-network"
+  },
+  {
+    icon: "📰",
+    name: "CryptoNews — Is BlockDAG a Scam? 5 Major Red Flags",
+    description: "Independent analysis of BlockDAG's 5 biggest red flags: extended presale, misleading marketing, leadership issues, financial discrepancies, and undelivered promises.",
+    url: "https://cryptonews.com/cryptocurrency/is-blockdag-a-scam-or-legit/",
+    label: "cryptonews.com"
+  },
+  {
+    icon: "📰",
+    name: "CryptoPotato — BlockDAG Under Fire: ZachXBT Alleges $300M Scam",
+    description: "Report on ZachXBT's on-chain investigation alleging BlockDAG extracted over $300M from retail investors, with at least $110M sent to Binance and BTSE accounts.",
+    url: "https://cryptopotato.com/blockdag-under-fire-as-investigator-alleges-300m-scam/",
+    label: "cryptopotato.com"
+  },
+  {
+    icon: "📰",
+    name: "TheHolyCoins — Is BlockDAG Legit? Risk Analysis",
+    description: "In-depth review of BlockDAG's presale mechanics, tokenomics, and risk factors. Covers the gap between marketing promises and on-chain reality.",
+    url: "https://theholycoins.com/news/is-blockdag-legit-uncovering-the-truth-behind-the-flashy-usdbdag-presale",
+    label: "theholycoins.com"
+  },
+  {
+    icon: "📰",
+    name: "Bitget News — Crypto Sleuth Slams BlockDAG as 'Fake Project'",
+    description: "Coverage of blockchain investigator findings labeling BlockDAG a fake project, citing over 1.5 years of presale extensions and undelivered commitments.",
+    url: "https://www.bitget.com/news/detail/12560604918093",
+    label: "bitget.com"
+  },
+  {
+    icon: "📰",
+    name: "OpenPR — BlockDAG Staff and Vendors Went Unpaid",
+    description: "Report based on former CEO statements confirming staff and vendors went unpaid, with roughly 24 employees owed over $140,000 for December salaries.",
+    url: "https://www.openpr.com/news/4436854/blockdag-bdag-staff-and-vendors-went-unpaid-per-former-ceo",
+    label: "openpr.com"
+  },
+  {
+    icon: "📰",
+    name: "OpenPR — BlockDAG Missed Four Launch Deadlines",
+    description: "Documentation of BlockDAG's four missed mainnet launch deadlines: June 2025, August 2025, January 2026, and February 2026.",
+    url: "https://www.openpr.com/news/4434508/blockdag-bdag-missed-four-launch-deadlines-or-taurox-taux",
+    label: "openpr.com"
   }
 ];
 
