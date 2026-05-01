@@ -618,6 +618,32 @@ const PROMISES = [
     ]
   },
   {
+    id: 55,
+    isNew: true,
+    category: "Exchange Listing",
+    status: "pending",
+    title: "10 Major Exchanges ready to launch BDAG — May 2026",
+    promised: "May 1, 2026",
+    reality: "BlockDAG claimed '10 Major Exchanges Ready to Launch BDAG'. As of May 1, 2026, no official listing announcements have been made by any of these exchanges. Full trading availability has been pushed to June 2026 according to BlockDAG's own roadmap.",
+    quotes: [
+      { date: "May 2026", text: "BlockDAG Listing EXPLOSION: 10 Major Exchanges Ready to Launch BDAG as Final Aftersale Hits Last Chance." },
+      { date: "May 2026", text: "Broader trading and launch expected in May–June 2026 based on timeline provided by the project team." }
+    ]
+  },
+  {
+    id: 56,
+    isNew: true,
+    category: "Product",
+    status: "misleading",
+    title: "Live Swap: buy instantly, receive directly to wallet",
+    promised: "May 1, 2026",
+    reality: "BlockDAG launched Live Swap promising instant delivery to wallet at 10-15% below market price. Community reports emerged of tokens not arriving and failed swaps. The feature was launched while staking remained broken and miners remained unshipped.",
+    quotes: [
+      { date: "May 1, 2026", text: "LIVE SWAP IS NOW ACTIVE. Buy now. Receive instantly. 15% below live market price. Straight to your wallet." },
+      { date: "May 1, 2026", text: "Community reports: swap completed but tokens not visible in wallet." }
+    ]
+  },
+  {
     id: 51,
     isNew: true,
     category: "Marketing",
@@ -783,6 +809,10 @@ const TIMELINE_EVENTS = [
   { date: "Apr 26, 2026", isNew: true, type: "promise", text: "BingX & Gate.io integrations confirmed as 'in final stage'. Miner shipping: 'will commence soon' — no specific date." },
   { date: "Apr 27, 2026", isNew: true, type: "broken", text: "Staking contract still 'under maintenance' — 67 days after it was promised live on February 19. CEO AMA scheduled to 'address all issues'." },
   { date: "Apr 27, 2026", isNew: true, type: "partial", text: "Batch 4 claims go live — delivered on the promised date. However staking, miner shipping, and exchange deposits remain unresolved." },
+  { date: "May 1, 2026", isNew: true, type: "misleading", text: "Live Swap feature launched: 'Buy now, receive instantly, 10-15% below market price, straight to your wallet.' Community reports of tokens not arriving and failed swaps. Another new sales mechanism launched while core issues remain unresolved." },
+  { date: "May 1, 2026", isNew: true, type: "misleading", text: "'246X potential' — new marketing push at $0.000000976. Fourth consecutive 'final price ever' claim after $0.00000058, $0.000000796 and $0.000000597. 246X from current price would still be 99.8% below the promised $0.05 launch price." },
+  { date: "May 1, 2026", isNew: true, type: "promise", text: "BlockDAG claims '10 Major Exchanges Ready to Launch BDAG'. No official listing announcements from any of these exchanges. Full exchange trading now pushed to June 2026." },
+  { date: "May 1, 2026", isNew: true, type: "partial", text: "X10 miners reportedly starting to ship. No confirmed delivery updates for X30 or X100 miners. Original shipping promise was February through April 2026." },
   { date: "May 7, 2026", type: "promise", text: "BlockDAG Casino launch promised. Partnership with Betski (iGaming) announced." },
   { date: "May 2026", type: "promise", text: "Website roadmap: DEX activation (Uniswap, PancakeSwap, Hyperliquid) + LP incentives. Originally promised for Day 1 (March 4)." },
   { date: "Jun 16, 2026", type: "promise", text: "X10 miners now scheduled to ship. Original promise was February–April 2026." },
