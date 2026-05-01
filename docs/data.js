@@ -645,7 +645,6 @@ const PROMISES = [
   },
   {
     id: 51,
-    isNew: true,
     category: "Marketing",
     status: "misleading",
     title: "50x, 85x and 100x potential returns promised in marketing",
@@ -658,7 +657,6 @@ const PROMISES = [
   },
   {
     id: 52,
-    isNew: true,
     category: "Transparency",
     status: "misleading",
     title: "Whitepaper copied from Kaspa — direct screenshots used",
@@ -671,7 +669,6 @@ const PROMISES = [
   },
   {
     id: 53,
-    isNew: true,
     category: "Funding",
     status: "misleading",
     title: "Only $32M planned for post-launch liquidity — not $100M as implied",
@@ -684,7 +681,6 @@ const PROMISES = [
   },
   {
     id: 54,
-    isNew: true,
     category: "Transparency",
     status: "misleading",
     title: "Founder Kiziloz previously involved in Big Eyes, Dogetti and Poorcoin — all collapsed after launch",
@@ -697,7 +693,6 @@ const PROMISES = [
   },
   {
     id: 48,
-    isNew: true,
     category: "Marketing",
     status: "misleading",
     title: "225X potential at $0.000000796 — new 'final chance' push",
@@ -711,7 +706,6 @@ const PROMISES = [
   },
   {
     id: 49,
-    isNew: true,
     category: "Product",
     status: "misleading",
     title: "All utilities live now — DeFi, staking, NFT marketplace, dApps",
@@ -724,7 +718,6 @@ const PROMISES = [
   },
   {
     id: 50,
-    isNew: true,
     category: "Staking",
     status: "broken",
     title: "Staking contract still under maintenance — April 27",
@@ -753,8 +746,8 @@ const PROMISES = [
 ];
 
 const TIMELINE_EVENTS = [
-  { date: "Mar 2024", isNew: true, type: "note", text: "BlockDAG presale launches. Founder identity anonymous. Core team not publicly introduced until July 2024 — 4 months after launch. Mainnet development begins, targeting November 2024." },
-  { date: "Nov 2024", isNew: true, type: "broken", text: "First mainnet target missed — November 2024. No announcement or explanation. Date quietly replaced with June 2025. This is the first of five missed mainnet deadlines." },
+  { date: "Mar 2024", type: "note", text: "BlockDAG presale launches. Founder identity anonymous. Core team not publicly introduced until July 2024 — 4 months after launch. Mainnet development begins, targeting November 2024." },
+  { date: "Nov 2024", type: "broken", text: "First mainnet target missed — November 2024. No announcement or explanation. Date quietly replaced with June 2025. This is the first of five missed mainnet deadlines." },
   { date: "Dec 2023", type: "promise", text: "BlockDAG presale launches. Founder identity completely anonymous. Registered address: Lusaka, Zambia. ScamAdviser trust score: 1/100." },
   { date: "2024", type: "misleading", text: "Keynote 2 'From the Moon' released — presenter later identified as a hired actor. X1 app promises $10–$100 daily mining income. X100 miner identified as rebranded Bitmain Antminer E9Pro with 'poor stickers'." },
   { date: "May 11, 2025", type: "broken", text: "'FINAL 48 HOURS — BDAG @ $0.0019! Exchange Announcement Incoming + Presale ENDING!' — countdown expires, presale continues for 9 more months." },
@@ -768,7 +761,7 @@ const TIMELINE_EVENTS = [
   { date: "Sep 2025", type: "note", text: "Lanistar fintech (Kiziloz's previous company) is liquidated. FCA had issued consumer warning against it in November 2020." },
   { date: "Nov 2025", type: "broken", text: "Alpine Racing sets December 3, 2025 as deadline for $1.4M in unpaid sponsorship. DL News investigation begins." },
   { date: "Dec 2025", type: "broken", text: "Alpine Racing payment deadline passes. Antony Turner fired as CEO. True founder Gurhan Kiziloz's identity revealed for first time. ~24 employees owed $140,000+ for December salaries. Nic Van Den Bergh appointed as new CEO." },
-  { date: "Jan 6, 2026", isNew: true, type: "misleading", text: "Internal investor meeting reveals only $32M planned for post-launch liquidity. Former payroll manager Liza Van Den Berg states actual funds raised were $30-60M — not $442M publicly claimed. Presale allegedly oversold by 100%+. On-chain verification via multisig wallet was reportedly declined." },
+  { date: "Jan 6, 2026", type: "misleading", text: "Internal investor meeting reveals only $32M planned for post-launch liquidity. Former payroll manager Liza Van Den Berg states actual funds raised were $30-60M — not $442M publicly claimed. Presale allegedly oversold by 100%+. On-chain verification via multisig wallet was reportedly declined." },
   { date: "Jan 26, 2026", type: "promise", text: "Presale scheduled to conclude. BlockDAG website claims $442M raised — CEO later states only ~$200M was actually raised." },
   { date: "Feb 2, 2026", type: "promise", text: "BlockDAG confirms February 11 as TGE date and February 16 as exchange listing date. 10 exchanges announced. Launch price marketed as $0.05. Miners promised to ship Feb–April." },
   { date: "Feb 3, 2026", type: "promise", text: "'BDAG will be available on 20 exchanges.' Exchange launch at 10:00 AM PST on Feb 16 confirmed repeatedly. DEX listings (Uniswap, Pancakeswap, Hyperliquid) included." },
@@ -804,11 +797,11 @@ const TIMELINE_EVENTS = [
   { date: "Apr 21, 2026", type: "partial", text: "BDAG lists on BingX — first actual Tier 1 exchange. 7 weeks after the promised March 4 listing date." },
   { date: "Apr 23, 2026", type: "broken", text: "DL News publishes full investigation: '$442M crypto maze of missing miners, unpaid employees, and breached contracts.' Current price: $0.0001554 — down 99.7% from promised $0.05 launch price. Market cap: $5.65M vs promised $1B." },
   { date: "Apr 24, 2026", type: "partial", text: "BDAG lists on Gate.io — delayed 3 days from the originally promised April 21 date." },
-  { date: "Apr 24, 2026", isNew: true, type: "misleading", text: "'225X POTENTIAL | 5 DAYS ONLY' — new 'final chance' marketing push at $0.000000796. Claimed 'ALL LIVE NOW: DeFi, staking, NFT marketplace, dApps' — same day staking was still under maintenance." },
-  { date: "Apr 24, 2026", isNew: true, type: "promise", text: "CEO promises to provide 'complete details about the casino before May 7.' Batch 4 claims confirmed for April 27." },
-  { date: "Apr 26, 2026", isNew: true, type: "promise", text: "BingX & Gate.io integrations confirmed as 'in final stage'. Miner shipping: 'will commence soon' — no specific date." },
-  { date: "Apr 27, 2026", isNew: true, type: "broken", text: "Staking contract still 'under maintenance' — 67 days after it was promised live on February 19. CEO AMA scheduled to 'address all issues'." },
-  { date: "Apr 27, 2026", isNew: true, type: "partial", text: "Batch 4 claims go live — delivered on the promised date. However staking, miner shipping, and exchange deposits remain unresolved." },
+  { date: "Apr 24, 2026", type: "misleading", text: "'225X POTENTIAL | 5 DAYS ONLY' — new 'final chance' marketing push at $0.000000796. Claimed 'ALL LIVE NOW: DeFi, staking, NFT marketplace, dApps' — same day staking was still under maintenance." },
+  { date: "Apr 24, 2026", type: "promise", text: "CEO promises to provide 'complete details about the casino before May 7.' Batch 4 claims confirmed for April 27." },
+  { date: "Apr 26, 2026", type: "promise", text: "BingX & Gate.io integrations confirmed as 'in final stage'. Miner shipping: 'will commence soon' — no specific date." },
+  { date: "Apr 27, 2026", type: "broken", text: "Staking contract still 'under maintenance' — 67 days after it was promised live on February 19. CEO AMA scheduled to 'address all issues'." },
+  { date: "Apr 27, 2026", type: "partial", text: "Batch 4 claims go live — delivered on the promised date. However staking, miner shipping, and exchange deposits remain unresolved." },
   { date: "May 1, 2026", isNew: true, type: "misleading", text: "Live Swap feature launched: 'Buy now, receive instantly, 10-15% below market price, straight to your wallet.' Community reports of tokens not arriving and failed swaps. Another new sales mechanism launched while core issues remain unresolved." },
   { date: "May 1, 2026", isNew: true, type: "misleading", text: "'246X potential' — new marketing push at $0.000000976. Fourth consecutive 'final price ever' claim after $0.00000058, $0.000000796 and $0.000000597. 246X from current price would still be 99.8% below the promised $0.05 launch price." },
   { date: "May 1, 2026", isNew: true, type: "promise", text: "BlockDAG claims '10 Major Exchanges Ready to Launch BDAG'. No official listing announcements from any of these exchanges. Full exchange trading now pushed to June 2026." },
