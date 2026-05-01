@@ -819,24 +819,39 @@ function renderHomeUpdates() {
     </div>`;
   document.body.insertBefore(ticker, document.body.firstChild);
 
-  fetch('https://api.coingecko.com/api/v3/simple/price?ids=blockdag&vs_currencies=usd&include_24hr_change=true')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      const price = d.blockdag && d.blockdag.usd;
-      const change = d.blockdag && d.blockdag.usd_24h_change;
-      if (!price) return;
-      document.getElementById('ticker-price').textContent = '$' + price.toFixed(8);
-      if (change !== undefined) {
-        const el = document.getElementById('ticker-change');
-        el.textContent = (change >= 0 ? '+' : '') + change.toFixed(2) + '%';
-        el.className = 'ticker-change--' + (change >= 0 ? 'up' : 'down');
-      }
-      const pct = ((price - 0.05) / 0.05 * 100).toFixed(1);
-      document.getElementById('ticker-down').textContent = pct + '%';
-    })
-    .catch(function() {
-      document.getElementById('ticker-price').textContent = 'Unavailable';
-    });
+  function updateTicker(data) {
+    const price = data.blockdag && data.blockdag.usd;
+    const change = data.blockdag && data.blockdag.usd_24h_change;
+    if (!price) return false;
+    document.getElementById('ticker-price').textContent = '$' + price.toFixed(8);
+    if (change !== undefined) {
+      const el = document.getElementById('ticker-change');
+      el.textContent = (change >= 0 ? '+' : '') + change.toFixed(2) + '%';
+      el.className = 'ticker-change--' + (change >= 0 ? 'up' : 'down');
+    }
+    const pct = ((price - 0.05) / 0.05 * 100).toFixed(1);
+    document.getElementById('ticker-down').textContent = pct + '%';
+    return true;
+  }
+
+  function fetchTicker(attempt) {
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=blockdag&vs_currencies=usd&include_24hr_change=true')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        if (!updateTicker(d) && attempt < 3) {
+          setTimeout(function() { fetchTicker(attempt + 1); }, 3000);
+        }
+      })
+      .catch(function() {
+        if (attempt < 3) {
+          setTimeout(function() { fetchTicker(attempt + 1); }, 3000);
+        } else {
+          var el = document.getElementById('ticker-price');
+          el.innerHTML = '<a href="https://coinmarketcap.com/currencies/blockdag/" target="_blank" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:10px;">View on CMC →</a>';
+        }
+      });
+  }
+  fetchTicker(1);
 })();
 
 /* ── COUNTDOWN ── */
