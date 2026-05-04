@@ -1,0 +1,178 @@
+//@version=6
+strategy(
+     title             = "MACD Zero Cross Strategy",
+     shorttitle        = "MACD-ZC",
+     overlay           = true,
+     initial_capital   = 100,
+     default_qty_type  = strategy.percent_of_equity,
+     default_qty_value = 95,
+     commission_type   = strategy.commission.percent,
+     commission_value  = 0.1,
+     slippage          = 1
+ )
+
+// =============================================================================
+// INSTELLINGEN
+// =============================================================================
+
+// --- MACD --------------------------------------------------------------------
+grp_macd   = "MACD Instellingen"
+fast_len   = input.int  (8,    "Fast Length",   minval=1,  group=grp_macd)
+slow_len   = input.int  (21,   "Slow Length",   minval=1,  group=grp_macd)
+signal_len = input.int  (9,    "Signal Length", minval=1,  group=grp_macd)
+
+// --- EMA Trend Filter --------------------------------------------------------
+grp_filter     = "Trend Filter"
+use_ema_filter = input.bool(false, "EMA Trend Filter (uit = meer trades)", group=grp_filter)
+ema_len        = input.int (50,    "EMA Lengte", minval=1,                 group=grp_filter)
+
+// --- Stop Loss & Take Profit -------------------------------------------------
+grp_sltp  = "Stop Loss en Take Profit"
+use_sl_tp = input.bool (true,  "SL/TP gebruiken",   group=grp_sltp)
+sl_pct    = input.float(3.0,   "Stop Loss %",    minval=0.1, step=0.1, group=grp_sltp)
+tp_pct    = input.float(6.0,   "Take Profit %",  minval=0.1, step=0.1, group=grp_sltp)
+use_trail = input.bool (false, "Trailing Stop",     group=grp_sltp)
+trail_pct = input.float(2.0,   "Trailing Stop %", minval=0.1, step=0.1, group=grp_sltp)
+
+// --- Tijdfilter (Amsterdam) --------------------------------------------------
+grp_time   = "Tijdfilter Amsterdam"
+use_time   = input.bool(true, "Tijdfilter aan/uit",                        group=grp_time)
+utc_offset = input.int (2,    "UTC offset (+2 zomer, +1 winter)", minval=-12, maxval=14, group=grp_time)
+start_wd   = input.int (9,    "Werkdag: start uur",  minval=0, maxval=23, group=grp_time)
+end_wd     = input.int (21,   "Werkdag: eind uur",   minval=0, maxval=23, group=grp_time)
+start_we   = input.int (12,   "Weekend: start uur",  minval=0, maxval=23, group=grp_time)
+end_we     = input.int (21,   "Weekend: eind uur",   minval=0, maxval=23, group=grp_time)
+
+// --- Weergave ----------------------------------------------------------------
+grp_vis       = "Weergave"
+show_signals  = input.bool(true, "Toon koop/verkoop pijlen", group=grp_vis)
+show_bg       = input.bool(true, "Achtergrond trading uren", group=grp_vis)
+show_sl_lines = input.bool(true, "Toon SL/TP lijnen",        group=grp_vis)
+
+// =============================================================================
+// BEREKENINGEN
+// =============================================================================
+
+// MACD
+[macd_line, signal_line, hist] = ta.macd(close, fast_len, slow_len, signal_len)
+
+// EMA trend filter
+ema_trend  = ta.ema(close, ema_len)
+bull_trend = close > ema_trend
+bear_trend = close < ema_trend
+
+// Tijdfilter
+local_hour = (hour + utc_offset) % 24
+is_weekend = (dayofweek == dayofweek.saturday) or (dayofweek == dayofweek.sunday)
+
+time_ok = true
+if use_time
+    if is_weekend
+        time_ok := (local_hour >= start_we) and (local_hour < end_we)
+    else
+        time_ok := (local_hour >= start_wd) and (local_hour < end_wd)
+
+// =============================================================================
+// ENTRY SIGNALEN
+// =============================================================================
+
+long_condition  = ta.crossover (macd_line, 0) and time_ok and (use_ema_filter ? bull_trend : true)
+short_condition = ta.crossunder(macd_line, 0) and time_ok and (use_ema_filter ? bear_trend : true)
+
+// =============================================================================
+// STRATEGY ORDERS
+// =============================================================================
+
+if long_condition
+    strategy.close("Short", comment="Short Exit")
+    strategy.entry("Long",  strategy.long,  comment="Long")
+
+if short_condition
+    strategy.close("Long",  comment="Long Exit")
+    strategy.entry("Short", strategy.short, comment="Short")
+
+// Stop Loss / Take Profit
+if use_sl_tp and not use_trail
+    if strategy.position_size > 0
+        strategy.exit("Long SL/TP", "Long",
+             stop           = strategy.position_avg_price * (1 - sl_pct / 100),
+             limit          = strategy.position_avg_price * (1 + tp_pct / 100),
+             comment_loss   = "SL Long",
+             comment_profit = "TP Long")
+    if strategy.position_size < 0
+        strategy.exit("Short SL/TP", "Short",
+             stop           = strategy.position_avg_price * (1 + sl_pct / 100),
+             limit          = strategy.position_avg_price * (1 - tp_pct / 100),
+             comment_loss   = "SL Short",
+             comment_profit = "TP Short")
+
+if use_sl_tp and use_trail
+    if strategy.position_size > 0
+        strategy.exit("Long Trail", "Long",
+             trail_price  = strategy.position_avg_price * (1 + trail_pct / 100),
+             trail_offset = close * (trail_pct / 100) / syminfo.mintick)
+    if strategy.position_size < 0
+        strategy.exit("Short Trail", "Short",
+             trail_price  = strategy.position_avg_price * (1 - trail_pct / 100),
+             trail_offset = close * (trail_pct / 100) / syminfo.mintick)
+
+// =============================================================================
+// VISUALISATIE
+// =============================================================================
+
+// Achtergrond trading uren
+bgcolor(show_bg and time_ok                    ? color.new(color.teal, 94) : na, title="Trading uren")
+bgcolor(show_bg and not time_ok and use_time   ? color.new(color.gray, 97) : na, title="Buiten uren")
+
+// EMA lijn
+plot(use_ema_filter ? ema_trend : na, "EMA Trend", color=color.new(color.orange, 0), linewidth=2)
+
+// Koop/verkoop pijlen
+plotshape(show_signals and long_condition,  title="LONG",  style=shape.triangleup,
+          location=location.belowbar, color=color.new(color.lime, 0), size=size.normal)
+plotshape(show_signals and short_condition, title="SHORT", style=shape.triangledown,
+          location=location.abovebar, color=color.new(color.red,  0), size=size.normal)
+
+// SL/TP lijnen
+long_sl_line  = strategy.position_size > 0 ? strategy.position_avg_price * (1 - sl_pct / 100) : na
+long_tp_line  = strategy.position_size > 0 ? strategy.position_avg_price * (1 + tp_pct / 100) : na
+short_sl_line = strategy.position_size < 0 ? strategy.position_avg_price * (1 + sl_pct / 100) : na
+short_tp_line = strategy.position_size < 0 ? strategy.position_avg_price * (1 - tp_pct / 100) : na
+
+plot(show_sl_lines and use_sl_tp ? long_sl_line  : na, "Long SL",  color=color.red,  linewidth=1, style=plot.style_linebr)
+plot(show_sl_lines and use_sl_tp ? long_tp_line  : na, "Long TP",  color=color.lime, linewidth=1, style=plot.style_linebr)
+plot(show_sl_lines and use_sl_tp ? short_sl_line : na, "Short SL", color=color.red,  linewidth=1, style=plot.style_linebr)
+plot(show_sl_lines and use_sl_tp ? short_tp_line : na, "Short TP", color=color.lime, linewidth=1, style=plot.style_linebr)
+
+// Ingangsprijs
+avg_line = strategy.position_size != 0 ? strategy.position_avg_price : na
+plot(avg_line, "Gem. prijs", color=color.white, linewidth=1, style=plot.style_linebr)
+
+// =============================================================================
+// INFO TABEL
+// =============================================================================
+var table info = table.new(position.bottom_right, 2, 8,
+     bgcolor      = color.new(color.black, 70),
+     border_width = 1,
+     border_color = color.new(color.gray, 50))
+
+if barstate.islast
+    pos_color = strategy.position_size > 0 ? color.lime : strategy.position_size < 0 ? color.red : color.gray
+    pos_text  = strategy.position_size > 0 ? "LONG" : strategy.position_size < 0 ? "SHORT" : "GEEN"
+
+    table.cell(info, 0, 0, "MACD Zero Cross",  text_color=color.yellow, text_size=size.small, bgcolor=color.new(color.navy, 60))
+    table.cell(info, 1, 0, "v1.0",             text_color=color.yellow, text_size=size.small, bgcolor=color.new(color.navy, 60))
+    table.cell(info, 0, 1, "MACD",             text_color=color.white,  text_size=size.small)
+    table.cell(info, 1, 1, str.tostring(fast_len) + "/" + str.tostring(slow_len) + "/" + str.tostring(signal_len), text_color=color.white, text_size=size.small)
+    table.cell(info, 0, 2, "Stop Loss",        text_color=color.white,  text_size=size.small)
+    table.cell(info, 1, 2, str.tostring(sl_pct) + "%", text_color=color.red,  text_size=size.small)
+    table.cell(info, 0, 3, "Take Profit",      text_color=color.white,  text_size=size.small)
+    table.cell(info, 1, 3, str.tostring(tp_pct) + "%", text_color=color.lime, text_size=size.small)
+    table.cell(info, 0, 4, "Tijdfilter",       text_color=color.white,  text_size=size.small)
+    table.cell(info, 1, 4, use_time ? "AAN" : "UIT", text_color=use_time ? color.lime : color.gray, text_size=size.small)
+    table.cell(info, 0, 5, "Trading uren",     text_color=color.white,  text_size=size.small)
+    table.cell(info, 1, 5, time_ok ? "OPEN" : "GESLOTEN", text_color=time_ok ? color.lime : color.gray, text_size=size.small)
+    table.cell(info, 0, 6, "Positie",          text_color=color.white,  text_size=size.small)
+    table.cell(info, 1, 6, pos_text,           text_color=pos_color,    text_size=size.small)
+    table.cell(info, 0, 7, "Aanbevolen pair",  text_color=color.white,  text_size=size.small)
+    table.cell(info, 1, 7, "ETH/USDT 15m",    text_color=color.yellow, text_size=size.small)

@@ -61,19 +61,20 @@
 - Site nog niet geïndexeerd (nieuw domein, duurt 1-4 weken)
 
 ## Data (data.js)
-- 57 promises (33 broken, 18 misleading, 3 kept, 3 pending)
-- 64 timeline events
+- 59 promises (33 broken, 19 misleading, 3 kept, 4 pending)
+- 66 timeline events
 - 38 notable quotes
 - 20 bronnen
-- Faalpercentage: 89.5%
-- Laatste update: May 1, 2026
+- Faalpercentage: 88.1%
+- Laatste update: May 4, 2026
 
-## Laatste Dewi Schep update (May 1, 2026)
+## Laatste Dewi Schep update (May 4, 2026)
 Nieuwe toevoegingen:
-- Promise 55: 10 Major Exchanges claim (pending)
-- Promise 56: Live Swap "instant delivery" misleading claim
-- 4 nieuwe timeline events (May 1, 2026): Live Swap launch, 246X marketing, 10 exchanges claim, X10 miners gedeeltelijk verscheept
-- Casino deadline May 7 nog steeds aanstaande
+- Promise 57: Binance listing May 7 misleading claim
+- Promise 58: May 2026 3-fase roadmap (Batch 5, lending, dApp dashboard) pending
+- 2 nieuwe timeline events (May 4): Binance claim headlines, May roadmap aankondiging
+- Casino deadline May 7 nog 3 dagen weg
+- Eerdere updates (May 1): Live Swap (56), 10 exchanges (55)
 
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F
