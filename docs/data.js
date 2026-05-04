@@ -520,15 +520,16 @@ const PROMISES = [
   },
   {
     id: 39,
+    isNew: true,
     category: "Exchange Listing",
-    status: "kept",
-    title: "BingX and Gate.io listings — two Tier 1 exchanges in April 2026",
-    promised: "Tier 1 exchange listings",
-    reality: "On April 21, 2026, BDAG listed on BingX. Gate.io followed on April 24 (rescheduled from April 21). These are the first legitimate Tier 1 exchange listings. However, these listings came 7 weeks after the original March 4 listing date, and the 'Major Tier 1 USA Exchange' (Coinbase/Kraken/Gemini) was never delivered.",
+    status: "broken",
+    title: "BingX and Gate.io listings — announced but never delivered",
+    promised: "April 21, 2026 (BingX) and April 24, 2026 (Gate.io)",
+    reality: "BingX and Gate.io listings were repeatedly announced and expected in April 2026. As of May 4, 2026, neither exchange has listed BDAG. BingX's own page confirms BDAG is not listed. Gate.io has not confirmed anything. BDAG dropped 25% in value partly due to this listing delay. Full trading is now pushed to June 2026 at earliest.",
     quotes: [
-      { date: "Apr 21, 2026", text: "BDAG lists on BingX — first Tier 1 exchange listing confirmed." },
-      { date: "Apr 24, 2026", text: "BDAG lists on Gate.io — second Tier 1 exchange. Originally scheduled April 21, delayed 3 days." },
-      { date: "Feb 18, 2026", text: "Original promise: 'Major Tier 1 USA Exchange Secured — Launch Day 1' [March 4]. BingX and Gate.io eventually delivered, but 7 weeks late and no US Tier 1 (Coinbase/Kraken/Gemini)." }
+      { date: "Apr 2026", text: "BlockDAG Listing Delay: BingX and Gate.io Still Missing." },
+      { date: "May 2026", text: "BlockDAG listing drama heats up as BingX and Gate.io delay rumors spark May fears." },
+      { date: "May 2026", text: "BlockDAG Price Down: Is Gate.io and BingX Killing Rally? BDAG lost 25% in a single day." }
     ]
   },
   {
@@ -818,9 +819,9 @@ const TIMELINE_EVENTS = [
   { date: "Apr 20, 2026", type: "broken", text: "Latest data point: Coin deposits to exchanges still not open. Batch 4 claiming not yet live. Miners still unshipped." },
   { date: "Apr 9, 2026", type: "partial", text: "Coinstore opens deposits for BDAG — 36 days after the March 4 listing date. Other exchanges still without deposit functionality." },
   { date: "Apr 13, 2026", type: "broken", text: "Dev release #247: 'Staking design locked and Miner Dashboard nearing completion.' Staking was promised live on February 19 — still not operational 54 days later." },
-  { date: "Apr 21, 2026", type: "partial", text: "BDAG lists on BingX — first actual Tier 1 exchange. 7 weeks after the promised March 4 listing date." },
+  { date: "Apr 21, 2026", type: "broken", text: "BingX listing expected — does not happen. BDAG listing repeatedly delayed. Community frustration grows." },
   { date: "Apr 23, 2026", type: "broken", text: "DL News publishes full investigation: '$442M crypto maze of missing miners, unpaid employees, and breached contracts.' Current price: $0.0001554 — down 99.7% from promised $0.05 launch price. Market cap: $5.65M vs promised $1B." },
-  { date: "Apr 24, 2026", type: "partial", text: "BDAG lists on Gate.io — delayed 3 days from the originally promised April 21 date." },
+  { date: "Apr 24, 2026", type: "broken", text: "Gate.io listing expected — does not happen. Neither BingX nor Gate.io lists BDAG in April 2026 despite repeated promises. Full listing pushed to May-June 2026." },
   { date: "Apr 24, 2026", type: "misleading", text: "'225X POTENTIAL | 5 DAYS ONLY' — new 'final chance' marketing push at $0.000000796. Claimed 'ALL LIVE NOW: DeFi, staking, NFT marketplace, dApps' — same day staking was still under maintenance." },
   { date: "Apr 24, 2026", type: "promise", text: "CEO promises to provide 'complete details about the casino before May 7.' Batch 4 claims confirmed for April 27." },
   { date: "Apr 26, 2026", type: "promise", text: "BingX & Gate.io integrations confirmed as 'in final stage'. Miner shipping: 'will commence soon' — no specific date." },
