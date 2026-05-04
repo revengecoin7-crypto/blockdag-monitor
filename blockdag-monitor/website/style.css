@@ -973,6 +973,65 @@ body.home-page {
   .about-layout { grid-template-columns: 1fr; }
 }
 
+/* ── WHAT IS BLOCKDAG INFO PAGE ── */
+.info-layout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; align-items: start; }
+.info-block { margin-bottom: 48px; }
+.info-heading {
+  font-family: var(--font-display); font-style: italic;
+  font-size: 24px; font-weight: 800; color: #fff;
+  margin-bottom: 18px; letter-spacing: -0.01em;
+}
+.info-block p {
+  font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.85;
+  margin-bottom: 14px;
+}
+.info-person-card {
+  background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px; padding: 22px 24px; margin-bottom: 16px;
+}
+.info-person-name { font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+.info-person-role { font-size: 11px; font-weight: 700; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+.info-person-card p { margin-bottom: 10px; }
+.info-person-card p:last-child { margin-bottom: 0; }
+
+.info-fact-list { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
+.info-fact {
+  font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.6;
+  padding: 10px 14px; border-left: 3px solid var(--red);
+  background: rgba(255,59,59,0.05); border-radius: 0 8px 8px 0;
+}
+
+.info-compare-table { border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.07); margin-top: 16px; }
+.info-compare-row {
+  display: grid; grid-template-columns: 1.5fr 1fr 1.5fr;
+  padding: 13px 18px; border-bottom: 1px solid rgba(255,255,255,0.05);
+  align-items: center; gap: 12px;
+}
+.info-compare-row:last-child { border-bottom: none; }
+.info-compare-row:hover { background: rgba(255,255,255,0.02); }
+.info-compare-label { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.55); }
+.info-compare-promised { font-family: var(--font-mono); font-size: 12px; color: var(--red); text-decoration: line-through; text-decoration-color: rgba(255,59,59,0.4); }
+.info-compare-reality { font-family: var(--font-mono); font-size: 12px; color: rgba(255,255,255,0.8); font-weight: 700; }
+
+.info-sidebar { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 80px; }
+.info-sidebar-card {
+  background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px; padding: 20px;
+}
+.info-sidebar-label { font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.3); margin-bottom: 14px; }
+.info-sidebar-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 12px; color: rgba(255,255,255,0.4); }
+.info-sidebar-row:last-child { border-bottom: none; }
+.info-sidebar-val { font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.8); }
+.info-sidebar-link { display: block; font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.45); text-decoration: none; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); transition: color 0.2s; }
+.info-sidebar-link:last-child { border-bottom: none; }
+.info-sidebar-link:hover { color: var(--cyan); }
+
+@media (max-width: 900px) {
+  .info-layout { grid-template-columns: 1fr; }
+  .info-sidebar { position: static; }
+  .info-compare-row { grid-template-columns: 1fr; gap: 4px; }
+}
+
 /* ── PETITION ── */
 .petition-counter-strip {
   display: flex; align-items: center; gap: 20px;

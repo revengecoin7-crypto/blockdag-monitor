@@ -24,15 +24,19 @@ log = logging.getLogger(__name__)
 TELEGRAM_TOKEN = "8731475814:AAFB3amJgTJe2R-bCLCYZ3d6tUtWZRHWs3Q"
 CHAT_ID        = "6172720508"
 
-# Super filter drempelwaarden
-MIN_SOL_INSTROOM  = 1.0    # minimaal 1 SOL in bonding curve na 30 sec
-MIN_MCAP_GROEI    = 1.15   # mcap moet 15% gegroeid zijn na 60 sec
-MIN_MCAP_START    = 3000   # token moet al boven $3k mcap zitten na 30 sec
+# =============================================================================
+# SCHERPE FILTER  (veel minder maar veel betere signalen)
+# =============================================================================
+MIN_SOL_30S       = 3.0    # minimaal 3 SOL instroom in EERSTE 30 seconden
+MIN_SOL_60S       = 5.0    # minimaal 5 SOL totaal na 60 seconden
+MIN_MCAP_30S      = 5000   # mcap al boven $5k na 30 sec (echte interesse)
+MIN_MCAP_GROEI    = 1.50   # mcap moet 50% gegroeid zijn tussen 30 en 60 sec
+SOL_MAG_NIET_DALEN = True  # SOL reserves mogen NIET dalen (geen verkopers)
 
 # Trade instellingen
 INZET_SOL         = 0.1
 TAKE_PROFIT       = 2.0
-STOP_LOSS_MINUTEN = 5
+STOP_LOSS_MINUTEN = 3      # sneller stoppen: 3 min geen groei = exit
 
 # Technisch
 POLL_INTERVAL     = 5
@@ -83,58 +87,72 @@ async def super_filter(session, token):
     mint       = token.get('mint', '')
     creator    = token.get('creator', '')
     naam       = token.get('name', '?')
-    mcap_start = token.get('usd_market_cap', 0)
     sol_start  = token.get('real_sol_reserves', 0) / 1e9
     res        = {}
 
-    # Wacht 30 seconden
-    log.info(f"  [{naam}] wacht 30 sec...")
+    # ── Check na 30 seconden ─────────────────────────────────────────────────
+    log.info(f"  [{naam}] check 1 na 30 sec...")
     await asyncio.sleep(30)
 
     info30 = await haal_token_info(session, mint)
     if not info30:
-        res['reden'] = 'Token niet meer beschikbaar'
+        res['reden'] = 'Token verdwenen'
         return None, res
 
-    sol_30   = info30.get('real_sol_reserves', 0) / 1e9
-    mcap_30  = info30.get('usd_market_cap', 0)
-    sol_flow = sol_30 - sol_start
-    res['sol_instroom'] = round(sol_flow, 3)
-    res['mcap_30']      = round(mcap_30, 0)
+    sol_30  = info30.get('real_sol_reserves', 0) / 1e9
+    mcap_30 = info30.get('usd_market_cap', 0)
+    sol_in  = sol_30 - sol_start
+    res['sol_30'] = round(sol_30, 2)
+    res['mcap_30'] = round(mcap_30, 0)
 
-    # Check 1: SOL instroom
-    if sol_flow < MIN_SOL_INSTROOM:
-        res['reden'] = f'Te weinig SOL: {sol_flow:.2f} (min {MIN_SOL_INSTROOM})'
+    # Check 1: Minimaal 3 SOL instroom in eerste 30 sec
+    if sol_in < MIN_SOL_30S:
+        res['reden'] = f'SOL 30s te laag: {sol_in:.2f} (min {MIN_SOL_30S})'
         return None, res
 
-    # Check 2: Mcap al boven minimum
-    if mcap_30 < MIN_MCAP_START:
-        res['reden'] = f'Mcap te laag: ${mcap_30:.0f} (min ${MIN_MCAP_START})'
+    # Check 2: Mcap al boven $5k na 30 sec
+    if mcap_30 < MIN_MCAP_30S:
+        res['reden'] = f'Mcap 30s te laag: ${mcap_30:.0f} (min ${MIN_MCAP_30S})'
         return None, res
 
-    # Wacht nog 30 seconden (totaal 60 sec)
-    log.info(f"  [{naam}] wacht nog 30 sec op mcap groei...")
+    # ── Check na 60 seconden ─────────────────────────────────────────────────
+    log.info(f"  [{naam}] check 2 na 60 sec...")
     await asyncio.sleep(30)
 
     info60  = await haal_token_info(session, mint)
-    mcap_60 = info60.get('usd_market_cap', 0) if info60 else 0
-    sol_60  = info60.get('real_sol_reserves', 0) / 1e9 if info60 else 0
-    res['mcap_60']  = round(mcap_60, 0)
-    res['sol_60']   = round(sol_60, 3)
-
-    # Check 3: Mcap groei tussen 30 en 60 sec
-    if mcap_30 > 0 and mcap_60 < mcap_30 * MIN_MCAP_GROEI:
-        groei = mcap_60 / mcap_30 if mcap_30 > 0 else 0
-        res['reden'] = f'Geen groei: {groei:.2f}x (min {MIN_MCAP_GROEI:.2f}x)'
+    if not info60:
+        res['reden'] = 'Token verdwenen bij check 2'
         return None, res
 
-    # Creator stats
+    sol_60  = info60.get('real_sol_reserves', 0) / 1e9
+    mcap_60 = info60.get('usd_market_cap', 0)
+    res['sol_60']  = round(sol_60, 2)
+    res['mcap_60'] = round(mcap_60, 0)
+
+    # Check 3: Minimaal 5 SOL totaal na 60 sec
+    if sol_60 < MIN_SOL_60S:
+        res['reden'] = f'SOL 60s te laag: {sol_60:.2f} (min {MIN_SOL_60S})'
+        return None, res
+
+    # Check 4: SOL mag niet gedaald zijn (mensen verkopen niet)
+    if SOL_MAG_NIET_DALEN and sol_60 < sol_30 * 0.95:
+        res['reden'] = f'SOL daalt: {sol_30:.2f} -> {sol_60:.2f} (verkopers!)'
+        return None, res
+
+    # Check 5: Mcap minimaal 50% gegroeid tussen 30 en 60 sec
+    if mcap_30 > 0 and mcap_60 < mcap_30 * MIN_MCAP_GROEI:
+        groei = mcap_60 / mcap_30 if mcap_30 > 0 else 0
+        res['reden'] = f'Groei 30->60s te laag: {groei:.2f}x (min {MIN_MCAP_GROEI:.2f}x)'
+        return None, res
+
+    # ── Alle checks geslaagd ──────────────────────────────────────────────────
     c_totaal, c_grads = await haal_creator_stats(session, creator)
     res['creator_tokens']    = c_totaal
     res['creator_graduated'] = c_grads
+    res['sol_instroom']      = round(sol_in, 2)
     res['geslaagd']          = True
 
-    return info60 or token, res
+    return info60, res
 
 
 # ── Berichten ─────────────────────────────────────────────────────────────────
@@ -270,14 +288,17 @@ async def main():
         return
 
     await bot.send_message(chat_id=CHAT_ID, text=(
-        "Pump.fun Bot v2 gestart (trades endpoint gefixed!)\n\n"
-        f"Filter:\n"
-        f"  Min SOL instroom 30s:  {MIN_SOL_INSTROOM} SOL\n"
-        f"  Min mcap na 30s:       ${MIN_MCAP_START:,}\n"
-        f"  Min mcap groei 60s:    {(MIN_MCAP_GROEI-1)*100:.0f}%\n"
-        f"  Take profit:           {TAKE_PROFIT}x\n"
-        f"  Stop loss:             {STOP_LOSS_MINUTEN} min\n\n"
-        "Signalen komen zodra er een goed token is!"
+        "Pump.fun Bot v3 gestart  —  SCHERPE FILTER\n\n"
+        "Nieuwe filter (veel strenger):\n"
+        f"  Min SOL eerste 30 sec:  {MIN_SOL_30S} SOL\n"
+        f"  Min SOL totaal 60 sec:  {MIN_SOL_60S} SOL\n"
+        f"  Min mcap na 30 sec:     ${MIN_MCAP_30S:,}\n"
+        f"  Min groei 30->60 sec:   {(MIN_MCAP_GROEI-1)*100:.0f}%\n"
+        f"  Verkopers check:        aan\n"
+        f"  Take profit:            {TAKE_PROFIT}x\n"
+        f"  Stop loss:              {STOP_LOSS_MINUTEN} min\n\n"
+        "Verwacht: veel minder signalen, veel betere kwaliteit.\n"
+        "Koop alleen als je een bericht krijgt!"
     ))
 
     await monitor_loop(bot)
