@@ -138,9 +138,9 @@
                 <div class="petition-hint">Filled automatically when you verify your transaction above.</div>
               </div>
               <div class="petition-field">
-                <label class="petition-label">BDAG tokens received <span class="petition-optional">optional</span></label>
-                <input type="number" id="p-bdag" class="petition-input" placeholder="e.g. 50000000" min="0" />
-                <div class="petition-hint">The total number of BDAG tokens in your wallet or dashboard.</div>
+                <label class="petition-label">BDAG tokens received <span class="petition-optional">auto-detected from blockchain</span></label>
+                <input type="text" id="p-bdag" class="petition-input" placeholder="Auto-filled after TX verification" readonly style="cursor:default; opacity:0.6;" />
+                <div class="petition-hint">Automatically detected from your transaction receipt after verification.</div>
               </div>
               <div class="petition-field">
                 <label class="petition-checkbox-wrap">
@@ -250,6 +250,35 @@
           document.getElementById('p-txhash').dataset.value = valueCoin;
           document.getElementById('p-txhash').dataset.coin = coinName;
           document.getElementById('p-amount').value = valueCoin;
+
+          // Try to auto-detect BDAG token amount from transaction receipt logs
+          try {
+            const receiptUrl = chain === 'bsc'
+              ? `https://api.bscscan.com/api?module=proxy&action=eth_getTransactionReceipt&txhash=${txhash}`
+              : `https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=${txhash}`;
+            const receiptRes = await fetch(receiptUrl);
+            const receiptData = await receiptRes.json();
+            const receipt = receiptData.result;
+            if (receipt && receipt.logs && receipt.logs.length > 0) {
+              const TRANSFER_TOPIC = '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef';
+              const txFrom = tx.from.toLowerCase();
+              for (const log of receipt.logs) {
+                if (log.topics && log.topics[0] && log.topics[0].toLowerCase() === TRANSFER_TOPIC && log.topics.length >= 3) {
+                  const toAddr = '0x' + log.topics[2].slice(26).toLowerCase();
+                  if (toAddr === txFrom) {
+                    const amountHex = log.data;
+                    const amountBig = BigInt(amountHex);
+                    const decimals = BigInt('1000000000000000000');
+                    const bdagAmount = Number(amountBig / decimals);
+                    if (bdagAmount > 0) {
+                      document.getElementById('p-bdag').value = bdagAmount.toLocaleString('en-US', { maximumFractionDigits: 0 });
+                    }
+                    break;
+                  }
+                }
+              }
+            }
+          } catch(e) { /* silent fail — BDAG auto-detect is best-effort */ }
         }
       } catch(e) {
         result.style.display = 'block';
@@ -296,7 +325,7 @@
       const email = document.getElementById('p-email').value.trim().toLowerCase();
       const country = document.getElementById('p-country').value;
       const amount = document.getElementById('p-amount').value || null;
-      const bdagRaw = document.getElementById('p-bdag').value;
+      const bdagRaw = document.getElementById('p-bdag').value.replace(/,/g, '');
       const bdagAmount = bdagRaw ? Number(bdagRaw) : null;
 
       try {
