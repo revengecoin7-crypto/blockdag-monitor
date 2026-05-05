@@ -483,13 +483,15 @@ const PROMISES = [
     id: 34,
     category: "Mining Hardware",
     status: "broken",
-    title: "X30 and X100 miners shipping April 16 – May 31, 2026 (4th revised date)",
-    promised: "Originally Feb–Apr 2026, now April 16 – May 31, 2026",
-    reality: "The X30 and X100 miners have had their shipping date revised at least 4 times. Current website states April 16 – May 31 for X30 and X100. The X10 is now listed as June 16, 2026. Original promise was February–April 2026.",
+    title: "X30 and X100 miners shipping April 16 – May 31, 2026 (5th revised date — now officially June)",
+    promised: "Originally Feb–Apr 2026, now June 2026",
+    reality: "The miners have had their shipping date revised at least 5 times. As of May 1-4, official support confirmed: 'Miners are scheduled to be shipped in June.' The April 16 – May 31 window on the website quietly passed without shipping. Original promise was February–April 2026. The community was told April–June at launch; the April and May windows are now gone.",
     quotes: [
       { date: "Feb 18, 2026", text: "All miners scheduled to ship February–April 2026." },
       { date: "Mar 12, 2026", text: "Miners now shipping May–June." },
-      { date: "Apr 2026", text: "Website: X30 — April 16 to May 31, 2026. X100 — April 16 to May 31, 2026. X10 — June 16, 2026." }
+      { date: "Apr 2026", text: "Website: X30 — April 16 to May 31, 2026. X100 — April 16 to May 31, 2026. X10 — June 16, 2026." },
+      { date: "May 1, 2026", text: "Miners are scheduled to be shipped in June." },
+      { date: "May 4, 2026", text: "Shipping of miners will commence in June." }
     ]
   },
   {
@@ -745,14 +747,60 @@ const PROMISES = [
     id: 50,
     category: "Staking",
     status: "broken",
-    title: "Staking contract still under maintenance — April 27",
+    title: "Staking broken for 75+ days — still unresolved as of May 5",
     promised: "February 19, 2026",
-    reality: "Staking was promised live on February 19, 2026. On April 6 it went 'under maintenance until after Easter'. On April 27 — 67 days after the original promise — staking is still under maintenance with no delivery date given.",
+    reality: "Staking was promised live on February 19, 2026. On April 6 it went 'under maintenance until after Easter'. As of May 5 — 75 days after launch — staking is still broken. Users report frozen rewards, impossible unstaking after 21-day cooldowns, and 'undefined address' errors. Official response throughout: 'The team is working on a fix.'",
     quotes: [
       { date: "Feb 19, 2026", text: "Staking & Earn contract goes live on the website — Feb 19." },
       { date: "Apr 6, 2026", text: "Staking contract under maintenance until after the Easter break." },
       { date: "Apr 27, 2026", text: "Staking contract is under maintenance and shipping will also commence soon." },
-      { date: "Apr 27, 2026", text: "There will be an update once staking website is sorted." }
+      { date: "May 4, 2026", text: "Team is working on resolving issues with the staking contract." },
+      { date: "May 4, 2026", text: "staking doesn't work as expected... stopped staking its useless [community member]" }
+    ]
+  },
+  {
+    id: 55,
+    category: "Exchange Listing",
+    status: "broken",
+    isNew: true,
+    title: "Toobit listing Monday May 4 — exchange publicly rejected BDAG",
+    promised: "May 4, 2026",
+    reality: "On May 1, BlockDAG announced 'Toobit & CoinW — LISTING MONDAY' describing Toobit as a 'Tier 1' exchange. Within 24 hours, Toobit posted on X that they would NOT list BDAG — community members reported this repeatedly to admins. BlockDAG continued to post 'Toobit — LISTING MONDAY' for 4+ more days without any acknowledgment of the rejection. No listing happened. No explanation was ever given.",
+    quotes: [
+      { date: "May 1, 2026", text: "Toobit & CoinW — LISTING MONDAY / More Tier 1 power loading.." },
+      { date: "May 1, 2026", text: "Toobit and CoinW are Tier 3 and Tier 2 not Tier 1, please do some research. [community pushback same day]" },
+      { date: "May 2, 2026", text: "Toobit confirmed they rejected it on their x account. [community member]" },
+      { date: "May 2, 2026", text: "Still promoting TooBit? Even after they publicly rejected and gave reasons why? [community member]" },
+      { date: "May 5, 2026", text: "Why is toobit still on the website when they've publicly stated they're not listing $bdag? [community member]" }
+    ]
+  },
+  {
+    id: 56,
+    category: "Exchange Listing",
+    status: "broken",
+    isNew: true,
+    title: "CoinW listing Monday May 4 — never happened",
+    promised: "May 4, 2026",
+    reality: "BlockDAG announced CoinW listing 'MONDAY' (May 4) on May 1. Monday passed with no CoinW listing. On May 4, the official response to community questions was 'There will be an announcement once BDAG starts trading on CoinW' — effectively confirming it had not listed. No further update given. This follows the same pattern of announced exchange listings that never materialise.",
+    quotes: [
+      { date: "May 1, 2026", text: "Toobit & CoinW — LISTING MONDAY / More Tier 1 power loading.." },
+      { date: "May 4, 2026", text: "today is monday. what about listing on coinw and toobit? and bingx and gateio [community member]" },
+      { date: "May 4, 2026", text: "There will be an announcement once BDAG start trading on CoinW." }
+    ]
+  },
+  {
+    id: 57,
+    category: "Transparency",
+    status: "misleading",
+    isNew: true,
+    title: "Marketing says 'Batch 5 is LIVE' — support simultaneously tells users it is not live",
+    promised: "From April 30, 2026",
+    reality: "Every official marketing message from April 30 onward included 'Batch 5 is LIVE' as a bullet point — posted dozens of times daily to attract new buyers. At the same time, support responses to individual users stated 'Batch 5 is not live' and 'Batch 5 claims are not live.' This direct contradiction ran for 5+ consecutive days, misleading prospective investors while existing holders could not claim.",
+    quotes: [
+      { date: "Apr 30, 2026", text: "Batch 5 is LIVE [repeated in mass marketing messages dozens of times daily]" },
+      { date: "May 1, 2026", text: "Batch 5 is not live, check your dashboard to see your allocation ready for claiming." },
+      { date: "May 3, 2026", text: "Batch 5 claims are not live." },
+      { date: "May 4, 2026", text: "Your coins will be ready to claim immediately after the aftersales period ends." }
     ]
   },
   {
@@ -831,8 +879,12 @@ const TIMELINE_EVENTS = [
   { date: "May 1, 2026", type: "misleading", text: "'246X potential' — new marketing push at $0.000000976. Fourth consecutive 'final price ever' claim after $0.00000058, $0.000000796 and $0.000000597. 246X from current price would still be 99.8% below the promised $0.05 launch price." },
   { date: "May 1, 2026", type: "promise", text: "BlockDAG claims '10 Major Exchanges Ready to Launch BDAG'. No official listing announcements from any of these exchanges. Full exchange trading now pushed to June 2026." },
   { date: "May 1, 2026", type: "partial", text: "X10 miners reportedly starting to ship. No confirmed delivery updates for X30 or X100 miners. Original shipping promise was February through April 2026." },
-  { date: "May 4, 2026", isNew: true, type: "misleading", text: "Headlines claim 'Binance Launch on May 7' and 'Tier 1 Listings Locked In'. BlockDAG has never officially confirmed a Binance listing. Pattern of unconfirmed exchange claims continues." },
-  { date: "May 4, 2026", isNew: true, type: "promise", text: "BlockDAG announces 3-phase May roadmap: Early May casino + exchanges, Mid May Batch 5 claims + lending/borrowing + supply compression, Late May dApp dashboard. New promises added while staking and miners from February still undelivered." },
+  { date: "May 4, 2026", type: "misleading", text: "Headlines claim 'Binance Launch on May 7' and 'Tier 1 Listings Locked In'. BlockDAG has never officially confirmed a Binance listing. Pattern of unconfirmed exchange claims continues." },
+  { date: "May 4, 2026", type: "promise", text: "BlockDAG announces 3-phase May roadmap: Early May casino + exchanges, Mid May Batch 5 claims + lending/borrowing + supply compression, Late May dApp dashboard. New promises added while staking and miners from February still undelivered." },
+  { date: "Apr 30, 2026", isNew: true, type: "misleading", text: "Live Swap launched: buy BDAG at 15% below CMC price, instant wallet delivery. Community immediately warns this drains exchange liquidity and crashes market price. AMA held on Binance Live with 'Real questions. Real answers.' — community reports core issues were not addressed." },
+  { date: "May 1, 2026", isNew: true, type: "broken", text: "BlockDAG announces Toobit and CoinW listing 'MONDAY' (May 4), calling both 'Tier 1' exchanges. Within 24 hours, community reports emerge that Toobit has publicly posted on X that they will NOT list BDAG. BlockDAG continues to promote Toobit with no acknowledgment." },
+  { date: "May 2, 2026", isNew: true, type: "broken", text: "Toobit officially confirms on X they are not listing BDAG. Community members alert admins multiple times. Zero official response. 'Batch 5 is LIVE' marketing continues while support tells individual users 'Batch 5 is not live.' Miner shipping date quietly shifted from April–May to June in individual support replies — no public announcement." },
+  { date: "May 4, 2026", isNew: true, type: "broken", text: "Monday arrives: no Toobit listing, no CoinW listing, no AMA. On May 1 officials promised 'next AMA is Monday' — on May 4 stated 'There's no AMA scheduled for today' four separate times. Casino language quietly downgraded: 'Casino in 3 days / Bets open in 7 days' — splitting the May 7 Casino promise into two dates. Miner shipping officially confirmed as June." },
   { date: "May 7, 2026", type: "promise", text: "BlockDAG Casino launch promised. Partnership with Betski (iGaming) announced." },
   { date: "May 2026", type: "promise", text: "Website roadmap: DEX activation (Uniswap, PancakeSwap, Hyperliquid) + LP incentives. Originally promised for Day 1 (March 4)." },
   { date: "Jun 16, 2026", type: "promise", text: "X10 miners now scheduled to ship. Original promise was February–April 2026." },
@@ -843,7 +895,7 @@ const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "307,926 public messages analyzed (Feb 18 – Apr 20, 2026). 30,488 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "319,783 public messages analyzed (Feb 18 – May 5, 2026). Approx. 31,700 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
@@ -1096,5 +1148,10 @@ const NOTABLE_QUOTES = [
   { date: "Feb 2026", tag: "promise", text: "🚨 USA + EUROPE TRADING START MARCH 4 🚨 Mainnet is LIVE. TGE is DONE. Airdrop claims are ACTIVE. 🔥 Now the next phase begins — GLOBAL TRADING starts March 4 🌍🚀", src: "https://x.com/blockdagnetwork/status/2023807216877232265" },
   { date: "2025", tag: "investigation", text: "ZachXBT: 'Stop the lies — the grifter Gurhan Kiziloz is the real co-founder secretly behind BlockDAG who pays people like Antony Turner to be the face of it while transferring away millions in presale funds from unsophisticated retail investors via Middle Eastern OTC brokers.'" },
   { date: "2025", tag: "investigation", text: "ZachXBT on-chain analysis: BlockDAG received amounts 'below the nine-digit range' — under $100M on-chain — directly contradicting the $433M presale claim. BlockDAG blocked ZachXBT on X after this post." },
-  { date: "2025–2026", tag: "warning", text: "Community reports across Reddit, Telegram and Trustpilot: users muted/banned for questioning delays, fund locations, or missing miners. Official Telegram admin: 'Any FUD will be removed with zero tolerance.'" }
+  { date: "2025–2026", tag: "warning", text: "Community reports across Reddit, Telegram and Trustpilot: users muted/banned for questioning delays, fund locations, or missing miners. Official Telegram admin: 'Any FUD will be removed with zero tolerance.'" },
+  { date: "Apr 30, 2026", isNew: true, tag: "response", text: "Nobody has lost anything here. The project is making progress each day and the development is in the right direction." },
+  { date: "Apr 30, 2026", isNew: true, tag: "response", text: "There has been no misappropriation of funds. All contributions were made with the clear objective of supporting the development and deployment of a functional Layer 1 network." },
+  { date: "May 1, 2026", isNew: true, tag: "misleading", text: "Batch 5 is not live, check your dashboard to see your allocation ready for claiming. [official support reply — while mass marketing simultaneously said 'Batch 5 is LIVE']" },
+  { date: "May 4, 2026", isNew: true, tag: "response", text: "Your money wasn't stolen, you made a purchase and you'll definitely get your coins." },
+  { date: "May 2, 2026", isNew: true, tag: "community", text: "There's a pattern with BlockDAG: they'll announce a listing, name the cex, receive more money, then won't list. It's been consistently the same — promise something, not follow through, people forget, and the cycle repeats. [community member who invested $13,000]" }
 ];
