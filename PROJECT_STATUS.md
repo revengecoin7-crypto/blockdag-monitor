@@ -16,7 +16,7 @@
 - Na elke wijziging: `cp blockdag-monitor/website/* docs/` + commit + push
 
 ## Alle pagina's
-1. `index.html` — Homepage
+1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
 2. `tracker.html` — Promise Tracker (59 promises)
 3. `timeline.html` — Tijdlijn (66 events)
 4. `evidence.html` — 38 directe quotes
@@ -24,10 +24,11 @@
 6. `investigation.html` — DL News onderzoek
 7. `indicators.html` — Trust Score pagina (gauge, 5/100)
 8. `petition.html` — Petitie met Firebase + blockchain TX verificatie
-9. `blockdag.html` — "What is BlockDAG?" info pagina (NIEUW)
-10. `sources.html` — 20 bronnen
-11. `about.html` — Over de site + ideeënformulier
-12. `admin.html` — Verborgen admin pagina (NIET in nav)
+9. `sources.html` — 20 bronnen
+10. `about.html` — Over de site + ideeënformulier
+11. `admin.html` — Verborgen admin pagina (NIET in nav)
+
+**Verwijderd:** `blockdag.html` — inhoud verhuisd naar homepage
 
 ## Admin pagina
 - URL: https://blockdagexposed.com/admin.html
