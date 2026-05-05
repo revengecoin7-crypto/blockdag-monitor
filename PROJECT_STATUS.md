@@ -58,12 +58,18 @@
 - Handmatig indexering aanvragen via URL-inspectie voor blockdag.html, petition.html, indicators.html
 
 ## Data (data.js) — Huidige staat
-- 59 promises (34 broken, 19 misleading, 2 kept, 4 pending)
-- 66 timeline events
-- 38 notable quotes
+- 62 promises (36 broken, 20 misleading, 2 kept, 4 pending)
+- 70 timeline events
+- 43 notable quotes
 - 20 bronnen
-- Faalpercentage: 89.8%
-- Laatste update: May 4, 2026
+- Faalpercentage: 90.3%
+- Laatste update: May 5, 2026
+
+## Telegram analyse
+- Geanalyseerd t/m: **5 mei 2026** (export: ChatExport_2026-05-05)
+- Periode: 18 februari t/m 5 mei 2026
+- Totaal berichten: 319,783 (307,926 eerste export + 11,857 tweede export)
+- Let op: gap van 10 dagen tussen exports (20 apr t/m 30 apr ontbreekt)
 
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F
@@ -72,11 +78,13 @@
 - BingX en Gate.io stonden als KEPT maar listings zijn NOOIT gebeurd → gecorrigeerd naar BROKEN (May 4, 2026)
 
 ## Volgende deadlines om te monitoren
-- Casino launch: May 7, 2026 (3 dagen weg op May 4)
-- Batch 5 claims: mid-May 2026 (beloofd)
+- Casino launch: May 7, 2026 (deadline nu geweest — "Casino in 3 days / Bets open in 7 days" stille downgrade)
+- Batch 5 claims: na May 7 (aftersale eindigt May 7 per eigen zeggen)
+- CoinW listing: nog steeds niet live (beloofd Monday May 4)
 - Lending/borrowing: mid-May 2026 (beloofd)
 - dApp dashboard: late May 2026 (beloofd)
-- Miners: June-July 2026 (vijfde deadline)
+- Miners: June 2026 (vijfde deadline, officieel bevestigd)
+- Super App: June 15, 2026
 
 ## Vaste regels
 1. Na elke wijziging in `blockdag-monitor/website/` altijd ook `docs/` updaten en pushen
