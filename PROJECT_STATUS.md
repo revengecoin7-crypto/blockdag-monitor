@@ -74,6 +74,13 @@
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F
 
+## Actuele marktdata (May 5, 2026)
+- Huidige prijs BDAG: $0.0001835 (CMC)
+- Marktcap: $7.5M
+- 24h volume: $7.77M
+- Prijsdaling vs belofte ($0.05): −99.6%
+- Piek 27 april 2026: ~$0.0009 (gevolgd door scherpe daling)
+
 ## Belangrijke correcties gedaan
 - BingX en Gate.io stonden als KEPT maar listings zijn NOOIT gebeurd → gecorrigeerd naar BROKEN (May 4, 2026)
 
