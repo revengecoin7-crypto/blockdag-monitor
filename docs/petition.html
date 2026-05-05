@@ -138,6 +138,11 @@
                 <div class="petition-hint">Filled automatically when you verify your transaction above.</div>
               </div>
               <div class="petition-field">
+                <label class="petition-label">BDAG tokens received <span class="petition-optional">optional</span></label>
+                <input type="number" id="p-bdag" class="petition-input" placeholder="e.g. 50000000" min="0" />
+                <div class="petition-hint">The total number of BDAG tokens in your wallet or dashboard.</div>
+              </div>
+              <div class="petition-field">
                 <label class="petition-checkbox-wrap">
                   <input type="checkbox" id="p-agree" required />
                   <span class="petition-checkbox-label">I confirm the above statement is true and I agree to the terms of this petition.</span>
@@ -291,6 +296,8 @@
       const email = document.getElementById('p-email').value.trim().toLowerCase();
       const country = document.getElementById('p-country').value;
       const amount = document.getElementById('p-amount').value || null;
+      const bdagRaw = document.getElementById('p-bdag').value;
+      const bdagAmount = bdagRaw ? Number(bdagRaw) : null;
 
       try {
         const txEl = document.getElementById('p-txhash');
@@ -305,6 +312,7 @@
           email,
           country,
           amount: amount ? Number(amount) : null,
+          bdagAmount: bdagAmount,
           txhash: txhash,
           txVerified: txVerified,
           txValue: txValue ? Number(txValue) : null,

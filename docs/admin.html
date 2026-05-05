@@ -127,12 +127,13 @@
       </div>
 
       <div class="admin-table-wrap">
-        <div class="admin-table-header" style="grid-template-columns:1.5fr 1.5fr 0.8fr 0.8fr 1fr 0.8fr;">
+        <div class="admin-table-header" style="grid-template-columns:1.5fr 1.5fr 0.7fr 0.7fr 0.9fr 1fr 0.7fr;">
           <span>Naam</span>
           <span>Email</span>
           <span>Land</span>
-          <span>Bedrag ($)</span>
-          <span>TX Hash (verified)</span>
+          <span>Bedrag</span>
+          <span>BDAG tokens</span>
+          <span>TX (verified)</span>
           <span>Datum</span>
         </div>
         <div id="admin-signatures-list">
@@ -211,11 +212,13 @@
     }
 
     function exportCSV() {
-      const rows = [['Naam', 'Email', 'Land', 'Bedrag ($)', 'Datum']];
+      const rows = [['Naam', 'Email', 'Land', 'Bedrag', 'BDAG tokens', 'Datum']];
       allSignatures.forEach(d => {
         rows.push([
           d.name || '', d.email || '', d.country || '',
-          d.amount || '', d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('nl-NL') : ''
+          d.amount ? d.amount + ' ' + (d.txCoin || '') : '',
+          d.bdagAmount || '',
+          d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('nl-NL') : ''
         ]);
       });
       const csv = rows.map(r => r.map(v => '"' + String(v).replace(/"/g, '""') + '"').join(',')).join('\n');
@@ -292,11 +295,13 @@
         list.innerHTML = docs.map(d => {
           const date = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('nl-NL') : '';
           const txDisplay = d.txhash ? `<span style="color:${d.txVerified ? '#00e5a0' : '#ff7a20'}">${d.txVerified ? '✓' : '?'} ${d.txValue ? d.txValue + ' ' + d.txCoin : ''} ${d.chain ? '(' + d.chain.toUpperCase() + ')' : ''}</span>` : '';
-          return `<div class="admin-table-row" style="grid-template-columns:1.5fr 1.5fr 0.8fr 0.8fr 1fr 0.8fr;">
+          const bdagDisplay = d.bdagAmount ? Number(d.bdagAmount).toLocaleString() + ' BDAG' : '';
+          return `<div class="admin-table-row" style="grid-template-columns:1.5fr 1.5fr 0.7fr 0.7fr 0.9fr 1fr 0.7fr;">
             <div class="admin-cell">${d.name || ''}</div>
             <div class="admin-cell admin-cell-mono" style="font-size:11px;">${d.email || ''}</div>
             <div class="admin-cell">${d.country || ''}</div>
-            <div class="admin-cell admin-cell-mono">${d.amount ? '$' + Number(d.amount).toLocaleString() : ''}</div>
+            <div class="admin-cell admin-cell-mono">${d.amount ? Number(d.amount).toLocaleString() + ' ' + (d.txCoin || '') : ''}</div>
+            <div class="admin-cell admin-cell-mono" style="color:#00d4ff;">${bdagDisplay}</div>
             <div class="admin-cell admin-cell-mono" style="font-size:11px;">${txDisplay}</div>
             <div class="admin-cell">${date}</div>
           </div>`;
