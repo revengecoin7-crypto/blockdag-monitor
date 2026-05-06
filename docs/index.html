@@ -44,29 +44,21 @@
 </head>
 <body class="home-page">
 
-  <!-- ── TICKER ── -->
-  <div class="ticker-bar">
-    <div class="ticker-inner">
-      <span class="ticker-item"><span class="ticker-label">Promises tracked</span><span class="ticker-val">62</span></span>
-      <span class="ticker-item"><span class="ticker-label">Broken or misleading</span><span class="ticker-val ticker-val--red">56</span></span>
-      <span class="ticker-item"><span class="ticker-label">Failure rate</span><span class="ticker-val ticker-val--red">90.3%</span></span>
-      <span class="ticker-item"><span class="ticker-label">Current price BDAG</span><span class="ticker-val ticker-val--red">$0.000155</span></span>
-      <span class="ticker-item"><span class="ticker-label">Price vs promise</span><span class="ticker-val ticker-val--red">−99.6%</span></span>
-      <span class="ticker-item"><span class="ticker-label">Staking broken</span><span class="ticker-val ticker-val--red">75+ days</span></span>
-      <span class="ticker-item"><span class="ticker-label">Miners shipped</span><span class="ticker-val ticker-val--red">0</span></span>
-      <span class="ticker-item"><span class="ticker-label">Messages analyzed</span><span class="ticker-val">319,783</span></span>
-      <span class="ticker-item"><span class="ticker-label">Exchanges promised</span><span class="ticker-val">20</span></span>
-      <span class="ticker-item"><span class="ticker-label">Exchanges delivered</span><span class="ticker-val ticker-val--red">3</span></span>
-      <span class="ticker-item"><span class="ticker-label">Promises tracked</span><span class="ticker-val">62</span></span>
-      <span class="ticker-item"><span class="ticker-label">Broken or misleading</span><span class="ticker-val ticker-val--red">56</span></span>
-      <span class="ticker-item"><span class="ticker-label">Failure rate</span><span class="ticker-val ticker-val--red">90.3%</span></span>
-      <span class="ticker-item"><span class="ticker-label">Current price BDAG</span><span class="ticker-val ticker-val--red">$0.000155</span></span>
-      <span class="ticker-item"><span class="ticker-label">Price vs promise</span><span class="ticker-val ticker-val--red">−99.6%</span></span>
-      <span class="ticker-item"><span class="ticker-label">Staking broken</span><span class="ticker-val ticker-val--red">75+ days</span></span>
-      <span class="ticker-item"><span class="ticker-label">Miners shipped</span><span class="ticker-val ticker-val--red">0</span></span>
-      <span class="ticker-item"><span class="ticker-label">Messages analyzed</span><span class="ticker-val">319,783</span></span>
-      <span class="ticker-item"><span class="ticker-label">Exchanges promised</span><span class="ticker-val">20</span></span>
-      <span class="ticker-item"><span class="ticker-label">Exchanges delivered</span><span class="ticker-val ticker-val--red">3</span></span>
+  <!-- ── PRICE BAR ── -->
+  <div style="background:#000;border-bottom:1px solid rgba(255,255,255,0.07);padding:0;height:34px;display:flex;align-items:center;">
+    <div class="container" style="display:flex;align-items:center;gap:0;">
+      <div style="display:flex;align-items:center;gap:6px;padding:0 24px 0 0;border-right:1px solid rgba(255,255,255,0.07);">
+        <span style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.3);letter-spacing:0.05em;font-family:var(--font-mono);">CURRENT PRICE</span>
+        <span style="font-size:12px;font-weight:700;color:#ff3b3b;font-family:var(--font-mono);">$0.000155</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;padding:0 24px;border-right:1px solid rgba(255,255,255,0.07);">
+        <span style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.3);letter-spacing:0.05em;font-family:var(--font-mono);">PROMISED PRICE</span>
+        <span style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.6);font-family:var(--font-mono);">$0.05</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;padding:0 24px;">
+        <span style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.3);letter-spacing:0.05em;font-family:var(--font-mono);">BELOW PROMISE</span>
+        <span style="font-size:12px;font-weight:700;color:#ff3b3b;font-family:var(--font-mono);">−99.6%</span>
+      </div>
     </div>
   </div>
 
