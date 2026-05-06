@@ -5,7 +5,7 @@ const ARTICLES = [
     date: '2026-05-06',
     dateDisplay: 'May 6, 2026',
     excerpt: 'Casino. Aftersale closure. Batch 5 claims. May 7 was marketed as a turning point. The data from the 36 hours before the deadline tells a different story.',
-    image: 'img-hero.jpg',
+    image: 'img-may7-reality.jpg',
     url: 'article-may7-reality.html',
     tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }]
   },
