@@ -2391,9 +2391,9 @@ body.home-page {
   overflow: hidden;
   background: #000;
 }
-.news-hero-main { position: relative; text-decoration: none; display: block; }
+.news-hero-main { position: relative; text-decoration: none; display: block; overflow: hidden; height: 420px; }
 .news-hero-main-img {
-  width: 100%; height: 420px;
+  width: 100%; height: 100%;
   object-fit: cover;
   display: block;
   background: #0a1520;
