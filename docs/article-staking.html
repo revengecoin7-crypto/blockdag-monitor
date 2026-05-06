@@ -183,6 +183,39 @@
             <span class="article-tag article-tag--cyan">Staking</span>
             <span class="article-tag article-tag--yellow">Broken Promise</span>
           </div>
+
+          <!-- Share buttons -->
+          <div class="article-share">
+            <span class="article-share-label">Share</span>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblockdagexposed.com%2Farticle-staking.html&text=75%20days%20and%20still%20broken%3A%20BlockDAG%E2%80%99s%20staking%20failure" target="_blank" rel="noopener" class="share-btn share-btn--x">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              X / Twitter
+            </a>
+            <a href="https://t.me/share/url?url=https%3A%2F%2Fblockdagexposed.com%2Farticle-staking.html&text=75%20days%20and%20still%20broken%3A%20BlockDAG%20staking%20failure" target="_blank" rel="noopener" class="share-btn share-btn--tg">Telegram</a>
+            <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblockdagexposed.com%2Farticle-staking.html&title=75%20days%20and%20still%20broken%3A%20BlockDAG%20staking%20failure" target="_blank" rel="noopener" class="share-btn share-btn--reddit">Reddit</a>
+            <button class="share-btn share-btn--copy" onclick="copyArticleLink(this, 'https://blockdagexposed.com/article-staking.html')">📋 Copy link</button>
+          </div>
+
+          <!-- Like button -->
+          <div class="article-like-wrap">
+            <button class="like-btn" id="like-btn" onclick="toggleLike()">
+              <span class="like-heart">♥</span>
+              <span>This was useful</span>
+              <span class="like-count" id="like-count">…</span>
+            </button>
+          </div>
+
+          <!-- Comments -->
+          <div class="article-comments">
+            <div class="comments-title">Community discussion</div>
+            <div class="comment-form">
+              <div class="comment-form-title">Leave a comment</div>
+              <input type="text" id="c-name" class="comment-input" placeholder="Your name (optional)" maxlength="60" />
+              <textarea id="c-text" class="comment-input comment-textarea" placeholder="Share your thoughts, questions or evidence..." maxlength="1000" required></textarea>
+              <button type="button" class="comment-submit" id="c-submit" onclick="postComment()">Post comment</button>
+            </div>
+            <div id="comments-list" class="comment-list"><div class="comments-loading">Loading comments…</div></div>
+          </div>
         </div>
 
         <!-- Sidebar -->
@@ -245,5 +278,49 @@
 
   <script src="data.js"></script>
   <script src="app.js"></script>
+  <script>
+    function copyArticleLink(btn, url) {
+      navigator.clipboard.writeText(url).then(() => {
+        btn.textContent = '✓ Copied!'; btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = '📋 Copy link'; btn.classList.remove('copied'); }, 2000);
+      });
+    }
+  </script>
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getFirestore, doc, collection, getDoc, setDoc, updateDoc, increment, addDoc, query, where, orderBy, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+    const firebaseConfig = { apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw", authDomain: "blockdag-exposed.firebaseapp.com", projectId: "blockdag-exposed", storageBucket: "blockdag-exposed.firebasestorage.app", messagingSenderId: "867203959601", appId: "1:867203959601:web:e31c472057f118f9aa3e10" };
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const ARTICLE_ID = 'article-staking';
+    const likeDoc = doc(db, 'likes', ARTICLE_ID);
+    if (localStorage.getItem('liked_' + ARTICLE_ID) === '1') document.getElementById('like-btn').classList.add('liked');
+    getDoc(likeDoc).then(snap => { document.getElementById('like-count').textContent = snap.exists() ? (snap.data().count || 0) : 0; });
+    window.toggleLike = async function() {
+      const btn = document.getElementById('like-btn');
+      const isLiked = btn.classList.toggle('liked');
+      localStorage.setItem('liked_' + ARTICLE_ID, isLiked ? '1' : '0');
+      const snap = await getDoc(likeDoc);
+      if (snap.exists()) { await updateDoc(likeDoc, { count: increment(isLiked ? 1 : -1) }); } else { await setDoc(likeDoc, { count: 1 }); }
+      const updated = await getDoc(likeDoc);
+      document.getElementById('like-count').textContent = updated.data().count || 0;
+    };
+    const commentsCol = collection(db, 'comments');
+    const q = query(commentsCol, where('article_id', '==', ARTICLE_ID), orderBy('timestamp', 'desc'));
+    onSnapshot(q, snap => {
+      const list = document.getElementById('comments-list');
+      if (snap.empty) { list.innerHTML = '<div class="comments-empty">No comments yet. Be the first to share your thoughts.</div>'; return; }
+      list.innerHTML = snap.docs.map(doc => { const d = doc.data(); const date = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : ''; const text = d.text.replace(/</g, '&lt;').replace(/>/g, '&gt;'); return `<div class="comment-item"><div class="comment-item-header"><span class="comment-item-name">${d.name || 'Anonymous'}</span><span class="comment-item-date">${date}</span></div><div class="comment-item-text">${text}</div></div>`; }).join('');
+    });
+    window.postComment = async function() {
+      const text = document.getElementById('c-text').value.trim();
+      if (!text) return;
+      const btn = document.getElementById('c-submit');
+      btn.disabled = true; btn.textContent = 'Posting…';
+      await addDoc(commentsCol, { article_id: ARTICLE_ID, name: document.getElementById('c-name').value.trim() || 'Anonymous', text, timestamp: serverTimestamp() });
+      document.getElementById('c-text').value = ''; document.getElementById('c-name').value = '';
+      btn.disabled = false; btn.textContent = 'Post comment';
+    };
+  </script>
 </body>
 </html>
