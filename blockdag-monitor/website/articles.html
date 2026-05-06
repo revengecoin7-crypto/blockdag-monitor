@@ -96,7 +96,7 @@
   <script>
     (function() {
       const grid = document.getElementById('articles-grid');
-      if (!grid || !window.ARTICLES) return;
+      if (!grid || typeof ARTICLES === 'undefined') return;
       const sorted = [...ARTICLES].sort((a, b) => b.date.localeCompare(a.date));
       grid.innerHTML = sorted.map(a => `
         <a href="${a.url}" class="article-card" style="text-decoration:none;">

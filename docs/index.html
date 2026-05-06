@@ -391,7 +391,7 @@
   <script>
     (function() {
       const wrap = document.getElementById('news-hero-wrap');
-      if (!wrap || !window.ARTICLES || !ARTICLES.length) return;
+      if (!wrap || typeof ARTICLES === 'undefined' || !ARTICLES.length) return;
       const sorted = [...ARTICLES].sort((a, b) => b.date.localeCompare(a.date));
       const main = sorted[0];
       const sides = sorted.slice(1, 4);
