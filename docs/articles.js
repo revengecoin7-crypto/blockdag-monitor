@@ -1,5 +1,15 @@
 const ARTICLES = [
   {
+    id: 'article-may7-reality',
+    title: 'May 7 was supposed to change everything',
+    date: '2026-05-06',
+    dateDisplay: 'May 6, 2026',
+    excerpt: 'Casino. Aftersale closure. Batch 5 claims. May 7 was marketed as a turning point. The data from the 36 hours before the deadline tells a different story.',
+    image: 'img-hero.jpg',
+    url: 'article-may7-reality.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }]
+  },
+  {
     id: 'article-exchanges',
     title: 'The exchanges that never came',
     date: '2026-05-05',

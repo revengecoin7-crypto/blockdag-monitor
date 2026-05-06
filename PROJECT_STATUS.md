@@ -59,27 +59,25 @@
 
 ## Data (data.js) — Huidige staat
 - 62 promises (36 broken, 20 misleading, 2 kept, 4 pending)
-- 70 timeline events
-- 43 notable quotes
+- 76 timeline events
+- 50 notable quotes
 - 20 bronnen
 - Faalpercentage: 90.3%
-- Laatste update: May 5, 2026
+- Laatste update: May 6, 2026
 
 ## Telegram analyse
-- Geanalyseerd t/m: **5 mei 2026** (export: ChatExport_2026-05-05)
-- Periode: 18 februari t/m 5 mei 2026
-- Totaal berichten: 319,783 (307,926 eerste export + 11,857 tweede export)
-- Let op: gap van 10 dagen tussen exports (20 apr t/m 30 apr ontbreekt)
+- Geanalyseerd t/m: **6 mei 2026** (export: ChatExport_2026-05-06)
+- Periode: 18 februari t/m 6 mei 2026
+- Totaal berichten: 322,134 (319,783 + 2,351 nieuwe, overlap May 5)
 
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F
 
-## Actuele marktdata (May 5, 2026)
-- Huidige prijs BDAG: $0.0001835 (CMC)
-- Marktcap: $7.5M
-- 24h volume: $7.77M
-- Prijsdaling vs belofte ($0.05): −99.6%
-- Piek 27 april 2026: ~$0.0009 (gevolgd door scherpe daling)
+## Actuele marktdata (May 6, 2026)
+- Huidige prijs BDAG: $0.0001283 (CMC, −30.55% in 24u)
+- Marktcap: $5.32M
+- Prijsdaling vs belofte ($0.05): −99.7%
+- Miner shipping date verwijderd van website (May 5)
 
 ## Belangrijke correcties gedaan
 - BingX en Gate.io stonden als KEPT maar listings zijn NOOIT gebeurd → gecorrigeerd naar BROKEN (May 4, 2026)
