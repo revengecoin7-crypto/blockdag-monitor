@@ -28,7 +28,7 @@
   <meta name="twitter:description" content="An independent trust indicator calculated from promise delivery rate, price performance, transparency, and development execution." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -78,13 +78,7 @@
         </div>
         <div class="footer-bottom">
           <div class="footer-note">Data sourced from Telegram, X/Twitter, CoinMarketCap, DL News, Reddit, LinkedIn &amp; more · Last updated: May 5, 2026</div>
-          <div style="display:flex;align-items:center;gap:16px;">
-            <div class="footer-note">www.blockdagexposed.com</div>
-            <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
-              <span id="theme-icon">🌙</span>
-              <span id="theme-label">Dark mode</span>
-            </button>
-          </div>
+          <div class="footer-note">www.blockdagexposed.com</div>
         </div>
       </div>
     </div>
@@ -92,27 +86,6 @@
 
   <script src="data.js"></script>
   <script src="app.js"></script>
-
-  <script>
-    function toggleTheme() {
-      const isDark = document.body.classList.toggle('dark-mode');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      document.getElementById('theme-icon').textContent = isDark ? '☀️' : '🌙';
-      document.getElementById('theme-label').textContent = isDark ? 'Light mode' : 'Dark mode';
-    }
-    (function() {
-      if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        var icon = document.getElementById('theme-icon');
-        var label = document.getElementById('theme-label');
-        if (icon) icon.textContent = '☀️';
-        if (label) label.textContent = 'Light mode';
-      }
-    })();
-  </script>
 </body>
 </html>
-
-
-
 

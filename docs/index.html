@@ -28,7 +28,7 @@
   <meta name="twitter:description" content="Independent tracker of BlockDAG Network. 319,783 messages analyzed. 56 broken promises. Price down 99.6% from what was promised." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <style>
@@ -38,11 +38,38 @@
     #sib-container input::placeholder { color: #999 !important; }
     .sib-form { background-color: transparent !important; }
     .sib-form-block__button { background-color: var(--cyan, #00d4ff) !important; color: #000 !important; border-radius: 8px !important; font-weight: 800 !important; }
-    .sib-form-block p, .sib-form-block label, .entry__label { color: rgba(255,255,255,0.7) !important; font-family: Inter, sans-serif !important; }
+    .sib-form-block p, .sib-form-block label, .entry__label { color: rgba(255,255,255,0.7) !important; font-family: Manrope, sans-serif !important; }
     .entry__specification { color: rgba(255,255,255,0.3) !important; }
   </style>
 </head>
 <body class="home-page">
+
+  <!-- ── TICKER ── -->
+  <div class="ticker-bar">
+    <div class="ticker-inner">
+      <span class="ticker-item"><span class="ticker-label">Promises tracked</span><span class="ticker-val">62</span></span>
+      <span class="ticker-item"><span class="ticker-label">Broken or misleading</span><span class="ticker-val ticker-val--red">56</span></span>
+      <span class="ticker-item"><span class="ticker-label">Failure rate</span><span class="ticker-val ticker-val--red">90.3%</span></span>
+      <span class="ticker-item"><span class="ticker-label">Current price BDAG</span><span class="ticker-val ticker-val--red">$0.000155</span></span>
+      <span class="ticker-item"><span class="ticker-label">Price vs promise</span><span class="ticker-val ticker-val--red">−99.6%</span></span>
+      <span class="ticker-item"><span class="ticker-label">Staking broken</span><span class="ticker-val ticker-val--red">75+ days</span></span>
+      <span class="ticker-item"><span class="ticker-label">Miners shipped</span><span class="ticker-val ticker-val--red">0</span></span>
+      <span class="ticker-item"><span class="ticker-label">Messages analyzed</span><span class="ticker-val">319,783</span></span>
+      <span class="ticker-item"><span class="ticker-label">Exchanges promised</span><span class="ticker-val">20</span></span>
+      <span class="ticker-item"><span class="ticker-label">Exchanges delivered</span><span class="ticker-val ticker-val--red">3</span></span>
+      <span class="ticker-item"><span class="ticker-label">Promises tracked</span><span class="ticker-val">62</span></span>
+      <span class="ticker-item"><span class="ticker-label">Broken or misleading</span><span class="ticker-val ticker-val--red">56</span></span>
+      <span class="ticker-item"><span class="ticker-label">Failure rate</span><span class="ticker-val ticker-val--red">90.3%</span></span>
+      <span class="ticker-item"><span class="ticker-label">Current price BDAG</span><span class="ticker-val ticker-val--red">$0.000155</span></span>
+      <span class="ticker-item"><span class="ticker-label">Price vs promise</span><span class="ticker-val ticker-val--red">−99.6%</span></span>
+      <span class="ticker-item"><span class="ticker-label">Staking broken</span><span class="ticker-val ticker-val--red">75+ days</span></span>
+      <span class="ticker-item"><span class="ticker-label">Miners shipped</span><span class="ticker-val ticker-val--red">0</span></span>
+      <span class="ticker-item"><span class="ticker-label">Messages analyzed</span><span class="ticker-val">319,783</span></span>
+      <span class="ticker-item"><span class="ticker-label">Exchanges promised</span><span class="ticker-val">20</span></span>
+      <span class="ticker-item"><span class="ticker-label">Exchanges delivered</span><span class="ticker-val ticker-val--red">3</span></span>
+    </div>
+  </div>
+
   <!-- ── HEADER ── -->
   <header class="site-header">
     <div class="container">
@@ -364,7 +391,7 @@
                 </div>
                 <div style="padding:8px 0;">
                   <div class="sib-form-block" style="text-align:center">
-                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-family:Inter,sans-serif;font-size:14px;font-weight:800;color:#000;border-width:0;width:100%;" form="sib-form" type="submit">
+                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-family:Manrope,sans-serif;font-size:14px;font-weight:800;color:#000;border-width:0;width:100%;" form="sib-form" type="submit">
                       <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
                       Subscribe — Stay informed
                     </button>
@@ -393,13 +420,7 @@
         </div>
         <div class="footer-bottom">
           <div class="footer-note">Data sourced from Telegram, X/Twitter, CoinMarketCap, DL News, Reddit, LinkedIn &amp; more · Last updated: May 5, 2026</div>
-          <div style="display:flex;align-items:center;gap:16px;">
-            <div class="footer-note">www.blockdagexposed.com</div>
-            <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
-              <span id="theme-icon">🌙</span>
-              <span id="theme-label">Dark mode</span>
-            </button>
-          </div>
+          <div class="footer-note">www.blockdagexposed.com</div>
         </div>
       </div>
     </div>
@@ -407,23 +428,6 @@
 
   <script src="data.js"></script>
   <script src="app.js"></script>
-  <script>
-    function toggleTheme() {
-      const isDark = document.body.classList.toggle('dark-mode');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      document.getElementById('theme-icon').textContent = isDark ? '☀️' : '🌙';
-      document.getElementById('theme-label').textContent = isDark ? 'Light mode' : 'Dark mode';
-    }
-    (function() {
-      if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        var icon = document.getElementById('theme-icon');
-        var label = document.getElementById('theme-label');
-        if (icon) icon.textContent = '☀️';
-        if (label) label.textContent = 'Light mode';
-      }
-    })();
-  </script>
   <script>
     window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
     window.LOCALE = 'en';
@@ -435,9 +439,5 @@
   <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
 </html>
-
-
-
-
 
 
