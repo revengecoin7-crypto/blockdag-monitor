@@ -2352,7 +2352,7 @@ body.home-page {
 
 /* ── LIGHT MODE ── */
 body.light-mode {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg) contrast(0.85) brightness(1.05);
 }
 body.light-mode img,
 body.light-mode video,
@@ -2361,7 +2361,7 @@ body.light-mode .news-hero-side-img,
 body.light-mode .article-cover,
 body.light-mode .article-card-img,
 body.light-mode .latest-item-img {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg) contrast(1.18) brightness(0.95);
 }
 
 /* Theme toggle button */
