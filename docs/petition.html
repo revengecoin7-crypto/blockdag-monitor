@@ -213,7 +213,13 @@
         </div>
         <div class="footer-bottom">
           <div class="footer-note">Data sourced from Telegram, X/Twitter, CoinMarketCap, DL News, Reddit, LinkedIn &amp; more · Last updated: May 5, 2026</div>
-          <div class="footer-note">www.blockdagexposed.com</div>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div class="footer-note">www.blockdagexposed.com</div>
+            <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
+              <span id="theme-icon">☀️</span>
+              <span id="theme-label">Light mode</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -390,6 +396,25 @@
 
   <script src="data.js"></script>
   <script src="app.js"></script>
+
+  <script>
+    function toggleTheme() {
+      const isLight = document.body.classList.toggle('light-mode');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      document.getElementById('theme-icon').textContent = isLight ? '🌙' : '☀️';
+      document.getElementById('theme-label').textContent = isLight ? 'Dark mode' : 'Light mode';
+    }
+    (function() {
+      if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-mode');
+        var icon = document.getElementById('theme-icon');
+        var label = document.getElementById('theme-label');
+        if (icon) icon.textContent = '🌙';
+        if (label) label.textContent = 'Dark mode';
+      }
+    })();
+  </script>
 </body>
 </html>
+
 

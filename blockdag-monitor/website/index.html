@@ -43,33 +43,6 @@
   </style>
 </head>
 <body class="home-page">
-
-  <!-- ── TICKER ── -->
-  <div class="ticker-bar">
-    <div class="ticker-inner">
-      <span class="ticker-item"><span class="ticker-label">Promises tracked</span><span class="ticker-val">62</span></span>
-      <span class="ticker-item"><span class="ticker-label">Broken or misleading</span><span class="ticker-val ticker-val--red">56</span></span>
-      <span class="ticker-item"><span class="ticker-label">Failure rate</span><span class="ticker-val ticker-val--red">90.3%</span></span>
-      <span class="ticker-item"><span class="ticker-label">Current price BDAG</span><span class="ticker-val ticker-val--red">$0.000155</span></span>
-      <span class="ticker-item"><span class="ticker-label">Price vs promise</span><span class="ticker-val ticker-val--red">−99.6%</span></span>
-      <span class="ticker-item"><span class="ticker-label">Staking broken</span><span class="ticker-val ticker-val--red">75+ days</span></span>
-      <span class="ticker-item"><span class="ticker-label">Miners shipped</span><span class="ticker-val ticker-val--red">0</span></span>
-      <span class="ticker-item"><span class="ticker-label">Messages analyzed</span><span class="ticker-val">319,783</span></span>
-      <span class="ticker-item"><span class="ticker-label">Exchanges promised</span><span class="ticker-val">20</span></span>
-      <span class="ticker-item"><span class="ticker-label">Exchanges delivered</span><span class="ticker-val ticker-val--red">3</span></span>
-      <span class="ticker-item"><span class="ticker-label">Promises tracked</span><span class="ticker-val">62</span></span>
-      <span class="ticker-item"><span class="ticker-label">Broken or misleading</span><span class="ticker-val ticker-val--red">56</span></span>
-      <span class="ticker-item"><span class="ticker-label">Failure rate</span><span class="ticker-val ticker-val--red">90.3%</span></span>
-      <span class="ticker-item"><span class="ticker-label">Current price BDAG</span><span class="ticker-val ticker-val--red">$0.000155</span></span>
-      <span class="ticker-item"><span class="ticker-label">Price vs promise</span><span class="ticker-val ticker-val--red">−99.6%</span></span>
-      <span class="ticker-item"><span class="ticker-label">Staking broken</span><span class="ticker-val ticker-val--red">75+ days</span></span>
-      <span class="ticker-item"><span class="ticker-label">Miners shipped</span><span class="ticker-val ticker-val--red">0</span></span>
-      <span class="ticker-item"><span class="ticker-label">Messages analyzed</span><span class="ticker-val">319,783</span></span>
-      <span class="ticker-item"><span class="ticker-label">Exchanges promised</span><span class="ticker-val">20</span></span>
-      <span class="ticker-item"><span class="ticker-label">Exchanges delivered</span><span class="ticker-val ticker-val--red">3</span></span>
-    </div>
-  </div>
-
   <!-- ── HEADER ── -->
   <header class="site-header">
     <div class="container">
@@ -420,7 +393,13 @@
         </div>
         <div class="footer-bottom">
           <div class="footer-note">Data sourced from Telegram, X/Twitter, CoinMarketCap, DL News, Reddit, LinkedIn &amp; more · Last updated: May 5, 2026</div>
-          <div class="footer-note">www.blockdagexposed.com</div>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div class="footer-note">www.blockdagexposed.com</div>
+            <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
+              <span id="theme-icon">☀️</span>
+              <span id="theme-label">Light mode</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -428,6 +407,23 @@
 
   <script src="data.js"></script>
   <script src="app.js"></script>
+  <script>
+    function toggleTheme() {
+      const isLight = document.body.classList.toggle('light-mode');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      document.getElementById('theme-icon').textContent = isLight ? '🌙' : '☀️';
+      document.getElementById('theme-label').textContent = isLight ? 'Dark mode' : 'Light mode';
+    }
+    (function() {
+      if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-mode');
+        var icon = document.getElementById('theme-icon');
+        var label = document.getElementById('theme-label');
+        if (icon) icon.textContent = '🌙';
+        if (label) label.textContent = 'Dark mode';
+      }
+    })();
+  </script>
   <script>
     window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
     window.LOCALE = 'en';
@@ -439,5 +435,6 @@
   <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
 </html>
+
 
 
