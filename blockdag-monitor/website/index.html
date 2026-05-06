@@ -75,6 +75,7 @@
         </div>
         <nav class="nav">
           <a href="index.html" class="nav-link active">Home</a>
+          <a href="articles.html" class="nav-link">Articles</a>
           <a href="tracker.html" class="nav-link">Tracker</a>
           <a href="categories.html" class="nav-link">Categories</a>
           <a href="timeline.html" class="nav-link">Timeline</a>
@@ -94,47 +95,13 @@
     <div class="container">
 
       <!-- News section label -->
-      <div style="padding-top:8px;margin-bottom:20px;">
-        <div class="news-section-label news-section-label--red">Latest investigations</div>
+      <div style="padding-top:8px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;">
+        <div class="news-section-label news-section-label--red" style="margin-bottom:0;">Latest investigations</div>
+        <a href="articles.html" style="font-size:11px;font-weight:700;color:var(--cyan);text-decoration:none;letter-spacing:0.05em;">View all →</a>
       </div>
 
-      <!-- News hero -->
-      <div class="news-hero" style="margin-bottom:40px;">
-        <!-- Featured article -->
-        <a href="article-442-million.html" class="news-hero-main">
-          <img src="img-hero.jpg" alt="BlockDAG investigation" class="news-hero-main-img" />
-          <div class="news-hero-main-overlay">
-            <span class="article-tag article-tag--red" style="margin-bottom:10px;">Investigation</span>
-            <div style="font-family:var(--font-display);font-size:clamp(18px,2.2vw,28px);font-weight:800;color:#fff;line-height:1.25;margin-bottom:8px;">Where did $442 million go?</div>
-            <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.5;">Three different numbers from the same team. Zero verifiable proof of where the money is held.</div>
-            <div style="font-size:10px;color:rgba(255,255,255,0.2);margin-top:10px;font-family:var(--font-mono);">BlockDAG Exposed &middot; May 5, 2026</div>
-          </div>
-        </a>
-        <!-- Side stack -->
-        <div class="news-hero-stack">
-          <a href="article-staking.html" class="news-hero-side">
-            <img src="img-staking.jpg" alt="Staking failure" class="news-hero-side-img" />
-            <div class="news-hero-side-overlay">
-              <span class="article-tag article-tag--cyan" style="margin-bottom:6px;">Staking</span>
-              <div style="font-family:var(--font-display);font-size:14px;font-weight:800;color:#fff;line-height:1.3;">75 days and still broken: BlockDAG's staking failure</div>
-            </div>
-          </a>
-          <a href="article-exchanges.html" class="news-hero-side">
-            <img src="img-exchanges.jpg" alt="Exchange listings" class="news-hero-side-img" />
-            <div class="news-hero-side-overlay">
-              <span class="article-tag article-tag--orange" style="margin-bottom:6px;">Exchange Listings</span>
-              <div style="font-family:var(--font-display);font-size:14px;font-weight:800;color:#fff;line-height:1.3;">The exchanges that never came</div>
-            </div>
-          </a>
-          <a href="investigation.html" class="news-hero-side">
-            <img src="img-442-million.jpg" alt="DL News Investigation" class="news-hero-side-img" />
-            <div class="news-hero-side-overlay">
-              <span class="article-tag article-tag--red" style="margin-bottom:6px;">External Investigation</span>
-              <div style="font-family:var(--font-display);font-size:14px;font-weight:800;color:#fff;line-height:1.3;">Inside BlockDAG's $442M crypto maze</div>
-            </div>
-          </a>
-        </div>
-      </div>
+      <!-- News hero (dynamisch via articles.js) -->
+      <div id="news-hero-wrap" style="margin-bottom:40px;"></div>
 
       <!-- Metrics strip -->
       <div class="metrics-strip" id="metrics-strip">
@@ -419,7 +386,42 @@
   </footer>
 
   <script src="data.js"></script>
+  <script src="articles.js"></script>
   <script src="app.js"></script>
+  <script>
+    (function() {
+      const wrap = document.getElementById('news-hero-wrap');
+      if (!wrap || !window.ARTICLES || !ARTICLES.length) return;
+      const sorted = [...ARTICLES].sort((a, b) => b.date.localeCompare(a.date));
+      const main = sorted[0];
+      const sides = sorted.slice(1, 4);
+
+      const tagHTML = (t) => `<span class="article-tag article-tag--${t.style}" style="margin-bottom:6px;">${t.label}</span>`;
+
+      const mainHTML = `
+        <a href="${main.url}" class="news-hero-main">
+          <img src="${main.image}" alt="${main.title}" class="news-hero-main-img" />
+          <div class="news-hero-main-overlay">
+            ${main.tags.map(tagHTML).join(' ')}
+            <div style="font-family:var(--font-display);font-size:clamp(18px,2.2vw,28px);font-weight:800;color:#fff;line-height:1.25;margin:8px 0;">${main.title}</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.5;">${main.excerpt}</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.2);margin-top:10px;font-family:var(--font-mono);">BlockDAG Exposed &middot; ${main.dateDisplay}</div>
+          </div>
+        </a>`;
+
+      const sidesHTML = sides.map(a => `
+        <a href="${a.url}" class="news-hero-side">
+          <img src="${a.image}" alt="${a.title}" class="news-hero-side-img" />
+          <div class="news-hero-side-overlay">
+            ${a.tags.slice(0,1).map(tagHTML).join('')}
+            <div style="font-family:var(--font-display);font-size:14px;font-weight:800;color:#fff;line-height:1.3;">${a.title}</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px;font-family:var(--font-mono);">${a.dateDisplay}</div>
+          </div>
+        </a>`).join('');
+
+      wrap.innerHTML = `<div class="news-hero">${mainHTML}<div class="news-hero-stack">${sidesHTML}</div></div>`;
+    })();
+  </script>
   <script>
     window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
     window.LOCALE = 'en';
