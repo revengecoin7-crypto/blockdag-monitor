@@ -1,4 +1,4 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+﻿*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --bg: #020408;
@@ -19,7 +19,7 @@
   --radius: 10px;
   --radius-sm: 6px;
   --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
@@ -2506,3 +2506,4 @@ body.light-mode .latest-item-img {
 .article-fact { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 13px; color: rgba(255,255,255,0.55); display: flex; gap: 10px; align-items: flex-start; line-height: 1.5; }
 .article-fact:last-child { border-bottom: none; }
 .article-fact::before { content: '→'; color: var(--red); font-weight: 800; flex-shrink: 0; margin-top: 1px; }
+
