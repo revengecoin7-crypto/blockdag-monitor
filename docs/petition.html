@@ -146,20 +146,20 @@
                 </select>
               </div>
               <div class="petition-field">
-                <label class="petition-label">Blockchain used <span class="petition-optional">optional, for transaction verification</span></label>
-                <select id="p-chain" class="petition-input">
+                <label class="petition-label">Blockchain used <span class="petition-required">*</span></label>
+                <select id="p-chain" class="petition-input" required>
                   <option value="">Select blockchain</option>
                   <option value="bsc">BSC (paid with BNB)</option>
                   <option value="eth">Ethereum (paid with ETH)</option>
                 </select>
               </div>
               <div class="petition-field">
-                <label class="petition-label">Transaction hash <span class="petition-optional">optional</span></label>
+                <label class="petition-label">Transaction hash <span class="petition-required">* must be verified</span></label>
                 <div style="display:flex;gap:8px;">
-                  <input type="text" id="p-txhash" class="petition-input" placeholder="0x..." maxlength="66" style="flex:1;" />
+                  <input type="text" id="p-txhash" class="petition-input" placeholder="0x..." maxlength="66" style="flex:1;" required />
                   <button type="button" id="p-verify-btn" class="petition-submit" style="width:auto;padding:0 16px;font-size:12px;white-space:nowrap;" onclick="verifyTx()">Verify</button>
                 </div>
-                <div class="petition-hint">Your TX hash from BSCScan or Etherscan. Used to verify your actual investment on-chain.</div>
+                <div class="petition-hint">Your TX hash from BSCScan or Etherscan. You must verify before signing.</div>
                 <div id="p-verify-result" style="display:none;margin-top:8px;padding:10px 14px;border-radius:8px;font-size:13px;font-weight:700;"></div>
               </div>
               <div class="petition-field">
@@ -178,8 +178,8 @@
                   <span class="petition-checkbox-label">I confirm the above statement is true and I agree to the terms of this petition.</span>
                 </label>
               </div>
-              <button type="submit" class="petition-submit" id="petition-submit-btn">
-                Sign the Petition
+              <button type="submit" class="petition-submit" id="petition-submit-btn" style="opacity:0.5;cursor:not-allowed;" disabled>
+                Sign the Petition — verify TX first
               </button>
             </form>
           </div>
@@ -276,6 +276,12 @@
           result.style.border = '1px solid rgba(0,229,160,0.3)';
           result.style.color = '#00e5a0';
           result.textContent = `✓ Verified: ${valueCoin} ${coinName} paid on ${chain.toUpperCase()}`;
+          // Enable submit button after verification
+          const submitBtn = document.getElementById('petition-submit-btn');
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+          submitBtn.style.cursor = 'pointer';
+          submitBtn.textContent = 'Sign the Petition';
           document.getElementById('p-txhash').dataset.verified = 'true';
           document.getElementById('p-txhash').dataset.value = valueCoin;
           document.getElementById('p-txhash').dataset.coin = coinName;
@@ -344,16 +350,45 @@
     });
 
 
+    // Temp mail domains to block
+    const BLOCKED_DOMAINS = ['mailinator','guerrillamail','tempmail','throwam','yopmail','10minutemail','sharklasers','guerrillamailblock','grr.la','spam4.me','trashmail','slmail','dispostable','fakeinbox','maildrop','getairmail','filzmail','throwamailaway','mailnull','spamgourmet','spamex','spam.la','binkmail','spaml','spamthisplease'];
+
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+      if (!emailRegex.test(email)) return false;
+      const domain = email.split('@')[1].toLowerCase();
+      return !BLOCKED_DOMAINS.some(d => domain.includes(d));
+    }
+
     // Submit form
     document.getElementById('petition-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = document.getElementById('petition-submit-btn');
-      btn.disabled = true;
-      btn.textContent = 'Signing...';
+      const errorEl = document.getElementById('petition-error');
 
       const name = document.getElementById('p-name').value.trim();
       const email = document.getElementById('p-email').value.trim().toLowerCase();
       const country = document.getElementById('p-country').value;
+      const txEl = document.getElementById('p-txhash');
+
+      // Require verified TX
+      if (!txEl.value.trim() || txEl.dataset.verified !== 'true') {
+        errorEl.textContent = 'You must verify your transaction hash before signing. Enter your TX hash and click Verify.';
+        errorEl.classList.remove('hidden');
+        return;
+      }
+
+      // Validate email
+      if (!isValidEmail(email)) {
+        errorEl.textContent = 'Please enter a valid email address. Temporary or disposable email addresses are not accepted.';
+        errorEl.classList.remove('hidden');
+        return;
+      }
+
+      errorEl.classList.add('hidden');
+      btn.disabled = true;
+      btn.textContent = 'Signing...';
+
       const amount = document.getElementById('p-amount').value || null;
       const bdagRaw = document.getElementById('p-bdag').value.replace(/,/g, '');
       const bdagAmount = bdagRaw ? Number(bdagRaw) : null;
