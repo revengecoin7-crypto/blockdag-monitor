@@ -217,8 +217,12 @@
                     <!-- Comments (Disqus) -->
           <div class="article-comments">
             <div class="comments-title">Community discussion</div>
-            <div id="disqus_thread"></div>
-            <noscript>Please enable JavaScript to view the comments.</noscript>
+            <div id="comments-list" style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px;"></div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <input type="text" id="c-name" placeholder="Your name (optional)" maxlength="60" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 14px;color:#fff;font-size:13px;font-family:inherit;outline:none;" />
+              <textarea id="c-text" placeholder="Share your thoughts..." maxlength="1000" rows="3" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 14px;color:#fff;font-size:13px;font-family:inherit;outline:none;resize:vertical;"></textarea>
+              <button onclick="postComment()" style="align-self:flex-start;background:#00d4ff;color:#000;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:800;cursor:pointer;font-family:inherit;">Post comment</button>
+            </div>
           </div>
         </div>
 
@@ -315,17 +319,39 @@
         .catch(() => { likeCountEl.textContent = (parseInt(likeCountEl.textContent) || 0) + 1; });
     };
   </script>
-  <script>
-    var disqus_config = function() {
-      this.page.url = 'https://blockdagexposed.com/article-exchanges.html';
-      this.page.identifier = 'article-exchanges';
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import { getFirestore, collection, addDoc, query, where, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+    const app = initializeApp({ apiKey:"AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw", authDomain:"blockdag-exposed.firebaseapp.com", projectId:"blockdag-exposed", storageBucket:"blockdag-exposed.firebasestorage.app", messagingSenderId:"867203959601", appId:"1:867203959601:web:e31c472057f118f9aa3e10" });
+    const db = getFirestore(app);
+    const col = collection(db, 'comments');
+    const ARTICLE_ID = 'article-exchanges';
+
+    onSnapshot(query(col, where('article_id', '==', ARTICLE_ID)), snap => {
+      const list = document.getElementById('comments-list');
+      if (!list) return;
+      const docs = snap.docs.slice().sort((a,b) => (b.data().timestamp?.seconds||0) - (a.data().timestamp?.seconds||0));
+      if (!docs.length) { list.innerHTML = '<div style="font-size:13px;color:rgba(255,255,255,0.25);padding:8px 0;">No comments yet. Be the first.</div>'; return; }
+      list.innerHTML = docs.map(d => {
+        const data = d.data();
+        const date = data.timestamp ? new Date(data.timestamp.toDate()).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) : '';
+        const text = (data.text||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:14px 16px;"><div style="display:flex;justify-content:space-between;margin-bottom:6px;"><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,0.8);">'+(data.name||'Anonymous')+'</span><span style="font-size:11px;color:rgba(255,255,255,0.25);">'+date+'</span></div><div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6;">'+text+'</div></div>';
+      }).join('');
+    }, () => {});
+
+    window.postComment = async function() {
+      const text = document.getElementById('c-text').value.trim();
+      if (!text) return;
+      const name = document.getElementById('c-name').value.trim() || 'Anonymous';
+      const btn = event.target;
+      btn.disabled = true; btn.textContent = 'Posting...';
+      await addDoc(col, { article_id: ARTICLE_ID, name, text, timestamp: serverTimestamp() });
+      document.getElementById('c-text').value = '';
+      document.getElementById('c-name').value = '';
+      btn.disabled = false; btn.textContent = 'Post comment';
     };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://blockdag-exposed.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
   </script>
 </body>
 </html>
