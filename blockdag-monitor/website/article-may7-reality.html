@@ -294,16 +294,43 @@
   <script>
     function copyArticleLink(btn, url) {
       navigator.clipboard.writeText(url).then(() => {
-        btn.textContent = '✓ Copied!'; btn.classList.add('copied');
+        btn.textContent = 'Copied!'; btn.classList.add('copied');
         setTimeout(() => { btn.textContent = '📋 Copy link'; btn.classList.remove('copied'); }, 2000);
       });
     }
+    const LIKE_KEY = 'article-may7-reality';
+    const likeCountEl = document.getElementById('like-count');
+    const likeBtn = document.getElementById('like-btn');
+    fetch('https://api.countapi.xyz/get/blockdagexposed/' + LIKE_KEY)
+      .then(r => r.json()).then(d => { likeCountEl.textContent = d.value || 0; })
+      .catch(() => { likeCountEl.textContent = '0'; });
+    if (localStorage.getItem('liked_' + LIKE_KEY) === '1') likeBtn.classList.add('liked');
+    window.toggleLike = function() {
+      const liked = likeBtn.classList.contains('liked');
+      if (liked) {
+        likeBtn.classList.remove('liked');
+        localStorage.removeItem('liked_' + LIKE_KEY);
+        likeCountEl.textContent = Math.max(0, (parseInt(likeCountEl.textContent) || 1) - 1);
+        return;
+      }
+      likeBtn.classList.add('liked');
+      localStorage.setItem('liked_' + LIKE_KEY, '1');
+      fetch('https://api.countapi.xyz/hit/blockdagexposed/' + LIKE_KEY)
+        .then(r => r.json()).then(d => { likeCountEl.textContent = d.value || 0; })
+        .catch(() => { likeCountEl.textContent = (parseInt(likeCountEl.textContent) || 0) + 1; });
+    };
   </script>
-  </body>
+  <script>
+    var disqus_config = function() {
+      this.page.url = 'https://blockdagexposed.com/article-may7-reality.html';
+      this.page.identifier = 'article-may7-reality';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://blockdag-exposed.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+</body>
 </html>
-
-
-
-
-
-
