@@ -1,5 +1,15 @@
 const ARTICLES = [
   {
+    id: 'article-casino-may7',
+    title: 'The casino that wasn\'t: what happened on May 7',
+    date: '2026-05-07',
+    dateDisplay: 'May 7, 2026',
+    excerpt: 'May 7 was casino launch day. The official channel was still posting "Casino Live Tomorrow" six times on May 7 morning. No launch was announced. The aftersale was still running.',
+    image: 'img-casino-may7.jpg',
+    url: 'article-casino-may7.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }]
+  },
+  {
     id: 'article-may7-reality',
     title: 'May 7 was supposed to change everything',
     date: '2026-05-06',

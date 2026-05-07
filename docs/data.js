@@ -879,22 +879,26 @@ const TIMELINE_EVENTS = [
   { date: "May 1, 2026", type: "broken", text: "BlockDAG announces Toobit and CoinW listing 'MONDAY' (May 4), calling both 'Tier 1' exchanges. Within 24 hours, community reports emerge that Toobit has publicly posted on X that they will NOT list BDAG. BlockDAG continues to promote Toobit with no acknowledgment." },
   { date: "May 2, 2026", type: "broken", text: "Toobit officially confirms on X they are not listing BDAG. Community members alert admins multiple times. Zero official response. 'Batch 5 is LIVE' marketing continues while support tells individual users 'Batch 5 is not live.' Miner shipping date quietly shifted from April–May to June in individual support replies — no public announcement." },
   { date: "May 4, 2026", type: "broken", text: "Monday arrives: no Toobit listing, no CoinW listing, no AMA. On May 1 officials promised 'next AMA is Monday' — on May 4 stated 'There's no AMA scheduled for today' four separate times. Casino language quietly downgraded: 'Casino in 3 days / Bets open in 7 days' — splitting the May 7 Casino promise into two dates. Miner shipping officially confirmed as June." },
-  { date: "May 5, 2026", isNew: true, type: "broken", text: "Miner delivery date quietly removed from the BlockDAG main website. Community notices: 'Why did they remove the miners shipping date from the main page?' Official response: 'Miners delivery will start in the upcoming weeks.' — no specific date given. This is the sixth time the deadline has changed or been obscured." },
-  { date: "May 5, 2026", isNew: true, type: "misleading", text: "AMA held on Binance Live. Node/docker scripts discussed in the AMA were not published to GitHub as of May 6. Community follows up; no upload. 'Series of AMA is yet to be uploaded on YouTube' — official response May 6." },
-  { date: "May 5, 2026", isNew: true, type: "misleading", text: "'Compression' rebranded to 'Reduction' in official dashboards without any announcement. Community notices: 'It's called reduction now, not compression.' Same mechanism, new name." },
-  { date: "May 6, 2026", isNew: true, type: "broken", text: "Admin confirms: 'BDAG is yet to be listed on above mentioned exchanges' — while marketing simultaneously posts 'major Tier 1s loading.' Direct contradiction. Toobit and CoinW still not listed. CMC market cap still unverified 50+ days after launch; admin gives no response to direct question." },
-  { date: "May 6, 2026", isNew: true, type: "misleading", text: "Aftersale announced as 'CLOSING FOREVER' on May 7. Community universally disbelieves it, predicting a 'casino sale' or 'batch 6' immediately after. Pattern of repeated 'final' sales has run since 2024." },
+  { date: "May 5, 2026", type: "broken", text: "Miner delivery date quietly removed from the BlockDAG main website. Community notices: 'Why did they remove the miners shipping date from the main page?' Official response: 'Miners delivery will start in the upcoming weeks.' — no specific date given. This is the sixth time the deadline has changed or been obscured." },
+  { date: "May 5, 2026", type: "misleading", text: "AMA held on Binance Live. Node/docker scripts discussed in the AMA were not published to GitHub as of May 6. Community follows up; no upload. 'Series of AMA is yet to be uploaded on YouTube' — official response May 6." },
+  { date: "May 5, 2026", type: "misleading", text: "'Compression' rebranded to 'Reduction' in official dashboards without any announcement. Community notices: 'It's called reduction now, not compression.' Same mechanism, new name." },
+  { date: "May 6, 2026", type: "broken", text: "Admin confirms: 'BDAG is yet to be listed on above mentioned exchanges' — while marketing simultaneously posts 'major Tier 1s loading.' Direct contradiction. Toobit and CoinW still not listed. CMC market cap still unverified 50+ days after launch; admin gives no response to direct question." },
+  { date: "May 6, 2026", type: "misleading", text: "Aftersale announced as 'CLOSING FOREVER' on May 7. Community universally disbelieves it, predicting a 'casino sale' or 'batch 6' immediately after. Pattern of repeated 'final' sales has run since 2024." },
   { date: "May 7, 2026", type: "promise", text: "BlockDAG Casino launch promised for this date. Official posts split into two: 'Casino goes LIVE May 7 / Betting unlocks shortly after.' Community confirms this is a 4-day gap. Morning posts used 'Casino Beta' language before switching back to 'Casino goes LIVE.'" },
   { date: "May 2026", type: "promise", text: "Website roadmap: DEX activation (Uniswap, PancakeSwap, Hyperliquid) + LP incentives. Originally promised for Day 1 (March 4)." },
   { date: "Jun 16, 2026", type: "promise", text: "X10 miners now scheduled to ship. Original promise was February–April 2026." },
-  { date: "Jun 2026", type: "promise", text: "Website roadmap: Super App launch (X1 + Wallet + Staking unified), lending/borrowing protocols, first third-party dApps." }
+  { date: "Jun 2026", type: "promise", text: "Website roadmap: Super App launch (X1 + Wallet + Staking unified), lending/borrowing protocols, first third-party dApps." },
+  { date: "May 6, 2026", isNew: true, type: "misleading", text: "BlockDAG announces X10Swap: 'live reward pools, hourly activation cycles, up to 10X rewards — COMING SOON.' Community immediately identifies it as a rebranded sale mechanism to replace the closing aftersale." },
+  { date: "May 7, 2026", isNew: true, type: "broken", text: "Casino launch day. As of 11:37 UTC, no official announcement that the casino was live. Official channel still posting 'CASINO LIVE TOMORROW' — the same automated message from May 6 — six separate times on May 7 morning. No community member posted a working casino link or screenshot. Community asking 'which website?' and 'what time?' with no admin response." },
+  { date: "May 7, 2026", isNew: true, type: "broken", text: "Aftersale 'CLOSING FOREVER' on May 7. Official support still directing users to purchase3.blockdag.network at 11:09 UTC on May 7. No closure announcement made within the analyzed period. X10Swap announced as successor product." },
+  { date: "Jun 30, 2026", isNew: true, type: "promise", text: "Official deposits on exchanges confirmed for June 30, 2026. Also: presale vesting coins only accessible after June 30. New hard date given in official Telegram on May 5." }
 ];
 
 const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "322,134 public messages analyzed (Feb 18 – May 6, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "326,369 public messages analyzed (Feb 18 – May 7, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
@@ -1153,11 +1157,19 @@ const NOTABLE_QUOTES = [
   { date: "May 1, 2026", tag: "misleading", text: "Batch 5 is not live, check your dashboard to see your allocation ready for claiming. [official support reply — while mass marketing simultaneously said 'Batch 5 is LIVE']" },
   { date: "May 4, 2026", tag: "response", text: "Your money wasn't stolen, you made a purchase and you'll definitely get your coins." },
   { date: "May 2, 2026", tag: "community", text: "There's a pattern with BlockDAG: they'll announce a listing, name the cex, receive more money, then won't list. It's been consistently the same — promise something, not follow through, people forget, and the cycle repeats. [community member who invested $13,000]" },
-  { date: "May 5, 2026", isNew: true, tag: "response", text: "Miners delivery will start in the upcoming weeks." },
-  { date: "May 5, 2026", isNew: true, tag: "response", text: "The total amount raised will be disclosed by the CEO." },
-  { date: "May 6, 2026", isNew: true, tag: "response", text: "BDAG is yet to be listed on above mentioned exchanges. [official admin, while marketing simultaneously claimed 'Tier 1s loading']" },
-  { date: "May 6, 2026", isNew: true, tag: "response", text: "Please stake 1 BDag and then try to withdraw. [only official workaround given for broken staking — 76 days after launch]" },
-  { date: "May 5, 2026", isNew: true, tag: "community", text: "They've raised over $400 million, and the exchange's liquidity in 24 hours is $7 million. They're also diluting the coin's price. This is deliberate. With this kind of cash flow, they should have secured liquidity better. We got a weak listing, no miners, and some ridiculous casino. [whale investor Lols, May 5]" },
-  { date: "May 6, 2026", isNew: true, tag: "community", text: "I had over 82k USD invested in BlockDAG with my husband and a cousin since Q1 2024 and ranked whale since then... this ongoing discrepancies worry me x10 and I'm not blind to see that maybe just maybe it might be a sinking ship. [self-described whale investor, May 6]" }
+  { date: "May 5, 2026", tag: "response", text: "Miners delivery will start in the upcoming weeks." },
+  { date: "May 5, 2026", tag: "response", text: "The total amount raised will be disclosed by the CEO." },
+  { date: "May 6, 2026", tag: "response", text: "BDAG is yet to be listed on above mentioned exchanges. [official admin, while marketing simultaneously claimed 'Tier 1s loading']" },
+  { date: "May 6, 2026", tag: "response", text: "Please stake 1 BDag and then try to withdraw. [only official workaround given for broken staking — 76 days after launch]" },
+  { date: "May 5, 2026", tag: "community", text: "They've raised over $400 million, and the exchange's liquidity in 24 hours is $7 million. They're also diluting the coin's price. This is deliberate. With this kind of cash flow, they should have secured liquidity better. We got a weak listing, no miners, and some ridiculous casino. [whale investor Lols, May 5]" },
+  { date: "May 6, 2026", tag: "community", text: "I had over 82k USD invested in BlockDAG with my husband and a cousin since Q1 2024 and ranked whale since then... this ongoing discrepancies worry me x10 and I'm not blind to see that maybe just maybe it might be a sinking ship. [self-described whale investor, May 6]" },
+  { date: "May 6, 2026", isNew: true, tag: "response", text: "CASINO GOES LIVE — TOMORROW / Betting unlocks in 7 days. [official channel, May 6 22:01 — same message then posted 6 times on May 7 with casino still not launched]" },
+  { date: "May 5, 2026", isNew: true, tag: "response", text: "Official deposits on June 30th. [first hard date given for exchange deposits — over 90 days after launch]" },
+  { date: "May 6, 2026", isNew: true, tag: "response", text: "No sale after May 7th. [official admin — aftersale still running in support messages at 11:09 UTC on May 7]" },
+  { date: "May 7, 2026", isNew: true, tag: "community", text: "Considering BlockDAG is the king of countdowns, should we not have a countdown for the Casino Launch? Considering how it was promoted as a life changer... [community member Zew MS, May 7, 09:04 UTC — casino still not announced live]" },
+  { date: "May 7, 2026", isNew: true, tag: "community", text: "BDAG presale investors were promised Lambos at $0.05, but after launch everyone became professional dip collectors instead. [community member Figata, May 7]" },
+  { date: "May 7, 2026", isNew: true, tag: "response", text: "Your wallet shows $0 because the price feed hasn't been integrated yet. [official admin, May 7 11:07]" }
 ];
+
+
 
