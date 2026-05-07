@@ -304,20 +304,26 @@
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
     const ARTICLE_ID = 'article-exchanges';
-    const likeDoc = doc(db, 'likes', ARTICLE_ID);
-    if (localStorage.getItem('liked_' + ARTICLE_ID) === '1') document.getElementById('like-btn').classList.add('liked');
-    getDoc(likeDoc).then(snap => { document.getElementById('like-count').textContent = snap.exists() ? (snap.data().count || 0) : 0; });
+        const likeDoc = doc(db, 'likes', ARTICLE_ID);
+    const likeBtn = document.getElementById('like-btn');
+    const likeCountEl = document.getElementById('like-count');
+    if (localStorage.getItem('liked_' + ARTICLE_ID) === '1') likeBtn.classList.add('liked');
+    onSnapshot(likeDoc, (snap) => {
+      likeCountEl.textContent = snap.exists() ? (snap.data().count || 0) : 0;
+    }, () => { likeCountEl.textContent = '0'; });
     window.toggleLike = async function() {
-      const btn = document.getElementById('like-btn');
-      const isLiked = btn.classList.toggle('liked');
+      const isLiked = likeBtn.classList.toggle('liked');
       localStorage.setItem('liked_' + ARTICLE_ID, isLiked ? '1' : '0');
-      const snap = await getDoc(likeDoc);
-      if (snap.exists()) { await updateDoc(likeDoc, { count: increment(isLiked ? 1 : -1) }); } else { await setDoc(likeDoc, { count: 1 }); }
-      const updated = await getDoc(likeDoc);
-      document.getElementById('like-count').textContent = updated.data().count || 0;
+      const cur = parseInt(likeCountEl.textContent) || 0;
+      likeCountEl.textContent = isLiked ? cur + 1 : Math.max(0, cur - 1);
+      try {
+        const snap = await getDoc(likeDoc);
+        if (snap.exists()) { await updateDoc(likeDoc, { count: increment(isLiked ? 1 : -1) }); }
+        else { await setDoc(likeDoc, { count: 1 }); }
+      } catch(e) {}
     };
     const commentsCol = collection(db, 'comments');
-    const q = query(commentsCol, where('article_id', '==', ARTICLE_ID), orderBy('timestamp', 'desc'));
+    const q = query(commentsCol, where('article_id', '==', ARTICLE_ID));
     onSnapshot(q, snap => {
       const list = document.getElementById('comments-list');
       if (snap.empty) { list.innerHTML = '<div class="comments-empty">No comments yet. Be the first to share your thoughts.</div>'; return; }
@@ -335,6 +341,7 @@
   </script>
 </body>
 </html>
+
 
 
 

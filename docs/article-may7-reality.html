@@ -330,7 +330,7 @@
       } catch(e) { console.log('Like save error:', e); }
     };
     const commentsCol = collection(db, 'comments');
-    const q = query(commentsCol, where('article_id', '==', ARTICLE_ID), orderBy('timestamp', 'desc'));
+    const q = query(commentsCol, where('article_id', '==', ARTICLE_ID));
     onSnapshot(q, snap => {
       const list = document.getElementById('comments-list');
       if (snap.empty) { list.innerHTML = '<div class="comments-empty">No comments yet. Be the first to share your thoughts.</div>'; return; }
@@ -348,6 +348,7 @@
   </script>
 </body>
 </html>
+
 
 
 
