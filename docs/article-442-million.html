@@ -216,9 +216,9 @@
 
           <!-- Like button -->
           <div class="article-like-wrap">
+            <span class="article-like-label">Was this useful?</span>
             <button class="like-btn" id="like-btn" onclick="toggleLike()">
               <span class="like-heart">♥</span>
-              <span>This was useful</span>
               <span class="like-count" id="like-count">…</span>
             </button>
           </div>
@@ -316,7 +316,7 @@
 
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
-    import { getFirestore, doc, collection, getDoc, setDoc, updateDoc, increment, addDoc, query, where, orderBy, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+    import { getFirestore, doc, collection, getDoc, setDoc, updateDoc, increment, addDoc, query, where, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
     const firebaseConfig = {
       apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
@@ -394,6 +394,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 

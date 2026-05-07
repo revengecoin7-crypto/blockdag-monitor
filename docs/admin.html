@@ -248,13 +248,14 @@
     const db = getFirestore(app);
 
     window.loadAdminData = function() {
-      // Load ideas
-      const ideasQ = query(collection(db, 'ideas'), orderBy('timestamp', 'desc'));
+      // Load ideas (sort client-side to avoid composite index requirement)
+      const ideasQ = query(collection(db, 'ideas'));
       onSnapshot(ideasQ, (snap) => {
-        document.getElementById('admin-ideas-count').textContent = snap.size + ' ideeën';
+        const ideaDocs = snap.docs.slice().sort((a,b) => { const ta = a.data().timestamp ? a.data().timestamp.seconds : 0; const tb = b.data().timestamp ? b.data().timestamp.seconds : 0; return tb - ta; });
+        document.getElementById('admin-ideas-count').textContent = ideaDocs.length + ' ideeën';
         const list = document.getElementById('admin-ideas-list');
-        if (snap.empty) { list.innerHTML = '<div class="admin-loading">Nog geen ideeën.</div>'; return; }
-        list.innerHTML = snap.docs.map(doc => {
+        if (!ideaDocs.length) { list.innerHTML = '<div class="admin-loading">Nog geen ideeën.</div>'; return; }
+        list.innerHTML = ideaDocs.map(doc => {
           const d = doc.data();
           const date = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('nl-NL') : '';
           return `<div class="admin-table-row" style="grid-template-columns:3fr 1fr 2fr 1fr;">

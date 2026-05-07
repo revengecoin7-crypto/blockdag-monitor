@@ -194,9 +194,9 @@
 
           <!-- Like button -->
           <div class="article-like-wrap">
+            <span class="article-like-label">Was this useful?</span>
             <button class="like-btn" id="like-btn" onclick="toggleLike()">
               <span class="like-heart">♥</span>
-              <span>This was useful</span>
               <span class="like-count" id="like-count">…</span>
             </button>
           </div>
@@ -284,7 +284,7 @@
   </script>
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
-    import { getFirestore, doc, collection, getDoc, setDoc, updateDoc, increment, addDoc, query, where, orderBy, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+    import { getFirestore, doc, collection, getDoc, setDoc, updateDoc, increment, addDoc, query, where, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
     const firebaseConfig = { apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw", authDomain: "blockdag-exposed.firebaseapp.com", projectId: "blockdag-exposed", storageBucket: "blockdag-exposed.firebasestorage.app", messagingSenderId: "867203959601", appId: "1:867203959601:web:e31c472057f118f9aa3e10" };
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
@@ -320,6 +320,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
