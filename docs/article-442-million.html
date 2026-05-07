@@ -223,20 +223,15 @@
             </button>
           </div>
 
-          <!-- Comments -->
+                    <!-- Comments (Disqus) -->
           <div class="article-comments">
             <div class="comments-title">Community discussion</div>
-            <div class="comment-form">
-              <div class="comment-form-title">Leave a comment</div>
-              <input type="text" id="c-name" class="comment-input" placeholder="Your name (optional)" maxlength="60" />
-              <textarea id="c-text" class="comment-input comment-textarea" placeholder="Share your thoughts, questions or evidence..." maxlength="1000" required></textarea>
-              <button type="button" class="comment-submit" id="c-submit" onclick="postComment()">Post comment</button>
-            </div>
-            <div id="comments-list" class="comment-list">
-              <div class="comments-loading">Loading comments…</div>
-            </div>
+            <div id="disqus_thread"></div>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
           </div>
         </div>
+
+        <!-- Sidebar -->
 
         <!-- Sidebar -->
         <div style="position:sticky;top:80px;">
@@ -314,84 +309,9 @@
     }
   </script>
 
-  <script type="module">
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
-    import { getFirestore, doc, collection, getDoc, setDoc, updateDoc, increment, addDoc, query, where, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
-      authDomain: "blockdag-exposed.firebaseapp.com",
-      projectId: "blockdag-exposed",
-      storageBucket: "blockdag-exposed.firebasestorage.app",
-      messagingSenderId: "867203959601",
-      appId: "1:867203959601:web:e31c472057f118f9aa3e10"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-    const ARTICLE_ID = 'article-442-million';
-
-    /* ── LIKES ── */
-    const likeDoc = doc(db, 'likes', ARTICLE_ID);
-    const likeBtn = document.getElementById('like-btn');
-    const likeCountEl = document.getElementById('like-count');
-    if (localStorage.getItem('liked_' + ARTICLE_ID) === '1') likeBtn.classList.add('liked');
-    onSnapshot(likeDoc, (snap) => {
-      likeCountEl.textContent = snap.exists() ? (snap.data().count || 0) : 0;
-    }, () => { likeCountEl.textContent = '0'; });
-    window.toggleLike = async function() {
-      const isLiked = likeBtn.classList.toggle('liked');
-      localStorage.setItem('liked_' + ARTICLE_ID, isLiked ? '1' : '0');
-      const cur = parseInt(likeCountEl.textContent) || 0;
-      likeCountEl.textContent = isLiked ? cur + 1 : Math.max(0, cur - 1);
-      try {
-        const snap = await getDoc(likeDoc);
-        if (snap.exists()) { await updateDoc(likeDoc, { count: increment(isLiked ? 1 : -1) }); }
-        else { await setDoc(likeDoc, { count: 1 }); }
-      } catch(e) {}
-    };
-
-    /* ── COMMENTS ── */
-    const commentsCol = collection(db, 'comments');
-    const q = query(commentsCol, where('article_id', '==', ARTICLE_ID));
-
-    onSnapshot(q, snap => {
-      const list = document.getElementById('comments-list');
-      if (snap.empty) {
-        list.innerHTML = '<div class="comments-empty">No comments yet. Be the first to share your thoughts.</div>';
-        return;
-      }
-      const sorted = snap.docs.slice().sort((a,b) => { const ta = a.data().timestamp ? a.data().timestamp.seconds : 0; const tb = b.data().timestamp ? b.data().timestamp.seconds : 0; return tb - ta; });
-      list.innerHTML = sorted.map(doc => {
-        const d = doc.data();
-        const date = d.timestamp ? new Date(d.timestamp.toDate()).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
-        const text = d.text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        return `<div class="comment-item">
-          <div class="comment-item-header">
-            <span class="comment-item-name">${d.name || 'Anonymous'}</span>
-            <span class="comment-item-date">${date}</span>
-          </div>
-          <div class="comment-item-text">${text}</div>
-        </div>`;
-      }).join('');
-    });
-
-    window.postComment = async function() {
-      const text = document.getElementById('c-text').value.trim();
-      if (!text) return;
-      const btn = document.getElementById('c-submit');
-      btn.disabled = true;
-      btn.textContent = 'Posting…';
-      const name = document.getElementById('c-name').value.trim() || 'Anonymous';
-      await addDoc(commentsCol, { article_id: ARTICLE_ID, name, text, timestamp: serverTimestamp() });
-      document.getElementById('c-text').value = '';
-      document.getElementById('c-name').value = '';
-      btn.disabled = false;
-      btn.textContent = 'Post comment';
-    };
-  </script>
-</body>
+  </body>
 </html>
+
 
 
 
