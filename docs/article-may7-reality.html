@@ -310,16 +310,24 @@
     const db = getFirestore(app);
     const ARTICLE_ID = 'article-may7-reality';
     const likeDoc = doc(db, 'likes', ARTICLE_ID);
-    if (localStorage.getItem('liked_' + ARTICLE_ID) === '1') document.getElementById('like-btn').classList.add('liked');
-    getDoc(likeDoc).then(snap => { document.getElementById('like-count').textContent = snap.exists() ? (snap.data().count || 0) : 0; });
+    const likeBtn = document.getElementById('like-btn');
+    const likeCountEl = document.getElementById('like-count');
+    if (localStorage.getItem('liked_' + ARTICLE_ID) === '1') likeBtn.classList.add('liked');
+    // Real-time like count via onSnapshot
+    onSnapshot(likeDoc, (snap) => {
+      likeCountEl.textContent = snap.exists() ? (snap.data().count || 0) : 0;
+    }, () => { likeCountEl.textContent = '0'; });
     window.toggleLike = async function() {
-      const btn = document.getElementById('like-btn');
-      const isLiked = btn.classList.toggle('liked');
+      const isLiked = likeBtn.classList.toggle('liked');
       localStorage.setItem('liked_' + ARTICLE_ID, isLiked ? '1' : '0');
-      const snap = await getDoc(likeDoc);
-      if (snap.exists()) { await updateDoc(likeDoc, { count: increment(isLiked ? 1 : -1) }); } else { await setDoc(likeDoc, { count: 1 }); }
-      const updated = await getDoc(likeDoc);
-      document.getElementById('like-count').textContent = updated.data().count || 0;
+      // Optimistic UI update
+      const current = parseInt(likeCountEl.textContent) || 0;
+      likeCountEl.textContent = isLiked ? current + 1 : Math.max(0, current - 1);
+      try {
+        const snap = await getDoc(likeDoc);
+        if (snap.exists()) { await updateDoc(likeDoc, { count: increment(isLiked ? 1 : -1) }); }
+        else { await setDoc(likeDoc, { count: 1 }); }
+      } catch(e) { console.log('Like save error:', e); }
     };
     const commentsCol = collection(db, 'comments');
     const q = query(commentsCol, where('article_id', '==', ARTICLE_ID), orderBy('timestamp', 'desc'));
@@ -340,6 +348,7 @@
   </script>
 </body>
 </html>
+
 
 
 
