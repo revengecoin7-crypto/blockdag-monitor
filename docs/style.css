@@ -2306,9 +2306,17 @@ body.home-page {
   .news-hero-main-img { height: 240px; }
   .news-grid { grid-template-columns: 1fr; }
   .news-layout { grid-template-columns: 1fr; }
-  .article-layout { grid-template-columns: 1fr; }
-  .article-cover { height: 220px; }
+  .article-layout { grid-template-columns: 1fr !important; gap: 24px; }
+  .article-layout > div[style*="sticky"] { position: static !important; }
+  .article-cover { height: 200px; }
   .ticker-inner { gap: 20px; }
+  /* Price bar mobile */
+  .price-bar-item--hide { display: none; }
+  .price-bar-wrap { font-size: 9px !important; gap: 0 !important; }
+  .price-bar-wrap > div { padding: 0 10px !important; }
+  /* Article share mobile */
+  .article-share { flex-wrap: wrap; gap: 8px; }
+  .share-btn { font-size: 11px; padding: 6px 10px; }
 }
 
 /* ── TICKER BAR ── */
