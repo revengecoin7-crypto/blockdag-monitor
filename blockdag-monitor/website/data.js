@@ -407,13 +407,16 @@
   {
     id: 30,
     category: "Product",
-    status: "pending",
+    status: "broken",
+    isNew: true,
     title: "BlockDAG Casino launch — May 7, 2026",
     promised: "May 7, 2026",
-    reality: "BlockDAG announced a Casino product launch for May 7, 2026. This was announced via their website and a partnership with Betski (iGaming platform). No Casino was live as of April 23, 2026.",
+    reality: "At 18:10 UTC on May 7, BlockDAG posted 'Casino is officially LIVE.' At 18:37 UTC, 27 minutes later, the same admin posted 'Casino will go live in 7 days.' No URL was ever provided. No community member confirmed accessing a working casino. New date confirmed: May 14, 2026.",
     quotes: [
       { date: "Apr 2026", text: "Website: BlockDAG Casino — Coming May 7, 2026." },
-      { date: "Apr 2026", text: "Blog: 'BlockDAG expands digital entertainment frontier through key Betski partnership.'" }
+      { date: "May 7, 2026", text: "BlockDAG Casino is officially LIVE — full casino and sportsbook unlocking soon. [18:10 UTC]" },
+      { date: "May 7, 2026", text: "Casino will go live in 7 days. [18:37 UTC — 27 minutes after declaring it LIVE]" },
+      { date: "May 7, 2026", text: "Casino will be going live on the 14th of MAY. [19:06 UTC]" }
     ]
   },
   {
@@ -808,6 +811,34 @@
       { date: "2024", text: "ScamAdviser: Trust score 1/100 for blockdag.network." },
       { date: "2024", text: "Analysis: 'Removed metadata from whitepaper PDF to prevent traceability. Registered address: Lusaka, Zambia.'" },
       { date: "2024", text: "'Multiple YouTube creators with large followings promoted BlockDAG using ready-made scripts provided by the project.'" }
+    ]
+  },
+  {
+    id: 63,
+    category: "Staking",
+    status: "misleading",
+    isNew: true,
+    title: "Website claims staking 'currently active' — staking broken for 78 days",
+    promised: "May 2026 (ongoing website claim)",
+    reality: "The official blockdag.network website states 'Staking rewards — 7-day cycles, currently active' as of May 8, 2026. The Telegram group documents staking as broken since February 19, 2026 — 78 days. Users cannot unstake, rewards are frozen, and the only official fix offered is 'stake 1 BDAG and try again.'",
+    quotes: [
+      { date: "May 8, 2026", text: "blockdag.network homepage: 'Staking rewards — 7-day cycles, currently active.'" },
+      { date: "May 7, 2026", text: "Official Telegram admin: 'The team is working on the staking issues, it will be back up soon.'" },
+      { date: "May 6, 2026", text: "Official Telegram admin: 'Please stake 1 BDag and then try to withdraw.' [Only fix offered after 78 days]" }
+    ]
+  },
+  {
+    id: 64,
+    category: "Mining Hardware",
+    status: "misleading",
+    isNew: true,
+    title: "Website claims miners shipping at '2,000 units weekly' — no community deliveries confirmed",
+    promised: "May 2026 (website claim)",
+    reality: "The official blockdag.network website claims 'physical miner shipments scaling to 2,000 units weekly' as of May 8, 2026. No community member in 330,807 analyzed Telegram messages has confirmed receiving a miner. The official Telegram position is 'shipping in June' with no specific date.",
+    quotes: [
+      { date: "May 8, 2026", text: "blockdag.network homepage: 'Physical miner shipments scaling to 2,000 units weekly.'" },
+      { date: "May 7, 2026", text: "Official Telegram: 'The miners are scheduled to be shipped in June.'" },
+      { date: "May 7, 2026", text: "Community member: 'I'm still waiting a full year for my X10.' [no deliveries confirmed in 330,807 messages]" }
     ]
   }
 ];
