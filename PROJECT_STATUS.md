@@ -63,22 +63,23 @@
 - 50 notable quotes
 - 20 bronnen
 - Faalpercentage: 90.3%
-- Laatste update: May 7, 2026
+- Laatste update: May 8, 2026
 
 ## Telegram analyse
-- Geanalyseerd t/m: **7 mei 2026** (export: ChatExport_2026-05-07)
+- Geanalyseerd t/m: **8 mei 2026** (export: ChatExport_2026-05-08)
 - Periode: 18 februari t/m 6 mei 2026
-- Totaal berichten: 326,369
+- Totaal berichten: 330,807
 
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F
 
 ## Actuele marktdata (May 7, 2026)
-- Huidige prijs BDAG: $0.0001152 (CMC, -99.8% vs $0.05)
-- Marktcap: $4.9M
-- Casino niet gelanceerd op May 7 (tot 11:37 UTC)
-- Aftersale nog steeds actief op May 7 ondanks "CLOSING FOREVER"
-- Volgende harde datum: June 30, 2026 (exchange deposits)
+- Huidige prijs BDAG: $0.00008156 (CMC, -99.84% vs $0.05, -34% in 24u)
+- Marktcap: $3.62M
+- Casino: "CASINO LIVE" 18:10 UTC, maar 18:37 UTC "goes live in 7 days", 19:06 UTC May 14 bevestigd
+- Aftersale gesloten May 7, vervangen door 15% discount swap (7 dagen)
+- X10Swap bot gelanceerd (t.me/x10swapbot)
+- Volgende harde datum casino: May 14, 2026
 
 ## Belangrijke correcties gedaan
 - BingX en Gate.io stonden als KEPT maar listings zijn NOOIT gebeurd → gecorrigeerd naar BROKEN (May 4, 2026)
@@ -106,4 +107,5 @@
 2. Start nieuwe chat met Claude Code
 3. Zeg: "Lees PROJECT_STATUS.md voor context, dan gaan we verder"
 4. Claude leest dit bestand en is direct bijgepraat
+
 

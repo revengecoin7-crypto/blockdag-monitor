@@ -888,17 +888,20 @@ const TIMELINE_EVENTS = [
   { date: "May 2026", type: "promise", text: "Website roadmap: DEX activation (Uniswap, PancakeSwap, Hyperliquid) + LP incentives. Originally promised for Day 1 (March 4)." },
   { date: "Jun 16, 2026", type: "promise", text: "X10 miners now scheduled to ship. Original promise was February–April 2026." },
   { date: "Jun 2026", type: "promise", text: "Website roadmap: Super App launch (X1 + Wallet + Staking unified), lending/borrowing protocols, first third-party dApps." },
-  { date: "May 6, 2026", isNew: true, type: "misleading", text: "BlockDAG announces X10Swap: 'live reward pools, hourly activation cycles, up to 10X rewards — COMING SOON.' Community immediately identifies it as a rebranded sale mechanism to replace the closing aftersale." },
-  { date: "May 7, 2026", isNew: true, type: "broken", text: "Casino launch day. As of 11:37 UTC, no official announcement that the casino was live. Official channel still posting 'CASINO LIVE TOMORROW' — the same automated message from May 6 — six separate times on May 7 morning. No community member posted a working casino link or screenshot. Community asking 'which website?' and 'what time?' with no admin response." },
-  { date: "May 7, 2026", isNew: true, type: "broken", text: "Aftersale 'CLOSING FOREVER' on May 7. Official support still directing users to purchase3.blockdag.network at 11:09 UTC on May 7. No closure announcement made within the analyzed period. X10Swap announced as successor product." },
-  { date: "Jun 30, 2026", isNew: true, type: "promise", text: "Official deposits on exchanges confirmed for June 30, 2026. Also: presale vesting coins only accessible after June 30. New hard date given in official Telegram on May 5." }
+  { date: "May 6, 2026", type: "misleading", text: "BlockDAG announces X10Swap: 'live reward pools, hourly activation cycles, up to 10X rewards — COMING SOON.' Community immediately identifies it as a rebranded sale mechanism to replace the closing aftersale." },
+  { date: "May 7, 2026", type: "broken", text: "Casino launch day. As of 11:37 UTC, no official announcement that the casino was live. Official channel still posting 'CASINO LIVE TOMORROW' — the same automated message from May 6 — six separate times on May 7 morning. No community member posted a working casino link or screenshot. Community asking 'which website?' and 'what time?' with no admin response." },
+  { date: "May 7, 2026", type: "broken", text: "Aftersale 'CLOSING FOREVER' on May 7. Official support still directing users to purchase3.blockdag.network at 11:09 UTC on May 7. No closure announcement made within the analyzed period. X10Swap announced as successor product." },
+  { date: "Jun 30, 2026", type: "promise", text: "Official deposits on exchanges confirmed for June 30, 2026. Also: presale vesting coins only accessible after June 30. New hard date given in official Telegram on May 5." },
+  { date: "May 7, 2026", isNew: true, type: "broken", text: "BlockDAG posted 'CASINO LIVE' at 18:10 UTC. No URL provided. No community member accessed a working casino. At 18:37 UTC — 27 minutes later — the same admin: 'Casino will go live in 7 days.' At 19:06 UTC: 'Casino will be going live on the 14th of MAY.' The announcement was a marketing headline, not a working product." },
+  { date: "May 7, 2026", isNew: true, type: "misleading", text: "Aftersale officially closed May 7 but immediately replaced: 'BDAG now exclusively available via LIVE SWAP — get 15% OFF market price for 1 WEEK ONLY.' X10Swap Telegram bot (t.me/x10swapbot) also launched: users send BDAG, receive USDT. Community described as another token collection mechanism in disguise." },
+  { date: "May 14, 2026", isNew: true, type: "promise", text: "Casino launch rescheduled to May 14, 2026. Confirmed by admin at 19:06, 19:08 and 19:29 UTC on May 7. Original promise was May 7. Betting was originally 'shortly after' May 7 — now no date given." }
 ];
 
 const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "326,369 public messages analyzed (Feb 18 – May 7, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "330,807 public messages analyzed (Feb 18 – May 8, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
@@ -1163,13 +1166,22 @@ const NOTABLE_QUOTES = [
   { date: "May 6, 2026", tag: "response", text: "Please stake 1 BDag and then try to withdraw. [only official workaround given for broken staking — 76 days after launch]" },
   { date: "May 5, 2026", tag: "community", text: "They've raised over $400 million, and the exchange's liquidity in 24 hours is $7 million. They're also diluting the coin's price. This is deliberate. With this kind of cash flow, they should have secured liquidity better. We got a weak listing, no miners, and some ridiculous casino. [whale investor Lols, May 5]" },
   { date: "May 6, 2026", tag: "community", text: "I had over 82k USD invested in BlockDAG with my husband and a cousin since Q1 2024 and ranked whale since then... this ongoing discrepancies worry me x10 and I'm not blind to see that maybe just maybe it might be a sinking ship. [self-described whale investor, May 6]" },
-  { date: "May 6, 2026", isNew: true, tag: "response", text: "CASINO GOES LIVE — TOMORROW / Betting unlocks in 7 days. [official channel, May 6 22:01 — same message then posted 6 times on May 7 with casino still not launched]" },
-  { date: "May 5, 2026", isNew: true, tag: "response", text: "Official deposits on June 30th. [first hard date given for exchange deposits — over 90 days after launch]" },
-  { date: "May 6, 2026", isNew: true, tag: "response", text: "No sale after May 7th. [official admin — aftersale still running in support messages at 11:09 UTC on May 7]" },
-  { date: "May 7, 2026", isNew: true, tag: "community", text: "Considering BlockDAG is the king of countdowns, should we not have a countdown for the Casino Launch? Considering how it was promoted as a life changer... [community member Zew MS, May 7, 09:04 UTC — casino still not announced live]" },
-  { date: "May 7, 2026", isNew: true, tag: "community", text: "BDAG presale investors were promised Lambos at $0.05, but after launch everyone became professional dip collectors instead. [community member Figata, May 7]" },
-  { date: "May 7, 2026", isNew: true, tag: "response", text: "Your wallet shows $0 because the price feed hasn't been integrated yet. [official admin, May 7 11:07]" }
+  { date: "May 6, 2026", tag: "response", text: "CASINO GOES LIVE — TOMORROW / Betting unlocks in 7 days. [official channel, May 6 22:01 — same message then posted 6 times on May 7 with casino still not launched]" },
+  { date: "May 5, 2026", tag: "response", text: "Official deposits on June 30th. [first hard date given for exchange deposits — over 90 days after launch]" },
+  { date: "May 6, 2026", tag: "response", text: "No sale after May 7th. [official admin — aftersale still running in support messages at 11:09 UTC on May 7]" },
+  { date: "May 7, 2026", tag: "community", text: "Considering BlockDAG is the king of countdowns, should we not have a countdown for the Casino Launch? Considering how it was promoted as a life changer... [community member Zew MS, May 7, 09:04 UTC — casino still not announced live]" },
+  { date: "May 7, 2026", tag: "community", text: "BDAG presale investors were promised Lambos at $0.05, but after launch everyone became professional dip collectors instead. [community member Figata, May 7]" },
+  { date: "May 7, 2026", tag: "response", text: "Your wallet shows $0 because the price feed hasn't been integrated yet. [official admin, May 7 11:07]" },
+  { date: "May 7, 2026", isNew: true, tag: "misleading", text: "CASINO LIVE — 15% OFF BDAG SWAP | AFTERSALE CLOSED | BDAGX10 SWAP APP LIVE. BlockDAG Casino is officially LIVE — full casino and sportsbook unlocking soon. $5M+ projected daily volume. [official channel, 18:10 UTC — no URL provided, no working casino accessible]" },
+  { date: "May 7, 2026", isNew: true, tag: "response", text: "Casino will go live in 7 days. [official admin, 18:37 UTC — 27 minutes after declaring casino 'LIVE']" },
+  { date: "May 7, 2026", isNew: true, tag: "response", text: "Casino will be going live on the 14th of MAY. [official admin, 19:06 UTC]" },
+  { date: "May 7, 2026", isNew: true, tag: "response", text: "A real scam does not spend time developing infrastructure publicly, running AMAs, releasing products, and supporting a global community. Delays and technical issues happen in crypto, especially during network growth. [official admin, 13:57 UTC]" },
+  { date: "May 7, 2026", isNew: true, tag: "community", text: "Should I recall you wrote everywhere casino live 7 may, or something like BingX or gate listing, or maybe something like no compression, or something like presale and discount sale will stop today? Here is just a few things that prove you just are liars. [community member Babouke, 21:43 UTC]" },
+  { date: "May 8, 2026", isNew: true, tag: "community", text: "So this crappy game is called casino? This is not casino this is a Nintendo game from 1980. [community member, 02:28 UTC — after apparently finding a placeholder page]" },
+  { date: "May 8, 2026", isNew: true, tag: "community", text: "Invest 21,500 USDT in May 2024 until Feb 2026 in BDAG, now get back around 500 USDT. Promise listing price $0.05. [community member, May 8]" }
 ];
+
+
 
 
 

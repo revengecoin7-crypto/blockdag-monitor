@@ -1,5 +1,15 @@
 const ARTICLES = [
   {
+    id: 'article-casino-not-launched',
+    title: 'BlockDAG declared the casino "LIVE." Then said it would open in 7 days.',
+    date: '2026-05-08',
+    dateDisplay: 'May 8, 2026',
+    excerpt: 'At 18:10 UTC: Casino officially LIVE. At 18:37 UTC: Casino will go live in 7 days. Both from the same official channel. 27 minutes apart. No URL was ever provided.',
+    image: 'img-casino-not-launched.jpg',
+    url: 'article-casino-not-launched.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }]
+  },
+  {
     id: 'article-casino-may7',
     title: 'The casino that wasn\'t: what happened on May 7',
     date: '2026-05-07',
