@@ -176,11 +176,13 @@
           </div>
           <div class="article-comments">
             <div class="comments-title">Community discussion</div>
-            <div id="comments-list" style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px;"></div>
-            <div style="display:flex;flex-direction:column;gap:10px;">
-              <input type="text" id="c-name" placeholder="Your name (optional)" maxlength="60" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 14px;color:#fff;font-size:13px;font-family:inherit;outline:none;" />
-              <textarea id="c-text" placeholder="Share your thoughts..." maxlength="1000" rows="3" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 14px;color:#fff;font-size:13px;font-family:inherit;outline:none;resize:vertical;"></textarea>
-              <button onclick="postComment()" style="align-self:flex-start;background:#00d4ff;color:#000;border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:800;cursor:pointer;font-family:inherit;">Post comment</button>
+            <div id="comments-list"></div>
+            <div class="comment-box">
+              <textarea id="c-text" placeholder="Share your thoughts..." maxlength="1000" rows="3"></textarea>
+              <div class="comment-box-footer">
+                <input type="text" id="c-name" class="comment-box-name" placeholder="Your name (optional)" maxlength="60" />
+                <button class="comment-send" id="c-submit" onclick="postComment()" title="Post"><svg fill="none" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#000" d="M12 5L12 20"/><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" stroke="#000" d="M7 9L11.293 4.707C11.626 4.374 11.793 4.207 12 4.207C12.207 4.207 12.374 4.374 12.707 4.707L17 9"/></svg></button>
+              </div>
             </div>
           </div>
         </div>
@@ -258,6 +260,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
