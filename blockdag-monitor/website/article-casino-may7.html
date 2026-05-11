@@ -30,16 +30,6 @@
 .shr{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;font-size:12.5px;font-weight:600;letter-spacing:.03em;border:1px solid var(--rule);color:var(--ink);cursor:pointer;font-family:'DM Sans',sans-serif;background:#fff;text-decoration:none}
 .shr:hover{border-color:var(--ink)}
 .shr svg{flex:none}
-.like-row{display:flex;align-items:center;gap:14px;margin:24px 0 32px}
-.like-row .lbl{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.like-button{display:flex;align-items:center;background:#1c1c1e;border-radius:36px;height:36px;width:100px;cursor:pointer;overflow:hidden;padding:0 10px;justify-content:space-between}
-.like-icon{width:18px;height:18px;fill:#fff;opacity:.7;transition:all .3s}
-.like-button.liked .like-icon{fill:#ff4466;opacity:1}
-.like-label{display:flex;align-items:center;gap:6px;cursor:pointer}
-.like-text{font-size:11px;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.04em;text-transform:uppercase}
-.like-count-box{display:flex;flex-direction:column;overflow:hidden;height:20px;align-items:center}
-.count-one,.count-two{font-size:13px;font-weight:700;color:#fff;line-height:20px;font-family:'JetBrains Mono',monospace}
-.like-button.liked .count-one{transform:translateY(-20px);transition:transform .3s}
 .cmt-section{margin-top:40px;padding-top:32px;border-top:2px solid var(--ink)}
 .cmt-section h3{font-family:'Newsreader',serif;font-size:22px;font-weight:700;margin:0 0 24px}
 .cmt-item{padding:16px 0;border-bottom:1px solid var(--rule)}
@@ -130,13 +120,6 @@ We update every story when new evidence lands. <a href="evidence.html" style="co
 <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblockdagexposed.com%2Farticle-casino-may7.html&title=BlockDAG%20Casino%20Launch%20Day%3A%20No%20Announcement%20Made" target="_blank" rel="noopener" class="shr">Reddit</a>
 <button class="shr" onclick="copyLink(this,'https://blockdagexposed.com/article-casino-may7.html')">📋 Copy link</button>
 </div>
-<div class="like-row">
-<span class="lbl">Likes</span>
-<div class="like-button" id="like-btn" onclick="toggleLike()">
-<label class="like-label"><svg class="like-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"/></svg><span class="like-text">Likes</span></label>
-<div class="like-count-box"><span class="count-one" id="like-count">0</span><span class="count-two" id="like-count-2">1</span></div>
-</div>
-</div>
 <div class="cmt-section">
 <h3>Community discussion</h3>
 <div class="cmt-form">
@@ -204,12 +187,6 @@ We update every story when new evidence lands. <a href="evidence.html" style="co
 </div></div></footer>
 <script>
 function copyLink(btn,url){navigator.clipboard.writeText(url).then(()=>{btn.textContent='Copied!';setTimeout(()=>{btn.textContent='📋 Copy link'},2000)});}
-const LIKE_KEY='article-casino-may7';
-const likeCountEl=document.getElementById('like-count');
-const likeBtn=document.getElementById('like-btn');
-fetch('https://api.countapi.xyz/get/blockdagexposed/'+LIKE_KEY).then(r=>r.json()).then(d=>{likeCountEl.textContent=d.value||0}).catch(()=>{likeCountEl.textContent='0'});
-if(localStorage.getItem('liked_'+LIKE_KEY)==='1')likeBtn.classList.add('liked');
-window.toggleLike=function(){const liked=likeBtn.classList.contains('liked');if(liked){likeBtn.classList.remove('liked');localStorage.removeItem('liked_'+LIKE_KEY);likeCountEl.textContent=Math.max(0,(parseInt(likeCountEl.textContent)||1)-1);return;}likeBtn.classList.add('liked');localStorage.setItem('liked_'+LIKE_KEY,'1');fetch('https://api.countapi.xyz/hit/blockdagexposed/'+LIKE_KEY).then(r=>r.json()).then(d=>{likeCountEl.textContent=d.value||0}).catch(()=>{likeCountEl.textContent=(parseInt(likeCountEl.textContent)||0)+1});};
 </script>
 <script type="module">
 import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
