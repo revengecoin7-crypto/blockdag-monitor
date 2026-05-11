@@ -1,118 +1,117 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5YT0HDKHY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-J5YT0HDKHY');
-  </script>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Articles — BlockDAG Exposed</title>
-  <meta name="description" content="All investigative articles on BlockDAG Network: funding discrepancies, broken staking, exchange failures and more." />
-  <meta name="keywords" content="BlockDAG articles, BDAG investigation, BlockDAG exposed articles" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://blockdagexposed.com/articles.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="BlockDAG Exposed" />
-  <meta property="og:url" content="https://blockdagexposed.com/articles.html" />
-  <meta property="og:title" content="All Articles — BlockDAG Exposed" />
-  <meta property="og:description" content="All investigative articles on BlockDAG Network. Updated daily." />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@blockdagmonitor" />
-  <meta name="twitter:title" content="All Articles — BlockDAG Exposed" />
-  <meta name="twitter:description" content="All investigative articles on BlockDAG Network. Updated daily." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5YT0HDKHY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J5YT0HDKHY');</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Investigations — BlockDAG Exposed</title>
+<meta name="description" content="All investigative articles on BlockDAG Network: funding discrepancies, broken staking, exchange failures and more. Updated daily.">
+<meta name="keywords" content="BlockDAG articles, BDAG investigation, BlockDAG exposed articles">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://blockdagexposed.com/articles.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BlockDAG Exposed">
+<meta property="og:url" content="https://blockdagexposed.com/articles.html">
+<meta property="og:title" content="All Investigations — BlockDAG Exposed">
+<meta property="og:description" content="All investigative articles on BlockDAG Network. Updated daily.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@blockdagmonitor">
+<meta name="twitter:title" content="All Investigations — BlockDAG Exposed">
+<meta name="twitter:description" content="All investigative articles on BlockDAG Network. Updated daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding:36px 0 60px}
+.art-card{display:flex;flex-direction:column;gap:12px;text-decoration:none;color:inherit}
+.art-card:hover .art-title{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.art-img{aspect-ratio:16/10;background:var(--bone);overflow:hidden;position:relative;border:1px solid var(--rule)}
+.art-img img{width:100%;height:100%;object-fit:cover;display:block}
+.art-img.navy{background:var(--navy)}
+.art-tags{display:flex;gap:6px;flex-wrap:wrap}
+.art-tag{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border:1px solid;line-height:1.4}
+.art-tag.red{color:var(--red);border-color:var(--red);background:var(--red-soft)}
+.art-tag.gold{color:var(--gold);border-color:var(--gold);background:var(--gold-soft)}
+.art-tag.green{color:var(--green);border-color:var(--green);background:var(--green-soft)}
+.art-tag.default{color:var(--navy);border-color:var(--rule);background:var(--bone)}
+.art-title{font-family:'Newsreader',serif;font-weight:600;font-size:20px;line-height:1.2;letter-spacing:-.005em;margin:0;color:var(--ink)}
+.art-excerpt{font-size:13.5px;color:var(--muted);line-height:1.5;margin:0}
+.art-meta{font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace}
+@media(max-width:1024px){.articles-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.articles-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="logo">
-          <a href="index.html" class="logo-link">
-            <div class="logo-mark"><div class="logo-mark-diamond"></div></div>
-            <div>
-              <div class="logo-name">BlockDAG<span class="logo-name-dim"> Exposed</span></div>
-              <div class="logo-sub">Independent Investigation</div>
-            </div>
-          </a>
-        </div>
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="articles.html" class="nav-link active">Articles</a>
-          <a href="tracker.html" class="nav-link">Tracker</a>
-          <a href="categories.html" class="nav-link">Categories</a>
-          <a href="timeline.html" class="nav-link">Timeline</a>
-          <a href="investigation.html" class="nav-link">Investigation</a>
-          <a href="evidence.html" class="nav-link">Evidence</a>
-          <a href="indicators.html" class="nav-link">Trust Score</a>
-          <a href="petition.html" class="nav-link">Petition</a>
-          <a href="sources.html" class="nav-link">Sources</a>
-          <a href="about.html" class="nav-link">About</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <section class="section">
-    <div class="container">
-
-      <div style="margin-bottom:32px;">
-        <div style="font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);margin-bottom:12px;">Investigations</div>
-        <h1 style="font-family:var(--font-display);font-style:italic;font-size:clamp(26px,3vw,40px);font-weight:800;color:#fff;margin-bottom:8px;">All articles</h1>
-        <p style="font-size:14px;color:rgba(255,255,255,0.4);">Updated daily. Every article is based on documented sources.</p>
-      </div>
-
-      <div id="articles-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;"></div>
-
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-top">
-          <div class="footer-logo"><span class="footer-logo-mark"><span class="footer-logo-diamond"></span></span>BlockDAG<span class="footer-logo-dim"> Exposed</span></div>
-          <div class="footer-social">
-            <a href="https://x.com/blockdagmonitor" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="X / Twitter"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-            <a href="https://t.me/blockdagexposed" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Telegram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-note">Data sourced from Telegram, X/Twitter, CoinMarketCap, DL News, Reddit, LinkedIn &amp; more · Last updated: May 8, 2026</div>
-          <div class="footer-note">www.blockdagexposed.com</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="articles.js"></script>
-  <script>
-    (function() {
-      const grid = document.getElementById('articles-grid');
-      if (!grid || typeof ARTICLES === 'undefined') return;
-      const sorted = [...ARTICLES].sort((a, b) => b.date.localeCompare(a.date));
-      grid.innerHTML = sorted.map(a => `
-        <a href="${a.url}" class="article-card" style="text-decoration:none;">
-          <img src="${a.image}" alt="${a.title}" class="article-card-img" />
-          <div class="article-card-body">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
-              ${a.tags.map(t => `<span class="article-tag article-tag--${t.style}">${t.label}</span>`).join('')}
-            </div>
-            <div class="article-card-title">${a.title}</div>
-            <div class="article-card-excerpt">${a.excerpt}</div>
-            <div class="article-card-meta">${a.dateDisplay} &middot; BlockDAG Exposed</div>
-          </div>
-        </a>
-      `).join('');
-    })();
-  </script>
+<div class="ticker"><div class="ticker-track">
+<span class="tick alarm"><b>BDAG promised</b> $0.05000</span><span class="tick"><b>actual</b> $0.00008156 <span class="neg">−99.8%</span></span><span class="tick"><b>raised (claim)</b> $442M</span><span class="tick"><b>on-chain</b> &lt;$100M</span><span class="tick"><b>promises broken</b> 59 / 64 <span class="neg">92.2%</span></span><span class="tick"><b>Borussia Dortmund</b> €2,007,444 default</span><span class="tick"><b>Alpine F1</b> $1.4M default</span><span class="tick alarm">·</span>
+<span class="tick alarm"><b>BDAG promised</b> $0.05000</span><span class="tick"><b>actual</b> $0.00008156 <span class="neg">−99.8%</span></span><span class="tick"><b>raised (claim)</b> $442M</span><span class="tick"><b>on-chain</b> &lt;$100M</span><span class="tick"><b>promises broken</b> 59 / 64 <span class="neg">92.2%</span></span><span class="tick alarm">·</span>
+</div></div>
+<header class="site"><div class="site-inner">
+<div class="site-top"><a href="index.html" class="brand"><div class="brand-mark">B</div><div><div class="brand-name">BlockDAG <em>Exposed</em></div><div class="brand-tag">INDEPENDENT · INVESTIGATIVE · CRYPTO</div></div></a>
+<div class="site-actions"><a href="index.html#newsletter" class="btn">Newsletter</a><a href="petition.html" class="btn solid">Sign Petition</a></div></div>
+<nav class="site-nav"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="articles.html" class="active">Investigations</a></li>
+<li><a href="tracker.html">Promise Tracker</a></li>
+<li><a href="timeline.html">Timeline</a></li>
+<li><a href="evidence.html">Evidence</a></li>
+<li><a href="people.html">The People</a></li>
+<li><a href="categories.html">Categories</a></li>
+<li class="sep"></li>
+<li><a href="trust.html">Trust Score</a></li>
+<li><a href="about.html">About</a></li>
+</ul></nav></div></header>
+<main>
+<div class="page-head" style="border-bottom:1px solid var(--rule)">
+<div class="eyebrow red">Investigations</div>
+<h1>All articles</h1>
+<p class="dek">Every article is based on documented sources — Telegram records, on-chain data, official announcements and independent reporting. Updated when new evidence lands.</p>
+</div>
+<div class="articles-grid" id="articles-grid"></div>
+</main>
+<footer class="site"><div class="footer-inner"><div class="footer-top">
+<div><div class="brand-name serif">BlockDAG <em>Exposed</em></div><p class="about" style="margin-top:14px">Independent investigative tracker of BlockDAG Network. 330,807 messages analyzed · 64 promises tracked · 59 broken. We publish what we can verify and cite every source.</p></div>
+<div><h4>Investigations</h4><ul>
+<li><a href="articles.html">All articles</a></li>
+<li><a href="tracker.html">Promise tracker</a></li>
+<li><a href="timeline.html">Timeline</a></li>
+<li><a href="evidence.html">Evidence library</a></li>
+<li><a href="categories.html">Categories</a></li></ul></div>
+<div><h4>The case</h4><ul>
+<li><a href="trust.html">Trust score breakdown</a></li>
+<li><a href="people.html">People &amp; roles</a></li>
+<li><a href="petition.html">Sign the petition</a></li>
+<li><a href="evidence.html">All sources</a></li></ul></div>
+<div><h4>About</h4><ul>
+<li><a href="methodology.html">Methodology</a></li>
+<li><a href="tips.html">Submit a tip</a></li>
+<li><a href="contact.html">Contact us</a></li></ul></div>
+</div><div class="footer-bot">
+<div>© 2026 BlockDAG Exposed · Independent · Not financial advice · Last updated May 8, 2026</div>
+<div class="socials"><a href="https://x.com/blockdagmonitor">X / Twitter</a><a href="https://t.me/blockdagexposed">Telegram</a><a href="contact.html">Contact</a></div>
+</div></div></footer>
+<script src="articles.js"></script>
+<script>
+(function(){
+  const grid=document.getElementById('articles-grid');
+  if(!grid||typeof ARTICLES==='undefined')return;
+  const tagClass={red:'red',orange:'red',yellow:'gold',cyan:'default',green:'green'};
+  const sorted=[...ARTICLES].sort((a,b)=>b.date.localeCompare(a.date));
+  grid.innerHTML=sorted.map(a=>{
+    const tags=a.tags.map(t=>`<span class="art-tag ${tagClass[t.style]||'default'}">${t.label}</span>`).join('');
+    const imgHtml=a.image?`<img src="${a.image}" alt="${a.title}" loading="lazy">`:'';
+    return`<a href="${a.url}" class="art-card">
+<div class="art-img${a.image?'':' navy'}">${imgHtml}</div>
+<div class="art-tags">${tags}</div>
+<div class="art-title">${a.title}</div>
+<div class="art-excerpt">${a.excerpt}</div>
+<div class="art-meta">${a.dateDisplay}</div>
+</a>`;
+  }).join('');
+})();
+</script>
 </body>
 </html>
-
