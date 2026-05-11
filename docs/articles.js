@@ -5,10 +5,10 @@ const ARTICLES = [
     date: '2026-05-11',
     dateDisplay: 'May 11, 2026',
     excerpt: '"No sale after May 7th." Less than 24 hours later: Utility Presale LIVE at $0.0000005 per BDAG. This is the sixth distinct sales mechanism since 2024.',
-    image: 'img-casino-not-launched.jpg',
     url: 'article-utility-presale.html',
     tags: [{ label: 'Breaking', style: 'red' }, { label: 'Marketing', style: 'orange' }],
-    isNew: true
+    isNew: true,
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="t1g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern><pattern id="t1h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#c62828" stroke-width="0.8" opacity="0.55"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#t1g)" opacity="0.7"/><g fill="#3157a8" opacity="0.55"><rect x="10" y="130" width="30" height="70" rx="2"/><rect x="50" y="110" width="30" height="90" rx="2"/><rect x="90" y="90" width="30" height="110" rx="2"/><rect x="130" y="70" width="30" height="130" rx="2"/><rect x="170" y="50" width="30" height="150" rx="2"/></g><rect x="220" y="25" width="50" height="175" rx="2" fill="#c62828"/><rect x="220" y="25" width="50" height="175" rx="2" fill="url(#t1h)" opacity="0.3"/><text x="245" y="60" text-anchor="middle" font-family="DM Sans" font-size="8" fill="#fff" font-weight="800" letter-spacing="2">SALE</text><text x="245" y="110" text-anchor="middle" font-family="Newsreader,serif" font-size="44" font-weight="800" fill="#fff" font-style="italic">#6</text><g transform="translate(90 45) rotate(-12)"><rect x="-56" y="-12" width="112" height="24" fill="none" stroke="#e6a23c" stroke-width="1.5" opacity="0.9"/><text font-family="DM Sans" font-size="7" font-weight="900" fill="#e6a23c" text-anchor="middle" y="-2" letter-spacing="1.5">NO SALE AFTER MAY 7</text><text font-family="JetBrains Mono" font-size="5" fill="#e6a23c" text-anchor="middle" y="9" letter-spacing="1">official admin</text></g><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">UTILITY PRESALE LIVE · MAY 8</text></svg>`
   },
   {
     id: 'article-casino-not-launched',
@@ -16,19 +16,19 @@ const ARTICLES = [
     date: '2026-05-08',
     dateDisplay: 'May 8, 2026',
     excerpt: 'At 18:10 UTC: Casino officially LIVE. At 18:37 UTC: Casino will go live in 7 days. Both from the same official channel. 27 minutes apart. No URL was ever provided.',
-    image: 'img-casino-not-launched.jpg',
     url: 'article-casino-not-launched.html',
-    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }]
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }],
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="t2g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#t2g)" opacity="0.6"/><rect x="20" y="25" width="360" height="70" rx="3" fill="#163877" stroke="#3157a8" stroke-width="0.8"/><text x="40" y="46" font-family="JetBrains Mono" font-size="7" fill="#6b8acf">18:10 UTC · Official Channel</text><text x="40" y="70" font-family="Newsreader,serif" font-size="13" font-weight="700" fill="#fff">"BlockDAG Casino is officially LIVE"</text><text x="200" y="118" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#e6a23c" letter-spacing="1">↓ 27 MINUTES LATER</text><rect x="20" y="130" width="360" height="65" rx="3" fill="#2a0808" stroke="#c62828" stroke-width="1.2"/><text x="40" y="152" font-family="JetBrains Mono" font-size="7" fill="#ff8a7a">18:37 UTC · Official Admin</text><text x="40" y="175" font-family="Newsreader,serif" font-size="13" font-weight="700" fill="#ff8a7a">"Casino will go live in 7 days."</text><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">27 MINUTES · SAME CHANNEL · NO URL</text></svg>`
   },
   {
     id: 'article-casino-may7',
-    title: 'The casino that wasn\'t: what happened on May 7',
+    title: "The casino that wasn't: what happened on May 7",
     date: '2026-05-07',
     dateDisplay: 'May 7, 2026',
     excerpt: 'May 7 was casino launch day. The official channel was still posting "Casino Live Tomorrow" six times on May 7 morning. No launch was announced. The aftersale was still running.',
-    image: 'img-casino-may7.jpg',
     url: 'article-casino-may7.html',
-    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }]
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }],
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="t3g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#t3g)" opacity="0.6"/><text x="30" y="35" font-family="JetBrains Mono" font-size="7" fill="#6b8acf">01:31 UTC</text><text x="110" y="35" font-family="Newsreader,serif" font-size="11" fill="#e6a23c" font-weight="600">CASINO GOES LIVE — TOMORROW</text><line x1="30" y1="45" x2="380" y2="45" stroke="#1c3870" stroke-width="0.6"/><text x="30" y="70" font-family="JetBrains Mono" font-size="7" fill="#6b8acf">02:31 UTC</text><text x="110" y="70" font-family="Newsreader,serif" font-size="11" fill="#e6a23c" font-weight="600">CASINO GOES LIVE — TOMORROW</text><line x1="30" y1="80" x2="380" y2="80" stroke="#1c3870" stroke-width="0.6"/><text x="30" y="105" font-family="JetBrains Mono" font-size="7" fill="#6b8acf">05:32 UTC</text><text x="110" y="105" font-family="Newsreader,serif" font-size="11" fill="#e6a23c" font-weight="600">CASINO GOES LIVE — TOMORROW</text><line x1="30" y1="115" x2="380" y2="115" stroke="#1c3870" stroke-width="0.6"/><text x="30" y="140" font-family="JetBrains Mono" font-size="7" fill="#6b8acf">06:03 UTC</text><text x="110" y="140" font-family="Newsreader,serif" font-size="11" fill="#e6a23c" font-weight="600">CASINO GOES LIVE — TOMORROW</text><line x1="30" y1="150" x2="380" y2="150" stroke="#1c3870" stroke-width="0.6"/><text x="30" y="175" font-family="JetBrains Mono" font-size="7" fill="#6b8acf">06:33 UTC</text><text x="110" y="175" font-family="Newsreader,serif" font-size="11" fill="#e6a23c" font-weight="600">CASINO GOES LIVE — TOMORROW</text><line x1="30" y1="185" x2="380" y2="185" stroke="#1c3870" stroke-width="0.6"/><text x="30" y="210" font-family="JetBrains Mono" font-size="7" fill="#6b8acf">09:20 UTC</text><text x="110" y="210" font-family="Newsreader,serif" font-size="11" fill="#e6a23c" font-weight="600">CASINO GOES LIVE — TOMORROW</text><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">6× ON LAUNCH DAY · NO LAUNCH CONFIRMED</text></svg>`
   },
   {
     id: 'article-may7-reality',
@@ -36,9 +36,9 @@ const ARTICLES = [
     date: '2026-05-06',
     dateDisplay: 'May 6, 2026',
     excerpt: 'Casino. Aftersale closure. Batch 5 claims. May 7 was marketed as a turning point. The data from the 36 hours before the deadline tells a different story.',
-    image: 'img-may7-reality.jpg',
     url: 'article-may7-reality.html',
-    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }]
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }],
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="t4l" width="22" height="22" patternUnits="userSpaceOnUse"><line x1="0" y1="22" x2="22" y2="22" stroke="#d8cfb6" stroke-width="0.5"/></pattern></defs><rect width="400" height="250" fill="#f4ede0"/><rect width="400" height="250" fill="url(#t4l)" opacity="0.9"/><text x="80" y="160" text-anchor="middle" font-family="Newsreader,serif" font-size="130" font-weight="800" fill="#c62828" font-style="italic" opacity="0.15">7</text><text x="70" y="155" text-anchor="middle" font-family="Newsreader,serif" font-size="110" font-weight="800" fill="#c62828" font-style="italic">7</text><text x="30" y="60" font-family="DM Sans" font-size="9" fill="#0C2956" letter-spacing="2" font-weight="700">MAY 7 SCORECARD</text><line x1="30" y1="68" x2="380" y2="68" stroke="#0C2956" stroke-width="0.7"/><g font-family="Newsreader,serif" font-size="12" fill="#0C2956"><text x="180" y="95">Casino LIVE</text><text x="180" y="120">Aftersale closed</text><text x="180" y="145">Miners shipped</text><text x="180" y="170">Staking fixed</text><text x="180" y="195">Tier 1 exchange</text></g><g font-family="JetBrains Mono" font-size="10" font-weight="700"><text x="375" y="95" text-anchor="end" fill="#e6a23c">Beta only</text><text x="375" y="120" text-anchor="end" fill="#c62828">Still running</text><text x="375" y="145" text-anchor="end" fill="#c62828">No date</text><text x="375" y="170" text-anchor="end" fill="#c62828">Still broken</text><text x="375" y="195" text-anchor="end" fill="#c62828">None</text></g><rect x="0" y="222" width="400" height="28" fill="#0C2956"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">MAY 7 "UTILITY ERA" · NOTHING DELIVERED</text></svg>`
   },
   {
     id: 'article-exchanges',
@@ -46,19 +46,19 @@ const ARTICLES = [
     date: '2026-05-05',
     dateDisplay: 'May 5, 2026',
     excerpt: '20 exchanges promised on launch day. Only 3 small exchanges listed. Deposits blocked for weeks. The pattern has now repeated at least eight times.',
-    image: 'img-exchanges.jpg',
     url: 'article-exchanges.html',
-    tags: [{ label: 'Investigation', style: 'red' }, { label: 'Exchange Listings', style: 'orange' }]
+    tags: [{ label: 'Investigation', style: 'red' }, { label: 'Exchange Listings', style: 'orange' }],
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="t5g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#t5g)" opacity="0.6"/><text x="200" y="30" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" opacity="0.5" letter-spacing="3">EXCHANGE SCORECARD</text><line x1="30" y1="38" x2="370" y2="38" stroke="#3157a8" stroke-width="0.6"/><g font-family="Newsreader,serif" font-size="12" fill="#fff"><text x="50" y="62">Uniswap</text><text x="50" y="85">OKX</text><text x="50" y="108">BingX</text><text x="50" y="131">Gate.io</text><text x="50" y="154">MEXC</text><text x="50" y="177">Toobit</text><text x="50" y="200">CoinW</text></g><g font-family="JetBrains Mono" font-size="11" fill="#c62828" font-weight="700" text-anchor="middle"><text x="200" y="62">✗</text><text x="200" y="85">✗</text><text x="200" y="108">✗</text><text x="200" y="131">✗</text><text x="200" y="154">✗</text><text x="200" y="177">✗ REJECTED</text><text x="200" y="200">✗</text></g><g font-family="Newsreader,serif" font-size="12" fill="#67d39d" text-anchor="end"><text x="370" y="85">LBank ✓</text><text x="370" y="108">BitMart ✓</text><text x="370" y="131">Coinstore ✓</text></g><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">20 PROMISED · 3 DELIVERED · 0 TIER 1</text></svg>`
   },
   {
     id: 'article-staking',
-    title: '75 days and still broken: BlockDAG\'s staking failure',
+    title: '82 days and still broken: BlockDAG\'s staking failure',
     date: '2026-05-05',
     dateDisplay: 'May 5, 2026',
-    excerpt: 'Staking was promised live on February 19, 2026. Seventy-five days later it remains broken. Users cannot unstake. Rewards are frozen.',
-    image: 'img-staking.jpg',
+    excerpt: 'Staking was promised live on February 19, 2026. Eighty-two days later it remains broken. Users cannot unstake. Rewards are frozen. The official response has not changed.',
     url: 'article-staking.html',
-    tags: [{ label: 'Investigation', style: 'red' }, { label: 'Staking', style: 'cyan' }]
+    tags: [{ label: 'Investigation', style: 'red' }, { label: 'Staking', style: 'cyan' }],
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="t6l" width="22" height="22" patternUnits="userSpaceOnUse"><line x1="0" y1="22" x2="22" y2="22" stroke="#d8cfb6" stroke-width="0.5"/></pattern></defs><rect width="400" height="250" fill="#f4ede0"/><rect width="400" height="250" fill="url(#t6l)" opacity="0.9"/><text x="105" y="170" text-anchor="middle" font-family="Newsreader,serif" font-size="120" font-weight="800" fill="#c62828" font-style="italic" opacity="0.12">82</text><text x="100" y="168" text-anchor="middle" font-family="Newsreader,serif" font-size="110" font-weight="800" fill="#c62828" font-style="italic">82</text><text x="100" y="198" text-anchor="middle" font-family="DM Sans" font-size="14" fill="#c62828" font-weight="700" letter-spacing="4">DAYS BROKEN</text><g font-family="Newsreader,serif" font-size="12" fill="#0C2956"><text x="230" y="75">Feb 19 → Promised live</text><text x="230" y="105">Apr 6 → "Under maintenance"</text><text x="230" y="135">May 4 → "Working on it"</text><text x="230" y="165">May 11 → Still broken</text></g><g fill="#c62828"><rect x="220" y="178" width="150" height="26" rx="2"/><text x="295" y="196" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#fff" font-weight="700">FIX DATE: NONE</text></g><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">LOCKED FUNDS · FROZEN REWARDS · NO COMPENSATION</text></svg>`
   },
   {
     id: 'article-442-million',
@@ -66,8 +66,8 @@ const ARTICLES = [
     date: '2026-05-05',
     dateDisplay: 'May 5, 2026',
     excerpt: 'BlockDAG claimed $442 million raised. The CEO said $200 million. ZachXBT found less than $100 million on-chain. Three different numbers. Zero verifiable proof.',
-    image: 'img-hero.jpg',
     url: 'article-442-million.html',
-    tags: [{ label: 'Investigation', style: 'red' }, { label: 'Funding', style: 'yellow' }]
+    tags: [{ label: 'Investigation', style: 'red' }, { label: 'Funding', style: 'yellow' }],
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="t7g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#t7g)" opacity="0.7"/><text x="200" y="26" text-anchor="middle" font-family="DM Sans" font-size="8" fill="#fff" opacity="0.5" letter-spacing="3">THREE NUMBERS · ZERO PROOF</text><rect x="40" y="40" width="70" height="160" rx="2" fill="#e6a23c" opacity="0.85"/><text x="75" y="80" text-anchor="middle" font-family="Newsreader,serif" font-size="14" font-weight="800" fill="#0C2956" font-style="italic">$442M</text><text x="75" y="100" text-anchor="middle" font-family="JetBrains Mono" font-size="6" fill="#0C2956" opacity="0.7">CLAIMED</text><rect x="160" y="78" width="70" height="122" rx="2" fill="#6b8acf" opacity="0.85"/><text x="195" y="126" text-anchor="middle" font-family="Newsreader,serif" font-size="14" font-weight="800" fill="#fff" font-style="italic">~$200M</text><text x="195" y="145" text-anchor="middle" font-family="JetBrains Mono" font-size="6" fill="#fff" opacity="0.6">CEO SAYS</text><rect x="280" y="114" width="70" height="86" rx="2" fill="#c62828" opacity="0.9"/><text x="315" y="158" text-anchor="middle" font-family="Newsreader,serif" font-size="14" font-weight="800" fill="#fff" font-style="italic">&lt;$100M</text><text x="315" y="178" text-anchor="middle" font-family="JetBrains Mono" font-size="6" fill="#fff" opacity="0.6">ON-CHAIN</text><line x1="30" y1="200" x2="370" y2="200" stroke="#3157a8" stroke-width="0.8"/><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">$342M UNACCOUNTED · NO AUDIT · NO MULTISIG</text></svg>`
   }
 ];

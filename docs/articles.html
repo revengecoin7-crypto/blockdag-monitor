@@ -102,9 +102,9 @@
   const sorted=[...ARTICLES].sort((a,b)=>b.date.localeCompare(a.date));
   grid.innerHTML=sorted.map(a=>{
     const tags=a.tags.map(t=>`<span class="art-tag ${tagClass[t.style]||'default'}">${t.label}</span>`).join('');
-    const imgHtml=a.image?`<img src="${a.image}" alt="${a.title}" loading="lazy">`:'';
+    const thumb=a.svg?a.svg:'';
     return`<a href="${a.url}" class="art-card">
-<div class="art-img${a.image?'':' navy'}">${imgHtml}</div>
+<div class="art-img${a.svg?'':' navy'}">${thumb}</div>
 <div class="art-tags">${tags}</div>
 <div class="art-title">${a.title}</div>
 <div class="art-excerpt">${a.excerpt}</div>
