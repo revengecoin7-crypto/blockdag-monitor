@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c3870" stroke-width="0.6"/>
+    </pattern>
+    <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.2" fill="#e6a23c" opacity="0.12"/>
+    </pattern>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#c62828" stroke-width="1.2" opacity="0.5"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#040e26"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.7"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Left divider line -->
+  <line x1="600" y1="60" x2="600" y2="570" stroke="#1c3870" stroke-width="1"/>
+
+  <!-- ── LEFT SIDE: The Promise ── -->
+  <text x="80" y="110" font-family="DM Sans, sans-serif" font-size="13" fill="#6b8acf" letter-spacing="4" font-weight="700">OFFICIAL BLOCKDAG ADMIN · MAY 6, 2026</text>
+
+  <!-- Quote box -->
+  <rect x="80" y="130" width="460" height="110" rx="4" fill="#163877" stroke="#3157a8" stroke-width="1"/>
+  <line x1="80" y1="130" x2="80" y2="240" stroke="#e6a23c" stroke-width="4"/>
+  <text x="104" y="180" font-family="Newsreader, Georgia, serif" font-size="32" font-weight="700" fill="#fff" font-style="italic">"No sale after May 7th."</text>
+  <text x="104" y="220" font-family="JetBrains Mono, monospace" font-size="14" fill="#e6a23c">confirmed in Telegram · direct response to community</text>
+
+  <!-- Arrow down -->
+  <text x="300" y="295" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="18" fill="#e6a23c" letter-spacing="2">↓  LESS THAN 24 HOURS LATER</text>
+
+  <!-- Reality box -->
+  <rect x="80" y="315" width="460" height="130" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+  <rect x="80" y="315" width="460" height="130" rx="4" fill="url(#hatch)" opacity="0.15"/>
+  <line x1="80" y1="315" x2="80" y2="445" stroke="#c62828" stroke-width="4"/>
+  <text x="104" y="358" font-family="DM Sans, sans-serif" font-size="11" fill="#ff8a7a" letter-spacing="3" font-weight="700">OFFICIAL BLOCKDAG CHANNEL · MAY 8, 2026</text>
+  <text x="104" y="395" font-family="Newsreader, Georgia, serif" font-size="26" font-weight="700" fill="#ff8a7a" font-style="italic">UTILITY PRESALE NOW LIVE</text>
+  <text x="104" y="430" font-family="JetBrains Mono, monospace" font-size="16" fill="#c62828" font-weight="700">$0.0000005 per BDAG · 160X POTENTIAL · 7 DAYS ONLY</text>
+
+  <!-- Badge -->
+  <rect x="80" y="472" width="200" height="42" rx="3" fill="#c62828"/>
+  <text x="180" y="499" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" fill="#fff" font-weight="800" letter-spacing="2">PROMISE #65 · BROKEN</text>
+
+  <!-- ── RIGHT SIDE: Sale history ── -->
+  <text x="650" y="110" font-family="DM Sans, sans-serif" font-size="13" fill="#6b8acf" letter-spacing="4" font-weight="700">BLOCKDAG SALES SINCE 2024</text>
+
+  <!-- 5 grey bars -->
+  <rect x="650" y="260" width="56" height="230" rx="3" fill="#3157a8" opacity="0.5"/>
+  <rect x="720" y="210" width="56" height="280" rx="3" fill="#3157a8" opacity="0.5"/>
+  <rect x="790" y="175" width="56" height="315" rx="3" fill="#3157a8" opacity="0.5"/>
+  <rect x="860" y="145" width="56" height="345" rx="3" fill="#3157a8" opacity="0.5"/>
+  <rect x="930" y="120" width="56" height="370" rx="3" fill="#3157a8" opacity="0.5"/>
+
+  <!-- Sale #6 bar in red -->
+  <rect x="1010" y="80" width="80" height="410" rx="3" fill="#c62828"/>
+  <rect x="1010" y="80" width="80" height="410" rx="3" fill="url(#hatch)" opacity="0.2"/>
+
+  <!-- SALE #6 label -->
+  <text x="1050" y="150" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="15" fill="#fff" font-weight="800" letter-spacing="2">SALE</text>
+  <text x="1050" y="255" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="88" font-weight="800" fill="#fff" font-style="italic">#6</text>
+
+  <!-- Bar labels -->
+  <g font-family="JetBrains Mono, monospace" font-size="11" fill="#fff" opacity="0.4" text-anchor="middle">
+    <text x="678" y="510">PRESALE</text>
+    <text x="748" y="510">AFTER</text>
+    <text x="818" y="510">SWAP</text>
+    <text x="888" y="510">X10</text>
+    <text x="958" y="510">BATCH</text>
+  </g>
+  <text x="1050" y="510" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#ff8a7a" font-weight="700">UTILITY</text>
+
+  <!-- Baseline -->
+  <line x1="640" y1="490" x2="1110" y2="490" stroke="#3157a8" stroke-width="1"/>
+
+  <!-- ── Bottom bar ── -->
+  <rect x="0" y="570" width="1200" height="60" fill="#c62828"/>
+  <rect x="0" y="570" width="1200" height="60" fill="url(#hatch)" opacity="0.15"/>
+
+  <!-- Branding left -->
+  <rect x="40" y="584" width="28" height="28" fill="#fff"/>
+  <text x="54" y="603" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-weight="800" fill="#0C2956">B</text>
+  <text x="78" y="601" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" fill="#fff">BlockDAG <tspan font-style="italic">Exposed</tspan></text>
+  <text x="78" y="618" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(255,255,255,0.6)" letter-spacing="2">INDEPENDENT · INVESTIGATIVE</text>
+
+  <!-- URL right -->
+  <text x="1160" y="605" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="13" fill="#fff" font-weight="600">blockdagexposed.com/article-utility-presale.html</text>
+  <text x="1160" y="622" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,0.5)">60 of 65 promises broken · 92.3%</text>
+</svg>
