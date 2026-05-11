@@ -817,7 +817,6 @@
     id: 63,
     category: "Staking",
     status: "misleading",
-    isNew: true,
     title: "Website claims staking 'currently active' — staking broken for 78 days",
     promised: "May 2026 (ongoing website claim)",
     reality: "The official blockdag.network website states 'Staking rewards — 7-day cycles, currently active' as of May 8, 2026. The Telegram group documents staking as broken since February 19, 2026 — 78 days. Users cannot unstake, rewards are frozen, and the only official fix offered is 'stake 1 BDAG and try again.'",
@@ -828,10 +827,23 @@
     ]
   },
   {
+    id: 65,
+    category: "Marketing",
+    status: "broken",
+    isNew: true,
+    title: "'No sale after May 7th' — Utility Presale launched May 8",
+    promised: "May 7, 2026",
+    reality: "BlockDAG sent dozens of 'AFTERSALE CLOSES FOREVER' messages promoting May 7 as the permanent end of all token sales. An admin explicitly stated 'No sale after May 7th.' On May 8 — less than 24 hours later — BlockDAG launched a new 'Utility Presale' at $0.0000005 per BDAG with '160X POTENTIAL' and '7 DAYS ONLY.' This is the sixth distinct sales mechanism since the original presale: presale → batches → aftersale → Live Swap → X10Swap → Utility Presale.",
+    quotes: [
+      { date: "May 6, 2026", text: "No sale after May 7th. [official admin statement]" },
+      { date: "May 7, 2026", text: "AFTERSALE CLOSES FOREVER [repeated in dozens of official marketing messages]" },
+      { date: "May 8, 2026", text: "🚨UTILITY PRESALE NOW LIVE🚨 $0.0000005 per BDAG | 160X POTENTIAL | 7 DAYS ONLY | FULL ECOSYSTEM ACTIVATION" }
+    ]
+  },
+  {
     id: 64,
     category: "Mining Hardware",
     status: "misleading",
-    isNew: true,
     title: "Website claims miners shipping at '2,000 units weekly' — no community deliveries confirmed",
     promised: "May 2026 (website claim)",
     reality: "The official blockdag.network website claims 'physical miner shipments scaling to 2,000 units weekly' as of May 8, 2026. No community member in 330,807 analyzed Telegram messages has confirmed receiving a miner. The official Telegram position is 'shipping in June' with no specific date.",
@@ -923,18 +935,22 @@ const TIMELINE_EVENTS = [
   { date: "May 7, 2026", type: "broken", text: "Casino launch day. As of 11:37 UTC, no official announcement that the casino was live. Official channel still posting 'CASINO LIVE TOMORROW' — the same automated message from May 6 — six separate times on May 7 morning. No community member posted a working casino link or screenshot. Community asking 'which website?' and 'what time?' with no admin response." },
   { date: "May 7, 2026", type: "broken", text: "Aftersale 'CLOSING FOREVER' on May 7. Official support still directing users to purchase3.blockdag.network at 11:09 UTC on May 7. No closure announcement made within the analyzed period. X10Swap announced as successor product." },
   { date: "Jun 30, 2026", type: "promise", text: "Official deposits on exchanges confirmed for June 30, 2026. Also: presale vesting coins only accessible after June 30. New hard date given in official Telegram on May 5." },
-  { date: "May 7, 2026", isNew: true, type: "broken", text: "BlockDAG posted 'CASINO LIVE' at 18:10 UTC. No URL provided. No community member accessed a working casino. At 18:37 UTC — 27 minutes later — the same admin: 'Casino will go live in 7 days.' At 19:06 UTC: 'Casino will be going live on the 14th of MAY.' The announcement was a marketing headline, not a working product." },
-  { date: "May 7, 2026", isNew: true, type: "misleading", text: "Aftersale officially closed May 7 but immediately replaced: 'BDAG now exclusively available via LIVE SWAP — get 15% OFF market price for 1 WEEK ONLY.' X10Swap Telegram bot (t.me/x10swapbot) also launched: users send BDAG, receive USDT. Community described as another token collection mechanism in disguise." },
-  { date: "May 14, 2026", isNew: true, type: "promise", text: "Casino launch rescheduled to May 14, 2026. Confirmed by admin at 19:06, 19:08 and 19:29 UTC on May 7. Original promise was May 7. Betting was originally 'shortly after' May 7 — now no date given." },
-  { date: "May 7, 2026", isNew: true, type: "note", text: "BDAG hit its All-Time Low of $0.00007481 on May 7, 2026 — the day the casino was promised to launch. The most marketed deadline in the project's history coincided with the lowest price in its history." },
-  { date: "May 8, 2026", isNew: true, type: "misleading", text: "BlockDAG website (blockdag.network) claims 'Staking rewards — 7-day cycles, currently active' as of May 8. The Telegram group shows staking has been broken for 78 days with no fix delivered. The same website also claims 'physical miner shipments scaling to 2,000 units weekly' — not confirmed by any community evidence or delivery report." }
+  { date: "May 7, 2026", type: "broken", text: "BlockDAG posted 'CASINO LIVE' at 18:10 UTC. No URL provided. No community member accessed a working casino. At 18:37 UTC — 27 minutes later — the same admin: 'Casino will go live in 7 days.' At 19:06 UTC: 'Casino will be going live on the 14th of MAY.' The announcement was a marketing headline, not a working product." },
+  { date: "May 7, 2026", type: "misleading", text: "Aftersale officially closed May 7 but immediately replaced: 'BDAG now exclusively available via LIVE SWAP — get 15% OFF market price for 1 WEEK ONLY.' X10Swap Telegram bot (t.me/x10swapbot) also launched: users send BDAG, receive USDT. Community described as another token collection mechanism in disguise." },
+  { date: "May 14, 2026", type: "promise", text: "Casino launch rescheduled to May 14, 2026. Confirmed by admin at 19:06, 19:08 and 19:29 UTC on May 7. Original promise was May 7. Betting was originally 'shortly after' May 7 — now no date given." },
+  { date: "May 7, 2026", type: "note", text: "BDAG hit its All-Time Low of $0.00007481 on May 7, 2026 — the day the casino was promised to launch. The most marketed deadline in the project's history coincided with the lowest price in its history." },
+  { date: "May 8, 2026", type: "misleading", text: "BlockDAG website (blockdag.network) claims 'Staking rewards — 7-day cycles, currently active' as of May 8. The Telegram group shows staking has been broken for 78 days with no fix delivered. The same website also claims 'physical miner shipments scaling to 2,000 units weekly' — not confirmed by any community evidence or delivery report." },
+  { date: "May 1, 2026", isNew: true, type: "note", text: "DL News announces it will close at end of May 2026. The outlet published the primary investigation into BlockDAG's $442M fundraising discrepancy on April 23, 2026. The article remains accessible. DL News was the news arm of DefiLlama and cited unsustainable business models and AI disrupting search distribution as reasons for closure." },
+  { date: "May 8, 2026", isNew: true, type: "broken", text: "'No sale after May 7th' — broken the next day. On May 8, BlockDAG launched a new 'Utility Presale' at $0.0000005 per BDAG with '160X POTENTIAL' and '7 DAYS ONLY.' Sales sequence: presale (2024) → batch 1/2/3/4/5 → aftersale → Live Swap → X10Swap → Utility Presale. The 'aftersale ends forever' promise lasted less than 24 hours." },
+  { date: "May 8, 2026", isNew: true, type: "misleading", text: "Casino (Beta) described as live on May 8 but with 'Play & Earn starts next week' — no actual betting possible. Batch 5 claims announced for May 14. Community clarifies only 40% will be released on May 14, not the full allocation. Community investor reports: '$1,450 USDT invested since 2024, now worth $80' — a 94.5% loss." },
+  { date: "May 11, 2026", isNew: true, type: "broken", text: "Staking still broken after 82 days (since Feb 19, 2026). Multiple purchase allocations from April 6 onwards not showing as claimable despite appearing in total balance. Admin questions about May 14 Batch 5 allocation confirm only 40% will be released, not the full amount." }
 ];
 
 const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "330,807 public messages analyzed (Feb 18 – May 8, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "339,729 public messages analyzed (Feb 18 – May 11, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
@@ -1205,13 +1221,17 @@ const NOTABLE_QUOTES = [
   { date: "May 7, 2026", tag: "community", text: "Considering BlockDAG is the king of countdowns, should we not have a countdown for the Casino Launch? Considering how it was promoted as a life changer... [community member Zew MS, May 7, 09:04 UTC — casino still not announced live]" },
   { date: "May 7, 2026", tag: "community", text: "BDAG presale investors were promised Lambos at $0.05, but after launch everyone became professional dip collectors instead. [community member Figata, May 7]" },
   { date: "May 7, 2026", tag: "response", text: "Your wallet shows $0 because the price feed hasn't been integrated yet. [official admin, May 7 11:07]" },
-  { date: "May 7, 2026", isNew: true, tag: "misleading", text: "CASINO LIVE — 15% OFF BDAG SWAP | AFTERSALE CLOSED | BDAGX10 SWAP APP LIVE. BlockDAG Casino is officially LIVE — full casino and sportsbook unlocking soon. $5M+ projected daily volume. [official channel, 18:10 UTC — no URL provided, no working casino accessible]" },
-  { date: "May 7, 2026", isNew: true, tag: "response", text: "Casino will go live in 7 days. [official admin, 18:37 UTC — 27 minutes after declaring casino 'LIVE']" },
-  { date: "May 7, 2026", isNew: true, tag: "response", text: "Casino will be going live on the 14th of MAY. [official admin, 19:06 UTC]" },
-  { date: "May 7, 2026", isNew: true, tag: "response", text: "A real scam does not spend time developing infrastructure publicly, running AMAs, releasing products, and supporting a global community. Delays and technical issues happen in crypto, especially during network growth. [official admin, 13:57 UTC]" },
-  { date: "May 7, 2026", isNew: true, tag: "community", text: "Should I recall you wrote everywhere casino live 7 may, or something like BingX or gate listing, or maybe something like no compression, or something like presale and discount sale will stop today? Here is just a few things that prove you just are liars. [community member Babouke, 21:43 UTC]" },
-  { date: "May 8, 2026", isNew: true, tag: "community", text: "So this crappy game is called casino? This is not casino this is a Nintendo game from 1980. [community member, 02:28 UTC — after apparently finding a placeholder page]" },
-  { date: "May 8, 2026", isNew: true, tag: "community", text: "Invest 21,500 USDT in May 2024 until Feb 2026 in BDAG, now get back around 500 USDT. Promise listing price $0.05. [community member, May 8]" }
+  { date: "May 7, 2026", tag: "misleading", text: "CASINO LIVE — 15% OFF BDAG SWAP | AFTERSALE CLOSED | BDAGX10 SWAP APP LIVE. BlockDAG Casino is officially LIVE — full casino and sportsbook unlocking soon. $5M+ projected daily volume. [official channel, 18:10 UTC — no URL provided, no working casino accessible]" },
+  { date: "May 7, 2026", tag: "response", text: "Casino will go live in 7 days. [official admin, 18:37 UTC — 27 minutes after declaring casino 'LIVE']" },
+  { date: "May 7, 2026", tag: "response", text: "Casino will be going live on the 14th of MAY. [official admin, 19:06 UTC]" },
+  { date: "May 7, 2026", tag: "response", text: "A real scam does not spend time developing infrastructure publicly, running AMAs, releasing products, and supporting a global community. Delays and technical issues happen in crypto, especially during network growth. [official admin, 13:57 UTC]" },
+  { date: "May 7, 2026", tag: "community", text: "Should I recall you wrote everywhere casino live 7 may, or something like BingX or gate listing, or maybe something like no compression, or something like presale and discount sale will stop today? Here is just a few things that prove you just are liars. [community member Babouke, 21:43 UTC]" },
+  { date: "May 8, 2026", tag: "community", text: "So this crappy game is called casino? This is not casino this is a Nintendo game from 1980. [community member, 02:28 UTC — after apparently finding a placeholder page]" },
+  { date: "May 8, 2026", tag: "community", text: "Invest 21,500 USDT in May 2024 until Feb 2026 in BDAG, now get back around 500 USDT. Promise listing price $0.05. [community member, May 8]" },
+  { date: "May 8, 2026", isNew: true, tag: "misleading", text: "🚨UTILITY PRESALE NOW LIVE🚨 $0.0000005 per BDAG | 160X POTENTIAL | 7 DAYS ONLY | FULL ECOSYSTEM ACTIVATION [official channel, May 8 — aftersale had 'closed forever' less than 24 hours earlier]" },
+  { date: "May 8, 2026", isNew: true, tag: "community", text: "BDAG presale is never going to end until they take all money from the innocent people's account. Shame on your team. You failed as a project. [community member, May 8, 16:07 UTC]" },
+  { date: "May 11, 2026", isNew: true, tag: "community", text: "I am purchasing from 2024, since fourth batch, I spent around 1,450 USDT, but nothing I have received, now it's worth just 80 USDT, it's unfortunate. [community member, May 11, 08:07 UTC — 94.5% loss reported]" },
+  { date: "May 11, 2026", isNew: true, tag: "community", text: "All my purchases since April 6th are not showing up as allocated or claimable on the Claim page even though they show up as Total BDAG balance on the home page. When will they be allocated and become claimable? [community member, May 11, 10:57 UTC — unresolved]" }
 ];
 
 

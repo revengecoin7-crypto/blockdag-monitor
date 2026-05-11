@@ -1,5 +1,16 @@
 const ARTICLES = [
   {
+    id: 'article-utility-presale',
+    title: 'The aftersale that never ended: BlockDAG launches another sale',
+    date: '2026-05-11',
+    dateDisplay: 'May 11, 2026',
+    excerpt: '"No sale after May 7th." Less than 24 hours later: Utility Presale LIVE at $0.0000005 per BDAG. This is the sixth distinct sales mechanism since 2024.',
+    image: 'img-casino-not-launched.jpg',
+    url: 'article-utility-presale.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Marketing', style: 'orange' }],
+    isNew: true
+  },
+  {
     id: 'article-casino-not-launched',
     title: 'BlockDAG declared the casino "LIVE." Then said it would open in 7 days.',
     date: '2026-05-08',
