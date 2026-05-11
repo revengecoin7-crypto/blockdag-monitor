@@ -934,10 +934,25 @@
       <h3>Get notified when promises break.</h3>
       <p>No spam. Only updates when something important happens — a deadline passes, a new promise is added, or a claim is delivered (or not). Sourced from Telegram, X, on-chain, and direct community submissions.</p>
     </div>
-    <form class="nl-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Check inbox ✓';">
-      <input type="email" placeholder="your@email" aria-label="Email" required />
-      <button type="submit">Subscribe</button>
+    <form class="nl-form" id="nl-form-new" method="POST" action="https://56be93cb.sibforms.com/serve/MUIFAJAWeQDEs8z-RUDw6bZmXaasfnj1iu6AFk6qIpusnj9gabPWwKB3mFti-fIpeFUnEMraRJRIPKT_ZbLLvGh7HrqLCe84bgPF8pGvllDuHPA_Fylp8qg6Vvu6sPFvTaf5cN79Yx3DVwo4Ssomdr3eremzPbwFZP82rP06WF8uoUNwepPnQK6DPZyY2zIeFV4zYVP6BRLJpS3IUA==" data-type="subscription" onsubmit="handleNewsletterSubmit(event)">
+      <input type="email" name="EMAIL" placeholder="your@email" aria-label="Email" required autocomplete="off" />
+      <input type="text" name="email_address_check" value="" style="display:none">
+      <input type="hidden" name="locale" value="en">
+      <button type="submit" id="nl-submit">Subscribe</button>
     </form>
+    <div id="nl-success" style="display:none;color:#00b37a;font-size:14px;font-weight:600;margin-top:10px;">✓ Subscribed! Check your inbox to confirm.</div>
+    <script>
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const email = form.querySelector('[name="EMAIL"]').value;
+      const btn = document.getElementById('nl-submit');
+      btn.textContent = 'Sending...'; btn.disabled = true;
+      fetch(form.action, {method:'POST', body: new FormData(form), mode:'no-cors'})
+        .then(() => { document.getElementById('nl-success').style.display='block'; form.style.display='none'; })
+        .catch(() => { document.getElementById('nl-success').style.display='block'; form.style.display='none'; });
+    }
+    </script>
   </div>
 </section>
 
