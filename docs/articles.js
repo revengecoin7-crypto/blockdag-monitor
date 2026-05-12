@@ -1,5 +1,16 @@
 const ARTICLES = [
   {
+    id: 'article-cmc-ban',
+    title: 'Our CoinMarketCap account was banned. Here is why we think it happened.',
+    date: '2026-05-12',
+    dateDisplay: 'May 12, 2026',
+    excerpt: 'Our CMC account was removed after posting documented facts about BlockDAG. We did not break the rules. Here is the pattern that connects BlockDAG, DL News, and our removal — and why it changes nothing.',
+    url: 'article-cmc-ban.html',
+    tags: [{ label: 'Editorial', style: 'red' }, { label: 'Transparency', style: 'orange' }],
+    isNew: true,
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="tb1g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern><pattern id="tb1h" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#c62828" stroke-width="0.8" opacity="0.4"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#tb1g)" opacity="0.6"/><rect x="90" y="30" width="220" height="175" rx="3" fill="#f4ede0" stroke="#d8cfb6" stroke-width="1"/><rect x="90" y="30" width="220" height="16" fill="#0C2956" rx="3"/><text x="200" y="41" text-anchor="middle" font-family="DM Sans" font-size="6" fill="#e6a23c" letter-spacing="2" font-weight="700">BLOCKDAG EXPOSED · CMC</text><g fill="#d8cfb6"><rect x="108" y="56" width="184" height="5" rx="1"/><rect x="108" y="68" width="140" height="4" rx="1"/><rect x="108" y="80" width="160" height="4" rx="1"/><rect x="108" y="98" width="184" height="4" rx="1"/><rect x="108" y="110" width="120" height="4" rx="1"/><rect x="108" y="130" width="184" height="4" rx="1"/><rect x="108" y="142" width="100" height="4" rx="1"/></g><g transform="translate(200 125) rotate(-15)"><rect x="-65" y="-22" width="130" height="44" rx="3" fill="none" stroke="#c62828" stroke-width="4" opacity="0.95"/><rect x="-61" y="-18" width="122" height="36" fill="url(#tb1h)" opacity="0.2"/><text font-family="DM Sans" font-size="26" font-weight="900" fill="#c62828" text-anchor="middle" y="8" letter-spacing="4">BANNED</text></g><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">APPEAL SUBMITTED · SITE STAYS UP</text></svg>`
+  },
+  {
     id: 'article-utility-presale',
     title: 'The aftersale that never ended: BlockDAG launches another sale',
     date: '2026-05-11',

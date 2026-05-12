@@ -1,4 +1,4 @@
-﻿const PROMISES = [
+const PROMISES = [
   {
     id: 0,
     category: "Exchange Listing",
@@ -940,17 +940,17 @@ const TIMELINE_EVENTS = [
   { date: "May 14, 2026", type: "promise", text: "Casino launch rescheduled to May 14, 2026. Confirmed by admin at 19:06, 19:08 and 19:29 UTC on May 7. Original promise was May 7. Betting was originally 'shortly after' May 7 — now no date given." },
   { date: "May 7, 2026", type: "note", text: "BDAG hit its All-Time Low of $0.00007481 on May 7, 2026 — the day the casino was promised to launch. The most marketed deadline in the project's history coincided with the lowest price in its history." },
   { date: "May 8, 2026", type: "misleading", text: "BlockDAG website (blockdag.network) claims 'Staking rewards — 7-day cycles, currently active' as of May 8. The Telegram group shows staking has been broken for 78 days with no fix delivered. The same website also claims 'physical miner shipments scaling to 2,000 units weekly' — not confirmed by any community evidence or delivery report." },
-  { date: "May 1, 2026", isNew: true, type: "note", text: "DL News announces it will close at end of May 2026. The outlet published the primary investigation into BlockDAG's $442M fundraising discrepancy on April 23, 2026. The article remains accessible. DL News was the news arm of DefiLlama and cited unsustainable business models and AI disrupting search distribution as reasons for closure." },
-  { date: "May 8, 2026", isNew: true, type: "broken", text: "'No sale after May 7th' — broken the next day. On May 8, BlockDAG launched a new 'Utility Presale' at $0.0000005 per BDAG with '160X POTENTIAL' and '7 DAYS ONLY.' Sales sequence: presale (2024) → batch 1/2/3/4/5 → aftersale → Live Swap → X10Swap → Utility Presale. The 'aftersale ends forever' promise lasted less than 24 hours." },
-  { date: "May 8, 2026", isNew: true, type: "misleading", text: "Casino (Beta) described as live on May 8 but with 'Play & Earn starts next week' — no actual betting possible. Batch 5 claims announced for May 14. Community clarifies only 40% will be released on May 14, not the full allocation. Community investor reports: '$1,450 USDT invested since 2024, now worth $80' — a 94.5% loss." },
-  { date: "May 11, 2026", isNew: true, type: "broken", text: "Staking still broken after 82 days (since Feb 19, 2026). Multiple purchase allocations from April 6 onwards not showing as claimable despite appearing in total balance. Admin questions about May 14 Batch 5 allocation confirm only 40% will be released, not the full amount." }
+  { date: "May 1, 2026", type: "note", text: "DL News announces it will close at end of May 2026. The outlet published the primary investigation into BlockDAG's $442M fundraising discrepancy on April 23, 2026. The article remains accessible. DL News was the news arm of DefiLlama and cited unsustainable business models and AI disrupting search distribution as reasons for closure." },
+  { date: "May 8, 2026", type: "broken", text: "'No sale after May 7th' — broken the next day. On May 8, BlockDAG launched a new 'Utility Presale' at $0.0000005 per BDAG with '160X POTENTIAL' and '7 DAYS ONLY.' Sales sequence: presale (2024) → batch 1/2/3/4/5 → aftersale → Live Swap → X10Swap → Utility Presale. The 'aftersale ends forever' promise lasted less than 24 hours." },
+  { date: "May 8, 2026", type: "misleading", text: "Casino (Beta) described as live on May 8 but with 'Play & Earn starts next week' — no actual betting possible. Batch 5 claims announced for May 14. Community clarifies only 40% will be released on May 14, not the full allocation. Community investor reports: '$1,450 USDT invested since 2024, now worth $80' — a 94.5% loss." },
+  { date: "May 11, 2026", type: "broken", text: "Staking still broken after 82 days (since Feb 19, 2026). Multiple purchase allocations from April 6 onwards not showing as claimable despite appearing in total balance. Admin questions about May 14 Batch 5 allocation confirm only 40% will be released, not the full amount." }
 ];
 
 const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "339,729 public messages analyzed (Feb 18 – May 11, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "342,222 public messages analyzed (Feb 18 – May 12, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
@@ -1231,10 +1231,10 @@ const NOTABLE_QUOTES = [
   { date: "May 8, 2026", isNew: true, tag: "misleading", text: "🚨UTILITY PRESALE NOW LIVE🚨 $0.0000005 per BDAG | 160X POTENTIAL | 7 DAYS ONLY | FULL ECOSYSTEM ACTIVATION [official channel, May 8 — aftersale had 'closed forever' less than 24 hours earlier]" },
   { date: "May 8, 2026", isNew: true, tag: "community", text: "BDAG presale is never going to end until they take all money from the innocent people's account. Shame on your team. You failed as a project. [community member, May 8, 16:07 UTC]" },
   { date: "May 11, 2026", isNew: true, tag: "community", text: "I am purchasing from 2024, since fourth batch, I spent around 1,450 USDT, but nothing I have received, now it's worth just 80 USDT, it's unfortunate. [community member, May 11, 08:07 UTC — 94.5% loss reported]" },
-  { date: "May 11, 2026", isNew: true, tag: "community", text: "All my purchases since April 6th are not showing up as allocated or claimable on the Claim page even though they show up as Total BDAG balance on the home page. When will they be allocated and become claimable? [community member, May 11, 10:57 UTC — unresolved]" }
+  { date: "May 11, 2026", isNew: true, tag: "community", text: "All my purchases since April 6th are not showing up as allocated or claimable on the Claim page even though they show up as Total BDAG balance on the home page. When will they be allocated and become claimable? [community member, May 11, 10:57 UTC — unresolved]" },
+  { date: "May 12, 2026", isNew: true, type: "broken", text: "Utility Presale price dropped from $0.0000005 to $0.00000039 within days of launch. ROI claim changed from '160X' to '320X' as the price fell. The 'limited 7 days only' presale is still running." },
+  { date: "May 12, 2026", isNew: true, type: "note", text: "Community member asks admin: 'You claimed the DL News report was false — did you sue them? Do we have any official documents?' Admin did not respond. DL News investigation banner remains on BlockDAG's CoinMarketCap page." },
+  { date: "May 12, 2026", isNew: true, type: "broken", text: "Batch 4 claims still unresolved for many users. Batch 5 described as 'live in a few days.' Batch 4 and Batch 5 are now being delayed together — both targeted for May 14. Multiple users report inability to claim Batch 4." },
+  { date: "May 12, 2026", isNew: true, type: "note", text: "BlockDAG Exposed CoinMarketCap account (@Blockdagexposed) banned after posting documented evidence about BlockDAG. Appeal submitted. All content posted was factual and independently verifiable. Website and tracker remain fully operational." }
 ];
-
-
-
-
 
