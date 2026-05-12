@@ -368,17 +368,26 @@ footer.site { background: var(--ink); color: #fff; padding: 56px 24px 28px; }
   .tl-row .when .yr { display: inline; font-size: 18px; margin-right: 8px; }
   .tl-row .dot { left: 2px; top: 8px; }
 }
+@media (max-width: 768px) {
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 24px; }
+}
 @media (max-width: 640px) {
   .grid-4, .press-grid, .ev-grid { grid-template-columns: 1fr; }
   .feat-row { grid-template-columns: 1fr; }
   .site-search, .site-actions .btn:not(.solid) { display: none; }
   .tracker-stats { grid-template-columns: 1fr; }
   .summary-bar { grid-template-columns: 1fr; }
-  .promises-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table.promises { font-size: 11px; min-width: 600px; }
-  table.promises td, table.promises th { padding: 10px 10px; }
-  .chip-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; }
+  .promises-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; display: block; width: 100%; }
+  table.promises { font-size: 11px; min-width: 560px; width: max-content; }
+  table.promises td, table.promises th { padding: 10px 8px; }
+  table.promises td:nth-child(4), table.promises th:nth-child(4) { display: none; }
+  table.promises td:nth-child(5), table.promises th:nth-child(5) { display: none; }
+  .chip-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
   .site-inner { padding: 12px 16px 0; }
-  nav.site-nav ul { gap: 16px; }
-  main { padding: 0 16px; }
+  nav.site-nav ul { gap: 14px; font-size: 12px; }
+  main { padding: 0 14px; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .footer-top .about { font-size: 12px; }
+  .newsletter { padding: 24px 16px; }
+  .page-head h1 { font-size: clamp(28px, 7vw, 48px); }
 }
