@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <pattern id="ag" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#1c3870" stroke-width="0.4"/>
+    </pattern>
+    <linearGradient id="abg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#040e26"/>
+    </linearGradient>
+    <style>
+      @keyframes slideIn {
+        from { opacity: 0; transform: translateX(-30px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0.4; }
+      }
+      @keyframes strikeGrow {
+        from { stroke-dashoffset: 300; }
+        to   { stroke-dashoffset: 0; }
+      }
+
+      .title  { animation: fadeIn 0.6s ease-out 0.2s both; }
+      .i1     { animation: slideIn 0.4s ease-out 0.8s both; }
+      .i2     { animation: slideIn 0.4s ease-out 1.6s both; }
+      .i3     { animation: slideIn 0.4s ease-out 2.4s both; }
+      .i4     { animation: slideIn 0.4s ease-out 3.2s both; }
+      .i5     { animation: slideIn 0.4s ease-out 4.0s both; }
+      .i6     { animation: slideIn 0.4s ease-out 4.8s both; }
+      .s1     { animation: strikeGrow 0.3s ease-out 1.4s both; stroke-dasharray: 300; stroke-dashoffset: 300; }
+      .s2     { animation: strikeGrow 0.3s ease-out 2.2s both; stroke-dasharray: 300; stroke-dashoffset: 300; }
+      .s3     { animation: strikeGrow 0.3s ease-out 3.0s both; stroke-dasharray: 300; stroke-dashoffset: 300; }
+      .s4     { animation: strikeGrow 0.3s ease-out 3.8s both; stroke-dasharray: 300; stroke-dashoffset: 300; }
+      .s5     { animation: strikeGrow 0.3s ease-out 4.6s both; stroke-dasharray: 300; stroke-dashoffset: 300; }
+      .counter{ animation: fadeIn 0.8s ease-out 5.6s both; }
+      .final  { animation: fadeIn 0.8s ease-out 6.2s both; }
+      .blink  { animation: pulse 1.2s ease-in-out 6.2s infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#abg)"/>
+  <rect width="800" height="500" fill="url(#ag)" opacity="0.6"/>
+
+  <!-- Title -->
+  <g class="title">
+    <text x="400" y="46" text-anchor="middle"
+          font-family="DM Sans, sans-serif" font-size="12"
+          fill="#6b8acf" letter-spacing="5" font-weight="700">
+      THE SALE THAT NEVER ENDS · BLOCKDAG 2024 – 2026
+    </text>
+    <line x1="60" y1="58" x2="740" y2="58" stroke="#1c3870" stroke-width="1"/>
+  </g>
+
+  <!-- Row 1 -->
+  <g class="i1">
+    <text x="80" y="102" font-family="JetBrains Mono, monospace"
+          font-size="11" fill="#6b8acf">2024 – early 2026</text>
+    <text x="80" y="124" font-family="Newsreader, Georgia, serif"
+          font-size="20" font-weight="700" fill="#e6a23c">
+      "PRESALE ENDING FOREVER"
+    </text>
+    <text x="80" y="142" font-family="JetBrains Mono, monospace"
+          font-size="10" fill="#3157a8">repeated for 450+ days</text>
+  </g>
+  <line class="s1" x1="78" y1="125" x2="490" y2="125"
+        stroke="#c62828" stroke-width="2.5" opacity="0.85"/>
+
+  <!-- Row 2 -->
+  <g class="i2">
+    <text x="80" y="182" font-family="JetBrains Mono, monospace"
+          font-size="11" fill="#6b8acf">May 6, 2026</text>
+    <text x="80" y="204" font-family="Newsreader, Georgia, serif"
+          font-size="20" font-weight="700" fill="#e6a23c">
+      "AFTERSALE CLOSES FOREVER – NO SALE AFTER MAY 7"
+    </text>
+    <text x="80" y="222" font-family="JetBrains Mono, monospace"
+          font-size="10" fill="#3157a8">official admin · direct statement</text>
+  </g>
+  <line class="s2" x1="78" y1="205" x2="700" y2="205"
+        stroke="#c62828" stroke-width="2.5" opacity="0.85"/>
+
+  <!-- Row 3 -->
+  <g class="i3">
+    <text x="80" y="262" font-family="JetBrains Mono, monospace"
+          font-size="11" fill="#6b8acf">May 8, 2026</text>
+    <text x="80" y="284" font-family="Newsreader, Georgia, serif"
+          font-size="20" font-weight="700" fill="#e6a23c">
+      "UTILITY PRESALE – 7 DAYS ONLY"
+    </text>
+    <text x="80" y="302" font-family="JetBrains Mono, monospace"
+          font-size="10" fill="#3157a8">launched 24h after "no sale after May 7"</text>
+  </g>
+  <line class="s3" x1="78" y1="285" x2="530" y2="285"
+        stroke="#c62828" stroke-width="2.5" opacity="0.85"/>
+
+  <!-- Row 4 -->
+  <g class="i4">
+    <text x="80" y="342" font-family="JetBrains Mono, monospace"
+          font-size="11" fill="#6b8acf">May 12, 2026</text>
+    <text x="80" y="364" font-family="Newsreader, Georgia, serif"
+          font-size="20" font-weight="700" fill="#e6a23c">
+      "EXTREME LIMITED-TIME 72H"
+    </text>
+    <text x="80" y="382" font-family="JetBrains Mono, monospace"
+          font-size="10" fill="#3157a8">$0.00000039 · 320X ROI potential</text>
+  </g>
+  <line class="s4" x1="78" y1="365" x2="490" y2="365"
+        stroke="#c62828" stroke-width="2.5" opacity="0.85"/>
+
+  <!-- Row 5 -->
+  <g class="i5">
+    <text x="80" y="422" font-family="JetBrains Mono, monospace"
+          font-size="11" fill="#6b8acf">May 13, 2026</text>
+    <text x="80" y="444" font-family="Newsreader, Georgia, serif"
+          font-size="20" font-weight="700" fill="#e6a23c">
+      "FLASH OFFER – 24H ONLY · ONE TIME OFFER"
+    </text>
+    <text x="80" y="462" font-family="JetBrains Mono, monospace"
+          font-size="10" fill="#3157a8">buy BDAG to unlock the right to sell BDAG</text>
+  </g>
+  <line class="s5" x1="78" y1="445" x2="620" y2="445"
+        stroke="#c62828" stroke-width="2.5" opacity="0.85"/>
+
+  <!-- Counter -->
+  <g class="counter">
+    <rect x="510" y="78" width="230" height="110" rx="4"
+          fill="#c62828" opacity="0.15" stroke="#c62828" stroke-width="1.5"/>
+    <text x="625" y="118" text-anchor="middle"
+          font-family="DM Sans, sans-serif" font-size="11"
+          fill="#ff8a7a" letter-spacing="2" font-weight="700">
+      SALES THAT ENDED FOREVER
+    </text>
+    <text x="625" y="168" text-anchor="middle"
+          font-family="Newsreader, Georgia, serif" font-size="72"
+          font-weight="800" fill="#c62828" font-style="italic">6</text>
+  </g>
+
+  <!-- Final caption -->
+  <rect class="final" x="0" y="472" width="800" height="28" fill="#c62828"/>
+  <text class="blink" x="400" y="490" text-anchor="middle"
+        font-family="DM Sans, sans-serif" font-size="13"
+        fill="#fff" letter-spacing="3" font-weight="800">
+    THE COUNTDOWN IS ALWAYS ON · THE SALE NEVER ENDS · blockdagexposed.com
+  </text>
+</svg>
