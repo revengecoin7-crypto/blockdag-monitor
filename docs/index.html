@@ -213,14 +213,14 @@
       </svg>
     </div>
     <div class="eyebrow red" id="hero-eyebrow">Breaking · 11 May 2026</div>
-    <h1 class="serif" id="hero-title"><a href="article-utility-presale.html" id="hero-link">"No sale after May 7th." Less than 24 hours later, BlockDAG launched another presale.</a></h1>
+    <h1 class="serif" id="hero-title">"No sale after May 7th." Less than 24 hours later, BlockDAG launched another presale.</h1>
     <p class="dek" id="hero-dek">BlockDAG sent dozens of "AFTERSALE CLOSES FOREVER" messages on May 7. An admin confirmed: "No sale after May 7th." On May 8, a new Utility Presale launched at $0.0000005 per BDAG — the sixth distinct sales mechanism since 2024. This is promise #65. It was broken within 24 hours.</p>
     <div class="byline">
       <span><b>BlockDAG Exposed</b> · Investigations Desk</span>
       <span>·</span>
       <span id="hero-date">11 May 2026</span>
       <span>·</span>
-      <span>5 min read</span>
+      <a href="article-utility-presale.html" id="hero-link" style="color:var(--red);font-weight:600;font-size:13px;letter-spacing:.04em;">Read article →</a>
     </div>
   </div>
 
@@ -831,7 +831,9 @@ button.site-search{background:transparent;font-family:inherit;text-align:left}
   const heroDek=document.getElementById('hero-dek');
   const heroDate=document.getElementById('hero-date');
   if(heroEyebrow)heroEyebrow.textContent=latest.tags.map(t=>t.label).join(' · ')+' · '+latest.dateDisplay;
-  if(heroLink){heroLink.href=latest.url;heroLink.textContent=latest.title;}
+  const heroTitle=document.getElementById('hero-title');
+  if(heroTitle)heroTitle.textContent=latest.title;
+  if(heroLink)heroLink.href=latest.url;
   if(heroDek)heroDek.textContent=latest.excerpt;
   if(heroDate)heroDate.textContent=latest.dateDisplay;
 
