@@ -32,7 +32,9 @@ body { overflow-x: hidden; max-width: 100vw; }
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-a, a:link, a:visited, a:hover, a:active, a:focus { color: inherit !important; text-decoration: none !important; }
+a { -webkit-tap-highlight-color: transparent; }
+a, a:link, a:hover, a:active, a:focus { color: inherit !important; text-decoration: none !important; }
+a:visited { color: inherit !important; -webkit-text-fill-color: inherit !important; text-decoration: none !important; }
 a:hover .hd-link, a.hd-link:hover, .article-card:hover .ttl { text-decoration: underline !important; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 img { max-width: 100%; display: block; }
 
