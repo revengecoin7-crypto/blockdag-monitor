@@ -1,10 +1,10 @@
 const ARTICLES = [
   {
     id: 'article-twitter-blocked',
-    title: 'BlockDAG disables all Twitter replies. Our CMC account is back.',
+    title: 'Since May 12: BlockDAG now blocks all Twitter replies. Our CMC account is back.',
     date: '2026-05-13',
     dateDisplay: 'May 13, 2026',
-    excerpt: 'BlockDAG has disabled replies on every Twitter post. Our CoinMarketCap account — banned after posting documented facts — has been reinstated. The censorship pattern is now fully documented.',
+    excerpt: 'Since May 12, 2026, BlockDAG blocks replies on their Twitter posts. Our CoinMarketCap account — banned after posting documented facts — has been reinstated. The censorship pattern is documented.',
     url: 'article-twitter-blocked.html',
     tags: [{ label: 'Editorial', style: 'red' }, { label: 'Transparency', style: 'orange' }],
     isNew: true,
