@@ -950,7 +950,7 @@ const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "342,222 public messages analyzed (Feb 18 – May 12, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "345,114 public messages analyzed (Feb 18 – May 13, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
@@ -1232,9 +1232,9 @@ const NOTABLE_QUOTES = [
   { date: "May 8, 2026", isNew: true, tag: "community", text: "BDAG presale is never going to end until they take all money from the innocent people's account. Shame on your team. You failed as a project. [community member, May 8, 16:07 UTC]" },
   { date: "May 11, 2026", isNew: true, tag: "community", text: "I am purchasing from 2024, since fourth batch, I spent around 1,450 USDT, but nothing I have received, now it's worth just 80 USDT, it's unfortunate. [community member, May 11, 08:07 UTC — 94.5% loss reported]" },
   { date: "May 11, 2026", isNew: true, tag: "community", text: "All my purchases since April 6th are not showing up as allocated or claimable on the Claim page even though they show up as Total BDAG balance on the home page. When will they be allocated and become claimable? [community member, May 11, 10:57 UTC — unresolved]" },
-  { date: "May 12, 2026", isNew: true, type: "broken", text: "Utility Presale price dropped from $0.0000005 to $0.00000039 within days of launch. ROI claim changed from '160X' to '320X' as the price fell. The 'limited 7 days only' presale is still running." },
-  { date: "May 12, 2026", isNew: true, type: "note", text: "Community member asks admin: 'You claimed the DL News report was false — did you sue them? Do we have any official documents?' Admin did not respond. DL News investigation banner remains on BlockDAG's CoinMarketCap page." },
-  { date: "May 12, 2026", isNew: true, type: "broken", text: "Batch 4 claims still unresolved for many users. Batch 5 described as 'live in a few days.' Batch 4 and Batch 5 are now being delayed together — both targeted for May 14. Multiple users report inability to claim Batch 4." },
-  { date: "May 12, 2026", isNew: true, type: "note", text: "BlockDAG Exposed CoinMarketCap account (@Blockdagexposed) banned after posting documented evidence about BlockDAG. Appeal submitted. All content posted was factual and independently verifiable. Website and tracker remain fully operational." }
+  { date: "May 12, 2026", type: "broken", text: "Utility Presale price dropped from $0.0000005 to $0.00000039 within days of launch. ROI claim changed from '160X' to '320X' as the price fell. The 'limited 7 days only' presale is still running." },
+  { date: "May 12, 2026", type: "note", text: "Community member asks admin: 'You claimed the DL News report was false — did you sue them? Do we have any official documents?' Admin did not respond. DL News investigation banner remains on BlockDAG's CoinMarketCap page." },
+  { date: "May 12, 2026", type: "broken", text: "Batch 4 claims still unresolved for many users. Batch 5 described as 'live in a few days.' Batch 4 and Batch 5 are now being delayed together — both targeted for May 14. Multiple users report inability to claim Batch 4." },
+  { date: "May 12, 2026", type: "note", text: "BlockDAG Exposed CoinMarketCap account (@Blockdagexposed) banned after posting documented evidence about BlockDAG. Appeal submitted. All content posted was factual and independently verifiable. Website and tracker remain fully operational." }
 ];
 
