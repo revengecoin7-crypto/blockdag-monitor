@@ -1,5 +1,16 @@
 const ARTICLES = [
   {
+    id: 'article-may14-casino',
+    title: 'May 14: the casino that still wasn\'t.',
+    date: '2026-05-14',
+    dateDisplay: 'May 14, 2026',
+    excerpt: 'May 7 was supposed to be the casino launch. May 14 replaced it. On May 14, no casino launched. Admin: "Please follow the pinned messages for updates." Two deadlines. Zero confirmed launches.',
+    url: 'article-may14-casino.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }],
+    isNew: true,
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="cm1t" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#cm1t)" opacity="0.6"/><!-- Row 1: May 7 --><rect x="20" y="30" width="360" height="50" rx="3" fill="#163877" stroke="#3157a8" stroke-width="0.6"/><text x="40" y="52" font-family="JetBrains Mono" font-size="9" fill="#6b8acf" font-weight="700">MAY 7, 2026</text><text x="40" y="68" font-family="Newsreader,serif" font-size="13" font-weight="700" fill="#fff">"Casino officially LIVE" · missed within 27 min</text><!-- Row 2: May 14 --><rect x="20" y="94" width="360" height="50" rx="3" fill="#2a0808" stroke="#c62828" stroke-width="1.2"/><text x="40" y="116" font-family="JetBrains Mono" font-size="9" fill="#ff8a7a" font-weight="700">MAY 14, 2026</text><text x="40" y="132" font-family="Newsreader,serif" font-size="13" font-weight="700" fill="#ff8a7a">"Follow pinned messages for updates"</text><!-- Stats --><g text-anchor="middle"><text x="90" y="180" font-family="JetBrains Mono" font-size="9" fill="#6b8acf">DEADLINES</text><text x="90" y="205" font-family="Newsreader,serif" font-size="40" font-weight="800" fill="#c62828" font-style="italic">2</text><text x="220" y="180" font-family="JetBrains Mono" font-size="9" fill="#6b8acf">LAUNCHES</text><text x="220" y="205" font-family="Newsreader,serif" font-size="40" font-weight="800" fill="#c62828" font-style="italic">0</text><text x="340" y="180" font-family="JetBrains Mono" font-size="9" fill="#6b8acf">STAKING</text><text x="340" y="205" font-family="Newsreader,serif" font-size="32" font-weight="800" fill="#c62828" font-style="italic">85d</text></g><rect x="0" y="228" width="400" height="22" fill="#c62828"/><text x="200" y="243" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">MAY 7 MISSED · MAY 14 MISSED · NO NEW DATE</text></svg>`
+  },
+  {
     id: 'article-twitter-blocked',
     title: 'Since May 12: BlockDAG now blocks all X replies. Our CMC account is back.',
     date: '2026-05-13',

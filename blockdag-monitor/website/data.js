@@ -950,7 +950,7 @@ const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "345,114 public messages analyzed (Feb 18 – May 13, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "347,987 public messages analyzed (Feb 18 – May 14, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
