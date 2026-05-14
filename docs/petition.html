@@ -59,7 +59,7 @@
 <div class="ticker" aria-label="BlockDAG promise ticker">
   <div class="ticker-track">
     <span class="tick alarm"><b>BDAG promised</b> $0.05000</span>
-    <span class="tick"><b>actual</b> $0.0001161 <span class="neg">−99.8%</span></span>
+    <span class="tick"><b>actual</b> $0.000093 <span class="neg">−99.8%</span></span>
     <span class="tick"><b>raised (claim)</b> $442M</span>
     <span class="tick"><b>on-chain</b> &lt;$100M</span>
     <span class="tick"><b>promises broken</b> 60 / 65 <span class="neg">92.3%</span></span>
@@ -68,7 +68,7 @@
     <span class="tick"><b>Alpine F1</b> $1.4M default</span>
     <span class="tick alarm">·</span>
     <span class="tick alarm"><b>BDAG promised</b> $0.05000</span>
-    <span class="tick"><b>actual</b> $0.0001161 <span class="neg">−99.8%</span></span>
+    <span class="tick"><b>actual</b> $0.000093 <span class="neg">−99.8%</span></span>
     <span class="tick"><b>raised (claim)</b> $442M</span>
     <span class="tick"><b>on-chain</b> &lt;$100M</span>
     <span class="tick"><b>promises broken</b> 60 / 65 <span class="neg">92.3%</span></span>
@@ -163,38 +163,24 @@
           </select>
         </div>
         <div class="p-field">
-          <label class="p-label">Blockchain used <span class="req">*</span></label>
-          <select id="p-chain" class="p-input" required>
-            <option value="">Select blockchain</option>
-            <option value="bsc">BSC (paid with BNB)</option>
-            <option value="eth">Ethereum (paid with ETH)</option>
-          </select>
+          <label class="p-label">Amount invested (USD) <span class="req">*</span></label>
+          <input type="number" id="p-amount" class="p-input" placeholder="e.g. 500" required min="1" step="any">
+          <div class="p-hint">Approximate total amount invested in BDAG in US dollars.</div>
         </div>
         <div class="p-field">
-          <label class="p-label">Transaction hash <span class="req">* must be verified</span></label>
-          <div class="p-verify-row">
-            <input type="text" id="p-txhash" class="p-input" placeholder="0x..." maxlength="66" required>
-            <button type="button" id="p-verify-btn" class="p-btn-verify" onclick="verifyTx()">Verify</button>
-          </div>
-          <div class="p-hint">Your TX hash from BSCScan or Etherscan. You must verify before signing.</div>
-          <div id="p-verify-result" style="display:none;margin-top:8px;padding:10px 14px;border-radius:4px;font-size:13px;font-weight:600;border:1px solid transparent"></div>
+          <label class="p-label">Screenshot of your investment <span class="opt">optional but strongly recommended</span></label>
+          <input type="file" id="p-screenshot" class="p-input" accept="image/*,.pdf" style="padding:6px 12px;cursor:pointer;">
+          <div class="p-hint">A screenshot from your wallet, exchange or BlockDAG dashboard showing your purchase. Max 10MB. Stored securely and never shared publicly.</div>
+          <div id="p-upload-progress" style="display:none;margin-top:8px;font-size:12px;color:var(--muted)">Uploading screenshot...</div>
         </div>
-        <div class="p-field">
-          <label class="p-label">Amount invested <span class="opt">auto-filled after verification</span></label>
-          <input type="text" id="p-amount" class="p-input" placeholder="Auto-filled after TX verification" readonly>
-        </div>
-        <div class="p-field">
-          <label class="p-label">BDAG tokens received <span class="opt">auto-detected</span></label>
-          <input type="text" id="p-bdag" class="p-input" placeholder="Auto-filled after TX verification" readonly>
-        </div>
-        <div class="p-field">
+        <div class="p-field" style="margin-top:8px">
           <div class="p-check-row">
             <input type="checkbox" id="p-agree" required>
-            <label for="p-agree" style="font-size:13px;color:var(--ink);line-height:1.5">I confirm the above statement is true and I agree to the terms of this petition.</label>
+            <label for="p-agree" style="font-size:13px;color:var(--ink);line-height:1.5">I confirm that I invested in BlockDAG Network and that the information above is accurate. I agree to the terms of this petition.</label>
           </div>
         </div>
-        <button type="submit" class="p-submit" id="petition-submit-btn" disabled style="opacity:0.45;cursor:default">
-          Sign the Petition — verify TX first
+        <button type="submit" class="p-submit" id="petition-submit-btn">
+          Sign the Petition
         </button>
       </form>
     </div>
@@ -214,9 +200,9 @@
       <div class="facts" style="margin-top:16px">
         <h4>Why this matters</h4>
         <div class="row"><a href="article-442-million.html" style="color:var(--ink)">Where did $442M go?</a><span style="color:var(--muted);font-size:11px">→</span></div>
-        <div class="row"><a href="investigations/whistleblower.html" style="color:var(--ink)">Whistleblower testimony</a><span style="color:var(--muted);font-size:11px">→</span></div>
-        <div class="row"><a href="investigations/otc-trail.html" style="color:var(--ink)">$110M OTC trail</a><span style="color:var(--muted);font-size:11px">→</span></div>
-        <div class="row"><a href="tracker.html" style="color:var(--ink)">All 64 promises</a><span style="color:var(--muted);font-size:11px">→</span></div>
+        <div class="row"><a href="article-exchanges.html" style="color:var(--ink)">Exchanges: 20 promised, 3 delivered</a><span style="color:var(--muted);font-size:11px">→</span></div>
+        <div class="row"><a href="article-staking.html" style="color:var(--ink)">Staking: 84 days broken</a><span style="color:var(--muted);font-size:11px">→</span></div>
+        <div class="row"><a href="tracker.html" style="color:var(--ink)">All 65 promises tracked</a><span style="color:var(--muted);font-size:11px">→</span></div>
       </div>
     </aside>
   </div>
@@ -225,7 +211,7 @@
 <footer class="site">
   <div class="footer-inner">
     <div class="footer-top">
-      <div><div class="brand-name serif">BlockDAG <em>Exposed</em></div><p class="about" style="margin-top:14px">Independent investigative tracker of BlockDAG Network. 342,222 messages analyzed · 64 promises tracked · 59 broken.</p></div>
+      <div><div class="brand-name serif">BlockDAG <em>Exposed</em></div><p class="about" style="margin-top:14px">Independent investigative tracker of BlockDAG Network. 345,114 messages analyzed · 65 promises tracked · 60 broken.</p></div>
       <div><h4>Investigations</h4><ul>
         <li><a href="index.html#articles">Latest stories</a></li>
         <li><a href="tracker.html">Promise tracker</a></li>
@@ -248,8 +234,8 @@
       </ul></div>
     </div>
     <div class="footer-bot">
-      <div>© 2026 BlockDAG Exposed · Independent · Not financial advice · Last updated May 12, 2026</div>
-      <div class="socials"><a href="https://x.com/blockdagmonitor">X / Twitter</a><a href="https://t.me/blockdagexposed">Telegram</a></div>
+      <div>© 2026 BlockDAG Exposed · Independent · Not financial advice · Last updated May 13, 2026</div>
+      <div class="socials"><a href="https://x.com/blockdagmonitor">X</a><a href="https://t.me/blockdagexposed">Telegram</a></div>
     </div>
   </div>
 </footer>
@@ -257,54 +243,44 @@
 <script type="module">
   import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
   import { getFirestore, collection, addDoc, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
-
-  window.verifyTx = async function() {
-    const txhash = document.getElementById('p-txhash').value.trim();
-    const chain = document.getElementById('p-chain').value;
-    const result = document.getElementById('p-verify-result');
-    const btn = document.getElementById('p-verify-btn');
-    if (!txhash || !txhash.startsWith('0x')) { result.style.display='block'; result.style.background='#fef2f2'; result.style.borderColor='#e53030'; result.style.color='#e53030'; result.textContent='Please enter a valid transaction hash starting with 0x.'; return; }
-    if (!chain) { result.style.display='block'; result.style.background='#fef2f2'; result.style.borderColor='#e53030'; result.style.color='#e53030'; result.textContent='Please select a blockchain first.'; return; }
-    btn.textContent='Verifying...'; btn.disabled=true;
-    const apiUrl = chain==='bsc' ? `https://api.bscscan.com/api?module=proxy&action=eth_getTransactionByHash&txhash=${txhash}` : `https://api.etherscan.io/api?module=proxy&action=eth_getTransactionByHash&txhash=${txhash}`;
-    try {
-      const res=await fetch(apiUrl); const data=await res.json(); const tx=data.result;
-      if (!tx) { result.style.display='block'; result.style.background='#fef2f2'; result.style.borderColor='#e53030'; result.style.color='#e53030'; result.textContent='Transaction not found. Check the hash and blockchain.'; }
-      else {
-        const valueWei=parseInt(tx.value,16); const valueCoin=(valueWei/1e18).toFixed(6); const coinName=chain==='bsc'?'BNB':'ETH';
-        result.style.display='block'; result.style.background='#e8faf0'; result.style.borderColor='#00b37a'; result.style.color='#007a52';
-        result.textContent=`✓ Verified: ${valueCoin} ${coinName} paid on ${chain.toUpperCase()}`;
-        const submitBtn=document.getElementById('petition-submit-btn');
-        submitBtn.disabled=false; submitBtn.style.opacity='1'; submitBtn.style.cursor='pointer'; submitBtn.textContent='Sign the Petition';
-        document.getElementById('p-txhash').dataset.verified='true'; document.getElementById('p-txhash').dataset.value=valueCoin; document.getElementById('p-txhash').dataset.coin=coinName;
-        document.getElementById('p-amount').value=valueCoin;
-        try {
-          const rUrl=chain==='bsc'?`https://api.bscscan.com/api?module=proxy&action=eth_getTransactionReceipt&txhash=${txhash}`:`https://api.etherscan.io/api?module=proxy&action=eth_getTransactionReceipt&txhash=${txhash}`;
-          const rRes=await fetch(rUrl); const rData=await rRes.json(); const receipt=rData.result;
-          if (receipt&&receipt.logs) { const TT='0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef'; const from=tx.from.toLowerCase(); for (const log of receipt.logs) { if (log.topics&&log.topics[0]&&log.topics[0].toLowerCase()===TT&&log.topics.length>=3) { const to='0x'+log.topics[2].slice(26).toLowerCase(); if (to===from) { const amt=Number(BigInt(log.data)/BigInt('1000000000000000000')); if (amt>0) document.getElementById('p-bdag').value=amt.toLocaleString('en-US',{maximumFractionDigits:0}); break; } } } }
-        } catch(e) {}
-      }
-    } catch(e) { result.style.display='block'; result.style.background='#fef2f2'; result.style.borderColor='#e53030'; result.style.color='#e53030'; result.textContent='Could not reach blockchain API. Please try again.'; }
-    btn.textContent='Verify'; btn.disabled=false;
-  };
+  import { getStorage, ref, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js';
 
   const BLOCKED=['mailinator','guerrillamail','tempmail','throwam','yopmail','10minutemail','sharklasers','grr.la','spam4.me','trashmail','slmail','dispostable','fakeinbox','maildrop','getairmail','filzmail','mailnull','spamgourmet','spamex','spam.la','binkmail','spaml'];
   function isValidEmail(e){ const r=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e); if(!r)return false; const d=e.split('@')[1].toLowerCase(); return !BLOCKED.some(b=>d.includes(b)); }
 
   const cfg={apiKey:"AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",authDomain:"blockdag-exposed.firebaseapp.com",projectId:"blockdag-exposed",storageBucket:"blockdag-exposed.firebasestorage.app",messagingSenderId:"867203959601",appId:"1:867203959601:web:e31c472057f118f9aa3e10"};
-  const app=initializeApp(cfg); const db=getFirestore(app); const sigCol=collection(db,'signatures');
+  const app=initializeApp(cfg);
+  const db=getFirestore(app);
+  const storage=getStorage(app);
+  const sigCol=collection(db,'signatures');
 
   onSnapshot(sigCol,(snap)=>{ const c=snap.size; document.getElementById('sig-count').textContent=c.toLocaleString(); document.getElementById('sig-bar').style.width=Math.min((c/1000)*100,100)+'%'; });
 
   document.getElementById('petition-form').addEventListener('submit',async(e)=>{ e.preventDefault();
     const btn=document.getElementById('petition-submit-btn'); const err=document.getElementById('petition-error');
-    const name=document.getElementById('p-name').value.trim(); const email=document.getElementById('p-email').value.trim().toLowerCase(); const country=document.getElementById('p-country').value; const txEl=document.getElementById('p-txhash');
-    if (!txEl.value.trim()||txEl.dataset.verified!=='true') { err.textContent='You must verify your transaction hash before signing.'; err.classList.add('show'); return; }
+    const name=document.getElementById('p-name').value.trim();
+    const email=document.getElementById('p-email').value.trim().toLowerCase();
+    const country=document.getElementById('p-country').value;
+    const amount=parseFloat(document.getElementById('p-amount').value)||null;
+    const fileInput=document.getElementById('p-screenshot');
     if (!isValidEmail(email)) { err.textContent='Please enter a valid email address. Disposable addresses are not accepted.'; err.classList.add('show'); return; }
+    if (!country) { err.textContent='Please select your country.'; err.classList.add('show'); return; }
     err.classList.remove('show'); btn.disabled=true; btn.textContent='Signing...';
-    const amount=document.getElementById('p-amount').value||null; const bdagRaw=document.getElementById('p-bdag').value.replace(/,/g,''); const bdagAmount=bdagRaw?Number(bdagRaw):null;
+    let screenshotUrl=null;
+    if (fileInput.files&&fileInput.files[0]) {
+      const file=fileInput.files[0];
+      if (file.size>10*1024*1024) { err.textContent='Screenshot file is too large. Maximum 10MB.'; err.classList.add('show'); btn.disabled=false; btn.textContent='Sign the Petition'; return; }
+      document.getElementById('p-upload-progress').style.display='block';
+      try {
+        const ts=Date.now(); const ext=file.name.split('.').pop();
+        const storageRef=ref(storage,`screenshots/${ts}_${Math.random().toString(36).slice(2)}.${ext}`);
+        await uploadBytes(storageRef,file);
+        screenshotUrl=await getDownloadURL(storageRef);
+      } catch(uploadErr){ console.warn('Screenshot upload failed',uploadErr); }
+      document.getElementById('p-upload-progress').style.display='none';
+    }
     try {
-      await addDoc(sigCol,{name,email,country,amount:amount?Number(amount):null,bdagAmount,txhash:txEl.value.trim()||null,txVerified:txEl.dataset.verified==='true',txValue:txEl.dataset.value?Number(txEl.dataset.value):null,txCoin:txEl.dataset.coin||null,chain:document.getElementById('p-chain').value||null,timestamp:serverTimestamp()});
+      await addDoc(sigCol,{name,email,country,amount,screenshotUrl,timestamp:serverTimestamp()});
       document.getElementById('petition-success').classList.add('show'); document.getElementById('petition-form').style.display='none';
     } catch(err2){ document.getElementById('petition-error').textContent='Something went wrong. Please try again.'; document.getElementById('petition-error').classList.add('show'); btn.disabled=false; btn.textContent='Sign the Petition'; }
   });
