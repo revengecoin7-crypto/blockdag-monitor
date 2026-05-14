@@ -1,5 +1,16 @@
 const ARTICLES = [
   {
+    id: 'article-tether-freeze',
+    title: 'Tether freezes $213M linked to BlockDAG founder Gurhan Kiziloz in Brazil tax dispute.',
+    date: '2026-05-14',
+    dateDisplay: 'May 14, 2026',
+    excerpt: 'A Brazilian court ordered Tether to freeze $213M in USDT across 48 wallets linked to Gurhan Kiziloz — BlockDAG\'s hidden founder — over alleged unpaid gambling taxes and unregistered crypto sales 2021-2024.',
+    url: 'article-tether-freeze.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Legal', style: 'orange' }],
+    isNew: true,
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="tf1g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#tf1g)" opacity="0.6"/><!-- Freeze icon center --><rect x="140" y="40" width="120" height="130" rx="4" fill="#163877" stroke="#c62828" stroke-width="2"/><text x="200" y="100" text-anchor="middle" font-family="Newsreader,serif" font-size="44" font-weight="800" fill="#c62828" font-style="italic">$213M</text><text x="200" y="128" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#ff8a7a" font-weight="700">FROZEN · 48 WALLETS</text><text x="200" y="152" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#6b8acf">BRAZIL COURT ORDER · TETHER USDT</text><!-- Who --><text x="20" y="200" font-family="JetBrains Mono" font-size="9" fill="#6b8acf">LINKED TO:</text><text x="20" y="218" font-family="Newsreader,serif" font-size="14" font-weight="700" fill="#fff">Gurhan Kiziloz</text><text x="20" y="234" font-family="JetBrains Mono" font-size="8" fill="#6b8acf">BlockDAG hidden founder · 2+ years concealed</text><rect x="0" y="238" width="400" height="12" fill="#c62828"/></svg>`
+  },
+  {
     id: 'article-may14-casino',
     title: 'May 14: the casino that still wasn\'t.',
     date: '2026-05-14',
