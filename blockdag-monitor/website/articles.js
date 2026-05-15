@@ -107,7 +107,7 @@ const ARTICLES = [
   },
   {
     id: 'article-staking',
-    title: '82 days and still broken: BlockDAG\'s staking failure',
+    title: '86 days and still broken: BlockDAG\'s staking failure',
     date: '2026-05-05',
     dateDisplay: 'May 5, 2026',
     excerpt: 'Staking was promised live on February 19, 2026. Eighty-two days later it remains broken. Users cannot unstake. Rewards are frozen. The official response has not changed.',
