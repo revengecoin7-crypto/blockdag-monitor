@@ -1,5 +1,16 @@
 const ARTICLES = [
   {
+    id: 'article-may15-casino',
+    title: 'May 15: casino postponed a third time. Sparks users cannot withdraw. Admin dismisses the $213M freeze.',
+    date: '2026-05-15',
+    dateDisplay: 'May 15, 2026',
+    excerpt: 'Three casino deadlines missed. Sparks users cannot withdraw winnings (minimum 460,000 Sparks). Admin calls $213M Kiziloz freeze "not unique to BDAG." Price down 15% to $0.000081.',
+    url: 'article-may15-casino.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Casino', style: 'orange' }],
+    isNew: true,
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="m15t" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#m15t)" opacity="0.6"/><rect x="20" y="25" width="360" height="42" rx="2" fill="#2a0808" stroke="#c62828" stroke-width="0.8"/><text x="40" y="42" font-family="JetBrains Mono" font-size="8" fill="#ff8a7a" font-weight="700">MAY 7</text><text x="40" y="58" font-family="Newsreader,serif" font-size="11" font-weight="700" fill="#ff8a7a">"LIVE" → "7 days" — 27 min later</text><rect x="20" y="78" width="360" height="42" rx="2" fill="#2a0808" stroke="#c62828" stroke-width="0.8"/><text x="40" y="95" font-family="JetBrains Mono" font-size="8" fill="#ff8a7a" font-weight="700">MAY 14</text><text x="40" y="111" font-family="Newsreader,serif" font-size="11" font-weight="700" fill="#ff8a7a">"Follow pinned messages" — no launch</text><rect x="20" y="131" width="360" height="42" rx="2" fill="#2a0808" stroke="#e6a23c" stroke-width="1.5"/><text x="40" y="148" font-family="JetBrains Mono" font-size="8" fill="#e6a23c" font-weight="700">MAY 15</text><text x="40" y="164" font-family="Newsreader,serif" font-size="11" font-weight="700" fill="#e6a23c">"Nearly finalised, launching tomorrow"</text><g text-anchor="middle"><text x="90" y="205" font-family="JetBrains Mono" font-size="8" fill="#6b8acf">DEADLINES</text><text x="90" y="232" font-family="Newsreader,serif" font-size="38" font-weight="800" fill="#c62828" font-style="italic">3</text><text x="215" y="205" font-family="JetBrains Mono" font-size="8" fill="#6b8acf">LAUNCHES</text><text x="215" y="232" font-family="Newsreader,serif" font-size="38" font-weight="800" fill="#c62828" font-style="italic">0</text><text x="330" y="205" font-family="JetBrains Mono" font-size="8" fill="#6b8acf">PRICE 24H</text><text x="330" y="232" font-family="Newsreader,serif" font-size="32" font-weight="800" fill="#c62828" font-style="italic">−15%</text></g></svg>`
+  },
+  {
     id: 'article-tether-freeze',
     title: 'Tether freezes $213M linked to BlockDAG founder Gurhan Kiziloz in Brazil tax dispute.',
     date: '2026-05-14',
