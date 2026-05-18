@@ -17,9 +17,9 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (59 promises)
-3. `timeline.html` — Tijdlijn (66 events)
-4. `evidence.html` — 38 directe quotes
+2. `tracker.html` — Promise Tracker (68 promises, 61 broken)
+3. `timeline.html` — Tijdlijn (incl. May 14–18 events)
+4. `evidence.html` — directe quotes (uitgebreid met May 14–18)
 5. `categories.html` — Categorieoverzicht
 6. `investigation.html` — DL News onderzoek
 7. `indicators.html` — Trust Score pagina (gauge, 5/100)
@@ -57,41 +57,41 @@
 - Site nog niet geïndexeerd (nieuw domein)
 - Handmatig indexering aanvragen via URL-inspectie voor blockdag.html, petition.html, indicators.html
 
-## Data (data.js) — Huidige staat
-- 62 promises (36 broken, 20 misleading, 2 kept, 4 pending)
-- 76 timeline events
-- 50 notable quotes
+## Data (data.js) — Huidige staat (May 18, 2026)
+- 68 promises tracked (61 broken, ~89.7% failure rate)
+- Timeline events bijgewerkt t/m May 18
+- Notable quotes bijgewerkt t/m May 18
 - 20 bronnen
-- Faalpercentage: 90.3%
-- Laatste update: May 8, 2026
+- Laatste artikel: article-x10swap-lottery.html (May 18)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **8 mei 2026** (export: ChatExport_2026-05-08)
-- Periode: 18 februari t/m 6 mei 2026
-- Totaal berichten: 330,807
+- Geanalyseerd t/m: **18 mei 2026** (export: ChatExport_2026-05-18)
+- Periode: 18 februari t/m 18 mei 2026
+- Totaal berichten: 359,947 (8,595 nieuw in deze export)
+- Gap: 20–30 april ontbreekt nog
 
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F
 
-## Actuele marktdata (May 7, 2026)
-- Huidige prijs BDAG: $0.00008156 (CMC, -99.84% vs $0.05, -34% in 24u)
-- Marktcap: $3.62M
-- Casino: "CASINO LIVE" 18:10 UTC, maar 18:37 UTC "goes live in 7 days", 19:06 UTC May 14 bevestigd
-- Aftersale gesloten May 7, vervangen door 15% discount swap (7 dagen)
-- X10Swap bot gelanceerd (t.me/x10swapbot)
-- Volgende harde datum casino: May 14, 2026
+## Actuele marktdata (May 18, 2026)
+- BDAG prijs: $0.000081 (CMC, –99.8% vs $0.05)
+- Casino: drie deadlines gemist (May 7, 14, 15). Geen volledige launch.
+- BDAG Sparks live op bdagsparks.com; minimum withdrawal 460,000 Sparks
+- x10swap: $40 entry fee, ~1 in 10 entries goedgekeurd, geen refund — feitelijk een betaalde loterij
+- $213M Tether freeze op Kiziloz (Brazilië, May 14, gambling tax dispuut 2021–2024)
+- blockdag.co certificaat flagged "unsafe" (May 16)
+- Nieuwe belofte: $0.001 buyback op June 1 (Promise 67)
 
 ## Belangrijke correcties gedaan
 - BingX en Gate.io stonden als KEPT maar listings zijn NOOIT gebeurd → gecorrigeerd naar BROKEN (May 4, 2026)
 
 ## Volgende deadlines om te monitoren
-- Casino launch: May 7, 2026 (deadline nu geweest — "Casino in 3 days / Bets open in 7 days" stille downgrade)
-- Batch 5 claims: na May 7 (aftersale eindigt May 7 per eigen zeggen)
-- CoinW listing: nog steeds niet live (beloofd Monday May 4)
-- Lending/borrowing: mid-May 2026 (beloofd)
-- dApp dashboard: late May 2026 (beloofd)
-- Miners: June 2026 (vijfde deadline, officieel bevestigd)
-- Super App: June 15, 2026
+- $0.001 buyback start: June 1, 2026 (Promise 67 — geen budget/bron/criteria gepubliceerd)
+- Casino full launch: geen nieuwe harde datum na drie misses
+- Batch 5 claims: nog niet beschikbaar
+- Miners: "June 2026" (zoveelste deadline)
+- Brazilië/Kiziloz: appèl tegen $213M freeze loopt
+- Staking: 89 dagen broken sinds Feb 19, 2026
 
 ## Vaste regels
 1. Na elke wijziging in `blockdag-monitor/website/` altijd ook `docs/` updaten en pushen
