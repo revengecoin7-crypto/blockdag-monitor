@@ -1,0 +1,30 @@
+🚨 BlockDAG's "x10swap" is not a swap.
+
+It's a paid lottery.
+
+⚙️ HOW IT WORKS
+
+You pay $40 to enter.
+About 1 in 10 entries get approved.
+If yours is denied, the $40 is gone. No refund.
+
+The promoted "10x rate" is paid out of the entry fees from the 9 users who got denied. That's not BlockDAG paying you 10x. That's the other 9 users paying you 10x.
+
+💬 WHAT USERS SAY
+
+"Cost $100 in Sparks. Used 450,000 in x10swap which costs $40 to enter. Swap wasn't approved. $140 spent. No money back, just BDAG coins."
+
+"Only one entry was approved in my round. They need at least 10 entry fees to pay for the one that does get approved."
+
+"I found out x10 swap is basically a lottery. Tried it once and never again."
+
+📋 WHAT BLOCKDAG HAS NOT PUBLISHED
+
+→ The approval rate
+→ The round size
+→ The source of USDT for payouts
+→ The operating licence
+→ The jurisdiction
+
+🔗 Full investigation:
+https://blockdagexposed.com/article-x10swap-lottery.html
