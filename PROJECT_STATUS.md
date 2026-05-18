@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (68 promises, 61 broken)
+2. `tracker.html` — Promise Tracker (68 promises, 60 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–18 events)
 4. `evidence.html` — directe quotes (uitgebreid met May 14–18)
 5. `categories.html` — Categorieoverzicht
@@ -58,7 +58,7 @@
 - Handmatig indexering aanvragen via URL-inspectie voor blockdag.html, petition.html, indicators.html
 
 ## Data (data.js) — Huidige staat (May 18, 2026)
-- 68 promises tracked (61 broken, ~89.7% failure rate)
+- 68 promises tracked (60 broken, ~88.2% failure rate)
 - Timeline events bijgewerkt t/m May 18
 - Notable quotes bijgewerkt t/m May 18
 - 20 bronnen

@@ -6,16 +6,16 @@
   <title>Admin — BlockDAG Exposed</title>
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;100;700;800&family=JetBrains+Mono:wght@400;100&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #010d14; color: #fff; font-family: Manrope, sans-serif; min-height: 100vh; }
+    body { background: #060d14; color: #fff; font-family: Manrope, sans-serif; min-height: 100vh; }
     .admin-login {
       display: flex; align-items: center; justify-content: center; min-height: 100vh;
     }
     .admin-login-box {
       background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 20px; padding: 40px; width: 310px; text-align: center;
+      border-radius: 20px; padding: 40px; width: 360px; text-align: center;
     }
     .admin-login-title { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
     .admin-login-sub { font-size: 13px; color: rgba(255,255,255,0.35); margin-bottom: 24px; }
@@ -45,12 +45,12 @@
     }
     .admin-tab.active { background: rgba(0,212,255,0.15); border-color: rgba(0,212,255,0.4); color: #00d4ff; }
 
-    .admin-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 11px; margin-bottom: 28px; }
+    .admin-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
     .admin-stat-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 20px; }
     .admin-stat-num { font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 800; color: #00d4ff; }
-    .admin-stat-label { font-size: 11px; color: rgba(255,255,255,0.35); margin-top: 4px; font-weight: 100; text-transform: uppercase; letter-spacing: 0.08em; }
+    .admin-stat-label { font-size: 11px; color: rgba(255,255,255,0.35); margin-top: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
 
-    .admin-table-wrap { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 11px; overflow: hidden; }
+    .admin-table-wrap { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; overflow: hidden; }
     .admin-table-header { display: grid; grid-template-columns: 2fr 2fr 1fr 1fr 1fr; gap: 12px; padding: 12px 20px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.07); }
     .admin-table-header span { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.3); }
     .admin-table-row { display: grid; grid-template-columns: 2fr 2fr 1fr 1fr 1fr; gap: 12px; padding: 13px 20px; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: center; }
@@ -60,7 +60,7 @@
     .admin-cell-mono { font-family: 'JetBrains Mono', monospace; font-size: 12px; }
     .admin-loading { padding: 40px; text-align: center; color: rgba(255,255,255,0.3); font-size: 14px; }
     .admin-export-btn {
-      padding: 8px 11px; border-radius: 8px; font-size: 12px; font-weight: 700;
+      padding: 8px 16px; border-radius: 8px; font-size: 12px; font-weight: 700;
       background: rgba(0,212,255,0.1); border: 1px solid rgba(0,212,255,0.3); color: #00d4ff;
       cursor: pointer; font-family: Manrope, sans-serif;
     }
@@ -68,8 +68,8 @@
     .admin-brevo-link {
       display: inline-flex; align-items: center; gap: 8px; padding: 14px 20px;
       background: rgba(9,179,98,0.1); border: 1px solid rgba(9,179,98,0.3);
-      border-radius: 14px; color: #09b312; font-weight: 700; font-size: 14px;
-      text-decoration: none; margin-top: 11px;
+      border-radius: 14px; color: #09b362; font-weight: 700; font-size: 14px;
+      text-decoration: none; margin-top: 16px;
     }
     .admin-brevo-link:hover { background: rgba(9,179,98,0.2); }
   </style>
@@ -163,7 +163,7 @@
     <!-- Newsletter tab -->
     <div id="tab-newsletter" style="display:none;">
       <div style="padding:32px;text-align:center;">
-        <div style="font-size:11px;color:rgba(255,255,255,0.1);margin-bottom:20px;line-height:1.7;">
+        <div style="font-size:16px;color:rgba(255,255,255,0.6);margin-bottom:20px;line-height:1.7;">
           De nieuwsbrief abonnees staan in Brevo.<br>Klik hieronder om ze te bekijken.
         </div>
         <a href="https://app.brevo.com/contact/list" target="_blank" class="admin-brevo-link">
@@ -236,12 +236,12 @@
 
 
     const firebaseConfig = {
-      apiKey: "AIzaSyBkFwzdib2ewXvNf1YmgKvmfhMWt-8k1uw",
+      apiKey: "AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",
       authDomain: "blockdag-exposed.firebaseapp.com",
       projectId: "blockdag-exposed",
       storageBucket: "blockdag-exposed.firebasestorage.app",
-      messagingSenderId: "817203959101",
-      appId: "1:817203959101:web:e31c472057f118f9aa3e10"
+      messagingSenderId: "867203959601",
+      appId: "1:867203959601:web:e31c472057f118f9aa3e10"
     };
 
     const app = initializeApp(firebaseConfig);
