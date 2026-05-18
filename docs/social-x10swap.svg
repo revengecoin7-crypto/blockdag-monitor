@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c3870" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="d" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="0.9" fill="#e6a23c" opacity="0.10"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#040e26"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#g)" opacity="0.7"/>
+  <rect width="1200" height="630" fill="url(#d)"/>
+
+  <text x="600" y="58" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#6b8acf" letter-spacing="5" font-weight="700">BLOCKDAG INVESTIGATION · MAY 18, 2026</text>
+  <line x1="80" y1="72" x2="1120" y2="72" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="125" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="44" font-weight="800" fill="#fff">BlockDAG's <tspan fill="#e6a23c" font-style="italic">"x10swap"</tspan></text>
+  <text x="600" y="170" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="28" font-weight="600" fill="#ff8a7a">is a paid lottery dressed as a token swap.</text>
+
+  <text x="600" y="220" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#6b8acf" letter-spacing="3">ONE ROUND · TEN ENTRIES · NINE DENIED</text>
+
+  <g>
+    <rect x="190" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="224" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+
+    <rect x="268" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="302" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+
+    <rect x="346" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="380" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+
+    <rect x="424" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="458" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+
+    <rect x="502" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="536" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+
+    <rect x="580" y="250" width="68" height="68" rx="4" fill="#163877" stroke="#67d39d" stroke-width="3"/>
+    <text x="614" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#67d39d" font-weight="800">PAID</text>
+
+    <rect x="658" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="692" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+
+    <rect x="736" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="770" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+
+    <rect x="814" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="848" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+
+    <rect x="892" y="250" width="68" height="68" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+    <text x="926" y="294" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff8a7a" font-weight="700">DENY</text>
+  </g>
+
+  <line x1="80" y1="370" x2="1120" y2="370" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="220" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf" letter-spacing="2" font-weight="700">ENTRY FEE</text>
+  <text x="220" y="450" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="38" font-weight="800" fill="#e6a23c">$40</text>
+  <text x="220" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#6b8acf">per attempt</text>
+
+  <line x1="380" y1="390" x2="380" y2="480" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="510" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf" letter-spacing="2" font-weight="700">APPROVAL RATE</text>
+  <text x="510" y="450" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="38" font-weight="800" fill="#c62828">~1 / 10</text>
+  <text x="510" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#6b8acf">per user reports</text>
+
+  <line x1="670" y1="390" x2="670" y2="480" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="810" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf" letter-spacing="2" font-weight="700">REFUND ON DENIAL</text>
+  <text x="810" y="450" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="38" font-weight="800" fill="#c62828">NONE</text>
+  <text x="810" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#6b8acf">fee kept by operator</text>
+
+  <line x1="960" y1="390" x2="960" y2="480" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="1080" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf" letter-spacing="2" font-weight="700">PUBLISHED ODDS</text>
+  <text x="1080" y="450" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="38" font-weight="800" fill="#c62828">NONE</text>
+  <text x="1080" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#6b8acf">no licence shown</text>
+
+  <text x="600" y="540" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-style="italic" fill="#e6a23c" font-weight="500">The 10x rate is funded by the rejected entry fees of the other nine users.</text>
+
+  <rect x="0" y="570" width="1200" height="60" fill="#c62828"/>
+  <rect x="40" y="584" width="28" height="28" fill="#fff"/>
+  <text x="54" y="603" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-weight="800" fill="#0C2956">B</text>
+  <text x="78" y="601" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" fill="#fff">BlockDAG <tspan font-style="italic">Exposed</tspan></text>
+  <text x="78" y="618" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(255,255,255,0.6)" letter-spacing="2">INDEPENDENT · INVESTIGATIVE</text>
+  <text x="1160" y="605" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="13" fill="#fff" font-weight="600">blockdagexposed.com/article-x10swap-lottery.html</text>
+  <text x="1160" y="622" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,0.5)">$40 per attempt. Most denied. No refund.</text>
+</svg>
