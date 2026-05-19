@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c3870" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="d" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="0.9" fill="#e6a23c" opacity="0.10"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#040e26"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#g)" opacity="0.7"/>
+  <rect width="1200" height="630" fill="url(#d)"/>
+
+  <text x="600" y="58" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#6b8acf" letter-spacing="5" font-weight="700">BLOCKDAG EXPOSED · EDITORIAL · MAY 19, 2026</text>
+  <line x1="80" y1="72" x2="1120" y2="72" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="135" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="50" font-weight="800" fill="#fff">BlockDAG just <tspan fill="#e6a23c" font-style="italic">blocked us</tspan> on X.</text>
+  <text x="600" y="180" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="26" font-weight="600" fill="#ff8a7a">The block is the receipt.</text>
+
+  <rect x="200" y="220" width="800" height="120" rx="4" fill="#163877" stroke="#3157a8" stroke-width="1.5"/>
+  <text x="240" y="252" font-family="JetBrains Mono, monospace" font-size="14" fill="#6b8acf" letter-spacing="2" font-weight="700">@blockdagnetwork (verified · 94.8K followers)</text>
+  <text x="240" y="290" font-family="Newsreader, Georgia, serif" font-size="26" font-weight="700" fill="#fff">"@blockdagnetwork has blocked you."</text>
+  <text x="240" y="320" font-family="JetBrains Mono, monospace" font-size="13" fill="rgba(255,255,255,0.65)">You can view public posts but cannot follow, message, or engage.</text>
+
+  <line x1="80" y1="370" x2="1120" y2="370" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#6b8acf" letter-spacing="3" font-weight="700">WHAT WE PUBLISHED THE WEEK OF THE BLOCK</text>
+
+  <g font-family="Newsreader, Georgia, serif" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="200" y="455" fill="#fff">$0.0000003 sale</text>
+    <text x="200" y="478" fill="#ff8a7a" font-size="13" font-weight="500">−99.9994% vs $0.05</text>
+
+    <text x="466" y="455" fill="#fff">250,000 coin cap</text>
+    <text x="466" y="478" fill="#ff8a7a" font-size="13" font-weight="500">max $250 buyback recovery</text>
+
+    <text x="733" y="455" fill="#fff">Miner sales</text>
+    <text x="733" y="478" fill="#ff8a7a" font-size="13" font-weight="500">STOPPED</text>
+
+    <text x="1000" y="455" fill="#fff">Batch 1 claims</text>
+    <text x="1000" y="478" fill="#ff8a7a" font-size="13" font-weight="500">RETRACTED</text>
+  </g>
+
+  <line x1="80" y1="510" x2="1120" y2="510" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="548" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-style="italic" fill="#e6a23c" font-weight="500">Same pattern as the 2025 ZachXBT block. The investigation continues.</text>
+
+  <rect x="0" y="570" width="1200" height="60" fill="#c62828"/>
+  <rect x="40" y="584" width="28" height="28" fill="#fff"/>
+  <text x="54" y="603" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-weight="800" fill="#0C2956">B</text>
+  <text x="78" y="601" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" fill="#fff">BlockDAG <tspan font-style="italic">Exposed</tspan></text>
+  <text x="78" y="618" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(255,255,255,0.6)" letter-spacing="2">INDEPENDENT · INVESTIGATIVE</text>
+  <text x="1160" y="605" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="13" fill="#fff" font-weight="600">blockdagexposed.com/article-blocked-on-x.html</text>
+  <text x="1160" y="622" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,0.5)">The block does not change the price chart. The publication continues.</text>
+</svg>
