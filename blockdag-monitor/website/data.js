@@ -855,7 +855,6 @@ const PROMISES = [
     id: 66,
     category: "Product",
     status: "misleading",
-    isNew: true,
     title: "x10swap marketed as 10x token swap — operates as paid lottery",
     promised: "May 14, 2026 (launch) — ongoing",
     reality: "BlockDAG promotes x10swap as a way to exchange BDAG for USDT at $0.00097 — roughly 10x the CoinMarketCap rate of $0.000081. Users report a $40 entry fee per attempt, with only about 1 in 10 entries approved. Entry fees are not refunded when an entry is denied. The 10x rate appears to be funded by the entry fees of users whose entries are rejected. BlockDAG has not published the approval rate, round size, or funding source.",
@@ -870,13 +869,82 @@ const PROMISES = [
     id: 67,
     category: "Marketing",
     status: "promised",
-    isNew: true,
     title: "Exclusive buyback at $0.001 starting June 1, 2026",
     promised: "June 1, 2026",
     reality: "On May 16, 2026, BlockDAG announced an 'exclusive buyback and burn program' starting June 1 at $0.001 per BDAG. Current market price is $0.000081 — the promise implies a roughly 12x recovery. BlockDAG has not disclosed the buyback budget, the source of funds, the maximum tokens to be bought, or the eligibility criteria. The same project promised the casino on May 7, May 14 and May 15 — all missed.",
     quotes: [
       { date: "May 16, 2026", text: "🚨BlockDAG CASINO & SPORTSBOOK LIVE + $0.001 BDAG BUYBACK STARTING June 1st! BUY NOW 🚨 [official channel, 00:08 UTC — casino was not actually live]" },
       { date: "May 16, 2026", text: "EXCLUSIVE BUYBACK & BURN PROGRAM STARTS JUNE 1: BDAG buyback price $0.001 + coins burned on live AMAs. [official channel]" }
+    ]
+  },
+  {
+    id: 68,
+    category: "Product",
+    status: "broken",
+    isNew: true,
+    title: "Casino \"deposits open\" May 18 — fourth time declared live",
+    promised: "May 7 / May 14 / May 15 / May 18, 2026",
+    reality: "On May 18, 2026, BlockDAG announced 'BDAG CASINO DEPOSITS OPEN' — the fourth distinct date the casino was declared live (May 7, May 14, May 15, May 18). The May 18 phrasing is 'Deposits OPEN. Sportsbook ACTIVATING. Play & Earn officially STARTING.' Two of those three are in progress wording, not delivery. BDAG deposit on the platform was added 'a few minutes ago' per admin at 22:26 UTC May 18 — months after the original May 7 launch promise.",
+    quotes: [
+      { date: "May 18, 2026", text: "BDAG CASINO DEPOSITS OPEN! BUY + DEPOSIT BDAG TODAY & QUALIFY FOR BUYBACK at $0.001. The world's first Layer-1 Blockchain Casino is HERE! Casino deposits are OPEN. Sportsbook ACTIVATING. Play & Earn is officially STARTING. [official channel, 21:35 UTC]" },
+      { date: "May 18, 2026", text: "BDAG deposit was just added few minutes ago. You can bet with BDAG and any other crypto available on the platform. [official admin, 22:26 UTC]" },
+      { date: "May 18, 2026", text: "BDAG deposit on Casino will later be available today. [official admin, 17:22 UTC — same day as 'deposits open' marketing]" }
+    ]
+  },
+  {
+    id: 69,
+    category: "Marketing",
+    status: "misleading",
+    isNew: true,
+    title: "$0.001 buyback marketed as \"300X ROI\" — capped at 250,000 coins per user",
+    promised: "$0.001 per BDAG from June 1, 2026",
+    reality: "On May 18 AMA, CEO Nic Van Den Bergh confirmed the buyback is capped at 250,000 BDAG per user. The cap was not in marketing graphics, pinned posts, or the official website. Maximum dollar recovery per user: $250. The promoted '300X ROI' is also mathematically wrong — buying at $0.0000003 and selling at $0.001 is 3,333x, not 300x. Marketing also failed to mention 'compression' applies to the new Aftersale tokens, effectively raising the buy price to approximately $0.0006 per claimable coin.",
+    quotes: [
+      { date: "May 18, 2026", text: "By the way it was said by Nic on the AMA today you can only sell back at .001 a maximum of 250k coins so in fact what it says on the email is in fact another blatant misrepresentation on the marketing. [community member SeanP, 23:35 UTC]" },
+      { date: "May 18, 2026", text: "Nic just said in the AMA the buy back is up to 250k coins, is that correct? [community member SeanP, 17:15 UTC]" },
+      { date: "May 19, 2026", text: "The percentage in their ad say buy at 0.0000003 and sell at 0.001 for a massive 300% ROI. Who calculated this? The actual ROI would be approximately 333,233% Lol. [community member Roland, 00:06 UTC]" },
+      { date: "May 18, 2026", text: "Buying directly from BDAG Aftersale at the current price of $0.0000003 ($50 min) will supposedly get you 166,666,666 BDAG. What you will likely get is more like 833,333 BDAG after compression. Likely only able to claim 166,666 BDAG at next batch. The effective price is approximately $0.0006. [community member Wes Learmann, 22:13 UTC]" }
+    ]
+  },
+  {
+    id: 70,
+    category: "Claim / Distribution",
+    status: "broken",
+    isNew: true,
+    title: "Batch 1 claims no longer available — paid coins locked out",
+    promised: "Open since February 2026",
+    reality: "On May 19, 2026 at 07:21 UTC, an admin replied to a user attempting to claim Batch 1: 'Batch 1 is no longer available to be claimed. Why didn't you claim it till now?' Batch 1 was the first claim window for presale investors. No prior public expiry notice was issued. Multiple users on May 19 confirmed they were unaware their entitlement would be cancelled. Community member Wes Learmann asked the admin: 'So if we don't claim our BDAG right away when they are ready, our allocation for that batch is forfeit?' The admin did not respond.",
+    quotes: [
+      { date: "May 19, 2026", text: "Batch 1 is no longer available to be claimed. Why didn't you claim it till now? [official admin, 07:21 UTC]" },
+      { date: "May 19, 2026", text: "Why should it matter when we claim if they are ready? Plus it comes in vested batches. So what you are saying admin is that if we don't claim our BDAG right away when they are ready, our allocation for that batch is forfeit? [community member Wes Learmann, 07:42 UTC]" }
+    ]
+  },
+  {
+    id: 71,
+    category: "Hardware (Miners)",
+    status: "broken",
+    isNew: true,
+    title: "Miner sales stopped — buyers redirected to \"third party websites later\"",
+    promised: "Direct sale via blockdag.network of X1, X10, X30, X100 miners",
+    reality: "On May 19, 2026 at 11:01 UTC, an admin confirmed BlockDAG has stopped selling miners directly. The exact wording: 'The sale of miners has been stopped for now, you might be able to purchase them from third party websites later.' BlockDAG sold the miner line through its own website throughout 2024 and 2025 with shipping promised February to April 2026. As of May 19 the X10, X30, and X100 miners are still undelivered. Existing orders remain promised for 'June' — the third time the shipping date has moved.",
+    quotes: [
+      { date: "May 19, 2026", text: "The sale of miners has been stopped for now, you might be able to purchase them from third party websites later. [official admin, 11:01 UTC]" },
+      { date: "May 18, 2026", text: "Miners are scheduled to be shipped in June. [official admin]" },
+      { date: "May 18, 2026", text: "X1 miner is walking perfectly other miners will be shipping out from next month. [official admin, 22:15 UTC]" }
+    ]
+  },
+  {
+    id: 72,
+    category: "Product",
+    status: "broken",
+    isNew: true,
+    title: "Wallet changing feature removed",
+    promised: "Account wallet update via support ticket",
+    reality: "On May 18, 2026 at 08:21 UTC, BlockDAG announced the wallet changing feature is no longer available. Throughout 2024 and 2025, users could request that the wallet associated with their dashboard account be updated via support ticket. The mechanism was used to migrate accounts to MetaMask after Trust Wallet stopped reading BDAG balances correctly. From May 18 forward, the only path is to import the existing Trust Wallet seed phrase directly into MetaMask. MetaMask continues to flag the BlockDAG custom network with a deceptive website warning. Admins acknowledged 'We are in talks with metamask to remove this.'",
+    quotes: [
+      { date: "May 18, 2026", text: "Wallet changing feature is no longer available. [official admin, 08:21 UTC]" },
+      { date: "May 18, 2026", text: "We are in talks with metamask to remove this. [official admin, 09:46 UTC — on MetaMask deceptive website warning]" },
+      { date: "May 18, 2026", text: "Metamask is showing deceptive website when i try to access bdag. [community member Chris Dwayne, 20:41 UTC]" }
     ]
   }
 ];
@@ -978,14 +1046,22 @@ const TIMELINE_EVENTS = [
   { date: "May 16, 2026", type: "promise", text: "BlockDAG announces 'exclusive buyback and burn program' starting June 1, 2026, at $0.001 per BDAG (12x current market). No budget, source of funds, maximum token count, or eligibility criteria disclosed." },
   { date: "May 16, 2026", type: "broken", text: "blockdag.co (one of two BlockDAG URLs) flagged unsafe by browsers due to certificate failure. Multiple community reports. Unresolved as of May 18." },
   { date: "May 17, 2026", type: "misleading", text: "BlockDAG begins heavy promotion of x10swap as a 10x token swap at $0.00097 per BDAG. Promotional 'user story' describes guaranteed profits from Sparks to x10swap cycles. Neither product is deterministic." },
-  { date: "May 18, 2026", type: "broken", text: "Community reports document x10swap as a paid lottery: $40 entry fee, roughly 1 in 10 entries approved, fees not refunded on denial. One user reports $140 spent, no money back. The 10x rate is funded by other users' rejected fees." }
+  { date: "May 18, 2026", type: "broken", text: "Community reports document x10swap as a paid lottery: $40 entry fee, roughly 1 in 10 entries approved, fees not refunded on denial. One user reports $140 spent, no money back. The 10x rate is funded by other users' rejected fees." },
+  { date: "May 18, 2026", type: "broken", text: "BlockDAG announces 'BDAG CASINO DEPOSITS OPEN' — the fourth distinct date the casino is declared live (after May 7, May 14, May 15). Phrasing: 'Deposits OPEN. Sportsbook ACTIVATING. Play & Earn officially STARTING.' BDAG deposits added 'a few minutes ago' per admin at 22:26 UTC. Sportsbook and Play & Earn still in progress wording, not delivery." },
+  { date: "May 18, 2026", type: "misleading", text: "BlockDAG launches aggressive 'BUY BDAG AT $0.0000003 / SELL BACK AT $0.001 / 300X ROI' campaign. Posted dozens of times on the official channel through May 18 and May 19. The 300X claim is mathematically wrong — buying at $0.0000003 and selling at $0.001 is 3,333x. The $0.0000003 price is 99.9994% below the $0.05 promised launch price. The official site also announces 'BDAG CASINO DEPOSITS OPEN' as if it were the casino launch (the fourth declared launch since May 7)." },
+  { date: "May 18, 2026", type: "broken", text: "Wallet changing feature removed. BlockDAG official admin at 08:21 UTC: 'Wallet changing feature is no longer available.' Path to migrate dashboard wallet via support ticket now closed. Users instructed to import existing Trust Wallet seed phrase directly into MetaMask. MetaMask continues to flag the BlockDAG custom network with a deceptive website warning. Admin: 'We are in talks with metamask to remove this.'" },
+  { date: "May 18, 2026", type: "misleading", text: "On the Binance Live AMA, CEO Nic Van Den Bergh confirms the $0.001 buyback is capped at 250,000 BDAG per user. The cap is not on marketing graphics, not in pinned channel posts, and not on the BlockDAG website. Maximum dollar recovery per user: $250. Community summary (SeanP, 23:35 UTC): 'You can only sell back at .001 a maximum of 250k coins so in fact what it says on the email is in fact another blatant misrepresentation on the marketing.'" },
+  { date: "May 18, 2026", type: "misleading", text: "Community member Wes Learmann publishes the compression math on the new $0.0000003 Aftersale: a $50 buy nominally yields 166,666,666 BDAG, but after compression effectively yields about 833,333 BDAG, with only roughly 166,666 claimable in the next batch. Effective real price: $0.0006 per claimable coin, two thousand times the headline $0.0000003." },
+  { date: "May 19, 2026", type: "broken", text: "Batch 1 claims retracted. Admin at 07:21 UTC: 'Batch 1 is no longer available to be claimed. Why didn't you claim it till now?' This is the first time BlockDAG has stated that an existing claim batch entitlement expires. No prior public notice was issued. Community member Wes Learmann (07:42 UTC): 'So if we don't claim our BDAG right away when they are ready, our allocation for that batch is forfeit?' — admin did not respond." },
+  { date: "May 19, 2026", type: "broken", text: "Miner sales stopped. Admin at 11:01 UTC: 'The sale of miners has been stopped for now, you might be able to purchase them from third party websites later.' BlockDAG sold X1, X10, X30, and X100 miners through its own website since 2024 with shipping promised February to April 2026. As of May 19, X10/X30/X100 still undelivered. Existing orders now promised for June — the third date change." },
+  { date: "May 19, 2026", type: "note", text: "Batch 5 claims confirmed for May 21 (Thursday) by admin. Multiple community members confirm via AMA reference. No compression was promised for Batch 5 originally — community members anticipate this promise will be broken as Batch 4 was compressed." }
 ];
 
 const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "359,947 public messages analyzed (Feb 18 – May 18, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "362,417 public messages analyzed (Feb 18 – May 19, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
@@ -1272,15 +1348,36 @@ const NOTABLE_QUOTES = [
   { date: "May 12, 2026", tag: "broken", text: "Batch 4 claims still unresolved for many users. Batch 5 described as 'live in a few days.' Batch 4 and Batch 5 are now being delayed together — both targeted for May 14. Multiple users report inability to claim Batch 4." },
   { date: "May 12, 2026", tag: "note", text: "BlockDAG Exposed CoinMarketCap account (@Blockdagexposed) banned after posting documented evidence about BlockDAG. Appeal submitted. All content posted was factual and independently verifiable. Website and tracker remain fully operational." },
   { date: "May 14, 2026", tag: "broken", text: "Tether freezes $213M across 48 USDT wallets linked to Gurhan Kiziloz on a Brazilian court order. Alleged unpaid gambling taxes and unregistered crypto sales 2021–2024. [DailyCoin, cryptonomist.ch, Insider Monkey, May 14]" },
-  { date: "May 15, 2026", isNew: true, tag: "community", text: "I tried BDAG Sparks, deposited 5,000, won 19,000, and cannot withdraw as the minimum withdrawal is 460,000. [community member, May 15]" },
-  { date: "May 15, 2026", isNew: true, tag: "response", text: "Every major crypto project faces moments of panic, headlines and uncertainty. Wallet freezes, investigations and regulatory actions have happened across the industry for years. This is not something unique to BDAG. [official admin, on the $213M Tether freeze]" },
-  { date: "May 16, 2026", isNew: true, tag: "community", text: "@admin blockdag.co is coming up as unsafe, probably need to fix the certificate. [community member, May 16, 00:05 UTC]" },
-  { date: "May 16, 2026", isNew: true, tag: "community", text: "Casino license is bs. [community member, May 16, 00:04 UTC]" },
-  { date: "May 16, 2026", isNew: true, tag: "promise", text: "🚨BlockDAG CASINO & SPORTSBOOK LIVE + $0.001 BDAG BUYBACK STARTING June 1st! [official channel, May 16, 00:08 UTC — casino was not actually live]" },
-  { date: "May 18, 2026", isNew: true, tag: "community", text: "My entry on x10swap was not approved but the entry fee is not credited back to my account. [community member, May 18, 00:06 UTC]" },
-  { date: "May 18, 2026", isNew: true, tag: "community", text: "You make it sound as if 10x swap is guaranteed. I hit one and the next 7 failed, still taking entry fees, though. It remains a total gamble. [community member, May 18, 01:37 UTC]" },
-  { date: "May 18, 2026", isNew: true, tag: "community", text: "Cost $100 US in BDAG Sparks to get about 1,000,000 BDAG. Used 450,000 in the BDAG x10swap which you have to pay $40 US to enter. My swap wasn't approved after the round closed and you don't get your entry money back. $140 spent. No money back, just BDAG coins. [community member, May 18, 02:12 UTC]" },
-  { date: "May 18, 2026", isNew: true, tag: "community", text: "Yeah, only one entry was approved in my round. I would guess that they need at least 10 entry fees to pay for the one that does get approved. So they cover the x10 by the entry fees and likely make a bit themselves. [community member, May 18, 02:22 UTC]" },
-  { date: "May 18, 2026", isNew: true, tag: "community", text: "I found out x10 swap is basically a lottery, so the chances of losing money are super high. That's why I tried it once and never did it again. [community member, May 18, 02:17 UTC]" }
+  { date: "May 15, 2026", tag: "community", text: "I tried BDAG Sparks, deposited 5,000, won 19,000, and cannot withdraw as the minimum withdrawal is 460,000. [community member, May 15]" },
+  { date: "May 15, 2026", tag: "response", text: "Every major crypto project faces moments of panic, headlines and uncertainty. Wallet freezes, investigations and regulatory actions have happened across the industry for years. This is not something unique to BDAG. [official admin, on the $213M Tether freeze]" },
+  { date: "May 16, 2026", tag: "community", text: "@admin blockdag.co is coming up as unsafe, probably need to fix the certificate. [community member, May 16, 00:05 UTC]" },
+  { date: "May 16, 2026", tag: "community", text: "Casino license is bs. [community member, May 16, 00:04 UTC]" },
+  { date: "May 16, 2026", tag: "promise", text: "🚨BlockDAG CASINO & SPORTSBOOK LIVE + $0.001 BDAG BUYBACK STARTING June 1st! [official channel, May 16, 00:08 UTC — casino was not actually live]" },
+  { date: "May 18, 2026", tag: "community", text: "My entry on x10swap was not approved but the entry fee is not credited back to my account. [community member, May 18, 00:06 UTC]" },
+  { date: "May 18, 2026", tag: "community", text: "You make it sound as if 10x swap is guaranteed. I hit one and the next 7 failed, still taking entry fees, though. It remains a total gamble. [community member, May 18, 01:37 UTC]" },
+  { date: "May 18, 2026", tag: "community", text: "Cost $100 US in BDAG Sparks to get about 1,000,000 BDAG. Used 450,000 in the BDAG x10swap which you have to pay $40 US to enter. My swap wasn't approved after the round closed and you don't get your entry money back. $140 spent. No money back, just BDAG coins. [community member, May 18, 02:12 UTC]" },
+  { date: "May 18, 2026", tag: "community", text: "Yeah, only one entry was approved in my round. I would guess that they need at least 10 entry fees to pay for the one that does get approved. So they cover the x10 by the entry fees and likely make a bit themselves. [community member, May 18, 02:22 UTC]" },
+  { date: "May 18, 2026", tag: "community", text: "I found out x10 swap is basically a lottery, so the chances of losing money are super high. That's why I tried it once and never did it again. [community member, May 18, 02:17 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "misleading", text: "🚀 BUYBACK ELIGIBILITY ACTIVATED! BUY BDAG for 300X ROI | $0.0000003 + CASINO DEPOSITS STARTING. Buy BDAG between NOW and June 1st to qualify. No qualifying purchase before June 1st = NO buyback access. [BlockDAG official channel, May 18, 12:58 UTC — math is wrong: $0.0000003 → $0.001 is 3,333x, not 300x. Cap of 250,000 coins per user disclosed only on AMA, not in marketing.]" },
+  { date: "May 18, 2026", isNew: true, tag: "response", text: "Wallet changing feature is no longer available. [official admin, 08:21 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "response", text: "We are in talks with metamask to remove this. [official admin, 09:46 UTC — on MetaMask flagging BlockDAG's custom network as 'deceptive website']" },
+  { date: "May 18, 2026", isNew: true, tag: "response", text: "BDAG CASINO DEPOSITS OPEN! Casino deposits are OPEN. Sportsbook ACTIVATING. Play & Earn is officially STARTING. [official channel, 21:35 UTC — fourth time casino is declared live since May 7]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "Nic just said in the AMA the buy back is up to 250k coins, is that correct? [community member SeanP, May 18, 17:15 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "By the way it was said by Nic on the AMA today you can only sell back at .001 a maximum of 250k coins so in fact what it says on the email is in fact another blatant misrepresentation on the marketing. [community member SeanP, May 18, 23:35 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "Buying directly from BDAG Aftersale at the current price of $0.0000003 ($50 min) will supposedly get you 166,666,666 BDAG. What you will likely get is more like 833,333 BDAG after compression. Likely only able to claim 166,666 BDAG at next batch. The effective price is approximately $0.0006. [community member Wes Learmann, May 18, 22:13 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "I am not happy with my investments with bdag I lost 40k. Hope to cause I lost my hope. [community member Alien 51, May 18, 15:35 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "If supply 50B at this price 0.0000003 total worth 15000$. Admin can you explain what happening with investors? [community member Eric Fre, May 18, 23:55 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "What amount BDAG will provide a successful entry at the 10X swap? Each unsuccessful entry has a USD entry fee loss implication. Done 2 unsuccessful entries now meaning lost the USD entry fees. [community member B Pret, May 18, 15:06 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "Why they buyback with 0.001 the coin they sell with 0.0000003? Any logic behind this? [community member Theodore Sai, May 18, 13:09 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "Buy at 0.0000003 and sell at 0.001 that's a 3333x how can you give that much amount to everyone @admin [community member Sarvesh Kadu, May 18, 17:30 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "Bdag whts the catch here there is no way i can buy 100$ coins per 0.0000003 and u can buy back at 0.001, thats 300k. There has to be a catch there is no way i can buy millions in 100$ at 0.0000003 and they will buy at 0.001. [community member Bull, May 18, 22:52 and 23:05 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "Metamask is showing deceptive website when i try to access bdag. [community member Chris Dwayne, May 18, 20:41 UTC]" },
+  { date: "May 18, 2026", isNew: true, tag: "community", text: "I set up the maintenance on metamask as per instructions. It looked okay. I then claimed 15000 early tokens and on the third attempt it worked. I looked today and they are gone. No transaction just gone — how is that possible? [community member Drew, May 18, 03:40 UTC]" },
+  { date: "May 19, 2026", isNew: true, tag: "response", text: "Batch 1 is no longer available to be claimed. Why didn't you claim it till now? [official admin, May 19, 07:21 UTC — first public statement that an existing claim batch expires]" },
+  { date: "May 19, 2026", isNew: true, tag: "response", text: "The sale of miners has been stopped for now, you might be able to purchase them from third party websites later. [official admin, May 19, 11:01 UTC — confirms BlockDAG has stopped direct miner sales]" },
+  { date: "May 19, 2026", isNew: true, tag: "community", text: "Why should it matter when we claim if they are ready? Plus it comes in vested batches. So what you are saying admin is that if we don't claim our BDAG right away when they are ready, our allocation for that batch is forfeit? [community member Wes Learmann, May 19, 07:42 UTC — admin did not respond]" },
+  { date: "May 19, 2026", isNew: true, tag: "community", text: "The percentage in their ad say buy at 0.0000003 and sell at 0.001 for a massive 300% ROI. Who calculated this? The actual ROI would be approximately 333,233% Lol. [community member Roland, May 19, 00:06 UTC]" },
+  { date: "May 19, 2026", isNew: true, tag: "community", text: "BATCH 5 is still pending because no compression. They dont deliver the promise. Again and again. So how to trust you? [community member gga, May 19, 04:26 UTC]" },
+  { date: "May 19, 2026", isNew: true, tag: "community", text: "I realised I can only buy BDAG, but none of my wallets can send BDAG, so I can't sell. Sounds like honeypot. That means I cannot buy anymore BDAG until they let me Send and let me Sell my BDAG from my wallets (now both Trust wallet and Metamask do not work). [community member Eric A, May 19, 04:26 UTC]" }
 ];
 
