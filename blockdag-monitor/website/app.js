@@ -754,7 +754,7 @@ function renderIndicators() {
             <span class="ind-comp-score" style="color:#ff7a20">${executionScore}/${executionMax}</span>
           </div>
           ${compBar(executionScore, executionMax, '#ff7a20')}
-          <div class="ind-comp-desc">5 missed mainnet deadlines. Staking broken 70+ days. Miners unshipped 6+ months after promise.</div>
+          <div class="ind-comp-desc">5 missed mainnet deadlines. Staking broken 89 days. Miner sales stopped. Buyback capped at 250k coins per user.</div>
         </div>
       </div>
     </div>
