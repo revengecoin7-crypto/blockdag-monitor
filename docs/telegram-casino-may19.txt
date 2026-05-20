@@ -1,0 +1,34 @@
+🚨 BlockDAG declared the casino live for the 5th time. BDAG dumped 15.64% in 24 hours.
+
+⚙️ WHAT HAPPENED
+
+May 19, 19:01 UTC official channel: "100M+ BDAG ALREADY DEPOSITED. CASINO LIVE. PLAYERS WINNING. 100+ games LIVE. Thousands of registered players."
+
+It was the 5th casino-live declaration after May 7, May 14, May 15, and May 18 ("deposits open").
+
+📉 MARKET RESPONSE
+
+BDAG went from $0.00008074 (May 19) to $0.00006828 (May 20). Down 15.64% in 24 hours. Market cap fell from $4.29M to $3.70M. Volume $3.56M.
+
+The casino launch was the trigger. The market sold the news.
+
+💬 IN THE SAME 24 HOURS, ADMIN POSTED
+
+May 19, 18:06 UTC:
+"It must be borne in mind that we remain within the listing phase. Upon the conclusion of this phase, price discovery and liquidity will commence."
+
+May 19, 18:08 UTC:
+"There is an issue with the network sync with every wallets API. After full TGE there will be no issues, when the listing phase is over."
+
+These two statements reverse 75 days of "mainnet LIVE" marketing.
+
+📋 IN THE SAME 24 HOURS, ALSO
+
+→ Aftersale coin claims deferred to "the last Batch" with no date.
+→ MetaMask "deceptive website" warning reframed as "a casual warning."
+→ Wallet sync issues admitted across MetaMask, Trust Wallet, SafePal and exchange wallets.
+→ "100M+ BDAG deposited" marketing reposted 5 times in 16 hours.
+→ 100M BDAG at the current price equals about $6,800 in total deposits across the entire claimed user base.
+
+🔗 Full investigation:
+https://blockdagexposed.com/article-casino-may19.html

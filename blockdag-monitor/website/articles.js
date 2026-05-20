@@ -1,5 +1,16 @@
 const ARTICLES = [
   {
+    id: 'article-casino-may19',
+    title: "BlockDAG's 5th Casino Launch: BDAG Dumps 15.64% in 24h",
+    date: '2026-05-20',
+    dateDisplay: 'May 20, 2026',
+    excerpt: 'BlockDAG declared the casino live for the fifth time on May 19. In the same 24 hours BDAG dropped 15.64% to $0.0000683. Admin admits BDAG "remains within the listing phase" 75 days after the public exchange launch.',
+    url: 'article-casino-may19.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Investigation', style: 'orange' }],
+    isNew: true,
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="cm19g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#cm19g)" opacity="0.6"/><text x="200" y="34" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" opacity="0.55" letter-spacing="3">CASINO "LIVE" #5 · MARKET RESPONSE</text><line x1="30" y1="42" x2="370" y2="42" stroke="#3157a8" stroke-width="0.6"/><g font-family="JetBrains Mono" font-size="8" fill="#6b8acf"><text x="100" y="70" text-anchor="middle">BEFORE</text><text x="300" y="70" text-anchor="middle">AFTER 24H</text></g><g font-family="Newsreader,serif" font-size="24" font-weight="800" font-style="italic" text-anchor="middle"><text x="100" y="100" fill="#fff">$0.0000807</text><text x="300" y="100" fill="#c62828">$0.0000683</text></g><text x="200" y="100" text-anchor="middle" font-family="Newsreader,serif" font-size="30" font-weight="800" fill="#e6a23c">→</text><g font-family="JetBrains Mono" font-size="9" fill="#ff8a7a" text-anchor="middle"><text x="100" y="118">May 19</text><text x="300" y="118">−15.64%</text></g><rect x="30" y="138" width="340" height="60" rx="3" fill="#2a0808" stroke="#c62828" stroke-width="1"/><text x="50" y="160" font-family="Newsreader,serif" font-size="12" font-weight="700" fill="#ff8a7a" font-style="italic">"We remain within the listing phase."</text><text x="50" y="180" font-family="JetBrains Mono" font-size="9" fill="#6b8acf">— official admin · May 19, 18:06 UTC</text><text x="50" y="192" font-family="JetBrains Mono" font-size="8" fill="#6b8acf">75 days after public exchange listing</text><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">5 CASINO LAUNCHES · 0 WORKING CASINOS · −15.64%</text></svg>`
+  },
+  {
     id: 'article-blocked-on-x',
     title: "BlockDAG just blocked us on X. The block is the receipt.",
     date: '2026-05-19',
@@ -7,7 +18,6 @@ const ARTICLES = [
     excerpt: '@blockdagnetwork blocked @blockdagmonitor on X within hours of our $0.0000003 sale + 250,000 coin buyback cap investigation. Same pattern as the 2025 ZachXBT block. The investigation continues.',
     url: 'article-blocked-on-x.html',
     tags: [{ label: 'Editorial', style: 'red' }, { label: 'Transparency', style: 'orange' }],
-    isNew: true,
     svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="bxg" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#bxg)" opacity="0.6"/><rect x="30" y="32" width="340" height="78" rx="3" fill="#163877" stroke="#3157a8" stroke-width="0.8"/><text x="44" y="54" font-family="JetBrains Mono" font-size="9" fill="#6b8acf" letter-spacing="1">@blockdagnetwork · verified · 94.8K</text><text x="44" y="80" font-family="Newsreader,serif" font-size="15" font-weight="700" fill="#fff">"@blockdagnetwork has blocked you."</text><text x="44" y="100" font-family="JetBrains Mono" font-size="8" fill="rgba(255,255,255,0.6)">cannot follow · cannot message · cannot engage</text><text x="200" y="138" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#e6a23c" letter-spacing="2" font-weight="700">WHAT WE PUBLISHED THE SAME WEEK</text><g font-family="Newsreader,serif" font-size="11" font-weight="700" text-anchor="middle"><text x="100" y="166" fill="#fff">$0.0000003 sale</text><text x="300" y="166" fill="#fff">250k buyback cap</text><text x="100" y="190" fill="#fff">Miner sales <tspan fill="#ff8a7a">STOPPED</tspan></text><text x="300" y="190" fill="#fff">Batch 1 <tspan fill="#ff8a7a">RETRACTED</tspan></text></g><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">THE BLOCK IS THE RECEIPT</text></svg>`
   },
   {

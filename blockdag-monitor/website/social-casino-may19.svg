@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c3870" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#040e26"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#g)" opacity="0.7"/>
+
+  <text x="600" y="58" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#6b8acf" letter-spacing="5" font-weight="700">BLOCKDAG INVESTIGATION · MAY 20, 2026</text>
+  <line x1="80" y1="72" x2="1120" y2="72" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="130" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="46" font-weight="800" fill="#fff">5th time <tspan fill="#e6a23c" font-style="italic">"casino LIVE."</tspan></text>
+  <text x="600" y="175" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="28" font-weight="600" fill="#ff8a7a">BDAG dumped 15.64% in 24 hours.</text>
+
+  <line x1="80" y1="220" x2="1120" y2="220" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="220" y="265" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf" letter-spacing="2" font-weight="700">BEFORE LAUNCH</text>
+  <text x="220" y="310" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="34" font-weight="800" fill="#fff">$0.0000807</text>
+  <text x="220" y="334" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#6b8acf">May 19 · CMC</text>
+
+  <text x="600" y="305" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="40" font-weight="800" fill="#e6a23c">→</text>
+
+  <text x="980" y="265" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf" letter-spacing="2" font-weight="700">AFTER LAUNCH</text>
+  <text x="980" y="310" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="34" font-weight="800" fill="#c62828">$0.0000683</text>
+  <text x="980" y="334" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff8a7a">May 20 · −15.64%</text>
+
+  <line x1="80" y1="380" x2="1120" y2="380" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="420" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#6b8acf" letter-spacing="3" font-weight="700">IN THE SAME 24 HOURS, ADMIN POSTED:</text>
+
+  <rect x="100" y="445" width="1000" height="70" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+  <text x="120" y="473" font-family="Newsreader, Georgia, serif" font-size="20" font-weight="700" fill="#ff8a7a" font-style="italic">"We remain within the listing phase. Upon the conclusion of</text>
+  <text x="120" y="500" font-family="Newsreader, Georgia, serif" font-size="20" font-weight="700" fill="#ff8a7a" font-style="italic">this phase, price discovery and liquidity will commence."</text>
+
+  <text x="600" y="545" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="16" font-style="italic" fill="#e6a23c" font-weight="500">Two and a half months after the official launch.</text>
+
+  <rect x="0" y="570" width="1200" height="60" fill="#c62828"/>
+  <rect x="40" y="584" width="28" height="28" fill="#fff"/>
+  <text x="54" y="603" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-weight="800" fill="#0C2956">B</text>
+  <text x="78" y="601" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" fill="#fff">BlockDAG <tspan font-style="italic">Exposed</tspan></text>
+  <text x="78" y="618" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(255,255,255,0.6)" letter-spacing="2">INDEPENDENT · INVESTIGATIVE</text>
+  <text x="1160" y="605" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="13" fill="#fff" font-weight="600">blockdagexposed.com/article-casino-may19.html</text>
+  <text x="1160" y="622" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,0.5)">5 casino launches. 0 working casinos. 90 days broken staking.</text>
+</svg>
