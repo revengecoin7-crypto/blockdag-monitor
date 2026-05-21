@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c3870" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#040e26"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#g)" opacity="0.7"/>
+
+  <text x="600" y="58" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#6b8acf" letter-spacing="5" font-weight="700">BLOCKDAG INVESTIGATION · MAY 21, 2026</text>
+  <line x1="80" y1="72" x2="1120" y2="72" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="135" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="48" font-weight="800" fill="#fff">BDAG Sparks <tspan fill="#e6a23c" font-style="italic">closed</tspan> in</text>
+  <text x="600" y="200" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="72" font-weight="800" fill="#c62828" font-style="italic">six days.</text>
+
+  <line x1="80" y1="240" x2="1120" y2="240" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="220" y="290" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#6b8acf" letter-spacing="2" font-weight="700">LAUNCHED</text>
+  <text x="220" y="335" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="36" font-weight="800" fill="#67d39d">May 14</text>
+  <text x="220" y="358" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf">bdagsparks.com</text>
+
+  <text x="600" y="335" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="56" font-weight="800" fill="#e6a23c">→</text>
+
+  <text x="980" y="290" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#6b8acf" letter-spacing="2" font-weight="700">CLOSED</text>
+  <text x="980" y="335" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="36" font-weight="800" fill="#c62828">May 20</text>
+  <text x="980" y="358" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#ff8a7a">official channel</text>
+
+  <line x1="80" y1="400" x2="1120" y2="400" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="438" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#6b8acf" letter-spacing="3" font-weight="700">IN THE SAME 48 HOURS</text>
+
+  <g font-family="Newsreader, Georgia, serif" font-size="17" font-weight="700" text-anchor="middle">
+    <text x="200" y="475" fill="#fff">Aftersale price</text>
+    <text x="200" y="500" fill="#ff8a7a" font-size="14" font-weight="500">dropped to $0.00000025</text>
+
+    <text x="500" y="475" fill="#fff">Casino deposits</text>
+    <text x="500" y="500" fill="#ff8a7a" font-size="14" font-weight="500">not crediting · 10K BDAG missing</text>
+
+    <text x="800" y="475" fill="#fff">Compression rate</text>
+    <text x="800" y="500" fill="#ff8a7a" font-size="14" font-weight="500">"no information"</text>
+
+    <text x="1050" y="475" fill="#fff">Listing phase</text>
+    <text x="1050" y="500" fill="#ff8a7a" font-size="14" font-weight="500">admin: still ongoing</text>
+  </g>
+
+  <text x="600" y="545" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-style="italic" fill="#e6a23c" font-weight="500">Six-day product lifecycle. The marketing called it "instant, simple, and addictive."</text>
+
+  <rect x="0" y="570" width="1200" height="60" fill="#c62828"/>
+  <rect x="40" y="584" width="28" height="28" fill="#fff"/>
+  <text x="54" y="603" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-weight="800" fill="#0C2956">B</text>
+  <text x="78" y="601" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" fill="#fff">BlockDAG <tspan font-style="italic">Exposed</tspan></text>
+  <text x="78" y="618" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(255,255,255,0.6)" letter-spacing="2">INDEPENDENT · INVESTIGATIVE</text>
+  <text x="1160" y="605" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="13" fill="#fff" font-weight="600">blockdagexposed.com/article-sparks-closed.html</text>
+  <text x="1160" y="622" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,0.5)">74 of 82 promises broken · 90.2% failure rate</text>
+</svg>

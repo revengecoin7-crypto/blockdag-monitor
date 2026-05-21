@@ -1,0 +1,26 @@
+🚨 BDAG Sparks launched May 14. BDAG Sparks closed May 20. Six days.
+
+⚙️ THE FULL ANNOUNCEMENT
+
+"🚨BDAG SWAP & SPARKS CLOSED & UTILITY PRESALE ENDING: BDAG CLOSING PRICE $0.00000025 | 350x ROI🚨"
+
+Posted by the official BlockDAG channel on May 20, 2026 at 15:43 UTC. Sparks, Live Swap, and the Utility Presale all closed in the same message.
+
+📋 IN THE SAME 48 HOURS
+
+→ Aftersale price dropped to $0.00000025, down from $0.0000003 two days earlier. Buyers from May 18 are already down 17% on the project's own published sale price.
+
+→ Multiple users report sending BDAG to the casino with zero credit. Santiago: 1,250 BDAG missing. Analiz Radar: 10,000 BDAG missing. Community warning: "Do not send BDAG to the Casino section, it doesn't get credited."
+
+→ Admin May 20, 18:14 UTC: "There's no information on compression rates, Edward."
+
+→ Admin May 20, 15:08 UTC: "We are still in listing phase. Next will be price discovery and liquidity."
+
+→ Admin May 20, 17:56 UTC: "Issue syncing your wallet with the network. After the Full TGE event, there will be no issues at all."
+
+💬 THE PATTERN
+
+Live Swap launched May 1, closed in 19 days. Sparks launched May 14, closed in 6 days. The Utility Presale has been in "final hours" for two weeks. The Aftersale price keeps dropping (from $0.0000005 in early May to $0.00000025 today). Promise tracker now stands at 74 broken or misleading out of 82 tracked, 90.2% failure rate. Staking has been broken for 91 days.
+
+🔗 Full investigation:
+https://blockdagexposed.com/article-sparks-closed.html
