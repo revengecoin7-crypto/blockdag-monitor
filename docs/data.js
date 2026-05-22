@@ -1016,7 +1016,6 @@ const PROMISES = [
     id: 78,
     category: "Product",
     status: "broken",
-    isNew: true,
     title: "BDAG Sparks shut down 6 days after launch",
     promised: "Spin-wheel casino product launched May 14, 2026 at bdagsparks.com",
     reality: "On May 20, 2026 BlockDAG announced 'BDAG SWAP & SPARKS CLOSED' in its official channel. Sparks was launched May 14, 2026 with a 460,000 minimum withdrawal threshold that trapped small winners. Six days later it was closed. Users who deposited BDAG into Sparks but did not reach the withdrawal minimum have no documented path to recovery. The same closure announcement bundled Sparks with 'BDAG SWAP' (live swap functionality also shut down).",
@@ -1030,7 +1029,6 @@ const PROMISES = [
     id: 79,
     category: "Product",
     status: "broken",
-    isNew: true,
     title: "Casino deposits not crediting — community reports of missing BDAG",
     promised: "BDAG casino deposits open May 18; '100M+ deposited' announced May 19",
     reality: "Multiple community members report depositing BDAG into the casino and never seeing it credited to their casino balance. Santiago (May 20, 10:23 UTC): 'I made a deposit using BDAG in CASINO, but it still doesn't show up in my account.' Same user later: 'I deposited 1250 BDAG in casino webpage but it is not showing in my account.' Analiz Radar (May 20): 'I sent 10,000 BDAG tokens. Where are my tokens, admin?' One user posted explicit warning to the community: 'Definitely do not send BDAG to the Casino section because it doesn't get credited.' BlockDAG has not published a fix, refund process, or on-chain verification path.",
@@ -1046,7 +1044,6 @@ const PROMISES = [
     id: 80,
     category: "Pricing",
     status: "broken",
-    isNew: true,
     title: "Aftersale price drops further to $0.00000025 — \"350X ROI\" math impossibility",
     promised: "$0.0000003 Aftersale price + $0.001 buyback advertised as 300X ROI (May 18)",
     reality: "On May 20, 2026 BlockDAG dropped the Aftersale price further to $0.00000025 — 99.9995% below the original $0.05 promise. The marketing was rebranded as '350X ROI'. The math is again wrong: $0.00000025 to $0.001 is 4,000x, not 350x. To reach the original $0.05 launch price, the token would need to rise 200,000x from current Aftersale levels. Buyers from May 18 at $0.0000003 are already down 17% on the project's own published sale price two days later.",
@@ -1060,7 +1057,6 @@ const PROMISES = [
     id: 81,
     category: "Claim / Distribution",
     status: "broken",
-    isNew: true,
     title: "Compression rate refused — admin: \"there's no information on compression rates\"",
     promised: "Transparency on how many claimable coins users receive per dollar paid",
     reality: "On May 20, 2026 at 18:14 UTC, an admin replied to Edward Hernandez asking about Aftersale compression: 'There's no information on compression rates, Edward.' This while BlockDAG is actively selling tokens at $0.00000025 with marketing that buyers will eventually receive their BDAG allocation. Without a published compression rate, no buyer can calculate the actual cost per claimable BDAG. Community member 'Mm' previously calculated buyers receive approximately 0.09% of nominal and BlockDAG keeps 99.91%. BlockDAG's own admin now confirms the rate is undisclosed.",
@@ -1069,6 +1065,73 @@ const PROMISES = [
       { date: "May 20, 2026", text: "@admin can you please provide the information about the compression percentage used for batch 4, it will be highly appreciated! [community member Samana, 13:03 UTC — no answer]" },
       { date: "May 20, 2026", text: "@admin any compression with what i just bought? Will you buyback the full 160mil+ coins i just bought, or is it compressed? [community member Mr Cognito, 15:28 UTC]" },
       { date: "May 20, 2026", text: "There was a pinned msg saying NO COMPRESSION. [community member VTR, 14:47 UTC — referencing original Batch 5 promise]" }
+    ]
+  },
+  {
+    id: 82,
+    category: "Tokenomics",
+    status: "broken",
+    isNew: true,
+    title: "1 billion BDAG \"burn\" — circulating supply went up the same week",
+    promised: "Supply reduction via May 21, 2026 live burn event",
+    reality: "On May 21, 2026 at 12:32 UTC BlockDAG announced a '1 BILLION BDAG LIVE BURN.' At 17:15 UTC the official channel posted the burn address: 0x0000000000000000000000000000000000000000 — the Ethereum standard dead address. BlockDAG runs on its own custom RPC (chain ID 1404), not Ethereum. CoinMarketCap circulating supply: May 20 = 54.24B, May 22 = 55.78B. Net change: +1.54 billion BDAG in circulation. The Aftersale issued more new BDAG than the burn removed. Price reaction: −5.17% in 24h.",
+    quotes: [
+      { date: "May 21, 2026", text: "🔥 0x0000000000000000000000000000000000000000 🔥 This is the address for the BURN. verifiable. BURN wallet. 🚀 1,000,000,000 BDAG has officially been permanently removed from circulation. [official channel, 17:15 UTC]" },
+      { date: "May 21, 2026", text: "Yes but it's an Ethereum protocol address which no one has access to? [community member, 17:27 UTC — unanswered]" },
+      { date: "May 21, 2026", text: "Then burning wouldn't make any sense. [community member Rgbrt Hslr, 12:55 UTC]" },
+      { date: "May 22, 2026", text: "CoinMarketCap circulating supply: 55,780,000,000 BDAG (May 22 after 1B burn) vs 54,240,000,000 (May 20 before burn). Net change in 48 hours: +1.54 billion." }
+    ]
+  },
+  {
+    id: 83,
+    category: "Claim / Distribution",
+    status: "broken",
+    isNew: true,
+    title: "Batch 5 compression documented: 99.92% — buyer receives 0.08% of allocation",
+    promised: "Batch 5 originally promised 'no compression' per pinned message",
+    reality: "On May 21, 2026 at 17:59 UTC, community member João Veríssimo published his Batch 5 receipt: 'Out of 368,792,138 BDAG files purchased for Batch 5, I only have 300,000 to claim. Can the admin explain?' Compression ratio: 99.9186%. Effective delivery: 0.0814%. Community member VTR (May 20): 'There was a pinned msg saying NO COMPRESSION.' Batch 5 was originally promoted as the no-compression batch. It compressed at 99.92 percent for the largest documented buyer.",
+    quotes: [
+      { date: "May 21, 2026", text: "@Admin Out of 368,792,138 BDAG files purchased for Batch 5, I only have 300,000 to claim? Can the admin explain? [João Veríssimo, 17:59 UTC]" },
+      { date: "May 21, 2026", text: "I have checked allocation of batch 4 was a Million bdag Claim was 300k i dont see my full loaded coin in batch 5. [Bullshhh, 17:38 UTC]" },
+      { date: "May 21, 2026", text: "Batch 4 was only 5.5 billion and batch 5 was around 5 billion. [community member nsared2000, 17:47 UTC]" }
+    ]
+  },
+  {
+    id: 84,
+    category: "Product",
+    status: "broken",
+    isNew: true,
+    title: "Whale 1B+ holder reports purchase missing from dashboard and on-chain trace",
+    promised: "All purchases visible on dashboard and BDAGScan explorer",
+    reality: "On May 21, 2026 at 17:43 UTC, community member Price Morache, a self-described 1B+ BDAG holder over two years, reported a paid purchase that does not appear on his dashboard and has no visible on-chain transaction. This is a distinct issue from compression — compression reduces the claim, missing transaction is the project not acknowledging the purchase at all.",
+    quotes: [
+      { date: "May 21, 2026", text: "First off I have well over 1B bdag and have been with this project for over two years. I'm not looking for what I will receive total, I'm looking for the purchase, the transaction — it shows like I never even made the purchase. It shows no transaction AND the bdag are not in the dashboard. [Price Morache, 17:43 UTC]" }
+    ]
+  },
+  {
+    id: 85,
+    category: "Exchange Listing",
+    status: "broken",
+    isNew: true,
+    title: "Exchange deposits indefinitely deferred — May 5 \"June 30\" promise quietly disappeared",
+    promised: "Exchange deposits open March 4, 2026. Re-promised for June 30 on May 5.",
+    reality: "On May 21, 2026 at 19:37 UTC, an admin replied to a user asking when exchange deposits open: 'Deposit will be open once the ecosystem infrastructure is fully prepared.' No date. No commitment to June 30 (the May 5 hard deadline). Exchange deposits are now indefinitely deferred, framed as an ecosystem infrastructure problem.",
+    quotes: [
+      { date: "May 21, 2026", text: "Deposit will be open once the ecosystem infrastructure is fully prepared. [official admin, 19:37 UTC]" },
+      { date: "May 5, 2026", text: "Official deposits on June 30th. [official admin — now silently replaced]" }
+    ]
+  },
+  {
+    id: 86,
+    category: "Marketing",
+    status: "broken",
+    isNew: true,
+    title: "x10swap reframed by admin: \"event-based USDT rewards, not a fixed-price buyback\"",
+    promised: "Originally marketed as 10x token swap at $0.00097 per BDAG",
+    reality: "On May 21, 2026 at 11:13 UTC, an admin in the official channel posted: 'BDAG X10SWAP is event-based USDT rewards after approved entries, not a fixed-price buyback program.' This is the first official admission that x10swap is not a swap. The product collects a $40 entry fee, approves approximately 1 in 10 entries, and pays USDT only to approved entries — funded by the rejected fees of the other 9 buyers. BlockDAG Exposed documented this mechanism in the May 18 x10swap-lottery article. The admin language now matches the community description.",
+    quotes: [
+      { date: "May 21, 2026", text: "If your entry is approved, you send BDAG and receive USDT rewards based on the event rate. You are not selling tokens back to the team at a fixed price. [official admin, 11:12 UTC]" },
+      { date: "May 21, 2026", text: "BDAG X10SWAP is event-based USDT rewards after approved entries, not a fixed-price buyback program. [official admin, 11:13 UTC]" }
     ]
   }
 ];
@@ -1191,14 +1254,20 @@ const TIMELINE_EVENTS = [
   { date: "May 20, 2026", type: "broken", text: "Casino deposits not crediting. Multiple users report sending BDAG to the casino but balances remain at zero. Santiago: 1,250 BDAG missing. Analiz Radar: 10,000 BDAG missing. Community warning posted: 'Definitely do not send BDAG to the Casino section because it doesn't get credited.' BlockDAG has not published a fix, refund process, or explanation."},
   { date: "May 20, 2026", type: "broken", text: "Admin admits compression rate is undisclosed. At 18:14 UTC, in response to Edward Hernandez asking about Aftersale compression rate: 'There's no information on compression rates, Edward.' Project is actively selling at $0.00000025 with no published ratio for how many BDAG buyers will actually receive." },
   { date: "May 20, 2026", type: "broken", text: "'Listing phase' becomes the standard reply line. At 15:08 UTC admin: 'We are still in listing phase. Next will be price discovery and liquidity.' At 17:56: 'Because we are still in listing phase, when full TGE commence with price discovery and liquidity, the network will function flawlessly without any sync issues.' The 'we haven't really launched' narrative is now the official explanation for every problem." },
-  { date: "May 21, 2026", type: "misleading", text: "Admin defense narrative shifts to 'long presale = good.' At 08:53 UTC: 'A long presale mean the team chose to build infrastructure, miners, blockchain, exchange presence, and utility before rushing a launch.' At 09:28: 'The project is still in its transition phase from presale into full ecosystem rollout.' The framing: presale that ran 2+ years is now positioned as a feature, not a delay." }
+  { date: "May 21, 2026", type: "misleading", text: "Admin defense narrative shifts to 'long presale = good.' At 08:53 UTC: 'A long presale mean the team chose to build infrastructure, miners, blockchain, exchange presence, and utility before rushing a launch.' At 09:28: 'The project is still in its transition phase from presale into full ecosystem rollout.' The framing: presale that ran 2+ years is now positioned as a feature, not a delay." },
+  { date: "May 21, 2026", type: "broken", text: "BlockDAG announces and live-streams a '1 BILLION BDAG LIVE BURN.' Burn address published as 0x0000000000000000000000000000000000000000 — the Ethereum standard dead address. BlockDAG runs on its own custom RPC at chain ID 1404, not Ethereum. Sending tokens to 0x0...0 on a custom chain is a convention, not a cryptographic guarantee. Community Rgbrt Hslr: 'Then burning wouldn't make any sense.'" },
+  { date: "May 21, 2026", type: "broken", text: "Batch 5 compression confirmed empirically. Community member João Veríssimo posts his receipt: 'Out of 368,792,138 BDAG files purchased for Batch 5, I only have 300,000 to claim.' Compression: 99.9186%. Effective delivery: 0.0814%. Batch 5 was originally promoted as the no-compression batch (community member VTR: 'There was a pinned msg saying NO COMPRESSION')." },
+  { date: "May 21, 2026", type: "broken", text: "Whale Price Morache (1B+ BDAG holder, 2+ years) reports his recent purchase is missing from both the dashboard AND BDAG explorer. Quote: 'It shows like I never even made the purchase. It shows no transaction AND the bdag are not in the dashboard.' Distinct from compression — purchase not acknowledged by the system at all." },
+  { date: "May 21, 2026", type: "broken", text: "x10swap reframed by admin as 'event-based USDT rewards after approved entries, not a fixed-price buyback program.' First official admission that x10swap is not a swap. Matches BlockDAG Exposed's May 18 article documenting the $40 fee, ~10% approval, no-refund paid-lottery structure." },
+  { date: "May 21, 2026", type: "broken", text: "Exchange deposits indefinitely deferred. Admin at 19:37 UTC: 'Deposit will be open once the ecosystem infrastructure is fully prepared.' The May 5 hard deadline of June 30 is silently replaced. Original March 4 promise was already 78 days overdue." },
+  { date: "May 22, 2026", type: "broken", text: "CoinMarketCap snapshot: BDAG circulating supply 55,780,000,000 (up from 54,240,000,000 on May 20). Net change in 48 hours: +1.54 billion BDAG. The 1B burn removed less than the Aftersale issued. Marketing said 'supply is decreasing' — supply rose 2.8%. Price: $0.000069, down 5.17% in 24h. Market cap $3.82M." }
 ];
 
 const SOURCES = [
   {
     icon: "📱",
     name: "BlockDAG Official Telegram",
-    description: "365,234 public messages analyzed (Feb 18 – May 21, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
+    description: "367,310 public messages analyzed (Feb 18 – May 22, 2026). Approx. 32,000 messages from BlockDAG Network itself. Primary source for all promise quotes.",
     url: "https://t.me/blockdagnetwork",
     label: "t.me/blockdagnetwork"
   },
@@ -1535,24 +1604,35 @@ const NOTABLE_QUOTES = [
   { date: "May 19, 2026", tag: "community", text: "Admin said they've suspended batch 1 claim completely. [community member Lucas Alvera, 13:29 UTC — independent confirmation of the Batch 1 retraction]" },
   { date: "May 20, 2026", tag: "response", text: "It is a casual warning while interacting with presales, however, we are in talks with metamask to remove this symbol. [official admin, May 20, 08:18 UTC — reframing the MetaMask deceptive-website security flag]" },
   { date: "May 20, 2026", tag: "warning", text: "BDAG dropped 15.64% in the first 24 hours after the casino-live announcement. From $0.00008074 to $0.00006828. Market cap from $4.29M to $3.70M. The casino launch was the trigger event. The market sold the news. [CoinMarketCap, May 20 mid-day snapshot]" },
-  { date: "May 20, 2026", isNew: true, tag: "misleading", text: "🚨BDAG SWAP & SPARKS CLOSED & UTILITY PRESALE ENDING: BDAG CLOSING PRICE $0.00000025 | 350x ROI🚨 [official channel, May 20 15:43 UTC — Sparks launched 6 days ago and is now closed]" },
-  { date: "May 20, 2026", isNew: true, tag: "response", text: "We are still in listing phase. Next will be price discovery and liquidity. [official admin, 15:08 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "response", text: "Because we are still in listing phase, when full TGE commence with price discovery and liquidity, the network will function flawlessly without any sync issues. [official admin, 17:56 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "response", text: "There's no information on compression rates, Edward. [official admin, 18:14 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "response", text: "🚚 MINERS: Deliveries are on the brink of starting—check your inboxes! [official channel, 18:43 UTC — same day miner sales were confirmed stopped, no actual delivery date given]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "I made a deposit using BDAG in CASINO, but it still doesn't show up in my account. [community member Santiago, 10:23 UTC — 1,250 BDAG missing]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "Definitely do not send BDAG to the Casino section because it doesn't get credited. I sent 10,000 BDAG and it never appeared in my account. [community member Analiz Radar, 18:37 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "There is no team anymore. Few AMAs ago Nic said that Jeremy would appear in the AMA again. It never happened. 90 out of 100 things come out of his mouth never happens. [community member Villagerz, 10:59 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "Once the remaining $3.6 million liquidity is gone, existing exchanges will delist the coin. Nic has to address this issue now. [community member Villagerz, 11:08 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "This project is dead. Buy at any price it will go down. [community member Deep Singh, 16:27 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "Stop lying. This value was only in pre-sale of the site and had an absurd compression. You won't be able to redeem. [community member Leonardo Contin, 16:35 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "100x?? To reach the price of 5 cents, from 0.00000025 it would need to increase 200,000 times! 200,000 × 0.00000025 = 5 cents. [community member Roland, 18:15 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "I bought at 0.0000003 and now PRICE $0.00000025. [community member Dark angel, 16:33 UTC — buyers from 2 days ago down 17% on the project's own sale price]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "they do not care about our money because they already have our 460 million. [community member Praba Selva, 17:43 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "It must be sad to be an admin and only answer questions no one cares about. For example why do I buy 10 million tokens and receive whatever some bright spark decides to give me? Why do they swear they won't sell unfairly and yet they keep doing it? Why are they driving the price to zero? [community member Luis14 Hall, 16:59 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "I hope someone may have a good time with our money. Whoever it is. We were all eaten alive. Of one thing I am certain: I won't lose more than 100%. [community member MD Franc, 18:54 UTC]" },
-  { date: "May 20, 2026", isNew: true, tag: "community", text: "I am getting so annoyed of this 'buy blockdag' presale never ends. [community member OnEarth, 19:22 UTC]" },
-  { date: "May 21, 2026", isNew: true, tag: "response", text: "A long presale mean the team chose to build infrastructure, miners, blockchain, exchange presence, and utility before rushing a launch. And 'Utility Presale' simply means the ecosystem is starting to activate instead of staying just a promise on paper. [official admin, May 21 08:53 UTC — reframing 2-year presale as a feature]" },
-  { date: "May 21, 2026", isNew: true, tag: "response", text: "The project is still in its transition phase from presale into full ecosystem rollout. Right now the team is focusing on infrastructure, wallet integration, utility features, exchange expansion, and blockchain development step by step rather than rushing everything at once. [official admin, May 21 09:28 UTC]" }
+  { date: "May 20, 2026", tag: "misleading", text: "🚨BDAG SWAP & SPARKS CLOSED & UTILITY PRESALE ENDING: BDAG CLOSING PRICE $0.00000025 | 350x ROI🚨 [official channel, May 20 15:43 UTC — Sparks launched 6 days ago and is now closed]" },
+  { date: "May 20, 2026", tag: "response", text: "We are still in listing phase. Next will be price discovery and liquidity. [official admin, 15:08 UTC]" },
+  { date: "May 20, 2026", tag: "response", text: "Because we are still in listing phase, when full TGE commence with price discovery and liquidity, the network will function flawlessly without any sync issues. [official admin, 17:56 UTC]" },
+  { date: "May 20, 2026", tag: "response", text: "There's no information on compression rates, Edward. [official admin, 18:14 UTC]" },
+  { date: "May 20, 2026", tag: "response", text: "🚚 MINERS: Deliveries are on the brink of starting—check your inboxes! [official channel, 18:43 UTC — same day miner sales were confirmed stopped, no actual delivery date given]" },
+  { date: "May 20, 2026", tag: "community", text: "I made a deposit using BDAG in CASINO, but it still doesn't show up in my account. [community member Santiago, 10:23 UTC — 1,250 BDAG missing]" },
+  { date: "May 20, 2026", tag: "community", text: "Definitely do not send BDAG to the Casino section because it doesn't get credited. I sent 10,000 BDAG and it never appeared in my account. [community member Analiz Radar, 18:37 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "There is no team anymore. Few AMAs ago Nic said that Jeremy would appear in the AMA again. It never happened. 90 out of 100 things come out of his mouth never happens. [community member Villagerz, 10:59 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "Once the remaining $3.6 million liquidity is gone, existing exchanges will delist the coin. Nic has to address this issue now. [community member Villagerz, 11:08 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "This project is dead. Buy at any price it will go down. [community member Deep Singh, 16:27 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "Stop lying. This value was only in pre-sale of the site and had an absurd compression. You won't be able to redeem. [community member Leonardo Contin, 16:35 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "100x?? To reach the price of 5 cents, from 0.00000025 it would need to increase 200,000 times! 200,000 × 0.00000025 = 5 cents. [community member Roland, 18:15 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "I bought at 0.0000003 and now PRICE $0.00000025. [community member Dark angel, 16:33 UTC — buyers from 2 days ago down 17% on the project's own sale price]" },
+  { date: "May 20, 2026", tag: "community", text: "they do not care about our money because they already have our 460 million. [community member Praba Selva, 17:43 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "It must be sad to be an admin and only answer questions no one cares about. For example why do I buy 10 million tokens and receive whatever some bright spark decides to give me? Why do they swear they won't sell unfairly and yet they keep doing it? Why are they driving the price to zero? [community member Luis14 Hall, 16:59 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "I hope someone may have a good time with our money. Whoever it is. We were all eaten alive. Of one thing I am certain: I won't lose more than 100%. [community member MD Franc, 18:54 UTC]" },
+  { date: "May 20, 2026", tag: "community", text: "I am getting so annoyed of this 'buy blockdag' presale never ends. [community member OnEarth, 19:22 UTC]" },
+  { date: "May 21, 2026", tag: "response", text: "A long presale mean the team chose to build infrastructure, miners, blockchain, exchange presence, and utility before rushing a launch. And 'Utility Presale' simply means the ecosystem is starting to activate instead of staying just a promise on paper. [official admin, May 21 08:53 UTC — reframing 2-year presale as a feature]" },
+  { date: "May 21, 2026", tag: "response", text: "The project is still in its transition phase from presale into full ecosystem rollout. Right now the team is focusing on infrastructure, wallet integration, utility features, exchange expansion, and blockchain development step by step rather than rushing everything at once. [official admin, May 21 09:28 UTC]" },
+  { date: "May 21, 2026", isNew: true, tag: "misleading", text: "🔥 0x0000000000000000000000000000000000000000 🔥 This is the address for the BURN. verifiable. BURN wallet. 🚀 1,000,000,000 BDAG has officially been permanently removed from circulation and sent to the burn wallet. [official channel, May 21 17:15 UTC — sent to the Ethereum dead address on a non-Ethereum chain. Circulating supply went UP +1.54B in the same 48h]" },
+  { date: "May 21, 2026", isNew: true, tag: "community", text: "Yes but it's an Ethereum protocol address which no one has access to? [community member, 17:27 UTC — question unanswered by admin]" },
+  { date: "May 21, 2026", isNew: true, tag: "community", text: "@Admin Out of 368,792,138 BDAG files purchased for Batch 5, I only have 300,000 to claim? Can the admin explain? [community member João Veríssimo, 17:59 UTC — empirically documents 99.9186% compression]" },
+  { date: "May 21, 2026", isNew: true, tag: "community", text: "First off I have well over 1B bdag and have been with this project for over two years. I'm not looking for what I will receive total, I'm looking for the purchase, the transaction — it shows like I never even made the purchase. It shows no transaction AND the bdag are not in the dashboard. [community member Price Morache, 17:43 UTC]" },
+  { date: "May 21, 2026", isNew: true, tag: "response", text: "BDAG X10SWAP is event-based USDT rewards after approved entries, not a fixed-price buyback program. [official admin, May 21 11:13 UTC — first admin acknowledgment that x10swap is not a swap]" },
+  { date: "May 21, 2026", isNew: true, tag: "response", text: "Deposit will be open once the ecosystem infrastructure is fully prepared. [official admin, May 21 19:37 UTC — exchange deposits now indefinitely deferred, May 5 June 30 promise silently replaced]" },
+  { date: "May 21, 2026", isNew: true, tag: "community", text: "There is no team anymore. The only connection everyone has now is these AMAs where he never addresses what people want. Once that stops, BDAG is gone forever. [community member Villagerz]" },
+  { date: "May 21, 2026", isNew: true, tag: "community", text: "Then burning wouldn't make any sense. [community member Rgbrt Hslr, 12:55 UTC — questioning the 1B BDAG burn to Ethereum dead address]" },
+  { date: "May 21, 2026", isNew: true, tag: "community", text: "I still dont get what was the point of purchasing coins in early batches while now one can buy 100x more. I bought at batch 2 and it's now worth less than 50$. Unbelievable. [community member rt, 11:10 UTC]" },
+  { date: "May 21, 2026", isNew: true, tag: "community", text: "I withdraw 1.5M BDAG from sparks to my coinstore Adress. On spark they are gone, but never arrived on coinstore. How can you help me. [community member dAminik 82, 13:57 UTC — Sparks withdrawal stuck after platform closure]" },
+  { date: "May 22, 2026", isNew: true, tag: "warning", text: "CoinMarketCap circulating supply after the May 21 1B burn: 55,780,000,000 BDAG. Before burn (May 20): 54,240,000,000. Net change: +1.54 billion in 48 hours. The Aftersale issued more new BDAG than the burn removed. Marketing claimed 'supply is decreasing.' Data: supply rose 2.8%. Price reaction: −5.17% in 24h to $0.000069. [CoinMarketCap snapshot]" }
 ];
 

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c3870" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#040e26"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#g)" opacity="0.7"/>
+
+  <text x="600" y="58" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#6b8acf" letter-spacing="5" font-weight="700">BLOCKDAG INVESTIGATION · MAY 22, 2026</text>
+  <line x1="80" y1="72" x2="1120" y2="72" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="130" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="44" font-weight="800" fill="#fff">BlockDAG "burned" <tspan fill="#e6a23c" font-style="italic">1 billion</tspan> BDAG.</text>
+  <text x="600" y="175" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="30" font-weight="700" fill="#ff8a7a">Circulating supply went up the same week.</text>
+
+  <line x1="80" y1="215" x2="1120" y2="215" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="220" y="258" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf" letter-spacing="2" font-weight="700">SUPPLY MAY 20</text>
+  <text x="220" y="298" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="34" font-weight="800" fill="#fff">54.24B</text>
+
+  <text x="500" y="298" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="36" font-weight="800" fill="#c62828">+1B BURN</text>
+  <text x="500" y="320" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff8a7a">to Ethereum dead address</text>
+
+  <text x="780" y="298" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="44" font-weight="800" fill="#e6a23c">→</text>
+
+  <text x="1020" y="258" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6b8acf" letter-spacing="2" font-weight="700">SUPPLY MAY 22</text>
+  <text x="1020" y="298" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="34" font-weight="800" fill="#c62828">55.78B</text>
+  <text x="1020" y="320" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff8a7a">+1.54B net change</text>
+
+  <line x1="80" y1="355" x2="1120" y2="355" stroke="#1c3870" stroke-width="1"/>
+
+  <text x="600" y="395" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#6b8acf" letter-spacing="3" font-weight="700">SAME 48 HOURS · BATCH 5 RECEIPT FROM A REAL BUYER</text>
+
+  <rect x="100" y="415" width="1000" height="90" rx="4" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/>
+  <text x="600" y="445" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="22" font-weight="700" fill="#fff" font-style="italic">"Out of 368,792,138 BDAG purchased for Batch 5,</text>
+  <text x="600" y="473" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="22" font-weight="700" fill="#fff" font-style="italic">I only have 300,000 to claim."</text>
+  <text x="600" y="494" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#ff8a7a">— João Veríssimo · May 21 · compression = 99.92%</text>
+
+  <text x="600" y="545" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-style="italic" fill="#e6a23c" font-weight="500">Marketing said "supply is decreasing." The data says supply rose 2.8%.</text>
+
+  <rect x="0" y="570" width="1200" height="60" fill="#c62828"/>
+  <rect x="40" y="584" width="28" height="28" fill="#fff"/>
+  <text x="54" y="603" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="18" font-weight="800" fill="#0C2956">B</text>
+  <text x="78" y="601" font-family="Newsreader, Georgia, serif" font-size="16" font-weight="700" fill="#fff">BlockDAG <tspan font-style="italic">Exposed</tspan></text>
+  <text x="78" y="618" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(255,255,255,0.6)" letter-spacing="2">INDEPENDENT · INVESTIGATIVE</text>
+  <text x="1160" y="605" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="13" fill="#fff" font-weight="600">blockdagexposed.com/article-burn-illusion.html</text>
+  <text x="1160" y="622" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="rgba(255,255,255,0.5)">79 of 87 promises broken · 90.8% failure rate</text>
+</svg>

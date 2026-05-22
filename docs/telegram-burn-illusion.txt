@@ -1,0 +1,29 @@
+🚨 BlockDAG announced a 1 billion BDAG burn on May 21. Circulating supply went up 1.54 billion in the same 48 hours.
+
+📊 THE NUMBERS (CoinMarketCap)
+
+May 20: 54.24 billion BDAG in circulation
+May 21: 1,000,000,000 BDAG sent to 0x0000000000000000000000000000000000000000
+May 22: 55.78 billion BDAG in circulation
+Net change: +1.54 billion
+
+The Aftersale issued more new BDAG than the burn removed. Supply did not decrease. Supply rose 2.8%.
+
+⚙️ THE BURN ADDRESS PROBLEM
+
+0x0000000000000000000000000000000000000000 is the Ethereum dead address. No one holds the private key on Ethereum. BlockDAG is not on Ethereum. BlockDAG runs its own custom RPC at rpc.bdagscan.com, chain ID 1404. Sending tokens to 0x0...0 on a custom chain is a convention, not a cryptographic guarantee.
+
+🧾 THE BATCH 5 RECEIPT
+
+Community member João Veríssimo, May 21 17:59 UTC:
+
+"Out of 368,792,138 BDAG files purchased for Batch 5, I only have 300,000 to claim? Can the admin explain?"
+
+Compression: 99.9186%. Effective delivery: 0.0814%. The remaining 99.92% stays with the project.
+
+📉 PRICE REACTION
+
+$0.00007224 → $0.000069 in 24 hours. Down 5.17%. The burn did not move the price up. Market cap fell to $3.82M.
+
+🔗 Full investigation:
+https://blockdagexposed.com/article-burn-illusion.html

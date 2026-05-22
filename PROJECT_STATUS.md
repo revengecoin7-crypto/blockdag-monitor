@@ -57,27 +57,31 @@
 - Site nog niet geïndexeerd (nieuw domein)
 - Handmatig indexering aanvragen via URL-inspectie voor blockdag.html, petition.html, indicators.html
 
-## Data (data.js) — Huidige staat (May 21, 2026)
-- 82 promises tracked (74 broken, ~90.2% failure rate)
-- Timeline events bijgewerkt t/m May 21
-- Notable quotes bijgewerkt t/m May 21
+## Data (data.js) — Huidige staat (May 22, 2026)
+- 87 promises tracked (79 broken, ~90.8% failure rate)
+- Timeline events bijgewerkt t/m May 22
+- Notable quotes bijgewerkt t/m May 22
 - 20 bronnen
-- Laatste artikelen: article-casino-may19.html (May 20), article-blocked-on-x.html (May 19), article-buyback-cap.html (May 19), is-blockdag-a-scam.html (landing page)
+- Laatste artikelen: **article-burn-illusion.html (May 22)**, article-sparks-closed.html (May 21), article-casino-may19.html (May 20), is-blockdag-a-scam.html (landing page)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **21 mei 2026** (export: ChatExport_2026-05-21)
-- Periode: 18 februari t/m 21 mei 2026
-- Totaal berichten: 365,234 (1,374 nieuw sinds laatste export)
+- Geanalyseerd t/m: **22 mei 2026** (export: ChatExport_2026-05-22)
+- Periode: 18 februari t/m 22 mei 2026
+- Totaal berichten: 367,310 (2,076 nieuw sinds laatste export)
 - Gap: 20–30 april ontbreekt nog
 
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F
 
-## Actuele marktdata (May 21, 2026)
-- BDAG prijs: **$0.00007224** (CMC, +5.8% bounce na de 15.64% dump, −99.86% vs $0.05)
-- Market cap: $3.97M
-- Circulating supply: 54.24B BDAG (36.17% van max 150B)
-- BDAG Aftersale prijs **DALEDE** $0.0000003 → **$0.00000025** in 2 dagen (officieel, –99.9995% vs $0.05). Marketing: "350X ROI" (math fout, echte ratio naar $0.001 = 4,000x)
+## Actuele marktdata (May 22, 2026)
+- BDAG prijs: **$0.000069** (CMC, −5.17% in 24h, −99.86% vs $0.05)
+- Market cap: $3.82M
+- **Circulating supply: 55.78B BDAG** (van 54.24B op May 20 = +1.54B in 48h ONDANKS 1B burn)
+- BDAG Aftersale prijs: $0.00000025 (officieel, –99.9995% vs $0.05). Marketing: "350X ROI" (math fout, echte ratio = 4,000x)
+- **1B BDAG "BURN" (May 21)** naar Ethereum dead address (0x0...0) op non-Ethereum chain (BlockDAG = chain ID 1404). Circulating supply ging OMHOOG +1.54B same week.
+- **Batch 5 compression bevestigd**: João Veríssimo paid 368,792,138 BDAG, kreeg 300,000 claimable = 99.92% compression (0.0814% delivery)
+- **x10swap officieel toegegeven** door admin: "event-based USDT rewards after approved entries, not a fixed-price buyback program" (May 21)
+- **Exchange deposits indefinitely deferred** (admin May 21: "once the ecosystem infrastructure is fully prepared")
 - **BDAG SPARKS GESLOTEN (May 20)** — gelanceerd May 14, dus 6 dagen later dicht. Live Swap ook gesloten.
 - **CASINO DEPOSITS WERKEN NIET** — meerdere users melden missing tokens (Santiago: 1,250 BDAG, Analiz Radar: 10,000 BDAG). Community waarschuwing: "Do not send BDAG to the Casino section, it doesn't get credited."
 - **Admin admit (May 20, 18:14 UTC):** "There's no information on compression rates" — actief verkopen met onbekend compression rate
@@ -103,7 +107,7 @@
 - Casino full launch: geen nieuwe harde datum na vijf misses
 - Miners: "June 2026" voor bestaande orders (zoveelste deadline), nieuwe verkoop gestopt
 - Brazilië/Kiziloz: appèl tegen $213M freeze loopt
-- Staking: **91 dagen** broken sinds Feb 19, 2026
+- Staking: **92 dagen** broken sinds Feb 19, 2026
 - Mainnet trading: June 30, 2026 (volgens Barry Moore via AMA referentie)
 - Admin's "listing phase" → "full TGE" overgang: geen datum gegeven
 
