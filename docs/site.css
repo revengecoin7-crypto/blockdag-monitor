@@ -394,3 +394,42 @@ footer.site { background: var(--ink); color: #fff; padding: 56px 24px 28px; }
   .newsletter { padding: 24px 16px; }
   .page-head h1 { font-size: clamp(28px, 7vw, 48px); }
 }
+
+/* MOBILE OVERFLOW FIXES — break long strings (addresses, URLs) and constrain inline tables/quotes */
+.article-body { word-wrap: break-word; overflow-wrap: break-word; }
+.article-body p, .article-body li, .article-body blockquote, .article-body cite { word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; }
+.article-body blockquote { max-width: 100%; }
+.article-body table { width: 100%; max-width: 100%; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.article-body table th, .article-body table td { word-wrap: break-word; overflow-wrap: break-word; }
+.callout, .callout p, .callout li, .callout ul { word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; max-width: 100%; }
+.facts .row, .facts .row b { word-wrap: break-word; overflow-wrap: break-word; word-break: break-word; min-width: 0; }
+.facts .row { gap: 8px; }
+.ticker { max-width: 100vw; overflow: hidden; }
+.share-row { max-width: 100%; }
+.shr { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.crumbs { flex-wrap: wrap; word-break: break-word; }
+
+@media (max-width: 640px) {
+  .article-body { font-size: 16px; }
+  .article-body p, .article-body ul, .article-body li { font-size: 16px; line-height: 1.55; }
+  .article-body .lede { font-size: 18px; line-height: 1.45; }
+  .article-body h1, .page-head h1 { font-size: clamp(24px, 6.5vw, 38px); }
+  .article-body h2 { font-size: 22px; line-height: 1.25; margin: 28px 0 10px; }
+  .article-body h3 { font-size: 18px; margin: 22px 0 8px; }
+  .article-body blockquote { font-size: 17px; padding: 4px 0 4px 14px; margin: 18px 0; line-height: 1.4; }
+  .article-body p.first::first-letter { font-size: 54px; margin: 4px 8px 0 0; }
+  .callout { padding: 16px 16px; margin: 22px 0; }
+  .callout p { font-size: 15px; }
+  .callout ul { padding-left: 18px; font-size: 15px; }
+  .article-body table th, .article-body table td { font-size: 12px; padding: 6px 8px; }
+  .meta-row { flex-wrap: wrap; gap: 6px; font-size: 12px; }
+  .article-side { gap: 16px; }
+  .facts { padding: 16px; }
+  .facts h4 { font-size: 10px; }
+  .facts .row { font-size: 12px; padding: 6px 0; flex-wrap: wrap; }
+  .footer-bot { flex-direction: column; gap: 12px; align-items: flex-start; padding: 16px; font-size: 12px; }
+  .ticker-track { font-size: 10px; }
+  .latest-strip { font-size: 11px; }
+  .crumbs { font-size: 11px; }
+  .page-head .dek { font-size: 15px; line-height: 1.5; }
+}
