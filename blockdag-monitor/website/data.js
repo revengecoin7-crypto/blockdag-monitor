@@ -1071,7 +1071,6 @@ const PROMISES = [
     id: 82,
     category: "Tokenomics",
     status: "broken",
-    isNew: true,
     title: "1 billion BDAG \"burn\" — circulating supply went up the same week",
     promised: "Supply reduction via May 21, 2026 live burn event",
     reality: "On May 21, 2026 at 12:32 UTC BlockDAG announced a '1 BILLION BDAG LIVE BURN.' At 17:15 UTC the official channel posted the burn address: 0x0000000000000000000000000000000000000000 — the Ethereum standard dead address. BlockDAG runs on its own custom RPC (chain ID 1404), not Ethereum. CoinMarketCap circulating supply: May 20 = 54.24B, May 22 = 55.78B. Net change: +1.54 billion BDAG in circulation. The Aftersale issued more new BDAG than the burn removed. Price reaction: −5.17% in 24h.",
@@ -1086,7 +1085,6 @@ const PROMISES = [
     id: 83,
     category: "Claim / Distribution",
     status: "broken",
-    isNew: true,
     title: "Batch 5 compression documented: 99.92% — buyer receives 0.08% of allocation",
     promised: "Batch 5 originally promised 'no compression' per pinned message",
     reality: "On May 21, 2026 at 17:59 UTC, community member João Veríssimo published his Batch 5 receipt: 'Out of 368,792,138 BDAG files purchased for Batch 5, I only have 300,000 to claim. Can the admin explain?' Compression ratio: 99.9186%. Effective delivery: 0.0814%. Community member VTR (May 20): 'There was a pinned msg saying NO COMPRESSION.' Batch 5 was originally promoted as the no-compression batch. It compressed at 99.92 percent for the largest documented buyer.",
@@ -1100,7 +1098,6 @@ const PROMISES = [
     id: 84,
     category: "Product",
     status: "broken",
-    isNew: true,
     title: "Whale 1B+ holder reports purchase missing from dashboard and on-chain trace",
     promised: "All purchases visible on dashboard and BDAGScan explorer",
     reality: "On May 21, 2026 at 17:43 UTC, community member Price Morache, a self-described 1B+ BDAG holder over two years, reported a paid purchase that does not appear on his dashboard and has no visible on-chain transaction. This is a distinct issue from compression — compression reduces the claim, missing transaction is the project not acknowledging the purchase at all.",
@@ -1112,7 +1109,6 @@ const PROMISES = [
     id: 85,
     category: "Exchange Listing",
     status: "broken",
-    isNew: true,
     title: "Exchange deposits indefinitely deferred — May 5 \"June 30\" promise quietly disappeared",
     promised: "Exchange deposits open March 4, 2026. Re-promised for June 30 on May 5.",
     reality: "On May 21, 2026 at 19:37 UTC, an admin replied to a user asking when exchange deposits open: 'Deposit will be open once the ecosystem infrastructure is fully prepared.' No date. No commitment to June 30 (the May 5 hard deadline). Exchange deposits are now indefinitely deferred, framed as an ecosystem infrastructure problem.",
@@ -1125,13 +1121,102 @@ const PROMISES = [
     id: 86,
     category: "Marketing",
     status: "broken",
-    isNew: true,
     title: "x10swap reframed by admin: \"event-based USDT rewards, not a fixed-price buyback\"",
     promised: "Originally marketed as 10x token swap at $0.00097 per BDAG",
     reality: "On May 21, 2026 at 11:13 UTC, an admin in the official channel posted: 'BDAG X10SWAP is event-based USDT rewards after approved entries, not a fixed-price buyback program.' This is the first official admission that x10swap is not a swap. The product collects a $40 entry fee, approves approximately 1 in 10 entries, and pays USDT only to approved entries — funded by the rejected fees of the other 9 buyers. BlockDAG Exposed documented this mechanism in the May 18 x10swap-lottery article. The admin language now matches the community description.",
     quotes: [
       { date: "May 21, 2026", text: "If your entry is approved, you send BDAG and receive USDT rewards based on the event rate. You are not selling tokens back to the team at a fixed price. [official admin, 11:12 UTC]" },
       { date: "May 21, 2026", text: "BDAG X10SWAP is event-based USDT rewards after approved entries, not a fixed-price buyback program. [official admin, 11:13 UTC]" }
+    ]
+  },
+  {
+    id: 87,
+    category: "Exchange Listing",
+    status: "broken",
+    isNew: true,
+    title: "MEXC delisted BDAG, BTSE suspended trading — multiple community confirmations",
+    promised: "Tier 1 exchange listings and continuous deposits across all exchange partners",
+    reality: "Between May 23 and May 24, 2026, multiple community members report that MEXC has delisted BDAG and BTSE has suspended BDAG trading. Matt David (May 24, 08:13 UTC): 'Why did Mexc delist us?' Followed up at 08:15 UTC and at 22:39 UTC: 'I saw it on there with a listing date then it was suspended then never happened.' FARUK HOSSAIN (May 23, 17:38 UTC): 'Delisting BTSE EXCHANGE @ADMIN.' Jhoss Hoss (May 23, 23:01 UTC): 'Why was BDAG trading suspended in BTSE?' Admin response (May 23, 23:08 and 23:16 UTC): 'Only the exchange admin can explain the reason BDAG was suspended from trading on their platform.' BlockDAG offers no explanation, no remediation, no replacement listing. The exchange suspension is a market signal — exchanges remove tokens when the issuer's behavior puts the exchange at compliance or reputational risk.",
+    quotes: [
+      { date: "May 23, 2026", text: "Delisting BTSE EXCHANGE @ADMIN [community member FARUK HOSSAIN, 17:38 UTC]" },
+      { date: "May 23, 2026", text: "Why was BDAG trading suspended in BTSE? Is it not your problem that BDAG is suspended indefinitely from exchanges? [community member Jhoss Hoss, 23:01 UTC]" },
+      { date: "May 23, 2026", text: "Only the exchange admin can explain the reason BDAG was suspended from trading on their platform. [official admin, 23:16 UTC]" },
+      { date: "May 24, 2026", text: "Why did Mexc delist us? Did we find out why Mexc delisted us? [community member Matt David, 08:13 and 08:15 UTC]" },
+      { date: "May 24, 2026", text: "Why did Mexc pull the plug on listing us. I saw it on there with a listing date then it was suspended then never happened. [community member Matt David, 22:39 UTC]" }
+    ]
+  },
+  {
+    id: 88,
+    category: "Product",
+    status: "broken",
+    isNew: true,
+    title: "BDAG Sparks reopened with \"chest\" gambling mechanic four days after closing",
+    promised: "Implicit: a product the team closes after six days should not reopen as a new gambling format days later",
+    reality: "BDAG Sparks closed on May 20, 2026 — six days after launch (BlockDAG Exposed reported this on May 21). On May 23, 2026 at 22:49 UTC, the official channel posted: 'The demand for SPARKS is insane. We're watching Sparks fly out of the vault in real time.' On May 24 at 11:34 UTC: '140,709 SPARKS. From one chest. One click. Chests are open. People are already hunting.' Sparks is now layered with a chest-opening loot-box mechanic targeted at users 'before Buyback hits.' The 460,000 minimum withdrawal that left May 14–20 users unable to cash out is not addressed. The product was not fixed; the marketing was relaunched.",
+    quotes: [
+      { date: "May 23, 2026", text: "The demand for SPARKS is insane. We're watching Sparks fly out of the vault in real time. The empty space in there is growing fast. How much longer it holds? Honestly, we don't know. [official channel, 22:49 UTC]" },
+      { date: "May 24, 2026", text: "140,709 SPARKS. From one chest. One click. Chests are open. People are already hunting. Every chest is a shot at loading up before Buyback hits. [official channel, 11:34 UTC]" },
+      { date: "May 25, 2026", text: "I don't understand the usefulness of BdagSPARKS. So, you buy sparks, place a bet, and always win a positive multiplier? Are tokens not lost, or can you lose BDAG? [community member Raulon, May 24 00:27 UTC]" }
+    ]
+  },
+  {
+    id: 89,
+    category: "Roadmap",
+    status: "promise",
+    isNew: true,
+    title: "\"Stable Coin launches June 1\" — no spec, no peg, no backing announced",
+    promised: "Stable Coin launch on June 1, 2026, marketed as a reason to stack BDAG now",
+    reality: "Starting May 23, 2026, the official channel pushes a new June 1 promise: 'How much BDAG will you hold when the Stable Coin launches on June 1st?' No specification published. No peg target (USD, USDT, BDAG-backed?). No backing mechanism. No reserve audit. No name. No collateral structure. No regulator. The promise is layered on top of the existing June 1 buyback at $0.001 — and the existing $25M Live Liquidity Wallets claim, the existing Daily Burns promise, the existing New Token Launches, and the existing Liquidity Expansion. BlockDAG has stacked five product promises onto the same date.",
+    quotes: [
+      { date: "May 23, 2026", text: "The big question is: How much BDAG will you hold when the Stable Coin launches on June 1st? SPARKS is your best move. Stack aggressively right now and enter June 1st with a massive bag. [official channel, 17:39 UTC]" },
+      { date: "May 23, 2026", text: "$25M LIVE LIQUIDITY WALLETS PUBLIC — BDAG $0.00000019 | 400X ROI. Buybacks. Stable Coin Launch. Daily Burns. Liquidity Expansion. New Token Launches. [official channel, 01:00 UTC]" },
+      { date: "May 24, 2026", text: "I am kind of lost with the whole USDT peg…. Does this mean our current Coins will be converted to Stablecoins or this is a different coin? [community member J P, 07:34 UTC — unanswered]" }
+    ]
+  },
+  {
+    id: 90,
+    category: "Claim / Distribution",
+    status: "broken",
+    isNew: true,
+    title: "Vesting contract added AFTER Batch 5 — claimed coins still locked",
+    promised: "Original purchase pages stated coins would be claimable at TGE without further vesting",
+    reality: "On May 24, 2026 at 04:18 UTC, the admin announced: 'After the previous claim, which was Batch 5, the vesting contract will be implemented.' Reconfirmed May 25 at 01:23 UTC: 'Coins locked is called vesting. This method is to avoid flooding the market with coins.' And again at 02:01 UTC: 'Coins are vested to avoid over supply of BDAG coins.' This is a new restriction added after buyers have already paid. Buyers from Batches 1–5 entered the contract on the basis that their allocations were claimable. The vesting contract is a unilateral lock applied after the money has been collected. Combined with Batch 5's documented 99.92% compression and the Batch 1 retraction (May 19), the path from payment to liquid BDAG is now: pay → compress 99.92% → wait for claim batch → vest in contract → wait for unlock schedule (no schedule published).",
+    quotes: [
+      { date: "May 24, 2026", text: "After the previous claim, which was Batch 5, the vesting contract will be implemented. [official admin, 04:18 UTC]" },
+      { date: "May 25, 2026", text: "Coins locked is called vesting. This method is to avoid flooding the market with coins. It's a strategic way of building a sustainable coin. [official admin, 01:23 UTC]" },
+      { date: "May 25, 2026", text: "Coins are vested to avoid over supply of BDAG coins. [official admin, 02:01 UTC]" },
+      { date: "May 25, 2026", text: "Could you please rephrase your query? What do you want to use? The vesting is applicable to everyone. [official admin, 10:14 UTC]" }
+    ]
+  },
+  {
+    id: 91,
+    category: "Marketing",
+    status: "broken",
+    isNew: true,
+    title: "Admin contradicts \"listing phase\" line — says \"BDAG is already launched and trading on exchanges\"",
+    promised: "Consistent communication on whether BDAG has fully launched or remains in a pre-launch phase",
+    reality: "On May 25, 2026 at 01:15 UTC, an admin in the official channel posted: 'BDAG is already launched and trading on exchanges.' This directly contradicts admin replies from May 19 ('we remain within the listing phase'), May 20 (15:08 UTC: 'We are still in listing phase. Next will be price discovery and liquidity'), and the entire 'long presale' narrative shift from May 21. Both statements come from the same official admin handle, six days apart. Either the project launched on exchanges (contradicting the listing phase that explains every problem since March 4) or it remains in listing phase (contradicting the May 25 line). BlockDAG cannot simultaneously be 'already trading' and 'still in listing phase' — yet both are used to deflect different community questions.",
+    quotes: [
+      { date: "May 25, 2026", text: "BDAG is already launched and trading on exchanges. [official admin, 01:15 UTC]" },
+      { date: "May 20, 2026", text: "We are still in listing phase. Next will be price discovery and liquidity. [official admin, 15:08 UTC]" },
+      { date: "May 19, 2026", text: "It must be borne in mind that we remain within the listing phase. Upon the conclusion of this phase, price discovery and liquidity will commence. [official admin, 18:06 UTC]" },
+      { date: "May 25, 2026", text: "The circulating supply is self reported on cmc which is subjected to change. Check BDAG explorer for more details about supply. [official admin, 06:10 UTC]" }
+    ]
+  },
+  {
+    id: 92,
+    category: "Product",
+    status: "broken",
+    isNew: true,
+    title: "Support system broken — \"account suspended\" errors block ticket creation",
+    promised: "Functioning support ticket system at support.blockdag.network for claim issues, missing coins, and refunds",
+    reality: "Between May 23 and May 25, 2026, multiple community members report they cannot create support tickets. The official support email returns 'account suspended.' On May 24 at 23:05 UTC, an admin acknowledged: 'The support link is no longer working.' At 23:15 UTC: 'Team is working with the support system in order fix it.' On May 25 at 06:45 UTC: 'Support system is currently down.' Users complain of being unable to raise tickets for missing Batch 3, 4 and 5 claims, missing casino deposits, and broken staking. The support outage runs in parallel with the active push to buy BDAG before the June 1 buyback. Users cannot purchase, but they also cannot report problems.",
+    quotes: [
+      { date: "May 23, 2026", text: "I only able to get Batch 1 and Batch 2, still waiting for Batch 3 & 4. I tried reaching out support mail but it says account suspended. [community member P, 10:01 UTC]" },
+      { date: "May 23, 2026", text: "@admin not able to raise ticket, it says your account has been suspended [community member D S, 11:57 UTC]" },
+      { date: "May 24, 2026", text: "The support link is no longer working. How can i assist you? [official admin, 23:05 UTC]" },
+      { date: "May 25, 2026", text: "Support system is currently down. How can I assist you? [official admin, 06:45 UTC]" },
+      { date: "May 25, 2026", text: "How I can raise a ticket due I can't claim [community member Imad, 22:44 UTC May 24]" }
     ]
   }
 ];
@@ -1260,7 +1345,20 @@ const TIMELINE_EVENTS = [
   { date: "May 21, 2026", type: "broken", text: "Whale Price Morache (1B+ BDAG holder, 2+ years) reports his recent purchase is missing from both the dashboard AND BDAG explorer. Quote: 'It shows like I never even made the purchase. It shows no transaction AND the bdag are not in the dashboard.' Distinct from compression — purchase not acknowledged by the system at all." },
   { date: "May 21, 2026", type: "broken", text: "x10swap reframed by admin as 'event-based USDT rewards after approved entries, not a fixed-price buyback program.' First official admission that x10swap is not a swap. Matches BlockDAG Exposed's May 18 article documenting the $40 fee, ~10% approval, no-refund paid-lottery structure." },
   { date: "May 21, 2026", type: "broken", text: "Exchange deposits indefinitely deferred. Admin at 19:37 UTC: 'Deposit will be open once the ecosystem infrastructure is fully prepared.' The May 5 hard deadline of June 30 is silently replaced. Original March 4 promise was already 78 days overdue." },
-  { date: "May 22, 2026", type: "broken", text: "CoinMarketCap snapshot: BDAG circulating supply 55,780,000,000 (up from 54,240,000,000 on May 20). Net change in 48 hours: +1.54 billion BDAG. The 1B burn removed less than the Aftersale issued. Marketing said 'supply is decreasing' — supply rose 2.8%. Price: $0.000069, down 5.17% in 24h. Market cap $3.82M." }
+  { date: "May 22, 2026", type: "broken", text: "CoinMarketCap snapshot: BDAG circulating supply 55,780,000,000 (up from 54,240,000,000 on May 20). Net change in 48 hours: +1.54 billion BDAG. The 1B burn removed less than the Aftersale issued. Marketing said 'supply is decreasing' — supply rose 2.8%. Price: $0.000069, down 5.17% in 24h. Market cap $3.82M." },
+  { date: "May 23, 2026", type: "broken", text: "BTSE Exchange suspends BDAG trading. Community member FARUK HOSSAIN at 17:38 UTC: 'Delisting BTSE EXCHANGE @ADMIN.' Jhoss Hoss at 23:01 UTC: 'Why was BDAG trading suspended in BTSE?' Admin response at 23:16 UTC deflects: 'Only the exchange admin can explain the reason BDAG was suspended from trading on their platform.' No remediation, no replacement listing, no explanation." },
+  { date: "May 23, 2026", type: "broken", text: "Aftersale price drops to $0.00000019 — 99.99996% below the original $0.05 promise. Marketing rebrand to '400X ROI' (math wrong, actual ratio to $0.001 is 5,263x). New '$25M LIVE LIQUIDITY WALLETS' marketing post launched: 'For the first time ever, you can now view over $25M USD prepared for deployment ahead of June 1st.' Five product promises stacked on June 1: Buybacks, Stable Coin Launch, Daily Burns, Liquidity Expansion, New Token Launches." },
+  { date: "May 23, 2026", type: "misleading", text: "BDAG Sparks marketing resumed three days after closing. Official channel at 22:49 UTC: 'The demand for SPARKS is insane. We're watching Sparks fly out of the vault in real time.' Sparks was officially closed May 20 (BDAG SWAP & SPARKS CLOSED). Users below the 460,000 withdrawal minimum still have no documented refund path." },
+  { date: "May 23, 2026", type: "broken", text: "Support tickets broken across the community. Multiple users report the support email returns 'account suspended.' Community member P (10:01 UTC): 'I tried reaching out support mail but it says account suspended.' D S (11:57 UTC): '@admin not able to raise ticket, it says your account has been suspended.' Users cannot report missing claims, missing casino deposits, or staking issues." },
+  { date: "May 23, 2026", type: "broken", text: "Community member: 'Where is NICK the CEO. Disappeared. No more AMA because he is ashamed of himself and this project.' Nic Van Den Bergh — appointed CEO December 2025 — has not held a public AMA since the May 18 Binance Live where the $250,000 buyback cap was disclosed." },
+  { date: "May 24, 2026", type: "broken", text: "MEXC delisting confirmed by community. Community member Matt David (08:13 UTC): 'Why did Mexc delist us?' At 08:15 UTC: 'Did we find out why Mexc delisted us?' At 22:39 UTC: 'Why did Mexc pull the plug on listing us. I saw it on there with a listing date then it was suspended then never happened.' BlockDAG had promoted MEXC since February 2026; the listing was 'in final stages' on multiple dates. Listing never materialised, then was removed." },
+  { date: "May 24, 2026", type: "broken", text: "Vesting contract announced — applied AFTER Batch 5 claims. Admin at 04:18 UTC: 'After the previous claim, which was Batch 5, the vesting contract will be implemented.' New restriction added after buyers paid. The path from payment to liquid BDAG is now: pay → 99.92% compression → wait for claim batch → vest in contract → wait for unlock schedule (no schedule published)." },
+  { date: "May 24, 2026", type: "misleading", text: "Sparks 'chest' loot box mechanic introduced. Official channel at 11:34 UTC: '140,709 SPARKS. From one chest. One click. Chests are open. People are already hunting. Every chest is a shot at loading up before Buyback hits.' A new gambling format layered on Sparks four days after the product officially closed." },
+  { date: "May 24, 2026", type: "note", text: "Community member Trader (16:00 UTC): 'This group has already lost over 5,000 members and will continue to lose more, as results and ROI so far are zero.' Followed by Ryan Crypto (20:04): 'A lot of people all over the internet are complaining about this project, guys. I think it's time to get this project back on track because many people have lost a lot of money, and there will probably be criminal complaints.'" },
+  { date: "May 25, 2026", type: "broken", text: "Official admin contradicts the 'listing phase' narrative. At 01:15 UTC: 'BDAG is already launched and trading on exchanges.' The same channel said 'we are still in listing phase' on May 20 (15:08 UTC), 'we remain within the listing phase' on May 19 (18:06 UTC), and reframed the entire 2-year presale as a 'transition phase' on May 21. Both statements come from the same official admin." },
+  { date: "May 25, 2026", type: "misleading", text: "Admin distances from CoinMarketCap supply data. At 06:10 UTC: 'The circulating supply is self reported on cmc which is subjected to change. Check BDAG explorer for more details about supply.' BlockDAG has cited CMC data in its own marketing for 11+ months. The disclaimer arrives only after the CMC supply rose to 55.78B (May 22) following the 1B burn." },
+  { date: "May 25, 2026", type: "broken", text: "Staking still broken. Admin at 06:50 UTC: 'Staking contract is being worked on according to the CEO. Regarding claiming you need to keep trying the claiming process in order to claim your coins.' 95 days since staking was promised live on February 19, 2026. Workaround: keep retrying. No fix date." },
+  { date: "May 25, 2026", type: "broken", text: "Support system still down. Admin at 06:45 UTC: 'Support system is currently down. How can I assist you?' Telegram is the only working support channel. Users report being unable to claim Batches 3, 4, 5, unable to retrieve casino deposits, unable to unstake — and now unable to file a ticket." }
 ];
 
 const SOURCES = [
@@ -1623,16 +1721,41 @@ const NOTABLE_QUOTES = [
   { date: "May 20, 2026", tag: "community", text: "I am getting so annoyed of this 'buy blockdag' presale never ends. [community member OnEarth, 19:22 UTC]" },
   { date: "May 21, 2026", tag: "response", text: "A long presale mean the team chose to build infrastructure, miners, blockchain, exchange presence, and utility before rushing a launch. And 'Utility Presale' simply means the ecosystem is starting to activate instead of staying just a promise on paper. [official admin, May 21 08:53 UTC — reframing 2-year presale as a feature]" },
   { date: "May 21, 2026", tag: "response", text: "The project is still in its transition phase from presale into full ecosystem rollout. Right now the team is focusing on infrastructure, wallet integration, utility features, exchange expansion, and blockchain development step by step rather than rushing everything at once. [official admin, May 21 09:28 UTC]" },
-  { date: "May 21, 2026", isNew: true, tag: "misleading", text: "🔥 0x0000000000000000000000000000000000000000 🔥 This is the address for the BURN. verifiable. BURN wallet. 🚀 1,000,000,000 BDAG has officially been permanently removed from circulation and sent to the burn wallet. [official channel, May 21 17:15 UTC — sent to the Ethereum dead address on a non-Ethereum chain. Circulating supply went UP +1.54B in the same 48h]" },
-  { date: "May 21, 2026", isNew: true, tag: "community", text: "Yes but it's an Ethereum protocol address which no one has access to? [community member, 17:27 UTC — question unanswered by admin]" },
-  { date: "May 21, 2026", isNew: true, tag: "community", text: "@Admin Out of 368,792,138 BDAG files purchased for Batch 5, I only have 300,000 to claim? Can the admin explain? [community member João Veríssimo, 17:59 UTC — empirically documents 99.9186% compression]" },
-  { date: "May 21, 2026", isNew: true, tag: "community", text: "First off I have well over 1B bdag and have been with this project for over two years. I'm not looking for what I will receive total, I'm looking for the purchase, the transaction — it shows like I never even made the purchase. It shows no transaction AND the bdag are not in the dashboard. [community member Price Morache, 17:43 UTC]" },
-  { date: "May 21, 2026", isNew: true, tag: "response", text: "BDAG X10SWAP is event-based USDT rewards after approved entries, not a fixed-price buyback program. [official admin, May 21 11:13 UTC — first admin acknowledgment that x10swap is not a swap]" },
-  { date: "May 21, 2026", isNew: true, tag: "response", text: "Deposit will be open once the ecosystem infrastructure is fully prepared. [official admin, May 21 19:37 UTC — exchange deposits now indefinitely deferred, May 5 June 30 promise silently replaced]" },
-  { date: "May 21, 2026", isNew: true, tag: "community", text: "There is no team anymore. The only connection everyone has now is these AMAs where he never addresses what people want. Once that stops, BDAG is gone forever. [community member Villagerz]" },
-  { date: "May 21, 2026", isNew: true, tag: "community", text: "Then burning wouldn't make any sense. [community member Rgbrt Hslr, 12:55 UTC — questioning the 1B BDAG burn to Ethereum dead address]" },
-  { date: "May 21, 2026", isNew: true, tag: "community", text: "I still dont get what was the point of purchasing coins in early batches while now one can buy 100x more. I bought at batch 2 and it's now worth less than 50$. Unbelievable. [community member rt, 11:10 UTC]" },
-  { date: "May 21, 2026", isNew: true, tag: "community", text: "I withdraw 1.5M BDAG from sparks to my coinstore Adress. On spark they are gone, but never arrived on coinstore. How can you help me. [community member dAminik 82, 13:57 UTC — Sparks withdrawal stuck after platform closure]" },
-  { date: "May 22, 2026", isNew: true, tag: "warning", text: "CoinMarketCap circulating supply after the May 21 1B burn: 55,780,000,000 BDAG. Before burn (May 20): 54,240,000,000. Net change: +1.54 billion in 48 hours. The Aftersale issued more new BDAG than the burn removed. Marketing claimed 'supply is decreasing.' Data: supply rose 2.8%. Price reaction: −5.17% in 24h to $0.000069. [CoinMarketCap snapshot]" }
+  { date: "May 21, 2026", tag: "misleading", text: "🔥 0x0000000000000000000000000000000000000000 🔥 This is the address for the BURN. verifiable. BURN wallet. 🚀 1,000,000,000 BDAG has officially been permanently removed from circulation and sent to the burn wallet. [official channel, May 21 17:15 UTC — sent to the Ethereum dead address on a non-Ethereum chain. Circulating supply went UP +1.54B in the same 48h]" },
+  { date: "May 21, 2026", tag: "community", text: "Yes but it's an Ethereum protocol address which no one has access to? [community member, 17:27 UTC — question unanswered by admin]" },
+  { date: "May 21, 2026", tag: "community", text: "@Admin Out of 368,792,138 BDAG files purchased for Batch 5, I only have 300,000 to claim? Can the admin explain? [community member João Veríssimo, 17:59 UTC — empirically documents 99.9186% compression]" },
+  { date: "May 21, 2026", tag: "community", text: "First off I have well over 1B bdag and have been with this project for over two years. I'm not looking for what I will receive total, I'm looking for the purchase, the transaction — it shows like I never even made the purchase. It shows no transaction AND the bdag are not in the dashboard. [community member Price Morache, 17:43 UTC]" },
+  { date: "May 21, 2026", tag: "response", text: "BDAG X10SWAP is event-based USDT rewards after approved entries, not a fixed-price buyback program. [official admin, May 21 11:13 UTC — first admin acknowledgment that x10swap is not a swap]" },
+  { date: "May 21, 2026", tag: "response", text: "Deposit will be open once the ecosystem infrastructure is fully prepared. [official admin, May 21 19:37 UTC — exchange deposits now indefinitely deferred, May 5 June 30 promise silently replaced]" },
+  { date: "May 21, 2026", tag: "community", text: "There is no team anymore. The only connection everyone has now is these AMAs where he never addresses what people want. Once that stops, BDAG is gone forever. [community member Villagerz]" },
+  { date: "May 21, 2026", tag: "community", text: "Then burning wouldn't make any sense. [community member Rgbrt Hslr, 12:55 UTC — questioning the 1B BDAG burn to Ethereum dead address]" },
+  { date: "May 21, 2026", tag: "community", text: "I still dont get what was the point of purchasing coins in early batches while now one can buy 100x more. I bought at batch 2 and it's now worth less than 50$. Unbelievable. [community member rt, 11:10 UTC]" },
+  { date: "May 21, 2026", tag: "community", text: "I withdraw 1.5M BDAG from sparks to my coinstore Adress. On spark they are gone, but never arrived on coinstore. How can you help me. [community member dAminik 82, 13:57 UTC — Sparks withdrawal stuck after platform closure]" },
+  { date: "May 22, 2026", tag: "warning", text: "CoinMarketCap circulating supply after the May 21 1B burn: 55,780,000,000 BDAG. Before burn (May 20): 54,240,000,000. Net change: +1.54 billion in 48 hours. The Aftersale issued more new BDAG than the burn removed. Marketing claimed 'supply is decreasing.' Data: supply rose 2.8%. Price reaction: −5.17% in 24h to $0.000069. [CoinMarketCap snapshot]" },
+  { date: "May 23, 2026", isNew: true, tag: "misleading", text: "🚨$25M LIVE LIQUIDITY WALLETS PUBLIC — BDAG $0.00000019 | 400X ROI 🚨 For the first time ever, you can now view over $25M USD prepared for deployment ahead of June 1st directly on the website. Buybacks. Stable Coin Launch. Daily Burns. Liquidity Expansion. New Token Launches. [official channel, May 23 01:00 UTC — five product promises stacked on the same date. Math: $0.00000019 to $0.001 is 5,263x not 400x.]" },
+  { date: "May 23, 2026", isNew: true, tag: "community", text: "Delisting BTSE EXCHANGE @ADMIN [community member FARUK HOSSAIN, May 23 17:38 UTC]" },
+  { date: "May 23, 2026", isNew: true, tag: "community", text: "Why was BDAG trading suspended in BTSE? Is it not your problem that BDAG is suspended indefinitely from exchanges? If you are delisted or suspended from exchanges, is it because there is something wrong with the project? [community member Jhoss Hoss, May 23 23:01–23:35 UTC]" },
+  { date: "May 23, 2026", isNew: true, tag: "response", text: "Only the exchange admin can explain the reason BDAG was suspended from trading on their platform. [official admin, May 23 23:16 UTC — no remediation, no replacement listing offered]" },
+  { date: "May 23, 2026", isNew: true, tag: "community", text: "Where is NICK the CEO. Disappeared. No more AMA because he is ashamed of himself and this project. [community member Alain, May 23 15:24 UTC]" },
+  { date: "May 23, 2026", isNew: true, tag: "community", text: "Where is investors hard earn money gone … price keeps on tanking .. so far only down no up. [community member A N, May 23 17:06 UTC]" },
+  { date: "May 23, 2026", isNew: true, tag: "misleading", text: "The demand for SPARKS is insane. We're watching Sparks fly out of the vault in real time. [official channel, May 23 22:49 UTC — Sparks was officially closed three days earlier on May 20]" },
+  { date: "May 23, 2026", isNew: true, tag: "response", text: "It is a casual warning while interacting with presales, however, we are in talks with metamask to remove this symbol. [official admin, May 23 14:41 UTC — same line used since May 18 to deflect the MetaMask scam flag, still active 5+ days later]" },
+  { date: "May 24, 2026", isNew: true, tag: "community", text: "Why did Mexc delist us? Did we find out why Mexc delisted us? Why did Mexc pull the plug on listing us. I saw it on there with a listing date then it was suspended then never happened. [community member Matt David, May 24 08:13–22:39 UTC]" },
+  { date: "May 24, 2026", isNew: true, tag: "response", text: "After the previous claim, which was Batch 5, the vesting contract will be implemented. [official admin, May 24 04:18 UTC — new restriction applied AFTER purchase. Path now: pay → 99.92% compression → claim batch → vest in contract → wait for unlock schedule (no schedule published)]" },
+  { date: "May 24, 2026", isNew: true, tag: "misleading", text: "140,709 SPARKS. From one chest. One click. Chests are open. People are already hunting. Every chest is a shot at loading up before Buyback hits. [official channel, May 24 11:34 UTC — new loot box gambling format layered on Sparks 4 days after the product officially closed]" },
+  { date: "May 24, 2026", isNew: true, tag: "community", text: "I am kind of lost with the whole USDT peg…. Does this mean our current Coins will be converted to Stablecoins or this is a different coin? [community member J P, May 24 07:34 UTC — unanswered]" },
+  { date: "May 24, 2026", isNew: true, tag: "community", text: "This group has already lost over 5,000 members and will continue to lose more, as results and ROI so far are zero. [community member Trader, May 24 16:00 UTC]" },
+  { date: "May 24, 2026", isNew: true, tag: "community", text: "A lot of people all over the internet are complaining about this project, guys. I think it's time to get this project back on track because many people have lost a lot of money, and there will probably be criminal complaints. [community member Ryan Crypto, May 24 20:04 UTC]" },
+  { date: "May 24, 2026", isNew: true, tag: "community", text: "This is not a fair project. We see it in the presale era. No ethics, no fair play for the early birds... This is a 'take the money and run' game. We lost.... Big time. [community member Καντάφης OG, May 24 14:26 UTC]" },
+  { date: "May 24, 2026", isNew: true, tag: "response", text: "The support link is no longer working. How can i assist you? [official admin, May 24 23:05 UTC]" },
+  { date: "May 25, 2026", isNew: true, tag: "response", text: "BDAG is already launched and trading on exchanges. [official admin, May 25 01:15 UTC — direct contradiction of the May 20 admin line 'We are still in listing phase. Next will be price discovery and liquidity']" },
+  { date: "May 25, 2026", isNew: true, tag: "response", text: "The circulating supply is self reported on cmc which is subjected to change. Check BDAG explorer for more details about supply. [official admin, May 25 06:10 UTC — first time the project distances itself from CoinMarketCap supply data, after CMC supply rose +1.54B following the 1B burn]" },
+  { date: "May 25, 2026", isNew: true, tag: "response", text: "Coins locked is called vesting. This method is to avoid flooding the market with coins. It's a strategic way of building a sustainable coin. [official admin, May 25 01:23 UTC]" },
+  { date: "May 25, 2026", isNew: true, tag: "response", text: "Coins are vested to avoid over supply of BDAG coins. [official admin, May 25 02:01 UTC — second post-purchase vesting confirmation in 38 minutes]" },
+  { date: "May 25, 2026", isNew: true, tag: "response", text: "Support system is currently down. How can I assist you? [official admin, May 25 06:45 UTC — 8th day with broken ticket system]" },
+  { date: "May 25, 2026", isNew: true, tag: "response", text: "Staking contract is being worked on according to the CEO. Regarding claiming you need to keep trying the claiming process in order to claim your coins. [official admin, May 25 06:50 UTC — 95 days since staking was promised live on Feb 19, 2026]" },
+  { date: "May 25, 2026", isNew: true, tag: "community", text: "Why would new investors come when there are continuous broken promises such as no tier 1 listings. Miners still aren't being delivered. And never ending pre sale with compression? The community that you keep yelling at had nothing to do with it. You're starting to look like a joke Ant. [community member Xnova 101, May 25 05:05 UTC]" },
+  { date: "May 25, 2026", isNew: true, tag: "community", text: "I gave up on this one... I'm leaving Telegram when you don't keep your word, a man's word is his bond, saying it will be his last, then continuing to sell this garbage on the site. I'm glad I only lost $100, imagine someone who bought $1000 worth of stuff. [community member Henrique, May 25 03:37 UTC]" },
+  { date: "May 25, 2026", isNew: true, tag: "community", text: "I think miners never gonna be delivered. I am in this sh**t project from 2024 I bought coins + miners i lost the hope and believing that these guys are S***M. [community member Jack Daniel, May 25 03:15 UTC]" }
 ];
 
