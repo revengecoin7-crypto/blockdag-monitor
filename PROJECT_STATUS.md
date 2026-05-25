@@ -78,8 +78,8 @@
 - Market cap: $3.82M
 - Circulating supply: **55.78B BDAG** (CMC self-reported volgens admin, "subjected to change")
 - BDAG Aftersale prijs: **$0.00000019** (officieel, –99.99996% vs $0.05). Marketing: "400X ROI" (echte math: $0.00000019 → $0.001 = 5,263x). Lager dan $0.00000025 op 21 mei.
-- **MEXC delisted BDAG** (May 24) — community confirmed, geen officieel statement van BlockDAG
-- **BTSE suspended BDAG trading** (May 23) — admin: "Only the exchange admin can explain"
+- **MEXC cancelled scheduled BDAG listing before launch** (May 24) — let op: MEXC had BDAG NOG NIET live, alleen ingepland; listing werd voor launch teruggetrokken. Matt David: "I saw it on there with a listing date then it was suspended then never happened." BlockDAG promootte MEXC sinds februari 2026 als Tier 1 partner.
+- **BTSE suspended BDAG trading** (May 23) — dit was actief trading dat werd opgeschort. Admin: "Only the exchange admin can explain"
 - **Vesting contract** (May 24): "After the previous claim, which was Batch 5, the vesting contract will be implemented" — nieuwe lock NA aankoop
 - **Stable Coin launch June 1** — admin May 23, geen peg, geen backing, geen spec
 - **$25M Live Liquidity Wallets** marketing (May 23): vijf June 1 producten op één datum (Buybacks, Stable Coin, Daily Burns, Liquidity Expansion, New Token Launches)
@@ -106,7 +106,7 @@
 
 ## Belangrijke correcties gedaan
 - BingX en Gate.io stonden als KEPT maar listings zijn NOOIT gebeurd → gecorrigeerd naar BROKEN (May 4, 2026)
-- MEXC was als "in final stages" gemarkeerd, nu BROKEN (May 24)
+- MEXC was als "in final stages" gemarkeerd, scheduled listing CANCELLED voor launch (May 24) — taalkundig: niet "delisted" want het was nooit live
 - BTSE was als gelist gemarkeerd, nu BROKEN (May 23 suspension)
 
 ## Volgende deadlines om te monitoren
