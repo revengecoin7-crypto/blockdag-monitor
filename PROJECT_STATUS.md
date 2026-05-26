@@ -17,9 +17,9 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (92 promises, 84 broken)
-3. `timeline.html` — Tijdlijn (incl. May 14–25 events)
-4. `evidence.html` — directe quotes (uitgebreid t/m May 25)
+2. `tracker.html` — Promise Tracker (95 promises, 87 broken)
+3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
+4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
 6. `investigation.html` — DL News onderzoek
 7. `indicators.html` — Trust Score pagina (gauge, 4/100)
@@ -27,8 +27,6 @@
 9. `sources.html` — 20 bronnen
 10. `about.html` — Over de site + ideeënformulier
 11. `admin.html` — Verborgen admin pagina (NIET in nav)
-
-**Verwijderd:** `blockdag.html` — inhoud verhuisd naar homepage (later weer terug)
 
 ## Admin pagina
 - URL: https://blockdagexposed.com/admin.html
@@ -51,78 +49,84 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Google Search Console
-- Geverifieerd via TXT record bij Namecheap
-- Sitemap ingediend: https://blockdagexposed.com/sitemap.xml
-- Site nog niet geïndexeerd (nieuw domein)
-- Handmatig indexering aanvragen via URL-inspectie voor blockdag.html, petition.html, indicators.html
-
-## Data (data.js) — Huidige staat (May 25, 2026)
-- 92 promises tracked (84 broken, 91.3% failure rate)
-- Timeline events bijgewerkt t/m May 25
-- Notable quotes bijgewerkt t/m May 25 (isNew op nieuwste May 23-25 quotes)
+## Data (data.js) — Huidige staat (May 26, 2026)
+- 95 promises tracked (87 broken, 91.6% failure rate)
+- Timeline events bijgewerkt t/m May 26
+- Notable quotes bijgewerkt t/m May 26 (isNew op nieuwste May 25-26 quotes)
 - 20 bronnen
-- Laatste artikelen: **article-exchange-suspensions.html (May 25)**, article-burn-illusion.html (May 22), article-sparks-closed.html (May 21), article-casino-may19.html (May 20), is-blockdag-a-scam.html (landing page)
+- Laatste artikelen: **article-turbo-presale.html (May 26)**, article-exchange-suspensions.html (May 25), article-burn-illusion.html (May 22), article-sparks-closed.html (May 21)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **25 mei 2026** (export: ChatExport_2026-05-25)
-- Periode: 18 februari t/m 25 mei 2026
-- Totaal berichten: 372,300+ (4,990 nieuw sinds laatste export op 22 mei)
+- Geanalyseerd t/m: **26 mei 2026** (export: ChatExport_2026-05-26)
+- Periode: 18 februari t/m 26 mei 2026
+- Totaal berichten: 374,600+ (2,328 nieuw sinds laatste export op 25 mei)
 - Gap: 20–30 april ontbreekt nog
 
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F
 
-## Actuele marktdata (May 25, 2026)
+## Actuele marktdata (May 26, 2026) — HUIDIGE STAAT
 - BDAG prijs CMC: **$0.000069** (−99.86% vs $0.05)
-- Market cap: $3.82M
-- Circulating supply: **55.78B BDAG** (CMC self-reported volgens admin, "subjected to change")
-- BDAG Aftersale prijs: **$0.00000019** (officieel, –99.99996% vs $0.05). Marketing: "400X ROI" (echte math: $0.00000019 → $0.001 = 5,263x). Lager dan $0.00000025 op 21 mei.
-- **MEXC cancelled scheduled BDAG listing before launch** (May 24) — let op: MEXC had BDAG NOG NIET live, alleen ingepland; listing werd voor launch teruggetrokken. Matt David: "I saw it on there with a listing date then it was suspended then never happened." BlockDAG promootte MEXC sinds februari 2026 als Tier 1 partner.
-- **BTSE suspended BDAG trading** (May 23) — dit was actief trading dat werd opgeschort. Admin: "Only the exchange admin can explain"
-- **Vesting contract** (May 24): "After the previous claim, which was Batch 5, the vesting contract will be implemented" — nieuwe lock NA aankoop
-- **Stable Coin launch June 1** — admin May 23, geen peg, geen backing, geen spec
-- **$25M Live Liquidity Wallets** marketing (May 23): vijf June 1 producten op één datum (Buybacks, Stable Coin, Daily Burns, Liquidity Expansion, New Token Launches)
-- **BDAG Sparks REOPENED met chest mechanic** (May 23-24) na sluiting May 20
-- **Admin contradicts "listing phase"** (May 25 01:15): "BDAG is already launched and trading on exchanges" vs May 20: "We are still in listing phase"
-- **CMC supply officieel "self reported"** (May 25 admin 06:10): "subjected to change. Check BDAG explorer"
-- **Support ticket system BROKEN** sinds May 17 — "account suspended" errors. Admin May 24: "The support link is no longer working"
-- 1B BDAG "BURN" (May 21) naar Ethereum dead address (0x0...0) op non-Ethereum chain. Circulating supply ging OMHOOG +1.54B same week.
-- Batch 5 compression bevestigd: João Veríssimo paid 368,792,138 BDAG, kreeg 300,000 claimable = 99.92% compression (0.0814% delivery)
-- x10swap officieel toegegeven door admin: "event-based USDT rewards after approved entries, not a fixed-price buyback program" (May 21)
-- Exchange deposits indefinitely deferred (admin May 21: "once the ecosystem infrastructure is fully prepared")
-- BDAG SPARKS GESLOTEN (May 20) → REOPENED (May 23 met chest gambling)
-- CASINO DEPOSITS WERKEN NIET — Santiago: 1,250 BDAG, Analiz Radar: 10,000 BDAG missing
-- Casino: vijf "live" claims gemist (May 7, 14, 15, 18, 19). Mei 19 "100M+ BDAG deposited" → 24h later −15.64%
-- MetaMask warning door admin omschreven als "casual" (May 23-24 nog steeds)
+- BDAG Aftersale prijs: **$0.00000019** (–99.99996% vs $0.05). Marketing: "400X ROI" (echte math: 5,263x)
+
+## NIEUW (May 25-26):
+- **BlockDAG TURBO PRESALE GELANCEERD** (May 25, 19:51 UTC): 7e distinct sales mechanism sinds 2024. Entry $0.0005, "launch" $0.04, "80X ROI", "ONLY 10 STAGES". Geen tokenomics, supply, vesting, contract, whitepaper of audit gepubliceerd. Community vijandig: T TriumphAnt "F Turbo F FOMO Until our network is working correctly." Edward Hernandez: "TURBO batch 1 phase 1 this one will extend for years enough is enough." Admin verdedigt: "BDAG is not bring abandon. Bdag turbo is a token under bdag ecosystem."
+- **Admin geeft toe MEXC was nooit confirmed** (May 25 22:20 UTC): "Tier 1 exchanges is yet to be announced and team are still in discussions with MEXC team regarding listing." Eerste officiële admission dat 3 maanden marketing ("Major Tier 1 USA Exchange Secured" Feb 18) een leugen was.
+- **Stablecoin onbevestigd door eigen admin** 6 dagen voor June 1 launch (May 25 19:31 UTC): "Not officially confirmed yet. If it launches as a stablecoin, it will likely be pegged around $1, but final details will be announced by the team."
+- **Admin tegenspreekt "listing phase" lijn** (May 25 17:15 UTC): "BDAG is launched and trading on exchanges" — terwijl 5 uur later dezelfde admin handle MEXC nog "in discussions" noemt
+- **Miners shipping "next month" = juni** (admin May 26 09:28): 7e datum verschuiving
+- **Staking 96 dagen broken** sinds Feb 19, 2026
+
+## Eerdere staat (May 22-25):
+- MEXC cancelled scheduled BDAG listing before launch (May 24) — niet "delisted" want het was nooit live
+- BTSE suspended actief trading (May 23) — admin "Only the exchange admin can explain"
+- Vesting contract toegevoegd NA Batch 5 (admin May 24): nieuwe lock NA aankoop
+- $25M Live Liquidity Wallets marketing (May 23): vijf June 1 producten op één datum
+- BDAG Sparks REOPENED met chest mechanic (May 23-24) na sluiting May 20
+- CMC supply officieel "self reported" (May 25 admin 06:10)
+- Support ticket system BROKEN sinds May 17 — "account suspended" errors. 9+ dagen down
+- 1B BDAG "BURN" (May 21) naar Ethereum dead address (0x0...0) op non-Ethereum chain. Circulating supply ging OMHOOG +1.54B same week
+- Batch 5 compression bevestigd: João Veríssimo paid 368,792,138 BDAG, kreeg 300,000 claimable = 99.92% compression
+- x10swap officieel toegegeven door admin als "event-based USDT rewards, not a fixed-price buyback program" (May 21)
+- Exchange deposits indefinitely deferred (admin May 21)
+- CASINO DEPOSITS WERKEN NIET — multiple users melden missing tokens
+- Casino: vijf "live" claims gemist (May 7, 14, 15, 18, 19)
 - Buyback "300X ROI" (nu 400X) — cap van 250,000 BDAG per gebruiker (max $250 recovery)
-- Miner verkoop GESTOPT (May 19): shipping "next month" (= juni) - admin May 24, 25
+- Miner verkoop GESTOPT (May 19)
 - Batch 1 claims INGETROKKEN (May 19)
 - Wallet changing feature VERWIJDERD (May 18)
 - x10swap: $40 entry fee, ~1 in 10 entries goedgekeurd, geen refund
-- $213M Tether freeze op Kiziloz (Brazilië, May 14, gambling tax dispuut 2021–2024)
+- $213M Tether freeze op Kiziloz (Brazilië, May 14)
 - BlockDAG heeft @blockdagmonitor geblokkeerd op X (May 19)
 - Trader (May 24): "This group has already lost over 5,000 members"
 
+## 7 sales mechanisms sinds 2024 (KRITIEKE LIJST)
+1. Original presale (Batches 1-5) — March 2024
+2. Aftersale — na "no sale after May 7" belofte
+3. Live Swap — May 1, 2026 (closed May 20)
+4. x10swap — May 6, 2026 (admin: "not a swap")
+5. Utility Presale — May 8, 2026
+6. BDAG Sparks (incl. chests) — May 14 (closed May 20, reopened May 23)
+7. **BlockDAG TURBO** — May 25, 2026 (CURRENTLY LIVE)
+
 ## Belangrijke correcties gedaan
 - BingX en Gate.io stonden als KEPT maar listings zijn NOOIT gebeurd → gecorrigeerd naar BROKEN (May 4, 2026)
-- MEXC was als "in final stages" gemarkeerd, scheduled listing CANCELLED voor launch (May 24) — taalkundig: niet "delisted" want het was nooit live
+- MEXC was als "in final stages" gemarkeerd, scheduled listing CANCELLED voor launch (May 24). Admin May 25 22:20 UTC bevestigt: "still in discussions" — listing was nooit geconfirmeerd.
 - BTSE was als gelist gemarkeerd, nu BROKEN (May 23 suspension)
 
 ## Volgende deadlines om te monitoren
-- $0.001 buyback start: **June 1, 2026** (250k cap, max $250 per user)
-- Stable Coin launch: **June 1, 2026** (geen peg/backing/spec gepubliceerd)
-- "$25M Liquidity Wallets" deployment: June 1, 2026
-- Daily Burns programma: June 1, 2026
-- Liquidity Expansion: June 1, 2026
-- New Token Launches: June 1, 2026
+- **June 1, 2026**: $0.001 buyback (250k cap, max $250 per user)
+- **June 1, 2026**: Stable Coin launch (geen peg/backing/spec gepubliceerd 6 dagen vooraf)
+- **June 1, 2026**: $25M Liquidity Wallets deployment
+- **June 1, 2026**: Daily Burns programma
+- **June 1, 2026**: Liquidity Expansion
+- **June 1, 2026**: New Token Launches
+- **June 2026**: Miners shipping (7e datum)
 - Vesting contract implementatie: na Batch 5 (geen datum)
 - Casino full launch: geen nieuwe harde datum na vijf misses
-- Miners shipping: "next month" = juni 2026 (zoveelste deadline)
 - Brazilië/Kiziloz: appèl tegen $213M freeze loopt
-- Staking: **95 dagen** broken sinds Feb 19, 2026
-- Mainnet trading: June 30, 2026 (volgens Barry Moore via AMA referentie — quietly disappeared)
-- Admin's "listing phase" → "full TGE" overgang: geen datum gegeven
+- Staking: **96 dagen** broken sinds Feb 19, 2026
+- BlockDAG TURBO: tokenomics/supply/vesting publicatie?
 
 ## Vaste regels
 1. Na elke wijziging in `blockdag-monitor/website/` altijd ook `docs/` updaten en pushen
@@ -134,6 +138,7 @@
 7. Bij elke update: verwijder oude isNew vlaggen, zet alleen op nieuwste items
 8. Na elke aanpassing PROJECT_STATUS.md bijwerken
 9. Long-context replacements only — never pure-numeric bulk (corrupteert font-weight 600→100 etc.)
+10. Cache busting: site.css?v=N, articles.js?v=N, data.js?v=N — bump bij elke update
 
 ## Hoe verder te gaan in nieuwe chat
 1. Open VS Code in map `c:\Users\yozga\Documents\Hakan\blockdag-exposed`
