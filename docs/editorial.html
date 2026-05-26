@@ -119,12 +119,40 @@ button.site-search{background:transparent;font-family:inherit;text-align:left}
       <input id="searchInput" placeholder="Search investigations, tracker, evidence…" autocomplete="off">
       <span class="esc">ESC</span>
     </header>
-    <div class="search-list" id="searchList"><a href="article-442-million.html" data-q="lead investigation: the missing millions"><span class="t">Lead investigation: the missing millions</span><span class="k">article</span></a><a href="articles/sponsorships-implosion.html" data-q="sponsorships implosion: dortmund · inter · alpine"><span class="t">Sponsorships implosion: Dortmund · Inter · Alpine</span><span class="k">article</span></a><a href="articles/otc-trail.html" data-q="$110m otc trail to binance and btse"><span class="t">$110M OTC trail to Binance and BTSE</span><span class="k">article</span></a><a href="articles/whitepaper-kaspa.html" data-q="whitepaper plagiarism: blockdag vs kaspa"><span class="t">Whitepaper plagiarism: BlockDAG vs Kaspa</span><span class="k">article</span></a><a href="articles/turner-fired.html" data-q="turner fired, kiziloz revealed"><span class="t">Turner fired, Kiziloz revealed</span><span class="k">article</span></a><a href="articles/whistleblower.html" data-q="whistleblower: oversold by 100%"><span class="t">Whistleblower: oversold by 100%</span><span class="k">article</span></a><a href="article-staking.html" data-q="staking · 92 days under maintenance"><span class="t">Staking · 92 days under maintenance</span><span class="k">article</span></a><a href="article-exchanges.html" data-q="listings: 20 promised, 3 delivered"><span class="t">Listings: 20 promised, 3 delivered</span><span class="k">article</span></a><a href="articles/promises-broken-overview.html" data-q="84 of 95 promises broken — overview"><span class="t">84 of 95 promises broken — overview</span><span class="k">article</span></a><a href="tracker.html" data-q="promise tracker · 87 rows"><span class="t">Promise Tracker · 87 rows</span><span class="k">tool</span></a><a href="timeline.html" data-q="timeline · 23 events"><span class="t">Timeline · 23 events</span><span class="k">tool</span></a><a href="evidence.html" data-q="evidence library · 21 sources"><span class="t">Evidence library · 21 sources</span><span class="k">tool</span></a><a href="people.html" data-q="the people"><span class="t">The People</span><span class="k">page</span></a><a href="categories.html" data-q="categories"><span class="t">Categories</span><span class="k">page</span></a><a href="trust.html" data-q="trust score · 4 / 100"><span class="t">Trust Score · 4 / 100</span><span class="k">page</span></a><a href="petition.html" data-q="sign the petition"><span class="t">Sign the petition</span><span class="k">page</span></a><a href="about.html" data-q="about"><span class="t">About</span><span class="k">page</span></a><a href="methodology.html" data-q="methodology"><span class="t">Methodology</span><span class="k">page</span></a><a href="editorial.html" data-q="editorial standards"><span class="t">Editorial standards</span><span class="k">page</span></a><a href="tips.html" data-q="submit a tip"><span class="t">Submit a tip</span><span class="k">page</span></a><a href="contact.html" data-q="contact us"><span class="t">Contact us</span><span class="k">page</span></a><a href="rss.html" data-q="rss feed"><span class="t">RSS feed</span><span class="k">page</span></a></div>
+    <div class="search-list" id="searchList"></div>
   </div>
 </div>
+<script src="articles.js?v=5"></script>
 <script>
 (function(){
   const ov=document.getElementById('searchOverlay'),inp=document.getElementById('searchInput'),list=document.getElementById('searchList');
+  if(!list||!ov)return;
+  const staticEntries=[
+    {url:'tracker.html',title:'Promise Tracker',kind:'tool',q:'promise tracker all promises broken partial kept'},
+    {url:'timeline.html',title:'Timeline',kind:'tool',q:'timeline events history chronology'},
+    {url:'evidence.html',title:'Evidence library',kind:'tool',q:'evidence quotes sources receipts'},
+    {url:'is-blockdag-a-scam.html',title:'Is BlockDAG a scam?',kind:'page',q:'is blockdag a scam scam review evidence faq'},
+    {url:'blockdag.html',title:'What is BlockDAG?',kind:'page',q:'what is blockdag bdag explainer founders kiziloz'},
+    {url:'people.html',title:'The People',kind:'page',q:'people kiziloz turner van den bergh founders'},
+    {url:'categories.html',title:'Categories',kind:'page',q:'categories'},
+    {url:'trust.html',title:'Trust Score · 4 / 100',kind:'page',q:'trust score 4 100 rating'},
+    {url:'petition.html',title:'Sign the petition',kind:'page',q:'sign petition'},
+    {url:'about.html',title:'About',kind:'page',q:'about'},
+    {url:'methodology.html',title:'Methodology',kind:'page',q:'methodology'},
+    {url:'editorial.html',title:'Editorial standards',kind:'page',q:'editorial standards'},
+    {url:'tips.html',title:'Submit a tip',kind:'page',q:'submit a tip'},
+    {url:'contact.html',title:'Contact us',kind:'page',q:'contact us'},
+    {url:'rss.html',title:'RSS feed',kind:'page',q:'rss feed'}
+  ];
+  const articleEntries=(typeof ARTICLES!=='undefined'?ARTICLES:[]).slice().sort((a,b)=>b.date.localeCompare(a.date)).map(a=>{
+    const tagWords=(a.tags||[]).map(t=>t.label).join(' ');
+    return{url:a.url,title:a.title,kind:'article',q:(a.title+' '+(a.excerpt||'')+' '+tagWords).toLowerCase()};
+  });
+  const entries=[...articleEntries,...staticEntries];
+  list.innerHTML=entries.map(e=>{
+    const safe=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    return'<a href="'+safe(e.url)+'" data-q="'+safe(e.q)+'"><span class="t">'+safe(e.title)+'</span><span class="k">'+safe(e.kind)+'</span></a>';
+  }).join('');
   const all=[...list.querySelectorAll('a')];
   window.openSearch=()=>{ov.classList.add('open');setTimeout(()=>inp.focus(),20);inp.value='';filter('');};
   window.closeSearch=()=>ov.classList.remove('open');
@@ -132,7 +160,7 @@ button.site-search{background:transparent;font-family:inherit;text-align:left}
     q=q.trim().toLowerCase();let any=false;
     all.forEach(a=>{const m=!q||a.dataset.q.includes(q);a.style.display=m?'':'none';if(m)any=true;});
     let e=list.querySelector('.search-empty');
-    if(!any){if(!e){e=document.createElement('div');e.className='search-empty';e.textContent='No matches. Try "tracker", "OTC", "Kiziloz"…';list.appendChild(e);}}
+    if(!any){if(!e){e=document.createElement('div');e.className='search-empty';e.textContent='No matches. Try "tracker", "burn", "Kiziloz"...';list.appendChild(e);}}
     else if(e)e.remove();
   }
   inp&&inp.addEventListener('input',e=>filter(e.target.value));

@@ -818,12 +818,39 @@ button.site-search{background:transparent;font-family:inherit;text-align:left}
       <input id="searchInput" placeholder="Search investigations, tracker, evidence…" autocomplete="off">
       <span class="esc">ESC</span>
     </header>
-    <div class="search-list" id="searchList"><a href="article-x10swap-lottery.html" data-q="x10swap lottery entry fee 40 dollars sparks not approved refund denied paid lottery"><span class="t">x10swap: a paid lottery dressed as a token swap</span><span class="k">article</span></a><a href="article-may15-casino.html" data-q="casino may 15 third deadline sparks withdrawal nexus kiziloz"><span class="t">May 15: casino postponed third time, Sparks users cannot withdraw</span><span class="k">article</span></a><a href="article-tether-freeze.html" data-q="tether freeze 213 million kiziloz brazil court gambling"><span class="t">BREAKING: Tether freezes $213M linked to BlockDAG founder in Brazil</span><span class="k">article</span></a><a href="article-may14-casino.html" data-q="casino may 14 missed delayed again deadline broken"><span class="t">May 14: the casino that still wasn't. Second missed deadline.</span><span class="k">article</span></a><a href="article-twitter-blocked.html" data-q="twitter replies blocked all censorship cmc reinstated blockdag exposed"><span class="t">BlockDAG disables all X replies. CMC account reinstated.</span><span class="k">article</span></a><a href="article-cmc-ban.html" data-q="cmc ban coinmarketcap banned censorship blockdag exposed appeal"><span class="t">Our CMC account was banned. Here is why we think it happened.</span><span class="k">article</span></a><a href="article-utility-presale.html" data-q="utility presale aftersale no sale after may 7"><span class="t">The aftersale that never ended: Utility Presale launched May 8</span><span class="k">article</span></a><a href="article-casino-not-launched.html" data-q="casino live 18:10 goes live 7 days 18:37 contradiction"><span class="t">Casino "LIVE" at 18:10 · "goes live in 7 days" at 18:37</span><span class="k">article</span></a><a href="article-casino-may7.html" data-q="casino launch day may 7 no announcement bot messages"><span class="t">The casino that wasn't: what happened on May 7</span><span class="k">article</span></a><a href="article-may7-reality.html" data-q="may 7 deadline casino aftersale miners staking scorecard"><span class="t">May 7 was supposed to change everything</span><span class="k">article</span></a><a href="article-442-million.html" data-q="442 million missing money presale funds zachxbt on-chain"><span class="t">Where did $442 million go? Three numbers, zero proof.</span><span class="k">article</span></a><a href="article-exchanges.html" data-q="exchanges 20 promised 3 delivered bingx gate toobit coinw"><span class="t">The exchanges that never came — 20 promised, 3 delivered</span><span class="k">article</span></a><a href="article-staking.html" data-q="staking broken 82 days february 19 frozen rewards"><span class="t">89 days and still broken: BlockDAG's staking failure</span><span class="k">article</span></a><a href="tracker.html" data-q="promise tracker · 68 rows all promises broken partial kept"><span class="t">Promise Tracker · 68 rows</span><span class="k">tool</span></a><a href="timeline.html" data-q="timeline · 23 events"><span class="t">Timeline · 23 events</span><span class="k">tool</span></a><a href="evidence.html" data-q="evidence library · 21 sources"><span class="t">Evidence library · 21 sources</span><span class="k">tool</span></a><a href="people.html" data-q="the people"><span class="t">The People</span><span class="k">page</span></a><a href="categories.html" data-q="categories"><span class="t">Categories</span><span class="k">page</span></a><a href="trust.html" data-q="trust score · 4 / 100"><span class="t">Trust Score · 4 / 100</span><span class="k">page</span></a><a href="petition.html" data-q="sign the petition"><span class="t">Sign the petition</span><span class="k">page</span></a><a href="about.html" data-q="about"><span class="t">About</span><span class="k">page</span></a><a href="methodology.html" data-q="methodology"><span class="t">Methodology</span><span class="k">page</span></a><a href="editorial.html" data-q="editorial standards"><span class="t">Editorial standards</span><span class="k">page</span></a><a href="tips.html" data-q="submit a tip"><span class="t">Submit a tip</span><span class="k">page</span></a><a href="contact.html" data-q="contact us"><span class="t">Contact us</span><span class="k">page</span></a><a href="rss.html" data-q="rss feed"><span class="t">RSS feed</span><span class="k">page</span></a></div>
+    <div class="search-list" id="searchList"></div>
   </div>
 </div>
+<script src="articles.js?v=5"></script>
 <script>
 (function(){
   const ov=document.getElementById('searchOverlay'),inp=document.getElementById('searchInput'),list=document.getElementById('searchList');
+  const staticEntries=[
+    {url:'tracker.html',title:'Promise Tracker',kind:'tool',q:'promise tracker all promises broken partial kept'},
+    {url:'timeline.html',title:'Timeline',kind:'tool',q:'timeline events history chronology'},
+    {url:'evidence.html',title:'Evidence library',kind:'tool',q:'evidence quotes sources receipts'},
+    {url:'is-blockdag-a-scam.html',title:'Is BlockDAG a scam?',kind:'page',q:'is blockdag a scam scam review evidence faq'},
+    {url:'blockdag.html',title:'What is BlockDAG?',kind:'page',q:'what is blockdag bdag explainer founders kiziloz'},
+    {url:'people.html',title:'The People',kind:'page',q:'people kiziloz turner van den bergh founders'},
+    {url:'categories.html',title:'Categories',kind:'page',q:'categories'},
+    {url:'trust.html',title:'Trust Score · 4 / 100',kind:'page',q:'trust score 4 100 rating'},
+    {url:'petition.html',title:'Sign the petition',kind:'page',q:'sign petition'},
+    {url:'about.html',title:'About',kind:'page',q:'about'},
+    {url:'methodology.html',title:'Methodology',kind:'page',q:'methodology'},
+    {url:'editorial.html',title:'Editorial standards',kind:'page',q:'editorial standards'},
+    {url:'tips.html',title:'Submit a tip',kind:'page',q:'submit a tip'},
+    {url:'contact.html',title:'Contact us',kind:'page',q:'contact us'},
+    {url:'rss.html',title:'RSS feed',kind:'page',q:'rss feed'}
+  ];
+  const articleEntries=(typeof ARTICLES!=='undefined'?ARTICLES:[]).slice().sort((a,b)=>b.date.localeCompare(a.date)).map(a=>{
+    const tagWords=(a.tags||[]).map(t=>t.label).join(' ');
+    return{url:a.url,title:a.title,kind:'article',q:(a.title+' '+(a.excerpt||'')+' '+tagWords).toLowerCase()};
+  });
+  const entries=[...articleEntries,...staticEntries];
+  list.innerHTML=entries.map(e=>{
+    const safe=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    return'<a href="'+safe(e.url)+'" data-q="'+safe(e.q)+'"><span class="t">'+safe(e.title)+'</span><span class="k">'+safe(e.kind)+'</span></a>';
+  }).join('');
   const all=[...list.querySelectorAll('a')];
   window.openSearch=()=>{ov.classList.add('open');setTimeout(()=>inp.focus(),20);inp.value='';filter('');};
   window.closeSearch=()=>ov.classList.remove('open');
@@ -831,7 +858,7 @@ button.site-search{background:transparent;font-family:inherit;text-align:left}
     q=q.trim().toLowerCase();let any=false;
     all.forEach(a=>{const m=!q||a.dataset.q.includes(q);a.style.display=m?'':'none';if(m)any=true;});
     let e=list.querySelector('.search-empty');
-    if(!any){if(!e){e=document.createElement('div');e.className='search-empty';e.textContent='No matches. Try "tracker", "OTC", "Kiziloz"…';list.appendChild(e);}}
+    if(!any){if(!e){e=document.createElement('div');e.className='search-empty';e.textContent='No matches. Try "tracker", "burn", "Kiziloz"…';list.appendChild(e);}}
     else if(e)e.remove();
   }
   inp&&inp.addEventListener('input',e=>filter(e.target.value));
@@ -841,7 +868,6 @@ button.site-search{background:transparent;font-family:inherit;text-align:left}
   });
 })();
 </script>
-<script src="articles.js?v=4"></script>
 <script>
 (function(){
   if(typeof ARTICLES==='undefined')return;
