@@ -83,39 +83,19 @@
   <div class="page-head">
     <div class="eyebrow red">The Database</div>
     <h1>Every promise BlockDAG made — and what actually happened.</h1>
-    <p class="dek">92 public commitments scraped from Telegram, X, the BlockDAG website, AMAs, the whitepaper and investor materials. Each entry is a single verifiable claim, with a current status and a source. Last updated <b style="color:var(--ink)">May 25, 2026</b>.</p>
-    <div class="meta-row">
-      <span><b>92</b> promises tracked</span>
-      <span>·</span>
-      <span><b style="color:var(--red)">84</b> broken</span>
-      <span>·</span>
-      <span><b style="color:var(--gold)">5</b> partial</span>
-      <span>·</span>
-      <span><b style="color:var(--green)">3</b> kept</span>
-      <span>·</span>
+    <p class="dek" id="tracker-dek">Loading promises…</p>
+    <div class="meta-row" id="tracker-meta-row">
       <span>Sources cited inline · click any row to read the receipts</span>
     </div>
   </div>
 
-  <div class="summary-bar">
-    <div class="cell"><div class="n">66</div><div class="lbl">Total promises</div></div>
-    <div class="cell"><div class="n red">59</div><div class="lbl">Broken / misleading</div></div>
-    <div class="cell"><div class="n gold">4</div><div class="lbl">Partial / pending</div></div>
-    <div class="cell"><div class="n green">3</div><div class="lbl">Kept</div></div>
-    <div class="cell"><div class="n red">91.6%</div><div class="lbl">Failure rate</div></div>
-  </div>
+  <div class="summary-bar" id="tracker-summary-bar"></div>
 
-  <div class="chip-row">
+  <div class="chip-row" id="tracker-status-chips">
     <span class="lbl">Status</span>
-    
-  <button class="chip active" data-status="all">All<span class="ct">66</span></button>
-  <button class="chip" data-status="broken">Broken<span class="ct">59</span></button>
-  <button class="chip" data-status="partial">Partial<span class="ct">4</span></button>
-  <button class="chip" data-status="kept">Kept<span class="ct">3</span></button>
   </div>
-  <div class="chip-row">
+  <div class="chip-row" id="tracker-category-chips">
     <span class="lbl">Category</span>
-    <button class="chip active" data-filter="all">All categories<span class="ct">66</span></button><button class="chip" data-filter="price">Price & Market Cap<span class="ct">4</span></button><button class="chip" data-filter="money">Money & Raise<span class="ct">4</span></button><button class="chip" data-filter="listings">Exchange Listings<span class="ct">4</span></button><button class="chip" data-filter="product">Product Roadmap<span class="ct">10</span></button><button class="chip" data-filter="hardware">Hardware (Miners)<span class="ct">4</span></button><button class="chip" data-filter="tech">Tech & Whitepaper<span class="ct">5</span></button><button class="chip" data-filter="marketing">Sponsorships & Marketing<span class="ct">6</span></button><button class="chip" data-filter="governance">Governance<span class="ct">8</span></button><button class="chip" data-filter="community">Community<span class="ct">5</span></button><button class="chip" data-filter="regional">Regional / Regulatory<span class="ct">4</span></button><button class="chip" data-filter="airdrop">Airdrop<span class="ct">3</span></button><button class="chip" data-filter="legal">Legal & Compliance<span class="ct">3</span></button><button class="chip" data-filter="security">Security<span class="ct">4</span></button><button class="chip" data-filter="adoption">Adoption<span class="ct">1</span></button>
   </div>
 
   <div class="tracker" style="margin-top:0;padding-top:36px;background:var(--bone)">
@@ -131,680 +111,7 @@
               <th style="width:19%">Source</th>
             </tr>
           </thead>
-          <tbody>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">BlockDAG TURBO presale launched — 7th distinct sales mechanism since 2024<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Marketing</div></td>
-          <td class="promised">Implicit: no new presale needed before original BDAG promises are delivered</td>
-          <td class="reality broken">May 25, 2026 19:51 UTC — "BlockDAG TURBO PRESALE STAGE 1 LIVE: ENTRY $0.0005 - LAUNCH PRICE $0.04 | 80X ROI. ONLY 10 STAGES." No tokenomics, total supply, vesting, contract address, whitepaper or audit published at launch. Community member T TriumphAnt: "F Turbo F FOMO Until our network is working correctly."</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 25, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="listings" data-status="broken">
-          <td class="subj">Admin admits MEXC "still in discussions" — confirming never confirmed<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Exchange Listing</div></td>
-          <td class="promised">"Major Tier 1 USA Exchange Secured" (Feb 18, 2026)</td>
-          <td class="reality broken">May 25, 2026 22:20 UTC — admin: "Tier 1 exchanges is yet to be announced and team are still in discussions with MEXC team regarding listing." First official admission MEXC was never a confirmed listing partner. Same admin same day at 17:15 UTC: "BDAG is launched and trading on exchanges." Contradictory positions within 5 hours.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 25, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="roadmap" data-status="broken">
-          <td class="subj">Stablecoin peg unconfirmed by own admin 6 days before launch<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Roadmap</div></td>
-          <td class="promised">Stable Coin launches June 1 (admin May 23) — marketed as reason to stack BDAG</td>
-          <td class="reality broken">May 25, 2026 19:31 UTC — admin: "Not officially confirmed yet. If it launches as a stablecoin, it will likely be pegged around $1, but final details will be announced by the team." "If it launches" 6 days before announced launch is incompatible with a production stablecoin. No peg target, backing, or reserve audit disclosed.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 25, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="listings" data-status="broken">
-          <td class="subj">MEXC cancelled the scheduled BDAG listing before launch — Tier 1 USA exchange<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Exchange Listing</div></td>
-          <td class="promised">"Major Tier 1 USA Exchange Secured" — Feb 18, 2026. MEXC marketed as confirmed listing partner since Feb 2026.</td>
-          <td class="reality broken">May 24, 2026 — community member Matt David: "Why did Mexc delist us? I saw it on there with a listing date then it was suspended then never happened." MEXC had a scheduled listing for BDAG that was suspended before launch and never went live. Multiple community confirmations. BlockDAG offered no public explanation.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 24, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram community</div></td>
-        </tr>
-        <tr data-cat="listings" data-status="broken">
-          <td class="subj">BTSE suspended BDAG trading — admin: "ask the exchange"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Exchange Listing</div></td>
-          <td class="promised">Continuous trading on BTSE</td>
-          <td class="reality broken">May 23, 17:38 UTC — FARUK HOSSAIN: "Delisting BTSE EXCHANGE @ADMIN." Jhoss Hoss at 23:01 UTC: "Why was BDAG trading suspended in BTSE?" Admin at 23:16 UTC: "Only the exchange admin can explain the reason BDAG was suspended from trading on their platform." No remediation, no replacement listing.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 23, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official + community</div></td>
-        </tr>
-        <tr data-cat="distribution" data-status="broken">
-          <td class="subj">Vesting contract added AFTER Batch 5 — post-purchase lock<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Claim / Distribution</div></td>
-          <td class="promised">Original purchase pages: coins claimable at TGE without further vesting</td>
-          <td class="reality broken">May 24, 04:18 UTC — admin: "After the previous claim, which was Batch 5, the vesting contract will be implemented." Reconfirmed May 25: "Coins are vested to avoid over supply." Post-purchase restriction. Path now: pay → 99.92% compression → claim batch → vest → unknown unlock schedule.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 24, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">BDAG Sparks reopened with "chest" gambling 4 days after closing<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product</div></td>
-          <td class="promised">Implicit: product closed May 20 should not be reopened as new gambling format days later</td>
-          <td class="reality broken">May 23, 22:49 UTC — "The demand for SPARKS is insane." May 24, 11:34 UTC — "140,709 SPARKS. From one chest. One click. Chests are open. People are already hunting before Buyback hits." New loot-box mechanic layered on the closed Sparks. The 460,000 minimum withdrawal that trapped May 14-20 users is not addressed.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 23-24, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">Admin: "BDAG is already launched and trading on exchanges" — contradicts "listing phase"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Marketing</div></td>
-          <td class="promised">Consistent communication on whether BDAG has fully launched or remains pre-launch</td>
-          <td class="reality broken">May 25, 01:15 UTC — admin: "BDAG is already launched and trading on exchanges." Contradicts the May 20 admin line (15:08 UTC): "We are still in listing phase. Next will be price discovery and liquidity." Same channel, same admin role. Both lines used to deflect different community questions.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 25, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Support ticket system broken — "account suspended" errors<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product</div></td>
-          <td class="promised">Functioning support ticket system at support.blockdag.network</td>
-          <td class="reality broken">May 23, 10:01 UTC — community member P: "I tried reaching out support mail but it says account suspended." Multiple confirmations through May 24-25. Admin May 24, 23:05 UTC: "The support link is no longer working." Users cannot file tickets for missing claims, missing casino deposits, broken staking.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 23-25, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram community + admin</div></td>
-        </tr>
-        <tr data-cat="price" data-status="broken">
-          <td class="subj">Launch price<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Price & Market Cap</div></td>
-          <td class="promised">$0.05000</td>
-          <td class="reality broken">$0.0005 (actual launch price)</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Apr 12, 2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="price" data-status="broken">
-          <td class="subj">Current price vs promise<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Price & Market Cap</div></td>
-          <td class="promised">$0.05000</td>
-          <td class="reality broken">$0.000081 · −99.8%</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 11, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">CoinGecko</div></td>
-        </tr>
-        <tr data-cat="price" data-status="broken">
-          <td class="subj">Market cap at launch<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Price & Market Cap</div></td>
-          <td class="promised">$1,000,000,000</td>
-          <td class="reality broken">$4,180,000</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Mar 4, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">On-chain</div></td>
-        </tr>
-        <tr data-cat="price" data-status="broken">
-          <td class="subj">Current market cap<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Price & Market Cap</div></td>
-          <td class="promised">$1,000,000,000</td>
-          <td class="reality broken">$4,180,000</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 11, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">CoinGecko</div></td>
-        </tr>
-        <tr data-cat="money" data-status="broken">
-          <td class="subj">Funds raised<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Money & Raise</div></td>
-          <td class="promised">$442,000,000</td>
-          <td class="reality broken"><$100M (ZachXBT on-chain)</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Feb 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">ZachXBT report</div></td>
-        </tr>
-        <tr data-cat="money" data-status="broken">
-          <td class="subj">CEO walk-back of raise<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Money & Raise</div></td>
-          <td class="promised">$442M public</td>
-          <td class="reality broken">"closer to $200M"</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Jan 6, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Investor meeting</div></td>
-        </tr>
-        <tr data-cat="money" data-status="broken">
-          <td class="subj">Launch liquidity<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Money & Raise</div></td>
-          <td class="promised">To be substantial</td>
-          <td class="reality broken">$32M disclosed</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Jan 6, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Investor meeting</div></td>
-        </tr>
-        <tr data-cat="money" data-status="broken">
-          <td class="subj">Presale allocation integrity<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Money & Raise</div></td>
-          <td class="promised">Within reserved supply</td>
-          <td class="reality broken">"Oversold by over 100%"</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Apr 22, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Whistleblower L.V.</div></td>
-        </tr>
-        <tr data-cat="listings" data-status="broken">
-          <td class="subj">Day-1 exchange listings<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Exchange Listings</div></td>
-          <td class="promised">20+ exchanges incl. tier-1</td>
-          <td class="reality broken">3 small CEXs</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Sep 8, 2024<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">X marketing post</div></td>
-        </tr>
-        <tr data-cat="listings" data-status="broken">
-          <td class="subj">DEX availability<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Exchange Listings</div></td>
-          <td class="promised">Day 1 with mainnet</td>
-          <td class="reality broken">Not available</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Sep 8, 2024<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">X marketing post</div></td>
-        </tr>
-        <tr data-cat="listings" data-status="broken">
-          <td class="subj">Binance listing<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Exchange Listings</div></td>
-          <td class="promised">"Strong relationship"</td>
-          <td class="reality broken">No listing</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Multiple AMAs<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram AMAs</div></td>
-        </tr>
-        <tr data-cat="listings" data-status="broken">
-          <td class="subj">Coinbase listing<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Exchange Listings</div></td>
-          <td class="promised">Q2 2026</td>
-          <td class="reality broken">No application filed</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Mar 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">AMA</div></td>
-        </tr>
-        <tr data-cat="product" data-status="kept">
-          <td class="subj">Mainnet launch<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">Q1 2026</td>
-          <td class="reality kept">Launched Mar 4, 2026</td>
-          <td class="status"><span class="pill kept">Kept</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Mar 4, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Block explorer</div></td>
-        </tr>
-        <tr data-cat="product" data-status="kept">
-          <td class="subj">First claim batch<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">At launch</td>
-          <td class="reality kept">Distributed on Day 1</td>
-          <td class="status"><span class="pill kept">Kept</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Mar 4, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Block explorer</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Staking live<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">Feb 19, 2026</td>
-          <td class="reality broken">"Under maintenance" 89 days</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Feb 19, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Product page</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Staking APR<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">Up to 25% APR</td>
-          <td class="reality broken">Inaccessible</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Feb 19, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Product page</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Casino launch — May 7, 2026<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">May 7, 2026</td>
-          <td class="reality broken">"Casino officially LIVE" at 18:10 UTC. "Goes live in 7 days" at 18:37 UTC. No URL. No working casino.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 7, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Casino launch — May 14, 2026 (rescheduled)<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">May 14, 2026</td>
-          <td class="reality broken">No confirmed launch. Admin: "Please follow pinned messages for updates." No new date announced.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 14, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Casino launch — May 15, 2026 (third reschedule)<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">May 15, 2026</td>
-          <td class="reality broken">"Final integrations nearly finalised, launching tomorrow." No working full casino. Third missed casino deadline in nine days.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 15, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Casino "deposits open" May 18 — fourth declared launch<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">May 18, 2026</td>
-          <td class="reality broken">"Casino deposits OPEN. Sportsbook ACTIVATING. Play & Earn officially STARTING." Two of three components still in progress wording. BDAG deposits added 'a few minutes ago' at 22:26 UTC May 18.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 18, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Casino "LIVE" #5 (May 19) — BDAG dumped 15.64% in 24h<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">May 19, 2026</td>
-          <td class="reality broken">"100M+ BDAG ALREADY DEPOSITED. CASINO LIVE. PLAYERS WINNING. 100+ games LIVE." 5th launch claim. Market response: −15.64% in 24h. No licence, jurisdiction or on-chain wallet published. 100M BDAG = approximately $6,800 at current price.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 19, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official · CMC</div></td>
-        </tr>
-        <tr data-cat="tech" data-status="broken">
-          <td class="subj">"We remain within the listing phase" — admission 75 days after launch<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Tech & Whitepaper</div></td>
-          <td class="promised">Mainnet live Feb 19; TGE Feb 11; exchange trading March 4, 2026</td>
-          <td class="reality broken">May 19, 18:06 UTC — admin: "We remain within the listing phase. Upon the conclusion of this phase, price discovery and liquidity will commence." 75 days after the public exchange launch. Reverses 75 days of "mainnet LIVE" marketing.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 19, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="tech" data-status="broken">
-          <td class="subj">Wallet sync broken across "every wallets API"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Tech & Whitepaper</div></td>
-          <td class="promised">Functional integration with MetaMask, Trust Wallet, SafePal, Coinbase Wallet, exchange wallets</td>
-          <td class="reality broken">May 19, 18:08 UTC — admin: "There's an issue with the network sync with every wallets API." Users across MetaMask, Trust Wallet, Binance Wallet report cannot see BDAG balances after successful on-chain claims. Standard fix: "delete network, clear cache."</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 19, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="distribution" data-status="broken">
-          <td class="subj">Aftersale claims deferred to "the last Batch" — no date<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Claim / Distribution</div></td>
-          <td class="promised">Aftersale coins claimable in upcoming windows</td>
-          <td class="reality broken">May 19, 22:11 UTC — admin: "Your coins will be available to claim with the last Batch from the after sale." No date for the last Batch. Same-day as the Batch 1 retraction. Aftersale was sold at $0.0000003 with the 250k cap buyback as inducement.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 19, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">MetaMask "deceptive website" warning reframed as "casual"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product</div></td>
-          <td class="promised">Trusted RPC integration</td>
-          <td class="reality broken">May 20, 08:18 UTC — admin: "It is a casual warning while interacting with presales." The MetaMask deceptive-website warning is the standard Blockaid-type flag for scams and wallet-drainers. BlockDAG has been "in talks with metamask" since May 18. Warning still active May 20.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 20, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">BDAG Sparks shut down 6 days after launch<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product</div></td>
-          <td class="promised">Spin-wheel casino launched May 14, 2026</td>
-          <td class="reality broken">May 20, 15:43 UTC — "BDAG SWAP & SPARKS CLOSED." Sparks launched May 14 with a 460,000 minimum withdrawal threshold that trapped small winners. Closed 6 days later. Live Swap also closed. No refund path published.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 20, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Casino deposits not crediting — community reports of missing BDAG<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product</div></td>
-          <td class="promised">BDAG casino deposits open May 18; "100M+ deposited" claimed May 19</td>
-          <td class="reality broken">Multiple users report depositing BDAG to the casino with zero credit. Santiago: 1,250 BDAG missing. Analiz Radar: 10,000 BDAG missing, "Where are my tokens, admin?" Community warning posted: "Do not send BDAG to the Casino section — it doesn't get credited." No fix or refund path published.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 20, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram community</div></td>
-        </tr>
-        <tr data-cat="price" data-status="broken">
-          <td class="subj">Aftersale price drops to $0.00000025 — "350X ROI" math impossibility<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Price &amp; Market Cap</div></td>
-          <td class="promised">$0.0000003 + 300X ROI (May 18) → now $0.00000025 + 350X ROI (May 20)</td>
-          <td class="reality broken">99.9995% below original $0.05 promise. Real ratio to $0.001 buyback is 4,000x, not 350x. To reach the original $0.05 launch price would require a 200,000x rise. Buyers from May 18 are already down 17% on the project's own published sale price two days later.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 20, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="distribution" data-status="broken">
-          <td class="subj">Compression rate refused — admin: "there's no information on compression rates"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Claim / Distribution</div></td>
-          <td class="promised">Transparent compression ratio for Aftersale buyers</td>
-          <td class="reality broken">May 20, 18:14 UTC — admin: "There's no information on compression rates, Edward." May 21: João Veríssimo's Batch 5 receipt empirically documents the rate at 99.92% compression (368M paid → 300K claimable = 0.08% delivery).</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 20, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="tokenomics" data-status="broken">
-          <td class="subj">1 billion BDAG "burn" — circulating supply went UP +1.54B in same week<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Tokenomics</div></td>
-          <td class="promised">Supply reduction via May 21 "1B BDAG live burn" event</td>
-          <td class="reality broken">Burn sent to 0x0...0 (Ethereum dead address) on BlockDAG's non-Ethereum chain (ID 1404). CMC supply: May 20 = 54.24B, May 22 = 55.78B. Net change: +1.54B (Aftersale issued more than burn removed). Marketing said "supply is decreasing." Data: +2.8%.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 21, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">CoinMarketCap · Telegram</div></td>
-        </tr>
-        <tr data-cat="distribution" data-status="broken">
-          <td class="subj">Batch 5 compression: João receipt = 99.92% compression rate<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Claim / Distribution</div></td>
-          <td class="promised">Batch 5 originally promoted as the "no compression" batch (pinned message)</td>
-          <td class="reality broken">May 21: community member João Veríssimo posts receipt: 368,792,138 BDAG purchased for Batch 5, only 300,000 claimable. Compression: 99.9186%. Effective delivery: 0.0814%. The "no compression" pinned promise was broken at scale on the largest documented Batch 5 buyer.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 21, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram community</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Whale 1B+ holder: purchase missing from dashboard AND BDAG explorer<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product</div></td>
-          <td class="promised">All purchases visible on dashboard and BDAGScan</td>
-          <td class="reality broken">May 21, 17:43 UTC — Price Morache (2+ year holder, 1B+ BDAG): "It shows like I never even made the purchase. It shows no transaction AND the bdag are not in the dashboard." Distinct issue from compression — purchase not acknowledged by the system at all.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 21, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram community</div></td>
-        </tr>
-        <tr data-cat="listings" data-status="broken">
-          <td class="subj">Exchange deposits indefinitely deferred — May 5 "June 30" promise quietly disappeared<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Exchange Listing</div></td>
-          <td class="promised">March 4 (launch day). Re-promised June 30 on May 5.</td>
-          <td class="reality broken">May 21, 19:37 UTC — admin: "Deposit will be open once the ecosystem infrastructure is fully prepared." No date. The May 5 hard deadline of June 30 silently replaced with indefinite deferral framed as infrastructure issue.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 21, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">x10swap admitted by admin as "event-based rewards, not a fixed-price buyback"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Marketing</div></td>
-          <td class="promised">Originally marketed as 10x token swap at $0.00097 per BDAG (May 14-18)</td>
-          <td class="reality broken">May 21, 11:13 UTC — admin: "BDAG X10SWAP is event-based USDT rewards after approved entries, not a fixed-price buyback program." First official admission that x10swap is not a swap. Matches the BlockDAG Exposed May 18 article documenting the $40-fee paid-lottery structure.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 21, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">$0.001 buyback marketed as "300X ROI" — cap of 250,000 coins not disclosed<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Marketing</div></td>
-          <td class="promised">"BUY at $0.0000003 → SELL at $0.001"</td>
-          <td class="reality broken">CEO confirmed on May 18 AMA the buyback is capped at 250,000 BDAG per user — max recovery $250. Cap not in marketing graphics, pinned posts, or website. Also: math is wrong, 3,333x not 300x.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 18, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Binance Live AMA</div></td>
-        </tr>
-        <tr data-cat="distribution" data-status="broken">
-          <td class="subj">Batch 1 claims — now reported "no longer available"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Claim / Distribution</div></td>
-          <td class="promised">Open since February 2026</td>
-          <td class="reality broken">May 19, 07:21 UTC — admin: "Batch 1 is no longer available to be claimed. Why didn't you claim it till now?" No prior public expiry notice. Presale buyers locked out of paid allocation.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 19, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="hardware" data-status="broken">
-          <td class="subj">Miner sales stopped — buyers redirected to "third party websites later"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Hardware (Miners)</div></td>
-          <td class="promised">Direct sale of X1, X10, X30, X100 via blockdag.network</td>
-          <td class="reality broken">May 19, 11:01 UTC — admin: "The sale of miners has been stopped for now, you might be able to purchase them from third party websites later." Existing orders still promised "June" — third date change.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 19, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">Wallet changing feature removed<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product</div></td>
-          <td class="promised">Account wallet update via support ticket</td>
-          <td class="reality broken">May 18, 08:21 UTC — "Wallet changing feature is no longer available." Path closed. Users now told to import Trust Wallet seed into MetaMask, which still flags BlockDAG as a deceptive website.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 18, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="broken">
-          <td class="subj">x10swap "10x token swap"<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Marketing</div></td>
-          <td class="promised">Swap BDAG at $0.00097 (~10x CMC)</td>
-          <td class="reality broken">$40 entry fee per attempt. ~1 in 10 approved. Fees not refunded on denial. Functions as paid lottery, not a swap.</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 14–18, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram community</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="partial">
-          <td class="subj">$0.001 buyback &amp; burn<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Marketing</div></td>
-          <td class="promised">June 1, 2026</td>
-          <td class="reality partial">Announced May 16. Buyback price $0.001 (~12x current $0.000081). No budget, source of funds, max tokens, or eligibility published.</td>
-          <td class="status"><span class="pill partial">Promised</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 16, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-        <tr data-cat="product" data-status="partial">
-          <td class="subj">Super App<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">Jun 15, 2026</td>
-          <td class="reality partial">Not yet built — pending</td>
-          <td class="status"><span class="pill partial">Partial</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Roadmap<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Roadmap</div></td>
-        </tr>
-        <tr data-cat="product" data-status="partial">
-          <td class="subj">Wallet release<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">Q4 2025</td>
-          <td class="reality partial">Released Q1 2026</td>
-          <td class="status"><span class="pill partial">Partial</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Q4 2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Roadmap</div></td>
-        </tr>
-        <tr data-cat="product" data-status="kept">
-          <td class="subj">Block explorer<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Product Roadmap</div></td>
-          <td class="promised">Mainnet day</td>
-          <td class="reality kept">Released Mar 4</td>
-          <td class="status"><span class="pill kept">Kept</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Mar 4, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">blockdag.network</div></td>
-        </tr>
-        <tr data-cat="hardware" data-status="broken">
-          <td class="subj">X1 miner shipping<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Hardware (Miners)</div></td>
-          <td class="promised">Feb–Apr 2026</td>
-          <td class="reality broken">Still unshipped</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Roadmap<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Roadmap</div></td>
-        </tr>
-        <tr data-cat="hardware" data-status="broken">
-          <td class="subj">X10 miner shipping<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Hardware (Miners)</div></td>
-          <td class="promised">Q1 2026</td>
-          <td class="reality broken">Still unshipped</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Roadmap<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Roadmap</div></td>
-        </tr>
-        <tr data-cat="hardware" data-status="broken">
-          <td class="subj">X30 miner shipping<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Hardware (Miners)</div></td>
-          <td class="promised">Q2 2026</td>
-          <td class="reality broken">Still unshipped</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Roadmap<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Roadmap</div></td>
-        </tr>
-        <tr data-cat="hardware" data-status="broken">
-          <td class="subj">Miner refunds<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Hardware (Miners)</div></td>
-          <td class="promised">"Available at any time"</td>
-          <td class="reality broken">Tickets unanswered 90+ days</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Telegram pinned<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="tech" data-status="broken">
-          <td class="subj">Whitepaper originality<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Tech & Whitepaper</div></td>
-          <td class="promised">"Novel DAG consensus"</td>
-          <td class="reality broken">Near-copy of Kaspa</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Whitepaper v1.2<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Whitepaper</div></td>
-        </tr>
-        <tr data-cat="tech" data-status="broken">
-          <td class="subj">Throughput claim<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Tech & Whitepaper</div></td>
-          <td class="promised">10–15k TPS</td>
-          <td class="reality broken">Not benchmarked publicly</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Whitepaper<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Whitepaper</div></td>
-        </tr>
-        <tr data-cat="tech" data-status="broken">
-          <td class="subj">Sub-second finality<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Tech & Whitepaper</div></td>
-          <td class="promised">"Sub-second finality"</td>
-          <td class="reality broken">Not demonstrated</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Whitepaper<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Whitepaper</div></td>
-        </tr>
-        <tr data-cat="tech" data-status="partial">
-          <td class="subj">EVM compatibility<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Tech & Whitepaper</div></td>
-          <td class="promised">Day 1</td>
-          <td class="reality partial">Limited / partial</td>
-          <td class="status"><span class="pill partial">Partial</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Roadmap<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Roadmap</div></td>
-        </tr>
-        <tr data-cat="tech" data-status="broken">
-          <td class="subj">Open-source code<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Tech & Whitepaper</div></td>
-          <td class="promised">Promised post-launch</td>
-          <td class="reality broken">Repos remain private</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Telegram AMA<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">Borussia Dortmund partnership<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Sponsorships & Marketing</div></td>
-          <td class="promised">€2,007,444 / season</td>
-          <td class="reality broken">Default notice</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Sep 2024<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Press / legal</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">Inter Milan partnership<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Sponsorships & Marketing</div></td>
-          <td class="promised">Multi-year sponsorship</td>
-          <td class="reality broken">Cease & desist served</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Aug 2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Inter Milan press</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">Alpine F1 partnership<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Sponsorships & Marketing</div></td>
-          <td class="promised">$1.4M sponsorship</td>
-          <td class="reality broken">Default Dec 2025</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Dec 2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Auto sport press</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">UFC fighter sponsorships<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Sponsorships & Marketing</div></td>
-          <td class="promised">Roster of 6 fighters</td>
-          <td class="reality broken">Quiet drop, no payment trail</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">X removals</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">Times Square billboard<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Sponsorships & Marketing</div></td>
-          <td class="promised">Permanent display</td>
-          <td class="reality broken">24-hour rental</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Jul 2024<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Public photos</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">New York Stock Exchange tower<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Sponsorships & Marketing</div></td>
-          <td class="promised">"Listed at NYSE"</td>
-          <td class="reality broken">Sponsored marquee only</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">2024<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">NYSE press desk</div></td>
-        </tr>
-        <tr data-cat="governance" data-status="broken">
-          <td class="subj">True founder identity<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Governance</div></td>
-          <td class="promised">"Antony Turner founded"</td>
-          <td class="reality broken">Gurhan Kiziloz revealed Dec 2025</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Dec 2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Multiple outlets</div></td>
-        </tr>
-        <tr data-cat="governance" data-status="broken">
-          <td class="subj">Audited finances<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Governance</div></td>
-          <td class="promised">"Big-4 audit underway"</td>
-          <td class="reality broken">No auditor confirmed</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">AMA Q3 2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="governance" data-status="broken">
-          <td class="subj">KYC / AML<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Governance</div></td>
-          <td class="promised">"Industry-leading KYC"</td>
-          <td class="reality broken">Refunds blocked, KYC inconsistent</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Telegram<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="governance" data-status="broken">
-          <td class="subj">Customer support SLA<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Governance</div></td>
-          <td class="promised">24h response</td>
-          <td class="reality broken">Tickets unanswered 90+ days</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Help center<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Help center</div></td>
-        </tr>
-        <tr data-cat="governance" data-status="broken">
-          <td class="subj">Employee payroll<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Governance</div></td>
-          <td class="promised">Salaries paid on time</td>
-          <td class="reality broken">~24 employees, $140K+ unpaid</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Dec 2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Whistleblower</div></td>
-        </tr>
-        <tr data-cat="governance" data-status="broken">
-          <td class="subj">Independent board<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Governance</div></td>
-          <td class="promised">"Strong governance"</td>
-          <td class="reality broken">No public board roster</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">AMA<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="governance" data-status="broken">
-          <td class="subj">Token unlock schedule<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Governance</div></td>
-          <td class="promised">Linear vesting</td>
-          <td class="reality broken">Schedule changed without notice</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Whitepaper<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Comparison</div></td>
-        </tr>
-        <tr data-cat="governance" data-status="broken">
-          <td class="subj">Treasury transparency<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Governance</div></td>
-          <td class="promised">Quarterly reports</td>
-          <td class="reality broken">None published</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Telegram<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="community" data-status="broken">
-          <td class="subj">Telegram moderation<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Community</div></td>
-          <td class="promised">Open & honest</td>
-          <td class="reality broken">Critical comments deleted</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Daily<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram archive</div></td>
-        </tr>
-        <tr data-cat="community" data-status="broken">
-          <td class="subj">Bug bounty program<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Community</div></td>
-          <td class="promised">$1M pool</td>
-          <td class="reality broken">No payouts confirmed</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Whitepaper<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Whitepaper</div></td>
-        </tr>
-        <tr data-cat="community" data-status="broken">
-          <td class="subj">AMA frequency<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Community</div></td>
-          <td class="promised">"Weekly AMAs"</td>
-          <td class="reality broken">Now monthly, scripted</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Telegram<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="community" data-status="broken">
-          <td class="subj">Reddit engagement<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Community</div></td>
-          <td class="promised">Official mod team</td>
-          <td class="reality broken">Subreddit unmaintained</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">r/blockdag<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Reddit</div></td>
-        </tr>
-        <tr data-cat="community" data-status="broken">
-          <td class="subj">Discord launch<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Community</div></td>
-          <td class="promised">Q4 2024</td>
-          <td class="reality broken">No official Discord</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Q4 2024<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Roadmap</div></td>
-        </tr>
-        <tr data-cat="regional" data-status="broken">
-          <td class="subj">India regulatory clearance<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Regional / Regulatory</div></td>
-          <td class="promised">SEBI engagement</td>
-          <td class="reality broken">No filings located</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">AMA<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="regional" data-status="broken">
-          <td class="subj">UAE registration<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Regional / Regulatory</div></td>
-          <td class="promised">VARA license</td>
-          <td class="reality broken">License not issued</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">AMA<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">VARA registry</div></td>
-        </tr>
-        <tr data-cat="regional" data-status="broken">
-          <td class="subj">UK FCA registration<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Regional / Regulatory</div></td>
-          <td class="promised">"Compliant"</td>
-          <td class="reality broken">Not registered with FCA</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">AMA<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">FCA register</div></td>
-        </tr>
-        <tr data-cat="regional" data-status="broken">
-          <td class="subj">Singapore MAS<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Regional / Regulatory</div></td>
-          <td class="promised">"Working with regulators"</td>
-          <td class="reality broken">No filings</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">AMA<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">MAS register</div></td>
-        </tr>
-        <tr data-cat="airdrop" data-status="broken">
-          <td class="subj">Airdrop allocation<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Airdrop</div></td>
-          <td class="promised">5% of supply</td>
-          <td class="reality broken">Allocation reduced</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Whitepaper<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Comparison</div></td>
-        </tr>
-        <tr data-cat="airdrop" data-status="broken">
-          <td class="subj">Airdrop claim window<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Airdrop</div></td>
-          <td class="promised">30 days post-launch</td>
-          <td class="reality broken">Window changed twice</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Telegram<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram</div></td>
-        </tr>
-        <tr data-cat="airdrop" data-status="broken">
-          <td class="subj">KYC for airdrop<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Airdrop</div></td>
-          <td class="promised">Optional</td>
-          <td class="reality broken">Mandatory at last minute</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Mar 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Email</div></td>
-        </tr>
-        <tr data-cat="legal" data-status="broken">
-          <td class="subj">No US persons sale<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Legal & Compliance</div></td>
-          <td class="promised">Geo-blocked</td>
-          <td class="reality broken">US wallets received tokens</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Terms<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">On-chain</div></td>
-        </tr>
-        <tr data-cat="legal" data-status="broken">
-          <td class="subj">No EU restricted persons<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Legal & Compliance</div></td>
-          <td class="promised">Geo-blocked</td>
-          <td class="reality broken">EU wallets received tokens</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Terms<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">On-chain</div></td>
-        </tr>
-        <tr data-cat="legal" data-status="broken">
-          <td class="subj">Lawsuit insurance<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Legal & Compliance</div></td>
-          <td class="promised">"Indemnity in place"</td>
-          <td class="reality broken">No proof of policy</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Terms<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Public records</div></td>
-        </tr>
-        <tr data-cat="security" data-status="partial">
-          <td class="subj">Smart contract audit<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Security</div></td>
-          <td class="promised">CertiK audit</td>
-          <td class="reality partial">Partial audit, scope reduced</td>
-          <td class="status"><span class="pill partial">Partial</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Q4 2025<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">CertiK report</div></td>
-        </tr>
-        <tr data-cat="security" data-status="broken">
-          <td class="subj">Bug bounty active<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Security</div></td>
-          <td class="promised">From mainnet day</td>
-          <td class="reality broken">Not active</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Whitepaper<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Whitepaper</div></td>
-        </tr>
-        <tr data-cat="security" data-status="broken">
-          <td class="subj">Multi-sig treasury<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Security</div></td>
-          <td class="promised">5/9 multi-sig</td>
-          <td class="reality broken">2/3 with internal keys only</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Whitepaper<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">On-chain</div></td>
-        </tr>
-        <tr data-cat="security" data-status="broken">
-          <td class="subj">Cold storage of funds<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Security</div></td>
-          <td class="promised">"Majority cold"</td>
-          <td class="reality broken">Funds moved to OTC desks</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">Telegram<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">On-chain trace</div></td>
-        </tr>
-        <tr data-cat="adoption" data-status="broken">
-          <td class="subj">Active partnerships<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Adoption</div></td>
-          <td class="promised">"50+ enterprise"</td>
-          <td class="reality broken">None publicly verifiable</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">AMA<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Press</div></td>
-        </tr>
-        <tr data-cat="marketing" data-status="broken">
-          <td class="subj">No sale after May 7th — Utility Presale launched May 8<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">Sponsorships & Marketing</div></td>
-          <td class="promised">May 7, 2026</td>
-          <td class="reality broken">Utility Presale live May 8 at $0.0000005</td>
-          <td class="status"><span class="pill broken">Broken</span></td>
-          <td style="font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap">May 8, 2026<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:'DM Sans',sans-serif;margin-top:3px">Telegram official</div></td>
-        </tr>
-          </tbody>
+          <tbody id="promises-tbody"></tbody>
         </table>
       </div>
       <p style="font-size:12px;color:var(--muted);margin-top:18px;font-family:'JetBrains Mono',monospace">Methodology: a "promise" is a public, falsifiable claim made by BlockDAG, its founders, or its official channels. Status is reassessed every 14 days. Sources are preserved as web archives and timestamped screenshots in the <a href="evidence.html" style="color:var(--red);font-weight:600">Evidence library</a>.</p>
@@ -933,28 +240,97 @@ button.site-search{background:transparent;font-family:inherit;text-align:left}
   });
 })();
 </script>
-</body></html>
+<script src="data.js?v=4"></script>
 <script>
-  const table = document.getElementById('promises-table');
-  const rows = [...table.querySelectorAll('tbody tr')];
-  let activeCat = 'all', activeStatus = 'all';
-  function apply() {
-    rows.forEach(r => {
-      const okCat = activeCat==='all' || r.dataset.cat===activeCat;
-      const okSt = activeStatus==='all' || r.dataset.status===activeStatus;
-      r.style.display = okCat && okSt ? '' : 'none';
+(function(){
+  if(typeof PROMISES==='undefined')return;
+  const safe=s=>String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const slug=s=>String(s||'other').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  const promises=PROMISES;
+
+  const total=promises.length;
+  const broken=promises.filter(p=>p.status==='broken').length;
+  const partial=promises.filter(p=>p.status==='partial').length;
+  const kept=promises.filter(p=>p.status==='kept').length;
+  const pending=total-broken-partial-kept;
+  const failurePct=total?(broken/total*100).toFixed(1):'0';
+
+  // Update intro
+  const dek=document.getElementById('tracker-dek');
+  if(dek)dek.innerHTML=total+' public commitments scraped from Telegram, X, the BlockDAG website, AMAs, the whitepaper and investor materials. Each entry is a single verifiable claim, with a current status and a source.';
+  const meta=document.getElementById('tracker-meta-row');
+  if(meta)meta.innerHTML='<span><b>'+total+'</b> promises tracked</span><span>·</span><span><b style="color:var(--red)">'+broken+'</b> broken</span><span>·</span><span><b style="color:var(--gold)">'+partial+'</b> partial</span><span>·</span><span><b style="color:var(--green)">'+kept+'</b> kept</span><span>·</span><span>Sources cited inline · click any row to read the receipts</span>';
+
+  // Summary bar
+  const bar=document.getElementById('tracker-summary-bar');
+  if(bar)bar.innerHTML='<div class="cell"><div class="n">'+total+'</div><div class="lbl">Total promises</div></div>'+
+    '<div class="cell"><div class="n red">'+broken+'</div><div class="lbl">Broken / misleading</div></div>'+
+    '<div class="cell"><div class="n gold">'+partial+'</div><div class="lbl">Partial / pending</div></div>'+
+    '<div class="cell"><div class="n green">'+kept+'</div><div class="lbl">Kept</div></div>'+
+    '<div class="cell"><div class="n red">'+failurePct+'%</div><div class="lbl">Failure rate</div></div>';
+
+  // Status chips
+  const statusRow=document.getElementById('tracker-status-chips');
+  if(statusRow)statusRow.innerHTML='<span class="lbl">Status</span>'+
+    '<button class="chip active" data-status="all">All<span class="ct">'+total+'</span></button>'+
+    '<button class="chip" data-status="broken">Broken<span class="ct">'+broken+'</span></button>'+
+    '<button class="chip" data-status="partial">Partial<span class="ct">'+partial+'</span></button>'+
+    '<button class="chip" data-status="kept">Kept<span class="ct">'+kept+'</span></button>';
+
+  // Category chips: count + sort by count desc
+  const catMap={};
+  promises.forEach(p=>{
+    const cat=p.category||'Other';
+    const s=slug(cat);
+    if(!catMap[s])catMap[s]={name:cat,count:0};
+    catMap[s].count++;
+  });
+  const sortedCats=Object.entries(catMap).sort((a,b)=>b[1].count-a[1].count);
+  const catRow=document.getElementById('tracker-category-chips');
+  if(catRow)catRow.innerHTML='<span class="lbl">Category</span>'+
+    '<button class="chip active" data-filter="all">All categories<span class="ct">'+total+'</span></button>'+
+    sortedCats.map(([s,d])=>'<button class="chip" data-filter="'+safe(s)+'">'+safe(d.name)+'<span class="ct">'+d.count+'</span></button>').join('');
+
+  // Table rows: newest first by id descending
+  const sorted=[...promises].sort((a,b)=>(b.id||0)-(a.id||0));
+  const tbody=document.getElementById('promises-tbody');
+  if(tbody)tbody.innerHTML=sorted.map(p=>{
+    const status=p.status||'broken';
+    const statusLabel=status.charAt(0).toUpperCase()+status.slice(1);
+    const catSlug=slug(p.category);
+    const lastQuote=(p.quotes&&p.quotes.length)?p.quotes[p.quotes.length-1]:null;
+    const dateText=lastQuote?lastQuote.date:'';
+    return '<tr data-cat="'+safe(catSlug)+'" data-status="'+safe(status)+'">'+
+      '<td class="subj">'+safe(p.title)+'<div style="font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.04em;text-transform:uppercase;margin-top:4px">'+safe(p.category||'')+'</div></td>'+
+      '<td class="promised">'+safe(p.promised||'')+'</td>'+
+      '<td class="reality '+safe(status)+'">'+safe(p.reality||'')+'</td>'+
+      '<td class="status"><span class="pill '+safe(status)+'">'+safe(statusLabel)+'</span></td>'+
+      '<td style="font-size:11.5px;color:var(--muted);font-family:\'JetBrains Mono\',monospace;white-space:nowrap">'+safe(dateText)+'<div style="font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-family:\'DM Sans\',sans-serif;margin-top:3px">Telegram official</div></td>'+
+      '</tr>';
+  }).join('');
+
+  // Filter behaviour
+  const rows=[...document.querySelectorAll('#promises-tbody tr')];
+  let activeCat='all',activeStatus='all';
+  function apply(){
+    rows.forEach(r=>{
+      const okCat=activeCat==='all'||r.dataset.cat===activeCat;
+      const okSt=activeStatus==='all'||r.dataset.status===activeStatus;
+      r.style.display=okCat&&okSt?'':'none';
     });
   }
-  document.querySelectorAll('.chip-row').forEach(row => {
-    row.querySelectorAll('.chip').forEach(c => {
-      c.addEventListener('click', () => {
+  document.querySelectorAll('.chip-row').forEach(row=>{
+    row.querySelectorAll('.chip').forEach(c=>{
+      c.addEventListener('click',()=>{
         row.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
         c.classList.add('active');
-        if (c.dataset.filter) activeCat = c.dataset.filter;
-        else if (c.dataset.status) activeStatus = c.dataset.status;
+        if(c.dataset.filter)activeCat=c.dataset.filter;
+        else if(c.dataset.status)activeStatus=c.dataset.status;
         apply();
       });
     });
   });
+})();
 </script>
+</body></html>
 
