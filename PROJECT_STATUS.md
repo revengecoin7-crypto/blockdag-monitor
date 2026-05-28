@@ -49,17 +49,18 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (May 26, 2026)
-- 95 promises tracked (87 broken, 91.6% failure rate)
-- Timeline events bijgewerkt t/m May 26
-- Notable quotes bijgewerkt t/m May 26 (isNew op nieuwste May 25-26 quotes)
+## Data (data.js) — Huidige staat (May 28, 2026)
+- 99 promises tracked (92 broken/misleading = 67 broken + 25 misleading, 92.9% failure rate)
+- LET OP: tracker.html telt nu "broken + misleading" samen als failures (92). Status verdeling: broken 67, misleading 25, kept 2, pending 3, promise 1, promised 1.
+- Timeline events bijgewerkt t/m May 28 (TIMELINE_EVENTS = 149 entries)
+- Notable quotes bijgewerkt t/m May 28 (isNew op nieuwste May 26-28 quotes) (NOTABLE_QUOTES = 206)
 - 20 bronnen
-- Laatste artikelen: **article-turbo-presale.html (May 26)**, article-exchange-suspensions.html (May 25), article-burn-illusion.html (May 22), article-sparks-closed.html (May 21)
+- Laatste artikelen: **article-batch6-lottery.html (May 28)**, article-turbo-presale.html (May 26), article-exchange-suspensions.html (May 25), article-burn-illusion.html (May 22)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **26 mei 2026** (export: ChatExport_2026-05-26)
-- Periode: 18 februari t/m 26 mei 2026
-- Totaal berichten: 374,600+ (2,328 nieuw sinds laatste export op 25 mei)
+- Geanalyseerd t/m: **28 mei 2026** (export: ChatExport_2026-05-28)
+- Periode: 18 februari t/m 28 mei 2026
+- Totaal berichten: 377,700+ (3,114 nieuw sinds laatste export op 26 mei)
 - Gap: 20–30 april ontbreekt nog
 
 ## Bekende blockchain data
@@ -69,7 +70,17 @@
 - BDAG prijs CMC: **$0.000069** (−99.86% vs $0.05)
 - BDAG Aftersale prijs: **$0.00000019** (–99.99996% vs $0.05). Marketing: "400X ROI" (echte math: 5,263x)
 
-## NIEUW (May 25-26):
+## NIEUW (May 26-28):
+- **"FINAL BATCH 6" + $10,000 USDT lottery** (May 26): "BUY BDAG NOW & WIN $10,000 USDT. FIRST 500 HOLDERS." Sweepstakes op een token sale. Batch 6 weerspreekt "presale ended Jan 26".
+- **TURBO op de Sparks slot machine binnen 24u** (May 26): "spin to multiply 2X/10X/50X/100X". May 27: "$24,835 from a few spins". 5% referral commissie toegevoegd. De "utility token" heeft 1 gedemonstreerde functie: gokken.
+- **Presale coins LOCKED tot June 30** tenzij promo code gebruikt (admin May 26): "If you bought BDAG during the presale but did not use a special code like TRADEMAY30 or FINALTRADE, your coins are locked until this date." Nooit verteld bij aankoop. De Feb "TGE compleet" is ongedaan gemaakt voor de meeste kopers.
+- **Stablecoin tegenspraak**: marketing "OFFICIAL BDAG STABLE COIN" vs admin "The team is not creating a new token" / "USDT will be available as pegged token". 6 dagen voor launch onduidelijk of ze een stablecoin maken of USDT bridgen.
+- **TURBO whitepaper pas DAG NA launch gepubliceerd** (May 26 20:35): blockdag.network/blockdag-turbo-whitepaper.pdf
+- **Barry Moore (mod) openlijk vijandig** tegen community: "I don't argue with reta*ded" (May 27)
+- **Super App "coming out soon"** (May 27)
+- Staking 98 dagen broken. Support tickets nog steeds down.
+
+## EERDER NIEUW (May 25-26):
 - **BlockDAG TURBO PRESALE GELANCEERD** (May 25, 19:51 UTC): 7e distinct sales mechanism sinds 2024. Entry $0.0005, "launch" $0.04, "80X ROI", "ONLY 10 STAGES". Geen tokenomics, supply, vesting, contract, whitepaper of audit gepubliceerd. Community vijandig: T TriumphAnt "F Turbo F FOMO Until our network is working correctly." Edward Hernandez: "TURBO batch 1 phase 1 this one will extend for years enough is enough." Admin verdedigt: "BDAG is not bring abandon. Bdag turbo is a token under bdag ecosystem."
 - **Admin geeft toe MEXC was nooit confirmed** (May 25 22:20 UTC): "Tier 1 exchanges is yet to be announced and team are still in discussions with MEXC team regarding listing." Eerste officiële admission dat 3 maanden marketing ("Major Tier 1 USA Exchange Secured" Feb 18) een leugen was.
 - **Stablecoin onbevestigd door eigen admin** 6 dagen voor June 1 launch (May 25 19:31 UTC): "Not officially confirmed yet. If it launches as a stablecoin, it will likely be pegged around $1, but final details will be announced by the team."

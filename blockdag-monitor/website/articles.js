@@ -1,5 +1,16 @@
 const ARTICLES = [
   {
+    id: 'article-batch6-lottery',
+    title: 'BlockDAG\'s "Final Batch 6" $10,000 lottery, the slot-machine token, and the June 30 lock.',
+    date: '2026-05-28',
+    dateDisplay: 'May 28, 2026',
+    excerpt: 'Between May 26 and 28, BlockDAG launched "Final Batch 6" with a $10,000 USDT prize draw, put its day-old TURBO token on a slot machine, added a 5% referral cut, and disclosed that presale coins are locked until June 30 unless buyers used a secret promo code like "TRADEMAY30." Plus a stablecoin that contradicts itself: "OFFICIAL BDAG STABLE COIN" vs "the team is not creating a new token."',
+    url: 'article-batch6-lottery.html',
+    tags: [{ label: 'Breaking', style: 'red' }, { label: 'Marketing', style: 'orange' }],
+    isNew: true,
+    svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="b6g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#b6g)" opacity="0.6"/><text x="200" y="32" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" opacity="0.55" letter-spacing="3">MAY 26 to 28 · THE WEEK IT BECAME A LOTTERY</text><line x1="30" y1="40" x2="370" y2="40" stroke="#3157a8" stroke-width="0.6"/><text x="200" y="78" text-anchor="middle" font-family="Newsreader,serif" font-size="34" font-weight="800" font-style="italic" fill="#e6a23c">"WIN $10,000 USDT"</text><text x="200" y="98" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#ff8a7a">FINAL BATCH 6 · FIRST 500 HOLDERS · BUY BEFORE JUNE 1</text><g font-family="Newsreader,serif" font-size="12" font-weight="700" fill="#fff"><text x="40" y="135">▪ TURBO put on the slot machine within 24h</text><text x="40" y="158">▪ 5% referral cut on friends' spins</text><text x="40" y="181">▪ Presale coins locked until June 30</text><text x="40" y="204">▪ "Stablecoin" contradicts its own admin</text></g><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">8TH SALES MECHANISM · NOW WITH A SWEEPSTAKES</text></svg>`
+  },
+  {
     id: 'article-turbo-presale',
     title: 'BlockDAG just launched "TURBO" — the 7th distinct presale mechanism in 14 months.',
     date: '2026-05-26',
@@ -7,7 +18,6 @@ const ARTICLES = [
     excerpt: 'On May 25, 2026 at 19:51 UTC, BlockDAG launched "BlockDAG TURBO" at $0.0005 entry with marketed $0.04 launch price and "80X ROI" headline. No tokenomics. No total supply. No vesting. No whitepaper. The community response: "F Turbo F FOMO. Until our network is working correctly." Same admin same day admitted MEXC was "still in discussions" and the stablecoin peg was "not officially confirmed yet" 6 days before launch.',
     url: 'article-turbo-presale.html',
     tags: [{ label: 'Breaking', style: 'red' }, { label: 'Marketing', style: 'orange' }],
-    isNew: true,
     svg: `<svg viewBox="0 0 400 250" style="width:100%;height:100%"><defs><pattern id="tbg" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#1c3870" stroke-width="0.4" fill="none"/></pattern></defs><rect width="400" height="250" fill="#0C2956"/><rect width="400" height="250" fill="url(#tbg)" opacity="0.6"/><text x="200" y="34" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" opacity="0.55" letter-spacing="3">7 SALES MECHANISMS · ONE PROJECT · 14 MONTHS</text><line x1="30" y1="42" x2="370" y2="42" stroke="#3157a8" stroke-width="0.6"/><g font-family="JetBrains Mono" font-size="8" fill="#6b8acf"><text x="36" y="68">1. Presale</text><text x="36" y="82">2. Aftersale</text><text x="36" y="96">3. Live Swap</text><text x="36" y="110">4. x10swap</text><text x="36" y="124">5. Utility Presale</text><text x="36" y="138">6. Sparks chests</text></g><text x="36" y="158" font-family="Newsreader,serif" font-size="14" font-weight="800" font-style="italic" fill="#ff8a7a">7. TURBO · MAY 25 · LIVE NOW</text><rect x="30" y="170" width="340" height="28" rx="3" fill="#2a0808" stroke="#c62828" stroke-width="1"/><text x="50" y="188" font-family="Newsreader,serif" font-size="11" font-weight="700" fill="#fff" font-style="italic">"F Turbo. F FOMO. Until our network is working."</text><text x="50" y="206" font-family="JetBrains Mono" font-size="8" fill="#6b8acf">— community member T TriumphAnt, May 25 20:06 UTC</text><rect x="0" y="222" width="400" height="28" fill="#c62828"/><text x="200" y="240" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#fff" letter-spacing="2" font-weight="800">NO TOKENOMICS · NO SUPPLY · NO VESTING · NO WHITEPAPER</text></svg>`
   },
   {

@@ -1217,7 +1217,6 @@ const PROMISES = [
     id: 93,
     category: "Marketing",
     status: "broken",
-    isNew: true,
     title: "BlockDAG TURBO presale launched — 7th distinct sales mechanism in 14 months",
     promised: "Implicit: after a casino, Sparks, x10swap, Utility Presale, Aftersale, and Live Swap, no new token sale needed before BDAG itself is functional",
     reality: "On May 25, 2026 at 19:51 UTC, the official BlockDAG channel posted: 'BlockDAG TURBO PRESALE STAGE 1 LIVE: ENTRY PRICE $0.0005 - LAUNCH PRICE $0.04 | 80X ROI. ONLY 10 STAGES. INTRODUCING BLOCKDAG TURBO UTILITY TOKEN PRESALE.' This is the SEVENTH distinct sales mechanism BlockDAG has launched since the original 2024 presale: presale → batches 1-5 → aftersale → Live Swap → x10swap → Utility Presale → BDAG SPARKS chests → and now TURBO. The product was launched at 19:51 UTC on May 25 with no prior community announcement, no published tokenomics, no total supply figure, no vesting disclosure, and no whitepaper. Community response was immediate and hostile. Community member T TriumphAnt (20:06 UTC): 'F Turbo F FOMO Until our network is working correctly. Staking, claiming, everything.' Edward Hernandez (20:31 UTC): 'TURBO batch 1 phase 1 this one will extend for years enough is enough.' Arjun: 'Turbo compressed Bdag.' Multiple community members asked basic questions (total supply, vesting, tokenomics) that admin did not answer.",
@@ -1235,7 +1234,6 @@ const PROMISES = [
     id: 94,
     category: "Exchange Listing",
     status: "broken",
-    isNew: true,
     title: "Admin admits MEXC \"still in discussions\" — confirming listing was never live",
     promised: "MEXC was marketed as confirmed Tier 1 listing partner since February 18, 2026 (\"Major Tier 1 USA Exchange Secured\")",
     reality: "On May 25, 2026 at 22:20 UTC, an official admin posted: 'Tier 1 exchanges is yet to be announced and team are still in discussions with MEXC team regarding listing.' This is the first official admission that MEXC was never actually a confirmed listing partner. Three months of marketing collapsed into one sentence. The 'Major Tier 1 USA Exchange Secured' February 18 post that triggered millions of dollars of presale buys was, by the project's own May 25 admission, still in discussion stage at the time. The 'launch date' that Matt David reported seeing on MEXC (May 24 — 'I saw it on there with a listing date then it was suspended then never happened') was apparently a planned listing that did not have agreement from MEXC. Combined with the admin's other May 25 contradictions ('BDAG is already launched and trading on exchanges' at 17:15 UTC) and the standing \"listing phase\" deflection from May 19-21, the official BlockDAG communication on its exchange status is internally inconsistent.",
@@ -1249,13 +1247,67 @@ const PROMISES = [
     id: 95,
     category: "Roadmap",
     status: "broken",
-    isNew: true,
     title: "Stablecoin peg unconfirmed by own admin 6 days before launch",
     promised: "Stable Coin launches June 1 (admin May 23) — marketed as reason to stack BDAG",
     reality: "On May 25, 2026 at 19:31 UTC, six days before the announced June 1 launch, the BlockDAG admin replied to a community question about the stablecoin: 'Not officially confirmed yet. If it launches as a stablecoin, it will likely be pegged around $1, but final details will be announced by the team.' Three things stand out: (1) the admin uses 'if it launches' on a product that the same project is marketing aggressively as a confirmed June 1 launch, (2) 'likely pegged around $1' is not a peg specification — the peg target, the collateral structure, the reserve audit, the redemption mechanism, and the issuer entity all remain unpublished, (3) the term 'final details will be announced' six days before launch is incompatible with a production stablecoin which requires reserve attestations and disclosed counterparty risk before going live. A stablecoin without disclosed backing is a token someone has labelled 'stable.' BlockDAG is asking buyers to stack BDAG as a reason to hold the as-yet-undefined stable token.",
     quotes: [
       { date: "May 25, 2026", text: "Not officially confirmed yet. If it launches as a stablecoin, it will likely be pegged around $1, but final details will be announced by the team. [official admin, 19:31 UTC — 6 days before announced June 1 launch]" },
       { date: "May 23, 2026", text: "The big question is: How much BDAG will you hold when the Stable Coin launches on June 1st? [official channel — promotional message that contradicts the admin's own 'not officially confirmed yet' two days later]" }
+    ]
+  },
+  {
+    id: 96,
+    category: "Marketing",
+    status: "broken",
+    isNew: true,
+    title: "\"FINAL BATCH 6\" + $10,000 USDT lottery to push buys before June 1",
+    promised: "Each previous batch was the \"final\" one. Batch 5 was already the \"last\" before the aftersale.",
+    reality: "On May 26, 2026 at 13:29 UTC the official channel launched 'FINAL BATCH 6': 'BUY BDAG NOW & WIN $10,000 USDT. BDAG: $0.00000019. 400X POTENTIAL. 25% OFF via LIVE SWAP. BUY BDAG before June 1 and become one of the FIRST 500 HOLDERS for a chance to' win $10,000 USDT. This is a lottery mechanic bolted onto a token sale: buy before a deadline, get entered into a prize draw. The 400X ROI claim is mathematically wrong (the $0.00000019 entry to the $0.001 buyback is 5,263x, and the buyback is capped at 250,000 coins = $250 max). 'Batch 6' also contradicts the entire 'presale ended' narrative — BlockDAG's own marketing said the presale concluded January 26, 2026. This is at least the sixth batch and the seventh distinct sales mechanism, now with a sweepstakes attached.",
+    quotes: [
+      { date: "May 26, 2026", text: "🚨 BDAG STABLE COIN TETHER USDT COMING JUNE 1st! FINAL BATCH 6: BUY BDAG NOW & WIN $10,000 USDT 🚨 BDAG: $0.00000019. 400X POTENTIAL. 25% OFF via LIVE SWAP. BUY BDAG before June 1 and become one of the FIRST 500 HOLDERS for a chance to win. [official channel, 13:29 UTC]" },
+      { date: "May 26, 2026", text: "🚨 FINAL BATCH 6 CLOSING PRICE: BDAG $0.00000019 | 400X ROI! BUY & WIN $10K USDT 💸 [official channel, 18:22 UTC]" },
+      { date: "May 26, 2026", text: "Are you kidding me bdag has acquired millions at our expense and now they are trying another bs Turbo campaign. [community member Paul, 14:59 UTC]" }
+    ]
+  },
+  {
+    id: 97,
+    category: "Product",
+    status: "broken",
+    isNew: true,
+    title: "TURBO put on the Sparks gambling reel within 24 hours of launch",
+    promised: "TURBO marketed as a 'utility token' for gaming, staking, VIP access, NFTs",
+    reality: "TURBO launched May 25 at 19:51 UTC. By May 26 at 19:46 UTC the official channel announced: 'BLOCKDAG TURBO IS LIVE ON SPARKS — AND IT'S TIME TO SPIN. While others wait, you can get in now and multiply: 2X, 10X, 50X, and 100X!' On May 27 at 16:01 UTC: 'Someone just walked away with $24,835 from a few spins on Sparks! Nine slot spins. 2,500,000 TURBO on the line each time.' The 'first utility token built for the BlockDAG ecosystem' had exactly one demonstrated use within 24 hours: feeding it into a slot machine. A referral program was added (May 27): 'earn from 5% in USDT on every Sparks purchase' your referrals make. The utility token's primary utility is gambling it, and recruiting others to gamble.",
+    quotes: [
+      { date: "May 26, 2026", text: "🚀 BLOCKDAG TURBO IS LIVE ON SPARKS — AND IT'S TIME TO SPIN. While others wait, you can get in now and multiply: 2X, 10X, 50X, and 100X! MORE BLOCKDAG TURBO = MORE CONTROL, MORE WINS. [official channel, 19:46 UTC]" },
+      { date: "May 27, 2026", text: "Someone just walked away with $24,835 from a few spins on Sparks! Nine slot spins. 2,500,000 TURBO on the line each time. 49,670,642 TURBO back in the wallet. [official channel, 16:01 UTC]" },
+      { date: "May 27, 2026", text: "Refer a friend and earn from 5% in USDT on every Sparks purchase they make! [official channel, 13:10 UTC — multi-level recruitment added to the gambling product]" }
+    ]
+  },
+  {
+    id: 98,
+    category: "Claim / Distribution",
+    status: "broken",
+    isNew: true,
+    title: "Presale coins locked until June 30 unless buyer used a special promo code",
+    promised: "TGE February 11, claiming live February 19, trading March 4 — for all presale buyers",
+    reality: "On May 26, 2026 at 19:29 and 19:39 UTC, an admin disclosed a condition not present in the original presale marketing: 'June 30, 2026 marks the Public Trading Launch for general presale buyers who did not utilize specific early access promotional codes. This is the final TGE event.' And: 'If you bought BDAG during the presale but did not use a special code like TRADEMAY30 or FINALTRADE, your coins are locked until this date.' This means the bulk of presale buyers — anyone who bought without an obscure promo code — have had their coins locked since the February TGE and remain locked until June 30, 2026, a four-month-plus lock that was never disclosed at purchase. The 'TGE' that was announced as complete in February is now described as not yet having happened for most buyers.",
+    quotes: [
+      { date: "May 26, 2026", text: "June 30, 2026 marks the Public Trading Launch for general presale buyers who did not utilize specific early access promotional codes. This is the final TGE event. [official admin, 19:29 UTC]" },
+      { date: "May 26, 2026", text: "If you bought BDAG during the presale but did not use a special code like TRADEMAY30 or FINALTRADE, your coins are locked until this date. [official admin, 19:39 UTC]" }
+    ]
+  },
+  {
+    id: 99,
+    category: "Tokenomics",
+    status: "broken",
+    isNew: true,
+    title: "Stablecoin messaging contradicts itself: \"BDAG STABLE COIN\" vs \"not creating a new token\"",
+    promised: "A USDT-pegged BDAG stablecoin launching June 1, marketed as a major ecosystem expansion",
+    reality: "BlockDAG's June 1 stablecoin messaging is internally inconsistent. The marketing calls it the 'OFFICIAL BDAG STABLE COIN — PEGGED TO TETHER (USDT)' as if BlockDAG is issuing its own stablecoin. But on May 26 at 18:30-18:31 UTC the admin said: 'USDT will be available as pegged token on the Blockdag network' and 'The team is not creating a new token.' These describe two completely different things: issuing a BlockDAG-branded stablecoin (which requires reserves, audits, an issuer) versus bridging existing Tether USDT onto the chain (which requires a bridge, not a stablecoin launch). Six days before launch the project cannot consistently state whether it is creating a stablecoin or bridging one. No reserve attestation, peg mechanism, issuer entity, or audit has been published for either interpretation.",
+    quotes: [
+      { date: "May 26, 2026", text: "USDT will be available as pegged token on the Blockdag network. The team is not creating a new token. [official admin, 18:30–18:31 UTC]" },
+      { date: "May 26, 2026", text: "OFFICIAL BDAG STABLE COIN — PEGGED TO TETHER (USDT) — GOES LIVE JUNE 1. More utility. More liquidity. More ecosystem power. [official channel, 18:22 UTC — markets it as BlockDAG's own stablecoin]" },
+      { date: "May 27, 2026", text: "BDAG stablecoin tethered to USDT means the stablecoin on the BlockDAG network is designed to maintain the same value as Tether, which is usually $1. [official admin, 01:32 UTC]" }
     ]
   }
 ];
@@ -1402,7 +1454,14 @@ const TIMELINE_EVENTS = [
   { date: "May 25, 2026", type: "broken", text: "Admin admits MEXC was never confirmed. At 22:20 UTC: 'Tier 1 exchanges is yet to be announced and team are still in discussions with MEXC team regarding listing.' Three months of 'Major Tier 1 USA Exchange Secured' marketing (Feb 18, 2026) collapsed into one sentence. MEXC was never an agreed listing partner, only a discussion target. Same day at 17:15 UTC the same admin handle said: 'BDAG is launched and trading on exchanges.' Two contradictory official statements 5 hours apart." },
   { date: "May 25, 2026", type: "broken", text: "Stablecoin unconfirmed by admin 6 days before launch. At 19:31 UTC: 'Not officially confirmed yet. If it launches as a stablecoin, it will likely be pegged around $1, but final details will be announced by the team.' BlockDAG has been marketing a June 1 stable coin launch since May 23. The admin's 'if it launches' wording is incompatible with a stablecoin that should require disclosed backing, reserve attestation, and redemption mechanism before going live." },
   { date: "May 26, 2026", type: "broken", text: "TURBO presale spam intensifies. Official channel reposts the TURBO ad 6+ times between May 25 19:51 UTC and May 26 06:20 UTC. Community member Lucas Alvera (09:36 UTC): 'What about miners, aftersale, spark, .. what on earth is Turbo. Turbo sales for a project that already ended presale?' Community member Y B (10:11 UTC): 'What's this turbo sale? When are you all actually gonna end this aftersale nonsense?'" },
-  { date: "May 26, 2026", type: "broken", text: "Miners 'shipping next month' reconfirmed for the seventh date change. Admin May 26, 09:28 UTC: 'The miners are to be shipped in June.' Barry Moore at 10:28 UTC: 'All miners delivery has been scheduled to take place in June.' Original promise: February to April 2026. Subsequent dates: May–June, June, June 16, 'the upcoming weeks,' 'next month.' All seven slipped." }
+  { date: "May 26, 2026", type: "broken", text: "Miners 'shipping next month' reconfirmed for the seventh date change. Admin May 26, 09:28 UTC: 'The miners are to be shipped in June.' Barry Moore at 10:28 UTC: 'All miners delivery has been scheduled to take place in June.' Original promise: February to April 2026. Subsequent dates: May–June, June, June 16, 'the upcoming weeks,' 'next month.' All seven slipped." },
+  { date: "May 26, 2026", type: "broken", text: "'FINAL BATCH 6' launched with a $10,000 USDT lottery. Official channel 13:29 UTC: 'FINAL BATCH 6: BUY BDAG NOW & WIN $10,000 USDT. BDAG $0.00000019. 400X POTENTIAL. Buy before June 1 and become one of the FIRST 500 HOLDERS for a chance to win.' A sweepstakes bolted onto a token sale. 'Batch 6' contradicts the 'presale ended Jan 26' narrative. The 400X claim is wrong (entry-to-buyback ratio is 5,263x, buyback capped at 250k coins = $250 max)." },
+  { date: "May 26, 2026", type: "broken", text: "Presale coins revealed as locked until June 30 unless buyer used a promo code. Admin 19:29 UTC: 'June 30, 2026 marks the Public Trading Launch for general presale buyers who did not utilize specific early access promotional codes. This is the final TGE event.' At 19:39: 'If you bought BDAG during the presale but did not use a special code like TRADEMAY30 or FINALTRADE, your coins are locked until this date.' A 4-month-plus lock never disclosed at purchase. The February 'TGE complete' is now undone for most buyers." },
+  { date: "May 26, 2026", type: "broken", text: "Stablecoin messaging contradicts itself. Marketing: 'OFFICIAL BDAG STABLE COIN — PEGGED TO TETHER (USDT) — GOES LIVE JUNE 1.' Admin at 18:30-18:31 UTC: 'USDT will be available as pegged token on the Blockdag network. The team is not creating a new token.' Issuing a BlockDAG stablecoin and bridging existing USDT are two different things. Six days before launch the project cannot state which it is. No reserve attestation or peg mechanism published." },
+  { date: "May 26, 2026", type: "broken", text: "TURBO whitepaper published the day AFTER launch. Admin at 20:35 UTC posts blockdag.network/blockdag-turbo-whitepaper.pdf — roughly 25 hours after the token went on sale. Buyers who entered on May 25 committed before any tokenomics document existed." },
+  { date: "May 27, 2026", type: "broken", text: "TURBO put on the Sparks gambling reel within 24 hours of launch. Official channel May 26 19:46 UTC: 'BLOCKDAG TURBO IS LIVE ON SPARKS — TIME TO SPIN. Multiply: 2X, 10X, 50X, 100X!' May 27 16:01 UTC: 'Someone just walked away with $24,835 from a few spins. Nine slot spins. 2,500,000 TURBO on the line each time.' A referral program (5% USDT on referrals' Sparks purchases) was added May 27. The 'first utility token' demonstrated one use within 24h: feeding a slot machine." },
+  { date: "May 27, 2026", type: "note", text: "Community member Satish Trivedi (May 26 12:34 UTC): 'BlockDAG TURBO looks like another illusion. No one should buy until they fulfill all commitments given to community.' Community member SR (18:30 UTC): 'Introducing a new token at this moment is the worst thing they could do. What scares me is that soon they will say all the BDAG will be burned and for every 10 million BDAG we will get 1 turbo bdag.'" },
+  { date: "May 28, 2026", type: "broken", text: "Staking still broken 96+ days (since Feb 19). Workaround unchanged: 'Try staking 1 BDag and then try to claim.' Support tickets still down ('account suspended'). Community members report May 6 and May 9 purchases still not showing on dashboard 19 days later. June 1 buyback, stablecoin, $25M liquidity injection, daily burns, new token launches, Batch 6 claims and the $10K lottery draw are all stacked on the same June 1 window." }
 ];
 
 const SOURCES = [
@@ -1801,22 +1860,35 @@ const NOTABLE_QUOTES = [
   { date: "May 25, 2026", tag: "community", text: "Why would new investors come when there are continuous broken promises such as no tier 1 listings. Miners still aren't being delivered. And never ending pre sale with compression? The community that you keep yelling at had nothing to do with it. You're starting to look like a joke Ant. [community member Xnova 101, May 25 05:05 UTC]" },
   { date: "May 25, 2026", tag: "community", text: "I gave up on this one... I'm leaving Telegram when you don't keep your word, a man's word is his bond, saying it will be his last, then continuing to sell this garbage on the site. I'm glad I only lost $100, imagine someone who bought $1000 worth of stuff. [community member Henrique, May 25 03:37 UTC]" },
   { date: "May 25, 2026", tag: "community", text: "I think miners never gonna be delivered. I am in this sh**t project from 2024 I bought coins + miners i lost the hope and believing that these guys are S***M. [community member Jack Daniel, May 25 03:15 UTC]" },
-  { date: "May 25, 2026", isNew: true, tag: "misleading", text: "🚀 BlockDAG TURBO PRESALE STAGE 1 LIVE: ENTRY PRICE $0.0005 - LAUNCH PRICE $0.04 | 80X ROI. INTRODUCING BLOCKDAG TURBO UTILITY TOKEN PRESALE. ONLY 10 STAGES. [official channel, May 25 19:51 UTC — 7th distinct sales mechanism since 2024. No tokenomics, supply, vesting or whitepaper published at launch]" },
-  { date: "May 25, 2026", isNew: true, tag: "response", text: "Tier 1 exchanges is yet to be announced and team are still in discussions with MEXC team regarding listing. [official admin, May 25 22:20 UTC — first official admission that MEXC was never confirmed as listing partner. Three months of 'Major Tier 1 USA Exchange Secured' marketing collapsed into one sentence]" },
-  { date: "May 25, 2026", isNew: true, tag: "response", text: "Not officially confirmed yet. If it launches as a stablecoin, it will likely be pegged around $1, but final details will be announced by the team. [official admin, May 25 19:31 UTC — six days before announced June 1 stable coin launch]" },
-  { date: "May 25, 2026", isNew: true, tag: "response", text: "BDAG is launched and trading on exchanges [official admin, May 25 17:15 UTC]" },
-  { date: "May 25, 2026", isNew: true, tag: "response", text: "BDAG is not bring abandon. Bdag turbo is a token under bdag ecosystem [official admin, May 25 22:09 UTC — defensive clarification after community accuses team of moving on from BDAG]" },
-  { date: "May 25, 2026", isNew: true, tag: "community", text: "F Turbo F FOMO. Until our network is working correctly. Staking, claiming, everything. [community member T TriumphAnt, May 25 20:06 UTC]" },
-  { date: "May 25, 2026", isNew: true, tag: "community", text: "TURBO batch 1 phase 1 this one will extend for years enough is enough. [community member Edward Hernandez, May 25 20:31 UTC]" },
-  { date: "May 25, 2026", isNew: true, tag: "community", text: "While $BDAG is still falling in price, why is there a new coin, $BDAG Turbo, what does that mean. I am very worried that this new coin will suffer the same fate as the $BDAG coin. [community member DENNI AGUNG PAMBUDI, May 25 20:16 UTC]" },
-  { date: "May 25, 2026", isNew: true, tag: "community", text: "Don't transfer the problem by launching a new blockdag turbo coin, rather solve the community problems wrt price feeds, liquidity and let the community please also enjoy the cake. [community member Gudgi, May 25 20:10 UTC]" },
-  { date: "May 25, 2026", isNew: true, tag: "community", text: "Whoever buys turbo after BDAg track record is stoooooopid. [community member Elvis The King, May 25 20:09 UTC]" },
-  { date: "May 25, 2026", isNew: true, tag: "community", text: "You wasted our money, what turbo are you talking about? Are you kidding me? [community member Suat, May 25 20:29 UTC]" },
-  { date: "May 25, 2026", isNew: true, tag: "community", text: "Turbo compressed bdag 😂 [community member Arjun, May 25 19:59 UTC — referencing the 99.92% Batch 5 compression now being layered into yet another presale]" },
-  { date: "May 26, 2026", isNew: true, tag: "community", text: "What about miners, aftersale, spark, .. what on earth is Turbo. Turbo sales for a project that already ended presale? Like what is Turbo?? [community member Lucas Alvera, May 26 09:36–09:44 UTC]" },
-  { date: "May 26, 2026", isNew: true, tag: "community", text: "What's this turbo sale? When are you all actually gonna end this aftersale nonsense? [community member Y B, May 26 10:11 UTC]" },
-  { date: "May 26, 2026", isNew: true, tag: "community", text: "Apparently it's a real project, how does Turbo service has a utility for a still pending Bdag presale token. We need more explanation, it was never mentioned during the AMA's. [community member Craig Smith, May 26 04:52 UTC]" },
-  { date: "May 26, 2026", isNew: true, tag: "community", text: "BlockDAG Turbo Delay edition 😂 [community member Pinilla, May 26 08:14 UTC]" },
-  { date: "May 26, 2026", isNew: true, tag: "community", text: "Turbo pro max ultra [community member Jatt, May 26 09:13 UTC — mocking the endless sale series]" }
+  { date: "May 25, 2026", tag: "misleading", text: "🚀 BlockDAG TURBO PRESALE STAGE 1 LIVE: ENTRY PRICE $0.0005 - LAUNCH PRICE $0.04 | 80X ROI. INTRODUCING BLOCKDAG TURBO UTILITY TOKEN PRESALE. ONLY 10 STAGES. [official channel, May 25 19:51 UTC — 7th distinct sales mechanism since 2024. No tokenomics, supply, vesting or whitepaper published at launch]" },
+  { date: "May 25, 2026", tag: "response", text: "Tier 1 exchanges is yet to be announced and team are still in discussions with MEXC team regarding listing. [official admin, May 25 22:20 UTC — first official admission that MEXC was never confirmed as listing partner. Three months of 'Major Tier 1 USA Exchange Secured' marketing collapsed into one sentence]" },
+  { date: "May 25, 2026", tag: "response", text: "Not officially confirmed yet. If it launches as a stablecoin, it will likely be pegged around $1, but final details will be announced by the team. [official admin, May 25 19:31 UTC — six days before announced June 1 stable coin launch]" },
+  { date: "May 25, 2026", tag: "response", text: "BDAG is launched and trading on exchanges [official admin, May 25 17:15 UTC]" },
+  { date: "May 25, 2026", tag: "response", text: "BDAG is not bring abandon. Bdag turbo is a token under bdag ecosystem [official admin, May 25 22:09 UTC — defensive clarification after community accuses team of moving on from BDAG]" },
+  { date: "May 25, 2026", tag: "community", text: "F Turbo F FOMO. Until our network is working correctly. Staking, claiming, everything. [community member T TriumphAnt, May 25 20:06 UTC]" },
+  { date: "May 25, 2026", tag: "community", text: "TURBO batch 1 phase 1 this one will extend for years enough is enough. [community member Edward Hernandez, May 25 20:31 UTC]" },
+  { date: "May 25, 2026", tag: "community", text: "While $BDAG is still falling in price, why is there a new coin, $BDAG Turbo, what does that mean. I am very worried that this new coin will suffer the same fate as the $BDAG coin. [community member DENNI AGUNG PAMBUDI, May 25 20:16 UTC]" },
+  { date: "May 25, 2026", tag: "community", text: "Don't transfer the problem by launching a new blockdag turbo coin, rather solve the community problems wrt price feeds, liquidity and let the community please also enjoy the cake. [community member Gudgi, May 25 20:10 UTC]" },
+  { date: "May 25, 2026", tag: "community", text: "Whoever buys turbo after BDAg track record is stoooooopid. [community member Elvis The King, May 25 20:09 UTC]" },
+  { date: "May 25, 2026", tag: "community", text: "You wasted our money, what turbo are you talking about? Are you kidding me? [community member Suat, May 25 20:29 UTC]" },
+  { date: "May 25, 2026", tag: "community", text: "Turbo compressed bdag 😂 [community member Arjun, May 25 19:59 UTC — referencing the 99.92% Batch 5 compression now being layered into yet another presale]" },
+  { date: "May 26, 2026", tag: "community", text: "What about miners, aftersale, spark, .. what on earth is Turbo. Turbo sales for a project that already ended presale? Like what is Turbo?? [community member Lucas Alvera, May 26 09:36–09:44 UTC]" },
+  { date: "May 26, 2026", tag: "community", text: "What's this turbo sale? When are you all actually gonna end this aftersale nonsense? [community member Y B, May 26 10:11 UTC]" },
+  { date: "May 26, 2026", tag: "community", text: "Apparently it's a real project, how does Turbo service has a utility for a still pending Bdag presale token. We need more explanation, it was never mentioned during the AMA's. [community member Craig Smith, May 26 04:52 UTC]" },
+  { date: "May 26, 2026", tag: "community", text: "BlockDAG Turbo Delay edition 😂 [community member Pinilla, May 26 08:14 UTC]" },
+  { date: "May 26, 2026", tag: "community", text: "Turbo pro max ultra [community member Jatt, May 26 09:13 UTC — mocking the endless sale series]" },
+  { date: "May 26, 2026", isNew: true, tag: "misleading", text: "🚨 BDAG STABLE COIN TETHER USDT COMING JUNE 1st! FINAL BATCH 6: BUY BDAG NOW & WIN $10,000 USDT 🚨 BDAG: $0.00000019. 400X POTENTIAL. Buy before June 1 and become one of the FIRST 500 HOLDERS for a chance to win. [official channel, May 26 13:29 UTC — a sweepstakes bolted onto a token sale]" },
+  { date: "May 26, 2026", isNew: true, tag: "response", text: "If you bought BDAG during the presale but did not use a special code like TRADEMAY30 or FINALTRADE, your coins are locked until this date. [official admin, May 26 19:39 UTC — June 30 lock never disclosed at purchase]" },
+  { date: "May 26, 2026", isNew: true, tag: "response", text: "June 30, 2026 marks the Public Trading Launch for general presale buyers who did not utilize specific early access promotional codes. This is the final TGE event. [official admin, May 26 19:29 UTC — the February 'TGE complete' is now undone for most buyers]" },
+  { date: "May 26, 2026", isNew: true, tag: "response", text: "USDT will be available as pegged token on the Blockdag network. The team is not creating a new token. [official admin, May 26 18:30-18:31 UTC — contradicts the 'OFFICIAL BDAG STABLE COIN' marketing posted the same day]" },
+  { date: "May 26, 2026", isNew: true, tag: "community", text: "Are you kidding me bdag has acquired millions at our expense and now they are trying another bs Turbo campaign. [community member Paul, May 26 14:59 UTC]" },
+  { date: "May 26, 2026", isNew: true, tag: "community", text: "BlockDAG TURBO looks like another illusion for me and will never buy it until BDAG gets tier-1 launching. No one should buy until they fulfill all commitments given to community. [community member Satish Trivedi, May 26 12:34 UTC]" },
+  { date: "May 26, 2026", isNew: true, tag: "community", text: "Introducing a new token at this moment is the worst thing they could do. What scares me is that soon they will say all the BDAG will be burned and for every 10 million BDAG we will get 1 turbo bdag. [community member SR, May 26 18:30 UTC]" },
+  { date: "May 26, 2026", isNew: true, tag: "misleading", text: "🚀 BLOCKDAG TURBO IS LIVE ON SPARKS — AND IT'S TIME TO SPIN. While others wait, you can get in now and multiply: 2X, 10X, 50X, and 100X! [official channel, May 26 19:46 UTC — the 'utility token' put on the gambling reel within 24 hours of launch]" },
+  { date: "May 27, 2026", isNew: true, tag: "misleading", text: "Someone just walked away with $24,835 from a few spins on Sparks! Nine slot spins. 2,500,000 TURBO on the line each time. [official channel, May 27 16:01 UTC]" },
+  { date: "May 27, 2026", isNew: true, tag: "misleading", text: "Refer a friend and earn from 5% in USDT on every Sparks purchase they make! [official channel, May 27 13:10 UTC — multi-level recruitment added to the gambling product]" },
+  { date: "May 27, 2026", isNew: true, tag: "response", text: "Try staking 1 BDag and then try to claim. [official admin, May 27 09:55 UTC — same workaround for staking, broken 96+ days since Feb 19]" },
+  { date: "May 27, 2026", isNew: true, tag: "warning", text: "Barry Moore (moderator) to a community member questioning the project: 'Sorry, I don't argue with reta*ded.' and 'Your parents taught you insult is free speech?' [official group, May 27 17:57 UTC — moderator hostility toward investors]" },
+  { date: "May 28, 2026", isNew: true, tag: "community", text: "Yesterday I flagged an issue that my purchases on May 6th and 9th are not showing on my dashboard and I was informed that it has been forwarded. I still don't see my purchases and wondering how long will it take to resolve? [community member Asif Khan, May 28 08:00 UTC]" }
 ];
 
