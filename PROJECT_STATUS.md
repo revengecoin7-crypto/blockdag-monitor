@@ -49,19 +49,28 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (May 28, 2026)
-- 99 promises tracked (92 broken/misleading = 67 broken + 25 misleading, 92.9% failure rate)
-- LET OP: tracker.html telt nu "broken + misleading" samen als failures (92). Status verdeling: broken 67, misleading 25, kept 2, pending 3, promise 1, promised 1.
-- Timeline events bijgewerkt t/m May 28 (TIMELINE_EVENTS = 149 entries)
-- Notable quotes bijgewerkt t/m May 28 (isNew op nieuwste May 26-28 quotes) (NOTABLE_QUOTES = 206)
+## Data (data.js) — Huidige staat (May 29, 2026)
+- 102 promises tracked (95 broken/misleading = 70 broken + 25 misleading, 93.1% failure rate)
+- LET OP: tracker.html telt "broken + misleading" samen als failures (95). Status verdeling: broken 70, misleading 25, kept 2, pending 3, promise 1, promised 1.
+- Canonieke cijfers overal: 102 tracked, 95 broken, 93.1%, staking 99 dagen, 379,000+ berichten
+- Timeline events bijgewerkt t/m May 29
+- Notable quotes bijgewerkt t/m May 29 (isNew op nieuwste May 28-29 quotes)
 - 20 bronnen
-- Laatste artikelen: **article-batch6-lottery.html (May 28)**, article-turbo-presale.html (May 26), article-exchange-suspensions.html (May 25), article-burn-illusion.html (May 22)
+- Laatste artikelen: **article-ecosystem-casino.html (May 29)**, article-batch6-lottery.html (May 28), article-turbo-presale.html (May 26), article-exchange-suspensions.html (May 25)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **28 mei 2026** (export: ChatExport_2026-05-28)
-- Periode: 18 februari t/m 28 mei 2026
-- Totaal berichten: 377,700+ (3,114 nieuw sinds laatste export op 26 mei)
+- Geanalyseerd t/m: **29 mei 2026** (export: ChatExport_2026-05-29)
+- Periode: 18 februari t/m 29 mei 2026
+- Totaal berichten: 379,000+ (1,352 nieuw sinds laatste export op 28 mei)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (May 28-29):
+- **BlockDAG definieert eigen "ecosystem"** (May 29 09:00): "BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin". 4 van de 6 pijlers zijn gokproducten.
+- **Sparks = volledige casino loyalty ladder** (May 28): Silver/Gold/Platinum/Diamond tiers (+2.5% tot +10% per win), 3-uurs "flash events" (dubbele punten). Loss-chasing mechaniek.
+- **Admin ontkent ZachXBT onderzoek** expliciet (May 28 13:04): "we are not related to other projects" — geen transactie-bewijs. ZachXBT traceerde BlockDAG+ZKP presale fondsen via Ethereum→Tron, HTX/BTSE, naar Spartans casino hot wallet + influencer betalingen, met luxe auto's/horloges/vastgoed allegaties.
+- **TURBO heeft "no timeline" en "roadmap yet to be released"** (admin May 28, 3 dagen na launch verkoop)
+- **Big D community inzicht**: "controlled launch on cex only, the price was manufactured. Not the presale buyers."
+- Staking 99 dagen broken. Vesting herbevestigd. Super App "coming soon" (Dex/staking/mining/nft op x1 app). Next AMA June 1.
 
 ## Bekende blockchain data
 - BSC presale contract BlockDAG: 0xf0163C18F8D3fC8D5b4cA15e97D0F9f75460335F

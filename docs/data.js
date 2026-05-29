@@ -1259,7 +1259,6 @@ const PROMISES = [
     id: 96,
     category: "Marketing",
     status: "broken",
-    isNew: true,
     title: "\"FINAL BATCH 6\" + $10,000 USDT lottery to push buys before June 1",
     promised: "Each previous batch was the \"final\" one. Batch 5 was already the \"last\" before the aftersale.",
     reality: "On May 26, 2026 at 13:29 UTC the official channel launched 'FINAL BATCH 6': 'BUY BDAG NOW & WIN $10,000 USDT. BDAG: $0.00000019. 400X POTENTIAL. 25% OFF via LIVE SWAP. BUY BDAG before June 1 and become one of the FIRST 500 HOLDERS for a chance to' win $10,000 USDT. This is a lottery mechanic bolted onto a token sale: buy before a deadline, get entered into a prize draw. The 400X ROI claim is mathematically wrong (the $0.00000019 entry to the $0.001 buyback is 5,263x, and the buyback is capped at 250,000 coins = $250 max). 'Batch 6' also contradicts the entire 'presale ended' narrative — BlockDAG's own marketing said the presale concluded January 26, 2026. This is at least the sixth batch and the seventh distinct sales mechanism, now with a sweepstakes attached.",
@@ -1273,7 +1272,6 @@ const PROMISES = [
     id: 97,
     category: "Product",
     status: "broken",
-    isNew: true,
     title: "TURBO put on the Sparks gambling reel within 24 hours of launch",
     promised: "TURBO marketed as a 'utility token' for gaming, staking, VIP access, NFTs",
     reality: "TURBO launched May 25 at 19:51 UTC. By May 26 at 19:46 UTC the official channel announced: 'BLOCKDAG TURBO IS LIVE ON SPARKS — AND IT'S TIME TO SPIN. While others wait, you can get in now and multiply: 2X, 10X, 50X, and 100X!' On May 27 at 16:01 UTC: 'Someone just walked away with $24,835 from a few spins on Sparks! Nine slot spins. 2,500,000 TURBO on the line each time.' The 'first utility token built for the BlockDAG ecosystem' had exactly one demonstrated use within 24 hours: feeding it into a slot machine. A referral program was added (May 27): 'earn from 5% in USDT on every Sparks purchase' your referrals make. The utility token's primary utility is gambling it, and recruiting others to gamble.",
@@ -1287,7 +1285,6 @@ const PROMISES = [
     id: 98,
     category: "Claim / Distribution",
     status: "broken",
-    isNew: true,
     title: "Presale coins locked until June 30 unless buyer used a special promo code",
     promised: "TGE February 11, claiming live February 19, trading March 4 — for all presale buyers",
     reality: "On May 26, 2026 at 19:29 and 19:39 UTC, an admin disclosed a condition not present in the original presale marketing: 'June 30, 2026 marks the Public Trading Launch for general presale buyers who did not utilize specific early access promotional codes. This is the final TGE event.' And: 'If you bought BDAG during the presale but did not use a special code like TRADEMAY30 or FINALTRADE, your coins are locked until this date.' This means the bulk of presale buyers — anyone who bought without an obscure promo code — have had their coins locked since the February TGE and remain locked until June 30, 2026, a four-month-plus lock that was never disclosed at purchase. The 'TGE' that was announced as complete in February is now described as not yet having happened for most buyers.",
@@ -1300,7 +1297,6 @@ const PROMISES = [
     id: 99,
     category: "Tokenomics",
     status: "broken",
-    isNew: true,
     title: "Stablecoin messaging contradicts itself: \"BDAG STABLE COIN\" vs \"not creating a new token\"",
     promised: "A USDT-pegged BDAG stablecoin launching June 1, marketed as a major ecosystem expansion",
     reality: "BlockDAG's June 1 stablecoin messaging is internally inconsistent. The marketing calls it the 'OFFICIAL BDAG STABLE COIN — PEGGED TO TETHER (USDT)' as if BlockDAG is issuing its own stablecoin. But on May 26 at 18:30-18:31 UTC the admin said: 'USDT will be available as pegged token on the Blockdag network' and 'The team is not creating a new token.' These describe two completely different things: issuing a BlockDAG-branded stablecoin (which requires reserves, audits, an issuer) versus bridging existing Tether USDT onto the chain (which requires a bridge, not a stablecoin launch). Six days before launch the project cannot consistently state whether it is creating a stablecoin or bridging one. No reserve attestation, peg mechanism, issuer entity, or audit has been published for either interpretation.",
@@ -1308,6 +1304,47 @@ const PROMISES = [
       { date: "May 26, 2026", text: "USDT will be available as pegged token on the Blockdag network. The team is not creating a new token. [official admin, 18:30–18:31 UTC]" },
       { date: "May 26, 2026", text: "OFFICIAL BDAG STABLE COIN — PEGGED TO TETHER (USDT) — GOES LIVE JUNE 1. More utility. More liquidity. More ecosystem power. [official channel, 18:22 UTC — markets it as BlockDAG's own stablecoin]" },
       { date: "May 27, 2026", text: "BDAG stablecoin tethered to USDT means the stablecoin on the BlockDAG network is designed to maintain the same value as Tether, which is usually $1. [official admin, 01:32 UTC]" }
+    ]
+  },
+  {
+    id: 100,
+    category: "Product",
+    status: "broken",
+    isNew: true,
+    title: "Sparks turned into a full casino loyalty program — tiers and timed \"flash events\"",
+    promised: "Implicit: a blockchain project's utility should be the network, not a casino loyalty ladder",
+    reality: "By May 28, 2026 the Sparks product had a complete GambleFi loyalty system. At 15:57 UTC the official channel ran a '3-HOUR FLASH EVENT — every Sparks you burn counts DOUBLE toward your level,' with tiers: 'Silver +2.5% on every win, Gold +5%, Platinum +7%, Diamond +10%.' At 13:07 UTC: 'The people who make real money in crypto don't wait. Sparks is the only place where you don't just get TURBO, you multiply it by 10, 20, 50 or 100 times. Stack now. Or watch someone else's screenshot go viral.' On May 29 at 09:00 UTC the official channel defined the project's own 'ecosystem' as: 'BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin.' Four of those six items are gambling products. The Layer-1 blockchain that promised mainnet utility now markets timed loss-chasing events with a points ladder.",
+    quotes: [
+      { date: "May 28, 2026", text: "3-HOUR FLASH EVENT — STARTING AT 4 P.M. UTC. For the next 3 hours every Sparks you burn counts DOUBLE toward your level. Silver +2.5% on every win. Gold +5%. Platinum +7%. Diamond +10%. [official channel, 15:57 UTC]" },
+      { date: "May 28, 2026", text: "The people who make real money in crypto don't wait. They move first. Stack now. Or watch someone else's screenshot go viral. [official channel, 13:07 UTC]" },
+      { date: "May 29, 2026", text: "BDAG isn't just a token. It's an entire ecosystem: BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin. Sparks is your entry point into all of it. [official channel, 09:00 UTC — four of six 'ecosystem' pillars are gambling products]" }
+    ]
+  },
+  {
+    id: 101,
+    category: "Governance",
+    status: "broken",
+    isNew: true,
+    title: "Admin denies the ZachXBT fund-tracing investigation: \"we are not related to other projects\"",
+    promised: "Transparency about fund flows and a substantive response to on-chain allegations",
+    reality: "On May 28, 2026 at 13:04 UTC, asked about ZachXBT's investigation, the official admin replied: 'That search doesn't have any background, we are not related to other projects, and the team is focused on development and improvement. The founder of BDAG is known, and the CEO as well.' ZachXBT's published on-chain analysis traced funds from BlockDAG and ZKP presale wallets, consolidated and moved across chains (Ethereum to Tron) and through exchanges including HTX and BTSE, before reaching the Spartans casino hot wallet and influencer payment addresses, with allegations that capital went to luxury cars, watches and real estate rather than development. BlockDAG's response is a flat denial with no on-chain rebuttal, no transaction references, and no independent audit. 'We are not related to other projects' is a claim, not evidence.",
+    quotes: [
+      { date: "May 28, 2026", text: "That search doesn't have any background, we are not related to other projects, and the team is focused on development and improvement. The founder of BDAG is known, and the CEO as well. [official admin, 13:04 UTC]" },
+      { date: "May 28, 2026", text: "Yeah, that's exactly true, if you read about the ZachXBT investigation you will know who is behind this project. [community member Unemployed2, 13:02 UTC]" }
+    ]
+  },
+  {
+    id: 102,
+    category: "Marketing",
+    status: "broken",
+    isNew: true,
+    title: "TURBO sold for days with admin admitting \"no timeline\" and \"roadmap yet to be released\"",
+    promised: "TURBO marketed since May 25 as a structured 10-stage presale with an $0.04 launch target",
+    reality: "On May 28, 2026 at 17:52 UTC, three days into active TURBO sales, an admin stated: 'There's no timeline for Turbo token presale and the roadmap is yet to be released.' TURBO has been sold to buyers since May 25 with a marketed $0.0005 entry, a $0.04 'launch price,' an '80X ROI' headline, and a '10 STAGES' structure — but by the project's own admission there is no published timeline and no roadmap. The whitepaper appeared only the day after launch. Community member jeremy (May 29, 05:44 UTC): 'The team must know why the Turbo token isn't selling. People have lost trust and are furious after years of unfulfilled promises.' ArtTheClown (May 29, 02:27 UTC): 'You've definitely lost your mind thinking turbo is gonna be any different than bdag.'",
+    quotes: [
+      { date: "May 28, 2026", text: "There's no timeline for Turbo token presale and the roadmap is yet to be released. [official admin, 17:52 UTC — three days into active TURBO sales]" },
+      { date: "May 29, 2026", text: "The team must know why the Turbo token isn't selling. People have lost trust and are furious after years of unfulfilled promises. [community member jeremy, 05:44 UTC]" },
+      { date: "May 29, 2026", text: "You've definitely lost your mind thinking turbo is gonna be any different than bdag. Same story with all the plots and twists only to end up with the same sad story at the end. [community member ArtTheClown, 02:27 UTC]" }
     ]
   }
 ];
@@ -1461,7 +1498,11 @@ const TIMELINE_EVENTS = [
   { date: "May 26, 2026", type: "broken", text: "TURBO whitepaper published the day AFTER launch. Admin at 20:35 UTC posts blockdag.network/blockdag-turbo-whitepaper.pdf — roughly 25 hours after the token went on sale. Buyers who entered on May 25 committed before any tokenomics document existed." },
   { date: "May 27, 2026", type: "broken", text: "TURBO put on the Sparks gambling reel within 24 hours of launch. Official channel May 26 19:46 UTC: 'BLOCKDAG TURBO IS LIVE ON SPARKS — TIME TO SPIN. Multiply: 2X, 10X, 50X, 100X!' May 27 16:01 UTC: 'Someone just walked away with $24,835 from a few spins. Nine slot spins. 2,500,000 TURBO on the line each time.' A referral program (5% USDT on referrals' Sparks purchases) was added May 27. The 'first utility token' demonstrated one use within 24h: feeding a slot machine." },
   { date: "May 27, 2026", type: "note", text: "Community member Satish Trivedi (May 26 12:34 UTC): 'BlockDAG TURBO looks like another illusion. No one should buy until they fulfill all commitments given to community.' Community member SR (18:30 UTC): 'Introducing a new token at this moment is the worst thing they could do. What scares me is that soon they will say all the BDAG will be burned and for every 10 million BDAG we will get 1 turbo bdag.'" },
-  { date: "May 28, 2026", type: "broken", text: "Staking still broken 96+ days (since Feb 19). Workaround unchanged: 'Try staking 1 BDag and then try to claim.' Support tickets still down ('account suspended'). Community members report May 6 and May 9 purchases still not showing on dashboard 19 days later. June 1 buyback, stablecoin, $25M liquidity injection, daily burns, new token launches, Batch 6 claims and the $10K lottery draw are all stacked on the same June 1 window." }
+  { date: "May 28, 2026", type: "broken", text: "Staking still broken 96+ days (since Feb 19). Workaround unchanged: 'Try staking 1 BDag and then try to claim.' Support tickets still down ('account suspended'). Community members report May 6 and May 9 purchases still not showing on dashboard 19 days later. June 1 buyback, stablecoin, $25M liquidity injection, daily burns, new token launches, Batch 6 claims and the $10K lottery draw are all stacked on the same June 1 window." },
+  { date: "May 28, 2026", type: "misleading", text: "Sparks becomes a full casino loyalty program. Official channel 15:57 UTC: '3-HOUR FLASH EVENT — every Sparks you burn counts DOUBLE toward your level. Silver +2.5% on every win, Gold +5%, Platinum +7%, Diamond +10%.' Timed loss-chasing events with a points ladder, layered on the TURBO slot machine. At 13:07 UTC: 'Stack now. Or watch someone else's screenshot go viral.'" },
+  { date: "May 28, 2026", type: "broken", text: "Admin denies the ZachXBT investigation. At 13:04 UTC: 'That search doesn't have any background, we are not related to other projects.' ZachXBT's on-chain analysis traced BlockDAG and ZKP presale funds across Ethereum to Tron, through HTX and BTSE, to the Spartans casino hot wallet and influencer payment addresses, with allegations of spending on luxury cars, watches and real estate. BlockDAG's reply is a flat denial with no transaction references and no audit." },
+  { date: "May 28, 2026", type: "broken", text: "TURBO admitted to have 'no timeline' and 'roadmap yet to be released' (admin 17:52 UTC) — three days into active sales at a marketed $0.0005 entry and $0.04 'launch price.' Community member Big D (12:29 UTC): 'They locked deposits so nobody that bought in the presale could sell. It was a controlled launch on cex only. The price was manufactured.'" },
+  { date: "May 29, 2026", type: "broken", text: "BlockDAG defines its own 'ecosystem' as: BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin (official channel 09:00 UTC). Four of the six pillars are gambling products. Vesting reconfirmed (09:52 UTC): 'The purchases are subject to vesting schedule, you cannot claim all the coins at once.' Next AMA set for June 1. Staking still has 'no recent update on the APY.' Miners 'shipping next month' again. 102 promises tracked, 95 broken or misleading (93.1% failure rate)." }
 ];
 
 const SOURCES = [
@@ -1877,18 +1918,28 @@ const NOTABLE_QUOTES = [
   { date: "May 26, 2026", tag: "community", text: "Apparently it's a real project, how does Turbo service has a utility for a still pending Bdag presale token. We need more explanation, it was never mentioned during the AMA's. [community member Craig Smith, May 26 04:52 UTC]" },
   { date: "May 26, 2026", tag: "community", text: "BlockDAG Turbo Delay edition 😂 [community member Pinilla, May 26 08:14 UTC]" },
   { date: "May 26, 2026", tag: "community", text: "Turbo pro max ultra [community member Jatt, May 26 09:13 UTC — mocking the endless sale series]" },
-  { date: "May 26, 2026", isNew: true, tag: "misleading", text: "🚨 BDAG STABLE COIN TETHER USDT COMING JUNE 1st! FINAL BATCH 6: BUY BDAG NOW & WIN $10,000 USDT 🚨 BDAG: $0.00000019. 400X POTENTIAL. Buy before June 1 and become one of the FIRST 500 HOLDERS for a chance to win. [official channel, May 26 13:29 UTC — a sweepstakes bolted onto a token sale]" },
-  { date: "May 26, 2026", isNew: true, tag: "response", text: "If you bought BDAG during the presale but did not use a special code like TRADEMAY30 or FINALTRADE, your coins are locked until this date. [official admin, May 26 19:39 UTC — June 30 lock never disclosed at purchase]" },
-  { date: "May 26, 2026", isNew: true, tag: "response", text: "June 30, 2026 marks the Public Trading Launch for general presale buyers who did not utilize specific early access promotional codes. This is the final TGE event. [official admin, May 26 19:29 UTC — the February 'TGE complete' is now undone for most buyers]" },
-  { date: "May 26, 2026", isNew: true, tag: "response", text: "USDT will be available as pegged token on the Blockdag network. The team is not creating a new token. [official admin, May 26 18:30-18:31 UTC — contradicts the 'OFFICIAL BDAG STABLE COIN' marketing posted the same day]" },
-  { date: "May 26, 2026", isNew: true, tag: "community", text: "Are you kidding me bdag has acquired millions at our expense and now they are trying another bs Turbo campaign. [community member Paul, May 26 14:59 UTC]" },
-  { date: "May 26, 2026", isNew: true, tag: "community", text: "BlockDAG TURBO looks like another illusion for me and will never buy it until BDAG gets tier-1 launching. No one should buy until they fulfill all commitments given to community. [community member Satish Trivedi, May 26 12:34 UTC]" },
-  { date: "May 26, 2026", isNew: true, tag: "community", text: "Introducing a new token at this moment is the worst thing they could do. What scares me is that soon they will say all the BDAG will be burned and for every 10 million BDAG we will get 1 turbo bdag. [community member SR, May 26 18:30 UTC]" },
-  { date: "May 26, 2026", isNew: true, tag: "misleading", text: "🚀 BLOCKDAG TURBO IS LIVE ON SPARKS — AND IT'S TIME TO SPIN. While others wait, you can get in now and multiply: 2X, 10X, 50X, and 100X! [official channel, May 26 19:46 UTC — the 'utility token' put on the gambling reel within 24 hours of launch]" },
-  { date: "May 27, 2026", isNew: true, tag: "misleading", text: "Someone just walked away with $24,835 from a few spins on Sparks! Nine slot spins. 2,500,000 TURBO on the line each time. [official channel, May 27 16:01 UTC]" },
-  { date: "May 27, 2026", isNew: true, tag: "misleading", text: "Refer a friend and earn from 5% in USDT on every Sparks purchase they make! [official channel, May 27 13:10 UTC — multi-level recruitment added to the gambling product]" },
-  { date: "May 27, 2026", isNew: true, tag: "response", text: "Try staking 1 BDag and then try to claim. [official admin, May 27 09:55 UTC — same workaround for staking, broken 96+ days since Feb 19]" },
-  { date: "May 27, 2026", isNew: true, tag: "warning", text: "Barry Moore (moderator) to a community member questioning the project: 'Sorry, I don't argue with reta*ded.' and 'Your parents taught you insult is free speech?' [official group, May 27 17:57 UTC — moderator hostility toward investors]" },
-  { date: "May 28, 2026", isNew: true, tag: "community", text: "Yesterday I flagged an issue that my purchases on May 6th and 9th are not showing on my dashboard and I was informed that it has been forwarded. I still don't see my purchases and wondering how long will it take to resolve? [community member Asif Khan, May 28 08:00 UTC]" }
+  { date: "May 26, 2026", tag: "misleading", text: "🚨 BDAG STABLE COIN TETHER USDT COMING JUNE 1st! FINAL BATCH 6: BUY BDAG NOW & WIN $10,000 USDT 🚨 BDAG: $0.00000019. 400X POTENTIAL. Buy before June 1 and become one of the FIRST 500 HOLDERS for a chance to win. [official channel, May 26 13:29 UTC — a sweepstakes bolted onto a token sale]" },
+  { date: "May 26, 2026", tag: "response", text: "If you bought BDAG during the presale but did not use a special code like TRADEMAY30 or FINALTRADE, your coins are locked until this date. [official admin, May 26 19:39 UTC — June 30 lock never disclosed at purchase]" },
+  { date: "May 26, 2026", tag: "response", text: "June 30, 2026 marks the Public Trading Launch for general presale buyers who did not utilize specific early access promotional codes. This is the final TGE event. [official admin, May 26 19:29 UTC — the February 'TGE complete' is now undone for most buyers]" },
+  { date: "May 26, 2026", tag: "response", text: "USDT will be available as pegged token on the Blockdag network. The team is not creating a new token. [official admin, May 26 18:30-18:31 UTC — contradicts the 'OFFICIAL BDAG STABLE COIN' marketing posted the same day]" },
+  { date: "May 26, 2026", tag: "community", text: "Are you kidding me bdag has acquired millions at our expense and now they are trying another bs Turbo campaign. [community member Paul, May 26 14:59 UTC]" },
+  { date: "May 26, 2026", tag: "community", text: "BlockDAG TURBO looks like another illusion for me and will never buy it until BDAG gets tier-1 launching. No one should buy until they fulfill all commitments given to community. [community member Satish Trivedi, May 26 12:34 UTC]" },
+  { date: "May 26, 2026", tag: "community", text: "Introducing a new token at this moment is the worst thing they could do. What scares me is that soon they will say all the BDAG will be burned and for every 10 million BDAG we will get 1 turbo bdag. [community member SR, May 26 18:30 UTC]" },
+  { date: "May 26, 2026", tag: "misleading", text: "🚀 BLOCKDAG TURBO IS LIVE ON SPARKS — AND IT'S TIME TO SPIN. While others wait, you can get in now and multiply: 2X, 10X, 50X, and 100X! [official channel, May 26 19:46 UTC — the 'utility token' put on the gambling reel within 24 hours of launch]" },
+  { date: "May 27, 2026", tag: "misleading", text: "Someone just walked away with $24,835 from a few spins on Sparks! Nine slot spins. 2,500,000 TURBO on the line each time. [official channel, May 27 16:01 UTC]" },
+  { date: "May 27, 2026", tag: "misleading", text: "Refer a friend and earn from 5% in USDT on every Sparks purchase they make! [official channel, May 27 13:10 UTC — multi-level recruitment added to the gambling product]" },
+  { date: "May 27, 2026", tag: "response", text: "Try staking 1 BDag and then try to claim. [official admin, May 27 09:55 UTC — same workaround for staking, broken 96+ days since Feb 19]" },
+  { date: "May 27, 2026", tag: "warning", text: "Barry Moore (moderator) to a community member questioning the project: 'Sorry, I don't argue with reta*ded.' and 'Your parents taught you insult is free speech?' [official group, May 27 17:57 UTC — moderator hostility toward investors]" },
+  { date: "May 28, 2026", tag: "community", text: "Yesterday I flagged an issue that my purchases on May 6th and 9th are not showing on my dashboard and I was informed that it has been forwarded. I still don't see my purchases and wondering how long will it take to resolve? [community member Asif Khan, May 28 08:00 UTC]" },
+  { date: "May 28, 2026", isNew: true, tag: "misleading", text: "3-HOUR FLASH EVENT — STARTING AT 4 P.M. UTC. For the next 3 hours every Sparks you burn counts DOUBLE toward your level. Silver +2.5% on every win. Gold +5%. Platinum +7%. Diamond +10%. [official channel, May 28 15:57 UTC — full casino loyalty ladder with timed events]" },
+  { date: "May 28, 2026", isNew: true, tag: "response", text: "That search doesn't have any background, we are not related to other projects, and the team is focused on development and improvement. [official admin, May 28 13:04 UTC — flat denial of ZachXBT's on-chain fund-tracing to Spartans casino, no transaction references given]" },
+  { date: "May 28, 2026", isNew: true, tag: "response", text: "There's no timeline for Turbo token presale and the roadmap is yet to be released. [official admin, May 28 17:52 UTC — three days into active TURBO sales at a marketed $0.04 launch target]" },
+  { date: "May 28, 2026", isNew: true, tag: "community", text: "They locked deposits so nobody that bought in the presale could sell. It was a controlled launch on cex only. The price was manufactured to give that price only on the coins/liq given to the cex. Not the presale buyers. [community member Big D, May 28 12:29 UTC]" },
+  { date: "May 28, 2026", isNew: true, tag: "community", text: "I lost my 18k investment and it turned to 200 bucks, how is that fair? I never seen such a presale! [community member BB JJ, May 28 16:14 UTC]" },
+  { date: "May 28, 2026", isNew: true, tag: "community", text: "Why is my claim failing, I think you guys have selectively blocked batch 1 investors. [community member Chauhan Fiziloz, May 28 14:59 UTC — Batch 1 still unclaimable since February]" },
+  { date: "May 29, 2026", isNew: true, tag: "misleading", text: "BDAG isn't just a token. It's an entire ecosystem: BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin. Sparks is your entry point into all of it. [official channel, May 29 09:00 UTC — four of the six 'ecosystem' pillars are gambling products]" },
+  { date: "May 29, 2026", isNew: true, tag: "response", text: "The purchases are subject to vesting schedule, you cannot claim all the coins at once. [official admin, May 29 09:52 UTC]" },
+  { date: "May 29, 2026", isNew: true, tag: "community", text: "The team must know why the Turbo token isn't selling. People have lost trust and are furious after years of unfulfilled promises. [community member jeremy, May 29 05:44 UTC]" },
+  { date: "May 29, 2026", isNew: true, tag: "community", text: "You've definitely lost your mind thinking turbo is gonna be any different than bdag. Same story with all the plots and twists only to end up with the same sad story at the end. [community member ArtTheClown, May 29 02:27 UTC]" }
 ];
 
