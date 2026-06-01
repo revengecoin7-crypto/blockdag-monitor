@@ -1310,7 +1310,6 @@ const PROMISES = [
     id: 100,
     category: "Product",
     status: "broken",
-    isNew: true,
     title: "Sparks turned into a full casino loyalty program — tiers and timed \"flash events\"",
     promised: "Implicit: a blockchain project's utility should be the network, not a casino loyalty ladder",
     reality: "By May 28, 2026 the Sparks product had a complete GambleFi loyalty system. At 15:57 UTC the official channel ran a '3-HOUR FLASH EVENT — every Sparks you burn counts DOUBLE toward your level,' with tiers: 'Silver +2.5% on every win, Gold +5%, Platinum +7%, Diamond +10%.' At 13:07 UTC: 'The people who make real money in crypto don't wait. Sparks is the only place where you don't just get TURBO, you multiply it by 10, 20, 50 or 100 times. Stack now. Or watch someone else's screenshot go viral.' On May 29 at 09:00 UTC the official channel defined the project's own 'ecosystem' as: 'BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin.' Four of those six items are gambling products. The Layer-1 blockchain that promised mainnet utility now markets timed loss-chasing events with a points ladder.",
@@ -1324,7 +1323,6 @@ const PROMISES = [
     id: 101,
     category: "Governance",
     status: "broken",
-    isNew: true,
     title: "Admin denies the ZachXBT fund-tracing investigation: \"we are not related to other projects\"",
     promised: "Transparency about fund flows and a substantive response to on-chain allegations",
     reality: "On May 28, 2026 at 13:04 UTC, asked about ZachXBT's investigation, the official admin replied: 'That search doesn't have any background, we are not related to other projects, and the team is focused on development and improvement. The founder of BDAG is known, and the CEO as well.' ZachXBT's published on-chain analysis traced funds from BlockDAG and ZKP presale wallets, consolidated and moved across chains (Ethereum to Tron) and through exchanges including HTX and BTSE, before reaching the Spartans casino hot wallet and influencer payment addresses, with allegations that capital went to luxury cars, watches and real estate rather than development. BlockDAG's response is a flat denial with no on-chain rebuttal, no transaction references, and no independent audit. 'We are not related to other projects' is a claim, not evidence.",
@@ -1337,7 +1335,6 @@ const PROMISES = [
     id: 102,
     category: "Marketing",
     status: "broken",
-    isNew: true,
     title: "TURBO sold for days with admin admitting \"no timeline\" and \"roadmap yet to be released\"",
     promised: "TURBO marketed since May 25 as a structured 10-stage presale with an $0.04 launch target",
     reality: "On May 28, 2026 at 17:52 UTC, three days into active TURBO sales, an admin stated: 'There's no timeline for Turbo token presale and the roadmap is yet to be released.' TURBO has been sold to buyers since May 25 with a marketed $0.0005 entry, a $0.04 'launch price,' an '80X ROI' headline, and a '10 STAGES' structure — but by the project's own admission there is no published timeline and no roadmap. The whitepaper appeared only the day after launch. Community member jeremy (May 29, 05:44 UTC): 'The team must know why the Turbo token isn't selling. People have lost trust and are furious after years of unfulfilled promises.' ArtTheClown (May 29, 02:27 UTC): 'You've definitely lost your mind thinking turbo is gonna be any different than bdag.'",
@@ -1345,6 +1342,62 @@ const PROMISES = [
       { date: "May 28, 2026", text: "There's no timeline for Turbo token presale and the roadmap is yet to be released. [official admin, 17:52 UTC — three days into active TURBO sales]" },
       { date: "May 29, 2026", text: "The team must know why the Turbo token isn't selling. People have lost trust and are furious after years of unfulfilled promises. [community member jeremy, 05:44 UTC]" },
       { date: "May 29, 2026", text: "You've definitely lost your mind thinking turbo is gonna be any different than bdag. Same story with all the plots and twists only to end up with the same sad story at the end. [community member ArtTheClown, 02:27 UTC]" }
+    ]
+  },
+  {
+    id: 103,
+    category: "Price",
+    status: "broken",
+    isNew: true,
+    title: "Aftersale price dropped to $0.00000012 on the eve of the \"$0.001 buyback\"",
+    promised: "Stable or rising price into the June 1 buyback at $0.001 per BDAG",
+    reality: "On May 31, 2026 at 15:55 UTC, just hours before the marketed June 1 buyback launch, BlockDAG dropped the Aftersale price to $0.00000012 with a 'FINAL 24 HOURS' campaign claiming '500X ROI' and '30% OFF SWAP.' Two problems. First, the 500X claim is mathematically wrong: $0.00000012 to the $0.001 buyback price is 8,333x, not 500x. Second, the price went DOWN, not up, into the buyback. Buyers at $0.00000019 from May 23 are already 36.8% below the project's own May 31 sale price eight days later. A buyback that 'stabilises' the price is incompatible with the issuer continuing to drop the entry price every few days. The presale price chart now reads as a continuous decline, in spite of the supposedly imminent floor.",
+    quotes: [
+      { date: "May 31, 2026", text: "🚨 FINAL 24 HOURS: BUY BDAG $0.00000012 | 500X ROI | 30% OFF SWAP! 🚨 Tomorrow June 1st BlockDAG enters a massive new era. [official channel, 15:55 UTC]" },
+      { date: "May 31, 2026", text: "The last year's sale was priced at $0.03. Will you participate in the $0.001 buyback program? They are showing mercy by buying back at $0.001, which is 30 times cheaper than the current sale price. [community member 🦉, 12:58 UTC]" },
+      { date: "May 31, 2026", text: "This needs to stop. How many 'final 24 hours' are we gonna see. I've invested thousands as an early investor. [community member Kizi, 16:41 UTC]" }
+    ]
+  },
+  {
+    id: 104,
+    category: "Marketing",
+    status: "broken",
+    isNew: true,
+    title: "Presale still selling hours before its supposed end on June 1",
+    promised: "June 1 is the final end of presale, aftersale and Live Swap. Buyback begins.",
+    reality: "Through the night of May 31 into June 1 morning UTC, the official channel continued to sell BDAG with 'FINAL 24 HOURS' and '30% OFF via LIVE SWAP' marketing. At 23:46 UTC on May 31 the admin was still confirming the stablecoin had not launched ('You don't provide stable coin, BDAG will be launching the ecosystem stable coin tomorrow'). Community member Name Last (June 1, 02:39 UTC): 'I'll ask again since there was no response last time. Will June 1st really be the absolute end of the presale, after-sale, live swap?' No admin answer was given. Community member Xnova 101 (June 1, 03:21 UTC): 'Hehe another presale launched.' Wolf69 (June 1, 02:59 UTC): 'And they are still selling coins. Just shocking.' The 'final' deadline arrived with the sale still active.",
+    quotes: [
+      { date: "May 31, 2026", text: "You don't provide stable coin BDAG will be launching the ecosystem stable coin tomorrow. [official admin, 23:46 UTC]" },
+      { date: "June 1, 2026", text: "I'll ask again since there was no response last time. Will June 1st really be the absolute end of the presale, after-sale, live swap? [community member Name Last, 02:39 UTC — unanswered]" },
+      { date: "June 1, 2026", text: "And they are still selling coins. Just shocking. [community member Wolf69, 02:59 UTC]" },
+      { date: "June 1, 2026", text: "Hehe another presale launched. [community member Xnova 101, 03:21 UTC]" }
+    ]
+  },
+  {
+    id: 105,
+    category: "Liquidity",
+    status: "broken",
+    isNew: true,
+    title: "$25M liquidity \"deployment\" actually deferred to June 30 — June 1 is just marketing",
+    promised: "$25M Live Liquidity Wallets deployed on June 1, 2026 (marketed since May 23)",
+    reality: "On June 1, 2026 at 00:54 UTC, community member O O posted what is, to date, the clearest summary of the June 1 stack: 'Nothing really. The supposed \"liquidity\" doesn't inject until 06/30.' The original BlockDAG May 23 marketing said the $25M wallets would deploy 'ahead of June 1.' By the actual day, the deployment was framed as activation rather than transfer, with the real liquidity injection deferred to the end of June, a date that had already slipped from the earlier 'exchange deposits open June 30' promise the May 5 admin gave. The pattern: a headline date for marketing, a quietly later date for the actual operation, and no on-chain wallet identifiers to verify either.",
+    quotes: [
+      { date: "June 1, 2026", text: "Nothing really. The supposed 'liquidity' doesn't inject until 06/30. [community member O O, 00:54 UTC]" },
+      { date: "May 23, 2026", text: "$25M LIVE LIQUIDITY WALLETS PUBLIC — for the first time ever, you can now view over $25M USD prepared for deployment ahead of June 1st directly on the website. [official channel — the version sold to buyers]" }
+    ]
+  },
+  {
+    id: 106,
+    category: "Tokenomics",
+    status: "broken",
+    isNew: true,
+    title: "BlockDAG asks CoinMarketCap to change the supply number after the burn looked wrong",
+    promised: "Transparent on-chain supply data, with the project standing by it",
+    reality: "On May 31, 2026 at 04:27 UTC, the admin posted: 'Team is currently working with cmc team in order to fix the BDAG supply information.' Reconfirmed at 23:55 UTC: 'Team is currently in talk with cmc on order to get it sorted.' The trigger: CoinMarketCap's circulating supply rose +1.54B in the 48 hours around the May 21 'burn,' contradicting BlockDAG's 'supply is decreasing' marketing. The fix the project is pursuing is not to publish on-chain reconciliation or to slow Aftersale issuance — it is to ask CoinMarketCap to change the displayed number. CMC supply is sourced from the project's own self-reporting. A self-reported number that contradicts the marketing is a marketing problem, not a CMC problem.",
+    quotes: [
+      { date: "May 31, 2026", text: "Team is currently working with cmc team in order to fix the BDAG supply information. [official admin, 04:27 UTC]" },
+      { date: "May 31, 2026", text: "Team is currently in talk with cmc on order to get it sorted. [official admin, 23:55 UTC]" },
+      { date: "May 25, 2026", text: "The circulating supply is self reported on cmc which is subjected to change. Check BDAG explorer for more details about supply. [earlier admin distancing, 06:10 UTC]" }
     ]
   }
 ];
@@ -1502,7 +1555,13 @@ const TIMELINE_EVENTS = [
   { date: "May 28, 2026", type: "misleading", text: "Sparks becomes a full casino loyalty program. Official channel 15:57 UTC: '3-HOUR FLASH EVENT — every Sparks you burn counts DOUBLE toward your level. Silver +2.5% on every win, Gold +5%, Platinum +7%, Diamond +10%.' Timed loss-chasing events with a points ladder, layered on the TURBO slot machine. At 13:07 UTC: 'Stack now. Or watch someone else's screenshot go viral.'" },
   { date: "May 28, 2026", type: "broken", text: "Admin denies the ZachXBT investigation. At 13:04 UTC: 'That search doesn't have any background, we are not related to other projects.' ZachXBT's on-chain analysis traced BlockDAG and ZKP presale funds across Ethereum to Tron, through HTX and BTSE, to the Spartans casino hot wallet and influencer payment addresses, with allegations of spending on luxury cars, watches and real estate. BlockDAG's reply is a flat denial with no transaction references and no audit." },
   { date: "May 28, 2026", type: "broken", text: "TURBO admitted to have 'no timeline' and 'roadmap yet to be released' (admin 17:52 UTC) — three days into active sales at a marketed $0.0005 entry and $0.04 'launch price.' Community member Big D (12:29 UTC): 'They locked deposits so nobody that bought in the presale could sell. It was a controlled launch on cex only. The price was manufactured.'" },
-  { date: "May 29, 2026", type: "broken", text: "BlockDAG defines its own 'ecosystem' as: BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin (official channel 09:00 UTC). Four of the six pillars are gambling products. Vesting reconfirmed (09:52 UTC): 'The purchases are subject to vesting schedule, you cannot claim all the coins at once.' Next AMA set for June 1. Staking still has 'no recent update on the APY.' Miners 'shipping next month' again. 102 promises tracked, 95 broken or misleading (93.1% failure rate)." }
+  { date: "May 29, 2026", type: "broken", text: "BlockDAG defines its own 'ecosystem' as: BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin (official channel 09:00 UTC). Four of the six pillars are gambling products. Vesting reconfirmed (09:52 UTC): 'The purchases are subject to vesting schedule, you cannot claim all the coins at once.' Next AMA set for June 1. Staking still has 'no recent update on the APY.' Miners 'shipping next month' again. 102 promises tracked, 95 broken or misleading (93.1% failure rate)." },
+  { date: "May 31, 2026", type: "broken", text: "BlockDAG lobbies CoinMarketCap to change the displayed supply number. Admin 04:27 UTC: 'Team is currently working with cmc team in order to fix the BDAG supply information.' Reconfirmed 23:55 UTC. After CMC supply rose +1.54B following the May 21 burn, the project's solution is to ask CMC to alter the number rather than to publish on-chain reconciliation. CMC supply is self-reported by the project; a wrong self-reported number is a project problem, not a CMC problem." },
+  { date: "May 31, 2026", type: "broken", text: "Aftersale price dropped to a new low of $0.00000012 with 'FINAL 24 HOURS' marketing, hours before the supposed June 1 buyback launch. Official channel 15:55 UTC: '500X ROI, 30% OFF SWAP.' Math is wrong (8,333x to $0.001 buyback, not 500x). Buyers from May 23 at $0.00000019 are already 37% below the project's own May 31 sale price. The price dropped, not rose, into the buyback." },
+  { date: "May 31, 2026", type: "note", text: "Community member Kizi (16:41 UTC): 'This needs to stop. It's getting old and exhausting. How many \"final 24 hours\" are we gonna see. I've invested thousands as an early investor.' Community member 🦉 (12:58 UTC): 'They are showing mercy by buying back at $0.001, which is 30 times cheaper than the current sale price.'" },
+  { date: "June 1, 2026", type: "broken", text: "June 1 morning UTC: the most-marketed deadline in BlockDAG's history arrives. As of 10:12 UTC (export end) there is no announced stablecoin launch, no activated buyback, no $25M liquidity injection, no published exchange listing. AMA scheduled for 15:00 UTC on Binance Live. Presale STILL selling with 30% OFF Live Swap promo. Community member O O at 00:54 UTC: 'Nothing really. The supposed liquidity doesn't inject until 06/30.' Community member Wolf69 02:59 UTC: 'And they are still selling coins. Just shocking.' Community member Xnova 101 03:21 UTC: 'Hehe another presale launched.'" },
+  { date: "June 1, 2026", type: "broken", text: "Admin keeps pushing forward dates as the day-of arrives. 02:44 UTC: 'The CEO will announce the presale timeline.' 04:27 UTC: 'All coins are means to be claimed according to the vesting method.' 04:29 UTC: 'Kindly wait for the next roll out of batch 6.' Batch 6 claim date not announced. Staking workaround still in use. Miners 'will start shipping this month (JUNE)' for the eighth date change." },
+  { date: "June 1, 2026", type: "note", text: "Community member BB JJ (03:08 UTC and 04:39 UTC): 'We, as more than two years investors who lost 18K, demand the stoppage of any kinds of sales. Just focus on delivering of miners, open the network to public, decentralization, running nodes freely, and liquidity expansions.' Community member CoinVerseD (05:33 UTC): 'Don't buy anymore, just wait for launch... will never happen.' The community at this point is openly telling new buyers to stay away." }
 ];
 
 const SOURCES = [
@@ -1931,15 +1990,30 @@ const NOTABLE_QUOTES = [
   { date: "May 27, 2026", tag: "response", text: "Try staking 1 BDag and then try to claim. [official admin, May 27 09:55 UTC — same workaround for staking, broken 96+ days since Feb 19]" },
   { date: "May 27, 2026", tag: "warning", text: "Barry Moore (moderator) to a community member questioning the project: 'Sorry, I don't argue with reta*ded.' and 'Your parents taught you insult is free speech?' [official group, May 27 17:57 UTC — moderator hostility toward investors]" },
   { date: "May 28, 2026", tag: "community", text: "Yesterday I flagged an issue that my purchases on May 6th and 9th are not showing on my dashboard and I was informed that it has been forwarded. I still don't see my purchases and wondering how long will it take to resolve? [community member Asif Khan, May 28 08:00 UTC]" },
-  { date: "May 28, 2026", isNew: true, tag: "misleading", text: "3-HOUR FLASH EVENT — STARTING AT 4 P.M. UTC. For the next 3 hours every Sparks you burn counts DOUBLE toward your level. Silver +2.5% on every win. Gold +5%. Platinum +7%. Diamond +10%. [official channel, May 28 15:57 UTC — full casino loyalty ladder with timed events]" },
-  { date: "May 28, 2026", isNew: true, tag: "response", text: "That search doesn't have any background, we are not related to other projects, and the team is focused on development and improvement. [official admin, May 28 13:04 UTC — flat denial of ZachXBT's on-chain fund-tracing to Spartans casino, no transaction references given]" },
-  { date: "May 28, 2026", isNew: true, tag: "response", text: "There's no timeline for Turbo token presale and the roadmap is yet to be released. [official admin, May 28 17:52 UTC — three days into active TURBO sales at a marketed $0.04 launch target]" },
-  { date: "May 28, 2026", isNew: true, tag: "community", text: "They locked deposits so nobody that bought in the presale could sell. It was a controlled launch on cex only. The price was manufactured to give that price only on the coins/liq given to the cex. Not the presale buyers. [community member Big D, May 28 12:29 UTC]" },
-  { date: "May 28, 2026", isNew: true, tag: "community", text: "I lost my 18k investment and it turned to 200 bucks, how is that fair? I never seen such a presale! [community member BB JJ, May 28 16:14 UTC]" },
-  { date: "May 28, 2026", isNew: true, tag: "community", text: "Why is my claim failing, I think you guys have selectively blocked batch 1 investors. [community member Chauhan Fiziloz, May 28 14:59 UTC — Batch 1 still unclaimable since February]" },
-  { date: "May 29, 2026", isNew: true, tag: "misleading", text: "BDAG isn't just a token. It's an entire ecosystem: BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin. Sparks is your entry point into all of it. [official channel, May 29 09:00 UTC — four of the six 'ecosystem' pillars are gambling products]" },
-  { date: "May 29, 2026", isNew: true, tag: "response", text: "The purchases are subject to vesting schedule, you cannot claim all the coins at once. [official admin, May 29 09:52 UTC]" },
-  { date: "May 29, 2026", isNew: true, tag: "community", text: "The team must know why the Turbo token isn't selling. People have lost trust and are furious after years of unfulfilled promises. [community member jeremy, May 29 05:44 UTC]" },
-  { date: "May 29, 2026", isNew: true, tag: "community", text: "You've definitely lost your mind thinking turbo is gonna be any different than bdag. Same story with all the plots and twists only to end up with the same sad story at the end. [community member ArtTheClown, May 29 02:27 UTC]" }
+  { date: "May 28, 2026", tag: "misleading", text: "3-HOUR FLASH EVENT — STARTING AT 4 P.M. UTC. For the next 3 hours every Sparks you burn counts DOUBLE toward your level. Silver +2.5% on every win. Gold +5%. Platinum +7%. Diamond +10%. [official channel, May 28 15:57 UTC — full casino loyalty ladder with timed events]" },
+  { date: "May 28, 2026", tag: "response", text: "That search doesn't have any background, we are not related to other projects, and the team is focused on development and improvement. [official admin, May 28 13:04 UTC — flat denial of ZachXBT's on-chain fund-tracing to Spartans casino, no transaction references given]" },
+  { date: "May 28, 2026", tag: "response", text: "There's no timeline for Turbo token presale and the roadmap is yet to be released. [official admin, May 28 17:52 UTC — three days into active TURBO sales at a marketed $0.04 launch target]" },
+  { date: "May 28, 2026", tag: "community", text: "They locked deposits so nobody that bought in the presale could sell. It was a controlled launch on cex only. The price was manufactured to give that price only on the coins/liq given to the cex. Not the presale buyers. [community member Big D, May 28 12:29 UTC]" },
+  { date: "May 28, 2026", tag: "community", text: "I lost my 18k investment and it turned to 200 bucks, how is that fair? I never seen such a presale! [community member BB JJ, May 28 16:14 UTC]" },
+  { date: "May 28, 2026", tag: "community", text: "Why is my claim failing, I think you guys have selectively blocked batch 1 investors. [community member Chauhan Fiziloz, May 28 14:59 UTC — Batch 1 still unclaimable since February]" },
+  { date: "May 29, 2026", tag: "misleading", text: "BDAG isn't just a token. It's an entire ecosystem: BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin. Sparks is your entry point into all of it. [official channel, May 29 09:00 UTC — four of the six 'ecosystem' pillars are gambling products]" },
+  { date: "May 29, 2026", tag: "response", text: "The purchases are subject to vesting schedule, you cannot claim all the coins at once. [official admin, May 29 09:52 UTC]" },
+  { date: "May 29, 2026", tag: "community", text: "The team must know why the Turbo token isn't selling. People have lost trust and are furious after years of unfulfilled promises. [community member jeremy, May 29 05:44 UTC]" },
+  { date: "May 29, 2026", tag: "community", text: "You've definitely lost your mind thinking turbo is gonna be any different than bdag. Same story with all the plots and twists only to end up with the same sad story at the end. [community member ArtTheClown, May 29 02:27 UTC]" },
+  { date: "May 31, 2026", isNew: true, tag: "misleading", text: "🚨 FINAL 24 HOURS: BUY BDAG $0.00000012 | 500X ROI | 30% OFF SWAP! 🚨 Tomorrow June 1st BlockDAG enters a massive new era. [official channel, May 31 15:55 UTC — new low price, math wrong, eighth+ 'final' deadline of the year]" },
+  { date: "May 31, 2026", isNew: true, tag: "response", text: "Team is currently working with cmc team in order to fix the BDAG supply information. [official admin, May 31 04:27 UTC — lobbying CMC to change the displayed supply after the burn looked wrong]" },
+  { date: "May 31, 2026", isNew: true, tag: "community", text: "This needs to stop. It's getting old and exhausting. How many 'final 24 hours' are we gonna see. I've invested thousands as an early investor and this is absolutely tiring to see. [community member Kizi, May 31 16:41 UTC]" },
+  { date: "May 31, 2026", isNew: true, tag: "community", text: "They are showing mercy by buying back at $0.001, which is 30 times cheaper than the current sale price. They are holding on to the liquidity for later. [community member 🦉, May 31 12:58 UTC]" },
+  { date: "May 31, 2026", isNew: true, tag: "community", text: "Are you sure for buyback program? I think only talk and promise not in reality. [community member Stupid Po, May 31 14:21 UTC]" },
+  { date: "June 1, 2026", isNew: true, tag: "community", text: "Nothing really. The supposed 'liquidity' doesn't inject until 06/30. [community member O O, June 1 00:54 UTC]" },
+  { date: "June 1, 2026", isNew: true, tag: "community", text: "And they are still selling coins. Just shocking. [community member Wolf69, June 1 02:59 UTC]" },
+  { date: "June 1, 2026", isNew: true, tag: "community", text: "Hehe another presale launched. [community member Xnova 101, June 1 03:21 UTC — on the day of the supposed buyback launch]" },
+  { date: "June 1, 2026", isNew: true, tag: "community", text: "I'll ask again since there was no response last time. Will June 1st really be the absolute end of the presale, after-sale, live swap? [community member Name Last, June 1 02:39 UTC — admin did not respond]" },
+  { date: "June 1, 2026", isNew: true, tag: "community", text: "We, as more than two years investors who lost 18K, demand the stoppage of any kinds of sales. Just focus on delivering of miners, open the network to public, decentralization, running nodes freely, and liquidity expansions. [community member BB JJ, June 1 03:08 UTC]" },
+  { date: "June 1, 2026", isNew: true, tag: "community", text: "Don't buy anymore, just wait for launch... will never happen. [community member CoinVerseD, June 1 05:33 UTC]" },
+  { date: "June 1, 2026", isNew: true, tag: "community", text: "Today Date 1, Where 0.001? [community member James Bond, June 1 05:08 UTC]" },
+  { date: "June 1, 2026", isNew: true, tag: "community", text: "The presales will continue and the price will get lower and lower. Too many people are still buying in this joke. We have all lost everything from the very first presale. Only thing I don't get is why haven't they been shut down and taken in yet. [community member J, June 1 05:56 UTC]" },
+  { date: "June 1, 2026", isNew: true, tag: "response", text: "All coins are means to be claimed according to the vesting method. [official admin, June 1 04:27 UTC]" },
+  { date: "June 1, 2026", isNew: true, tag: "response", text: "Miners will start shipping this month (JUNE). [official admin, June 1 07:10 UTC — eighth date change since the original February to April 2026 promise]" }
 ];
 

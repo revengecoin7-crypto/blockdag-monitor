@@ -49,20 +49,29 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (May 29, 2026)
-- 102 promises tracked (95 broken/misleading = 70 broken + 25 misleading, 93.1% failure rate)
-- LET OP: tracker.html telt "broken + misleading" samen als failures (95). Status verdeling: broken 70, misleading 25, kept 2, pending 3, promise 1, promised 1.
-- Canonieke cijfers overal: 102 tracked, 95 broken, 93.1%, staking 99 dagen, 379,000+ berichten
-- Timeline events bijgewerkt t/m May 29
-- Notable quotes bijgewerkt t/m May 29 (isNew op nieuwste May 28-29 quotes)
+## Data (data.js) — Huidige staat (June 1, 2026)
+- 106 promises tracked (99 broken/misleading, 93.4% failure rate)
+- Canonieke cijfers overal: 106 tracked, 99 broken, 93.4%, staking 102 dagen, 383,000+ berichten
+- Aftersale price: **$0.00000012** (nieuwe low op 31 mei)
+- Timeline events bijgewerkt t/m June 1
+- Notable quotes bijgewerkt t/m June 1 (isNew op nieuwste May 31-June 1 quotes)
 - 20 bronnen
-- Laatste artikelen: **article-ecosystem-casino.html (May 29)**, article-batch6-lottery.html (May 28), article-turbo-presale.html (May 26), article-exchange-suspensions.html (May 25)
+- Laatste artikelen: **article-june1-runup.html (June 1)**, article-ecosystem-casino.html (May 29), article-batch6-lottery.html (May 28), article-turbo-presale.html (May 26)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **29 mei 2026** (export: ChatExport_2026-05-29)
-- Periode: 18 februari t/m 29 mei 2026
-- Totaal berichten: 379,000+ (1,352 nieuw sinds laatste export op 28 mei)
+- Geanalyseerd t/m: **1 juni 2026 10:12 UTC** (export: ChatExport_2026-06-01)
+- Periode: 18 februari t/m 1 juni 2026
+- Totaal berichten: 383,000+ (3,707 nieuw sinds laatste export op 29 mei)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (May 30 - June 1):
+- **Aftersale prijs gedropt naar $0.00000012** (May 31 15:55) — nieuwe low, "FINAL 24 HOURS" + "500X ROI" (echte math 8,333x)
+- **9e "FINAL" deadline** van 2026 (May 7 casino, "no sale after May 7", Utility Presale "7 DAYS ONLY", TURBO "10 STAGES", buyback eligibility, burn, Batch 6 + lottery, May 31)
+- **$25M liquidity deployment uitgesteld naar 30 juni** (community catch via O O: "doesn't inject until 06/30")
+- **BlockDAG lobbyt CMC** om de supply data te wijzigen na de mislukte burn (admin May 31 04:27 + 23:55)
+- **Op June 1 morgen UTC: niets gelanceerd** — geen stablecoin announcement, geen buyback activation, presale STILL selling
+- Community: "Hehe another presale launched" (Xnova 101), "And they are still selling coins. Just shocking" (Wolf69), "Where is 0.001?" (James Bond)
+- Staking 102 dagen broken. Miners "this month JUNE" (8e datumverschuiving). AMA 3 PM UTC June 1 op Binance Live (na export einde).
 
 ## NIEUW (May 28-29):
 - **BlockDAG definieert eigen "ecosystem"** (May 29 09:00): "BDAG, TURBO, Casino & Gaming, Buyback, Sparks, Stablecoin". 4 van de 6 pijlers zijn gokproducten.
