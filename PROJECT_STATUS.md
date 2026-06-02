@@ -49,20 +49,30 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 1, 2026)
-- 106 promises tracked (99 broken/misleading, 93.4% failure rate)
-- Canonieke cijfers overal: 106 tracked, 99 broken, 93.4%, staking 102 dagen, 383,000+ berichten
-- Aftersale price: **$0.00000012** (nieuwe low op 31 mei)
-- Timeline events bijgewerkt t/m June 1
-- Notable quotes bijgewerkt t/m June 1 (isNew op nieuwste May 31-June 1 quotes)
+## Data (data.js) — Huidige staat (June 2, 2026)
+- 110 promises tracked (103 broken/misleading, 93.6% failure rate)
+- Canonieke cijfers overal: 110 tracked, 103 broken, 93.6%, staking 103 dagen, 385,500+ berichten
+- Aftersale price: **$0.00000012** (nieuwe low op 31 mei, ongewijzigd)
+- Timeline events bijgewerkt t/m June 2
+- Notable quotes bijgewerkt t/m June 2 (isNew op nieuwste June 1-2 quotes)
 - 20 bronnen
-- Laatste artikelen: **article-june1-runup.html (June 1)**, article-ecosystem-casino.html (May 29), article-batch6-lottery.html (May 28), article-turbo-presale.html (May 26)
+- Laatste artikelen: **article-buyback-bait-switch.html (June 2)**, article-june1-runup.html (June 1), article-ecosystem-casino.html (May 29), article-batch6-lottery.html (May 28)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **1 juni 2026 10:12 UTC** (export: ChatExport_2026-06-01)
-- Periode: 18 februari t/m 1 juni 2026
-- Totaal berichten: 383,000+ (3,707 nieuw sinds laatste export op 29 mei)
+- Geanalyseerd t/m: **2 juni 2026 10:05 UTC** (export: ChatExport_2026-06-02)
+- Periode: 18 februari t/m 2 juni 2026
+- Totaal berichten: 385,500+ (2,392 nieuw sinds laatste export op 1 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 1-2): de buyback BAIT-AND-SWITCH
+- **De June 1 buyback is een REGISTRATIE FORMULIER, geen payout**. Admin 19:24 UTC: "You can't sell at the moment. You can only register for now and wait for further information."
+- **Headline prijs van $0.001 naar $0.01** (10x marketing sprong) — maar alleen voor NIEUWE aankopen tijdens de 48u registratie window. Bestaande houders blijven op de lagere tier.
+- **Payout in BDUSD, niet USDT** — BlockDAG's eigen "Beta" stablecoin (stablecoin.blockdag.network). Geen audit, geen reserve attestation, geen redemption pad gepubliceerd. Community Pedro: "Be careful, they're going to give you BDUSD, not USDT or USDC. Where will you exchange it?"
+- **Exchange kopers EXPLICIET UITGESLOTEN** — admin 18:46 UTC: "Yes! Only purchase made from the official website will be eligible." Iedereen die op LBank/BitMart/Coinstore/BTSE/Poloniex kocht is uitgesloten.
+- **$25M liquidity deployment** → "Liquidity will gradually be injected" (admin June 2 08:49)
+- **Daily burns** → "Next burning event will be announced" (June 1 21:12)
+- **Miners "this month JUNE"** voor de 9e datum verschuiving
+- Sparks 10M TURBO JACKPOT als afleiding op de buyback dag
 
 ## NIEUW (May 30 - June 1):
 - **Aftersale prijs gedropt naar $0.00000012** (May 31 15:55) — nieuwe low, "FINAL 24 HOURS" + "500X ROI" (echte math 8,333x)
