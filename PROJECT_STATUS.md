@@ -49,20 +49,29 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 2, 2026)
-- 110 promises tracked (103 broken/misleading, 93.6% failure rate)
-- Canonieke cijfers overal: 110 tracked, 103 broken, 93.6%, staking 103 dagen, 385,500+ berichten
+## Data (data.js) — Huidige staat (June 3, 2026)
+- 113 promises tracked (106 broken/misleading, 93.8% failure rate)
+- Canonieke cijfers overal: 113 tracked, 106 broken, 93.8%, staking 104 dagen, 388,000+ berichten
 - Aftersale price: **$0.00000012** (nieuwe low op 31 mei, ongewijzigd)
-- Timeline events bijgewerkt t/m June 2
-- Notable quotes bijgewerkt t/m June 2 (isNew op nieuwste June 1-2 quotes)
+- Timeline events bijgewerkt t/m June 3
+- Notable quotes bijgewerkt t/m June 3 (isNew op nieuwste June 2-3 quotes)
 - 20 bronnen
-- Laatste artikelen: **article-buyback-bait-switch.html (June 2)**, article-june1-runup.html (June 1), article-ecosystem-casino.html (May 29), article-batch6-lottery.html (May 28)
+- Laatste artikelen: **article-buyback-bait-switch.html (June 2, UPDATED June 3)**, article-june1-runup.html (June 1), article-ecosystem-casino.html (May 29), article-batch6-lottery.html (May 28)
+- LET OP: June 3 was GEEN nieuw artikel maar een UPDATE block toegevoegd aan het bestaande buyback artikel (bewuste keuze: zelfde verhaal, voorkomt near-duplicate content / SEO schade)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **2 juni 2026 10:05 UTC** (export: ChatExport_2026-06-02)
-- Periode: 18 februari t/m 2 juni 2026
-- Totaal berichten: 385,500+ (2,392 nieuw sinds laatste export op 1 juni)
+- Geanalyseerd t/m: **3 juni 2026 10:22 UTC** (export: ChatExport_2026-06-03)
+- Periode: 18 februari t/m 3 juni 2026
+- Totaal berichten: 388,000+ (2,801 nieuw sinds laatste export op 2 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 2-3): buyback bait-and-switch verergert
+- **Buyback prijs HALVEERT per fase**: $0.02 (verlopen) → $0.01 (nu) → $0.005 (volgende fase). Marketing: "DOUBLE the buyback value is available right now!" Geen vaste floor, een countdown timer.
+- **"You cannot sell as of now"** (admin June 3 10:00 UTC) — 3 dagen na de "June 1 buyback"
+- **Verkopen uitgesteld naar June 30** (admin June 2 12:56: "You can sell only after that")
+- **Payout calculation discrepancy**: Adriano Toledo meldt dashboard betaalt ~helft van de geadverteerde $0.01
+- **Community consensus: payout in BDUSD niet USDT**. Szetto Raind: "Early investors will only be guinea pigs." Jamie: "give them another worthless token just to keep this presale going."
+- Promises #111-113 toegevoegd
 
 ## NIEUW (June 1-2): de buyback BAIT-AND-SWITCH
 - **De June 1 buyback is een REGISTRATIE FORMULIER, geen payout**. Admin 19:24 UTC: "You can't sell at the moment. You can only register for now and wait for further information."

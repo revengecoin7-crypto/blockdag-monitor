@@ -2,9 +2,9 @@ const ARTICLES = [
   {
     id: 'article-buyback-bait-switch',
     title: 'The June 1 "buyback" was a registration form. You have to buy more to register.',
-    date: '2026-06-02',
-    dateDisplay: 'June 2, 2026',
-    excerpt: 'On June 1, 2026 BlockDAG announced not a buyback but a 48-hour registration window: "BUY NOW & REGISTER." Holders must purchase MORE BDAG between June 1 and 3 to qualify. Headline price jumped from $0.001 to $0.01. Payout in BDUSD, the project\'s own untested "Beta" stablecoin. Exchange buyers (LBank, BitMart, Coinstore, BTSE, Poloniex) excluded.',
+    date: '2026-06-03',
+    dateDisplay: 'June 2, 2026 · updated June 3',
+    excerpt: 'On June 1, 2026 BlockDAG announced not a buyback but a 48-hour registration window: "BUY NOW & REGISTER." Holders must purchase MORE BDAG to qualify. Payout in BDUSD, not USDT. Exchange buyers excluded. UPDATE June 3: still no buyback ("you cannot sell as of now"), the price is now halving phase by phase ($0.02 to $0.01 to $0.005), and selling is deferred to June 30.',
     url: 'article-buyback-bait-switch.html',
     tags: [{ label: 'Breaking', style: 'red' }, { label: 'Buyback', style: 'orange' }],
     isNew: true,
