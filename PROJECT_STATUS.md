@@ -27,6 +27,15 @@
 9. `sources.html` — 20 bronnen
 10. `about.html` — Over de site + ideeënformulier
 11. `admin.html` — Verborgen admin pagina (NIET in nav)
+12. `social-cards.html` — Generator: download elke artikel-hero als PNG/SVG (NIET in nav, noindex)
+
+## Social Cards Generator (social-cards.html)
+- URL: https://blockdagexposed.com/social-cards.html (noindex, niet in nav)
+- Toont alle artikelen uit articles.js als kaartjes met knoppen "Download PNG" en "Download SVG"
+- PNG = 1600x1000, met watermerk blockdagexposed.com rechtsonder, kant en klaar voor X/Telegram/CMC
+- Lost het fonts-probleem op: bij download worden Google Fonts vervangen door web-veilige tegenhangers (Newsreader→Georgia, DM Sans→Segoe UI, JetBrains Mono→Consolas) zodat SVG→PNG rasterisatie correct rendert
+- Werkt lokaal (file://) en live, geen server-tools nodig (canvas toBlob in de browser)
+- X accepteert geen SVG → gebruik daar de PNG. Per CMC-post beeld roteren tegen spam-detectie
 
 ## Admin pagina
 - URL: https://blockdagexposed.com/admin.html
