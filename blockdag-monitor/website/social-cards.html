@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Social Cards Generator · BlockDAG Exposed</title>
+<style>
+  :root{--navy:#0C2956;--gold:#e6a23c;--red:#c62828;--ink:#0e1726;--mut:#5b6675;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Arial,sans-serif;background:#eef1f5;color:var(--ink);padding:24px;}
+  h1{font-family:Georgia,serif;font-size:24px;margin:0 0 6px}
+  p.lead{color:var(--mut);max-width:760px;line-height:1.55;margin:0 0 22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:22px;}
+  .card{background:#fff;border:1px solid #d7dce4;border-radius:12px;padding:14px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  .preview{width:100%;aspect-ratio:8/5;border-radius:8px;overflow:hidden;background:var(--navy);border:1px solid #cdd4de}
+  .preview svg{display:block;width:100%;height:100%}
+  .ttl{font-family:Georgia,serif;font-size:15px;line-height:1.35;margin:12px 0 4px}
+  .meta{font-size:12px;color:var(--mut);margin:0 0 12px}
+  .meta .new{color:var(--red);font-weight:700}
+  .btns{display:flex;gap:8px;flex-wrap:wrap}
+  button{font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;border-radius:7px;padding:9px 14px;border:1px solid transparent}
+  .png{background:var(--navy);color:#fff}
+  .png:hover{background:#13346b}
+  .svgb{background:#fff;color:var(--navy);border-color:var(--navy)}
+  .svgb:hover{background:#f0f4fb}
+  .tip{font-size:12px;color:var(--mut);margin-top:18px;max-width:760px;line-height:1.5}
+  code{background:#e3e8ef;padding:1px 5px;border-radius:4px;font-family:Consolas,monospace}
+</style>
+</head>
+<body>
+  <h1>Social Cards Generator</h1>
+  <p class="lead">Elke artikel hero als kant en klare afbeelding voor X, Telegram en CoinMarketCap. Klik <b>Download PNG</b> voor een plaatje dat je direct in een post plakt (1600x1000, watermerk blockdagexposed.com). <b>Download SVG</b> geeft het vectorbestand. De download gebruikt web veilige fonts zodat de afbeelding overal identiek rendert.</p>
+  <div class="grid" id="grid"></div>
+  <p class="tip">Tip: X accepteert geen SVG, gebruik daar de PNG. Telegram en CMC accepteren beide. Voor CMC roteer je het beste de afbeelding per post om spam detectie te verlagen. De preview hierboven gebruikt de echte site fonts, de download gebruikt Georgia, Segoe UI en Consolas als veilige tegenhangers.</p>
+
+<script src="articles.js"></script>
+<script>
+const W=1600, H=1000;            // export resolution (4x of 400x250)
+const FONTMAP=[
+  [/font-family="DM Sans"/g,            'font-family="Segoe UI, Arial, sans-serif"'],
+  [/font-family="JetBrains Mono"/g,     'font-family="Consolas, monospace"'],
+  [/font-family="Newsreader,serif"/g,   'font-family="Georgia, serif"'],
+  [/font-family="Newsreader, serif"/g,  'font-family="Georgia, serif"'],
+];
+
+function buildExportSvg(rawSvg){
+  let s = rawSvg;
+  // normalise the opening <svg ...> tag: explicit size + xmlns, keep viewBox
+  s = s.replace(/<svg[^>]*>/, '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 250" width="'+W+'" height="'+H+'">');
+  // web-safe fonts so PNG rasterisation keeps correct text
+  FONTMAP.forEach(([re,rep])=>{ s = s.replace(re,rep); });
+  // watermark bottom-right
+  const wm = '<text x="392" y="244" text-anchor="end" font-family="Consolas, monospace" font-size="7" fill="#ffffff" opacity="0.6" letter-spacing="0.5">blockdagexposed.com</text>';
+  s = s.replace('</svg>', wm+'</svg>');
+  return s;
+}
+
+function downloadBlob(blob, name){
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url), 4000);
+}
+
+function downloadSvg(article){
+  const s = buildExportSvg(article.svg);
+  downloadBlob(new Blob([s],{type:'image/svg+xml;charset=utf-8'}), article.id+'.svg');
+}
+
+function downloadPng(article, btn){
+  const s = buildExportSvg(article.svg);
+  const img = new Image();
+  img.onload = function(){
+    const c = document.createElement('canvas');
+    c.width=W; c.height=H;
+    const ctx=c.getContext('2d');
+    ctx.fillStyle='#0C2956'; ctx.fillRect(0,0,W,H);   // safety bg
+    ctx.drawImage(img,0,0,W,H);
+    c.toBlob(b=>{ downloadBlob(b, article.id+'.png'); if(btn){btn.textContent='Download PNG';} }, 'image/png');
+  };
+  img.onerror = function(){ if(btn){btn.textContent='Fout, probeer SVG';} };
+  img.src = 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(s);
+}
+
+(function(){
+  const grid=document.getElementById('grid');
+  if(typeof ARTICLES==='undefined'){ grid.innerHTML='<p>articles.js niet geladen.</p>'; return; }
+  ARTICLES.forEach(a=>{
+    if(!a.svg) return;
+    const card=document.createElement('div'); card.className='card';
+    const prev=document.createElement('div'); prev.className='preview'; prev.innerHTML=a.svg;
+    const ttl=document.createElement('div'); ttl.className='ttl'; ttl.textContent=a.title||a.id;
+    const meta=document.createElement('div'); meta.className='meta';
+    meta.innerHTML=(a.date?a.date:'')+(a.isNew?' <span class="new">NEW</span>':'');
+    const btns=document.createElement('div'); btns.className='btns';
+    const bp=document.createElement('button'); bp.className='png'; bp.textContent='Download PNG';
+    bp.onclick=()=>{ bp.textContent='Bezig...'; downloadPng(a,bp); };
+    const bs=document.createElement('button'); bs.className='svgb'; bs.textContent='Download SVG';
+    bs.onclick=()=>downloadSvg(a);
+    btns.appendChild(bp); btns.appendChild(bs);
+    card.appendChild(prev); card.appendChild(ttl); card.appendChild(meta); card.appendChild(btns);
+    grid.appendChild(card);
+  });
+})();
+</script>
+</body>
+</html>
