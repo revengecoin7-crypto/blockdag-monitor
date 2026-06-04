@@ -49,21 +49,30 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 3, 2026)
-- 113 promises tracked (106 broken/misleading, 93.8% failure rate)
-- Canonieke cijfers overal: 113 tracked, 106 broken, 93.8%, staking 104 dagen, 388,000+ berichten
-- Aftersale price: **$0.00000012** (nieuwe low op 31 mei, ongewijzigd)
-- Timeline events bijgewerkt t/m June 3
-- Notable quotes bijgewerkt t/m June 3 (isNew op nieuwste June 2-3 quotes)
+## Data (data.js) — Huidige staat (June 4, 2026)
+- 116 promises tracked (109 broken/misleading, 94.0% failure rate)
+- Canonieke cijfers overal: 116 tracked, 109 broken, 94.0%, staking 105 dagen, 392,000+ berichten
+- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000044**
+- Timeline events bijgewerkt t/m June 4
+- Notable quotes bijgewerkt t/m June 4 (isNew op nieuwste June 3-4 quotes)
 - 20 bronnen
-- Laatste artikelen: **article-buyback-bait-switch.html (June 2, UPDATED June 3)**, article-june1-runup.html (June 1), article-ecosystem-casino.html (May 29), article-batch6-lottery.html (May 28)
-- LET OP: June 3 was GEEN nieuw artikel maar een UPDATE block toegevoegd aan het bestaande buyback artikel (bewuste keuze: zelfde verhaal, voorkomt near-duplicate content / SEO schade)
+- Laatste artikelen: **article-legacy-sale.html (June 4)**, article-buyback-bait-switch.html (June 2, UPDATED June 3), article-june1-runup.html (June 1), article-ecosystem-casino.html (May 29)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **3 juni 2026 10:22 UTC** (export: ChatExport_2026-06-03)
-- Periode: 18 februari t/m 3 juni 2026
-- Totaal berichten: 388,000+ (2,801 nieuw sinds laatste export op 2 juni)
+- Geanalyseerd t/m: **4 juni 2026 10:12 UTC** (export: ChatExport_2026-06-04)
+- Periode: 18 februari t/m 4 juni 2026
+- Totaal berichten: 392,000+ (4,271 nieuw sinds laatste export op 3 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 3-4): de buyback PRICE CUT bait-and-switch
+- **LEGACY SALE + BUYBACK PROGRAM gelanceerd** (June 3 21:03 UTC). 9e distinct sales mechanism. Entry $0.00000044.
+- **Buyback prijs 40x VERLAAGD NA registratie**: wie op $0.01 registreerde ziet nu $0.00025 op dashboard. jeremy: "the sell price has changed from $0.01 to $0.00025."
+- **Twee tiers**: NIEUWE Legacy Sale kopers (op $0.00000044) krijgen $0.001 met "uncapped daily sell limits" en "no transfers required." BESTAANDE houders krijgen $0.00025 (4x minder).
+- **Payout uitgesteld naar OKTOBER 1, 2026** — na een 48-uurs "FINAL HOURS" countdown. France аdola: "why was the countdown 44 hours and not 4 months?"
+- **Admin geeft toe**: "Buyback prices are with a special limited time offer. It is not a fixed price." (June 3 21:41)
+- **Om mee te doen**: stuur je al-geclaimde BDAG naar een buyback wallet en wacht 4 maanden voor payout in BDUSD
+- De "buyback price" ladder in 18 dagen: $0.001 → $0.01 → $0.02 → $0.005 → $0.00025
+- Promises #114-116 toegevoegd
 
 ## NIEUW (June 2-3): buyback bait-and-switch verergert
 - **Buyback prijs HALVEERT per fase**: $0.02 (verlopen) → $0.01 (nu) → $0.005 (volgende fase). Marketing: "DOUBLE the buyback value is available right now!" Geen vaste floor, een countdown timer.

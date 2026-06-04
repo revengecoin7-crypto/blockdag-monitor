@@ -1453,7 +1453,6 @@ const PROMISES = [
     id: 111,
     category: "Marketing",
     status: "broken",
-    isNew: true,
     title: "Buyback price now HALVING phase by phase: $0.02 → $0.01 → $0.005",
     promised: "A single $0.001 buyback floor (marketed since May 16), then a $0.01 registration tier (June 1)",
     reality: "Over 48 hours the buyback price moved in three directions at once. June 2 22:32 UTC admin: 'Toy was limited offer for $0.02. Now, it is $0.01 per BDAG.' June 2 17:01 UTC marketing: 'After this phase, the planned buyback price moves to $0.005. Meaning DOUBLE the buyback value is available right now!' So the structure is now: a $0.02 'limited' tier that already expired, a $0.01 tier for the current 48-hour window, and a $0.005 tier after that. A genuine buyback floor is a fixed commitment; a price that halves every phase is a countdown timer designed to manufacture urgency. The 'DOUBLE the value right now' framing is the classic decreasing-discount sales tactic, applied to a buyback that, by the team's own June 3 admission, you still cannot actually execute.",
@@ -1467,7 +1466,6 @@ const PROMISES = [
     id: 112,
     category: "Claim / Distribution",
     status: "broken",
-    isNew: true,
     title: "Buyback selling deferred to June 30 — \"you cannot sell as of now\"",
     promised: "Buyback activates June 1, 2026. Holders sell BDAG at the buyback price.",
     reality: "Three days after the 'June 1 buyback,' holders still cannot sell. June 3 10:00 UTC admin: 'You cannot sell as of now.' June 2 12:56 UTC: 'The final phase is scheduled for June 30, 2026, which marks the Public Trading Launch for general presale buyers who did not utilize specific early access promotional codes. You can sell only after that!' June 2 12:35 UTC: 'Once the deposits are open, you will be able to sell.' The buyback that was the centerpiece of the June 1 deadline is now: register before June 3, but you cannot sell until June 30, and even then only if you did not buy through the wrong channel. The actual liquidity event has been pushed a full month past the date it was sold on, joining the $25M deployment and the 'final TGE' already parked on June 30.",
@@ -1481,7 +1479,6 @@ const PROMISES = [
     id: 113,
     category: "Tokenomics",
     status: "broken",
-    isNew: true,
     title: "Community consensus: the buyback pays in BDUSD, converting real money into a project IOU",
     promised: "A buyback returning value to holders, marketed alongside a USDT-pegged stablecoin",
     reality: "By June 2-3, 2026 the community had independently reasoned out the structure of the buyback and reached a shared conclusion the project has not denied: holders sell BDAG (bought with real money) and receive BDUSD, BlockDAG's own untested 'Beta' stablecoin, not USDT. Szetto Raind (June 2 14:13 UTC): 'My prediction is that if I sell BDAG assets, I will receive BDUSD instead of USDT. This team is very smart. Early investors will only be guinea pigs.' Jamie (14:36 UTC): 'This buy back seems like another scenario where you buy back bdag from people who used real money then give them another worthless token, just so you can keep this presale going.' Noy (15:29 UTC): 'One thing I begging you bdag team, please don't buyback with BDUSD, please give us back as USDT.' Adriano Toledo separately documented that the dashboard payout calculation comes out to roughly half the advertised $0.01. The buyback, the stablecoin, and the new round of selling all route value inward, into project-issued tokens, rather than out to holders in an asset they can freely redeem.",
@@ -1489,6 +1486,48 @@ const PROMISES = [
       { date: "June 2, 2026", text: "My prediction is that if I sell BDAG assets, I will receive BDUSD instead of USDT or other assets. This team is very smart. Early investors will only be guinea pigs. [community member Szetto Raind, 14:13 UTC]" },
       { date: "June 2, 2026", text: "This buy back seems like another scenario where you'll buy back bdag from people who used real money to buy it in the first place then give them another worthless token. [community member Jamie, 14:36 UTC]" },
       { date: "June 2, 2026", text: "One thing I begging you bdag team, please don't buyback with BDUSD, please give us back as USDT. [community member Noy, 15:29 UTC]" }
+    ]
+  },
+  {
+    id: 114,
+    category: "Marketing",
+    status: "broken",
+    isNew: true,
+    title: "Buyback price for existing holders cut 40x: registered at $0.01, dashboard now shows $0.00025",
+    promised: "$0.01 per BDAG buyback (June 1 registration tier), down from earlier $0.02, marketed as the 'highest buyback phase ever'",
+    reality: "On June 3, 2026 at 21:03 UTC BlockDAG launched a 'LEGACY SALE + BUYBACK PROGRAM' that retroactively changed the price holders had already registered at. Community member jeremy (20:35 UTC): 'The dashboard has been updated, and the sell price has changed from $0.01 to $0.00025.' Sebi (20:38 UTC): 'I registered my buyback for $0.01 each bdag and now we should only get $0.00025 per bdag? That's not what I signed for.' The new tier structure pays NEW Legacy Sale buyers (who buy at $0.00000044) at $0.001, but EXISTING holders who participate via BDAG Swap only get $0.00025 per BDAG: 40 times less than the $0.01 they were told 48 hours earlier, and 4 times less than the original $0.001 floor. Admin confirmed the change at 21:41 UTC: 'Buyback prices are with a special limited time offer. It is not a fixed price.' A buyback whose price is explicitly not fixed, and which can be cut 40x after holders register, is not a buyback floor. It is a moving target.",
+    quotes: [
+      { date: "June 3, 2026", text: "The dashboard has been updated, and it's asking to send 250 million tokens. Also, the sell price has changed from $0.01 to $0.00025. [community member jeremy, 20:35 UTC]" },
+      { date: "June 3, 2026", text: "You keep changing the terms, prices, timelines and conditions over and over again. First it was $0.01, then $0.005, then $0.001, and now suddenly $0.00025. From an investor perspective, this looks extremely unprofessional. [community member Sebi, 20:55 UTC]" },
+      { date: "June 3, 2026", text: "Buyback prices are with a special limited time offer. It is not a fixed price. [official admin, 21:41 UTC]" }
+    ]
+  },
+  {
+    id: 115,
+    category: "Claim / Distribution",
+    status: "broken",
+    isNew: true,
+    title: "Buyback payout deferred to October 1, 2026 — after a 48-hour 'FINAL HOURS' countdown",
+    promised: "June 1 buyback activation, marketed with 'FINAL 24 HOURS' and '48H ONLY' urgency",
+    reality: "The June 3 Legacy Sale announcement set the buyback availability 'until October 1st, 2026' (admin June 4 08:12 UTC), and community members report the dashboard shows an October payout date. France аdola (20:46 UTC): 'The handover is in October and November, so why was the countdown 44 hours and not 4 months?' Edward Hernandez (20:59 UTC): 'How is this buy back payment start October 1 2026, this is another broken promise.' To participate, holders must SEND their already-claimed BDAG to a buyback wallet now and wait up to four months for payment. E K (21:02 UTC): 'So we're supposed to send tokens that we've already claimed to a wallet that can disappear at anytime and then by sometime in October/November, we will get USD sent back?' The structure: lock your tokens by sending them away, accept a 40x-reduced price, and wait four months for a payout in the project's own untested stablecoin. The '48 hours' urgency was for a four-month-deferred event.",
+    quotes: [
+      { date: "June 4, 2026", text: "Get BDAG at $0.00000044 and submit eligible coins for the Buyback Program at $0.001 per BDAG. Eligible swap purchases qualifying for the $0.00025 buyback tier. Available until October 1st, 2026. [official admin, 08:12 UTC]" },
+      { date: "June 3, 2026", text: "The handover is in October and November, so why was the countdown 44 hours and not 4 months? You treat us as if we are stupid. [community member France аdola, 20:46 UTC]" },
+      { date: "June 3, 2026", text: "We're supposed to send tokens that we've already claimed to a wallet that can disappear at anytime and then by sometime in October, we will get USD sent back? [community member E K, 21:02 UTC]" }
+    ]
+  },
+  {
+    id: 116,
+    category: "Marketing",
+    status: "broken",
+    isNew: true,
+    title: "\"Legacy Sale\" launched — the 9th distinct sales mechanism since 2024",
+    promised: "Implicit: after presale, aftersale, Live Swap, x10swap, Utility Presale, Sparks, TURBO and Batch 6, no new sale needed",
+    reality: "On June 3, 2026 at 21:03 UTC BlockDAG launched the 'BlockDAG LEGACY SALE' at $0.00000044 per BDAG, bundled with the buyback. This is the NINTH distinct sales mechanism the project has run since 2024 (presale → aftersale → Live Swap → x10swap → Utility Presale → Sparks → TURBO → Batch 6 → Legacy Sale). It arrives on the same day the previous 'final' buyback deadline expired, and it is structured so that the only way to access the higher $0.001 buyback tier is to become a NEW Legacy Sale buyer at $0.00000044. Existing holders are routed to the $0.00025 tier. Community member Jose Augusto (20:07 UTC): 'Another sale, different name, LEGACY.' The 'Legacy Sale' name itself is an admission: the existing two-year-old holders are now the 'legacy,' and the project's forward motion depends on a fresh cohort of buyers at a price 113,636 times below the original $0.05 promise.",
+    quotes: [
+      { date: "June 3, 2026", text: "🏛️ THE BLOCKDAG LEGACY SALE IS OFFICIALLY LIVE. Buy BDAG at just $0.00000044. Register eligible BDAG directly from your dashboard. Participate in the Buyback Program at $0.001 per BDAG. No transfers required for Legacy Sale buyers. Uncapped daily sell limits. [official channel, 21:03 UTC]" },
+      { date: "June 3, 2026", text: "Another sale, different name, LEGACY. [community member Jose Augusto, 20:07 UTC]" },
+      { date: "June 3, 2026", text: "Legacy sale 😂😂😂 where is 0.005 buyback? Another mistake right? [community member ., 21:10 UTC]" }
     ]
   }
 ];
@@ -1660,7 +1699,10 @@ const TIMELINE_EVENTS = [
   { date: "June 2, 2026", type: "broken", text: "Morning after: admin still answering buyback questions with 'More details about the buyback will be shared shortly, please stay tuned' (09:25 UTC). Liquidity question answered with 'Liquidity will gradually be injected' (08:49 UTC). Miners 'shipped within this month, you will receive an email once your device is ready to be sent' (08:34 UTC, the ninth date change). Eligibility question: 'You need to purchase between the announced window to be able to qualify for the buyback' (08:33 UTC, confirming the buy-more-to-register requirement)." },
   { date: "June 2, 2026", type: "broken", text: "Buyback price starts halving phase by phase. Official channel 17:01 UTC: 'SELL BDAG FOR $0.01 - FINAL 24 HOURS. After this phase, the planned buyback price moves to $0.005. DOUBLE the buyback value is available right now!' Admin 22:32 UTC: 'Toy was limited offer for $0.02. Now it is $0.01 per BDAG.' Three tiers in 48 hours ($0.02 expired, $0.01 now, $0.005 next). A real buyback floor is a fixed commitment; a halving price is a countdown timer. Community member Adriano Toledo reports the dashboard payout calculates to roughly half the advertised $0.01." },
   { date: "June 2, 2026", type: "broken", text: "Community reaches consensus that the buyback pays in BDUSD, not USDT. Szetto Raind: 'If I sell BDAG I will receive BDUSD instead of USDT. Early investors will only be guinea pigs.' Jamie: 'You buy back bdag from people who used real money then give them another worthless token, just to keep this presale going.' Noy: 'Please don't buyback with BDUSD, please give us back as USDT.' The project has not denied that the payout is in its own untested Beta stablecoin." },
-  { date: "June 3, 2026", type: "broken", text: "Three days after the 'June 1 buyback,' holders still cannot sell. Admin 10:00 UTC: 'You cannot sell as of now.' Selling is now deferred to June 30 (admin June 2 12:56 UTC: 'You can sell only after that'), joining the $25M liquidity deployment and the 'final TGE' already parked on that date. The buyback that was the centerpiece of the most-marketed deadline in project history is, by day three, a registration form with the actual liquidity event pushed a full month past the date it was sold on. 113 promises tracked, 106 broken (93.8%)." }
+  { date: "June 3, 2026", type: "broken", text: "Three days after the 'June 1 buyback,' holders still cannot sell. Admin 10:00 UTC: 'You cannot sell as of now.' Selling is now deferred to June 30 (admin June 2 12:56 UTC: 'You can sell only after that'), joining the $25M liquidity deployment and the 'final TGE' already parked on that date. The buyback that was the centerpiece of the most-marketed deadline in project history is, by day three, a registration form with the actual liquidity event pushed a full month past the date it was sold on. 113 promises tracked, 106 broken (93.8%)." },
+  { date: "June 3, 2026", type: "broken", text: "BlockDAG launches the 'LEGACY SALE + BUYBACK PROGRAM' (21:03 UTC), retroactively cutting the buyback price and deferring payout to October. Holders who registered at $0.01 see their dashboard change to $0.00025, a 40x reduction. jeremy: 'The sell price has changed from $0.01 to $0.00025.' Admin: 'Buyback prices are with a special limited time offer. It is not a fixed price.' Payout pushed to October 1, 2026, after a 48-hour FINAL HOURS countdown. To participate you must SEND your claimed BDAG to a buyback wallet now and wait four months. The Legacy Sale itself is the 9th distinct sales mechanism since 2024, at $0.00000044 (113,636x below the $0.05 promise)." },
+  { date: "June 3, 2026", type: "broken", text: "Tiered buyback confirmed: NEW Legacy Sale buyers (at $0.00000044) can sell at $0.001 with 'uncapped daily sell limits' and 'no transfers required.' EXISTING holders only get $0.00025 via BDAG Swap. The structure routes the better terms exclusively to fresh money, while two-year holders are labelled 'legacy' and offered 4x less. Community: France аdola: 'You treat us as if we are stupid.' E K: 'send tokens to a wallet that can disappear at anytime and then by sometime in October we get USD back?'" },
+  { date: "June 4, 2026", type: "broken", text: "Buyback registration window extended to October 1, 2026 (admin 08:12 UTC), four months past the 'June 1' deadline it was sold on. Admin still answering execution questions with 'You will be notified once the sell window is open' (08:55 UTC) and 'Detailed information about the buyback will be shared through the official website once the process goes live' (08:19 UTC). Three days after launch, the buyback has no live execution, a price cut 40x for existing holders, and a payout date in October. 116 promises tracked, 109 broken (94.0%)." }
 ];
 
 const SOURCES = [
@@ -2131,15 +2173,25 @@ const NOTABLE_QUOTES = [
   { date: "June 2, 2026", tag: "response", text: "You need to purchase between the announced window to be able to qualify for the buyback. [official admin, June 2 08:33 UTC — confirming the buy-more-to-register requirement]" },
   { date: "June 2, 2026", tag: "response", text: "More details about the buyback will be shared shortly, please stay tuned. [official admin, June 2 09:25 UTC — 14+ hours after the buyback was supposed to start]" },
   { date: "June 2, 2026", tag: "response", text: "Liquidity will gradually be injected. [official admin, June 2 08:49 UTC — the $25M deployment that was 'ahead of June 1' is now indefinite]" },
-  { date: "June 2, 2026", isNew: true, tag: "misleading", text: "🚨 SELL BDAG FOR $0.01 - FINAL 24 HOURS. After this phase, the planned buyback price moves to $0.005. DOUBLE the buyback value is available right now! [official channel, June 2 17:01 UTC — buyback price halving phase by phase]" },
-  { date: "June 2, 2026", isNew: true, tag: "response", text: "Toy was limited offer for $0.02. Now, it is $0.01 per BDAG. [official admin, June 2 22:32 UTC]" },
-  { date: "June 2, 2026", isNew: true, tag: "community", text: "Attention, Blockdag team. The Blockdag buyback value is calculated at a final rate of half a US dollar ($0.01), half of what you are advertising. Do the math. [community member Adriano Toledo, June 2 14:02 UTC]" },
-  { date: "June 2, 2026", isNew: true, tag: "community", text: "My prediction is that if I sell BDAG assets, I will receive BDUSD instead of USDT. This team is very smart. Early investors will only be guinea pigs. [community member Szetto Raind, June 2 14:13 UTC]" },
-  { date: "June 2, 2026", isNew: true, tag: "community", text: "This buy back seems like another scenario where you'll buy back bdag from people who used real money to buy it in the first place then give them another worthless token, just so you can keep this presale going. [community member Jamie, June 2 14:36 UTC]" },
-  { date: "June 2, 2026", isNew: true, tag: "community", text: "Wtf man, what is this new bdusd and how can I sell what I already bought during presale? Who is managing this nonsense. [community member Aklis Company, June 2 12:11 UTC]" },
-  { date: "June 2, 2026", isNew: true, tag: "community", text: "Most of us have left after being deceived so many times. The buyback at 0.01 (and 0.005) is enticing. But I don't trust the project anymore and I will not participate. [community member Gerard Lafeur, June 2 15:14 UTC]" },
-  { date: "June 2, 2026", isNew: true, tag: "community", text: "One thing I begging you bdag team, please don't buyback with BDUSD, please give us back as USDT. [community member Noy, June 2 15:29 UTC]" },
-  { date: "June 3, 2026", isNew: true, tag: "response", text: "You cannot sell as of now. [official admin, June 3 10:00 UTC — three days after the 'June 1 buyback']" },
-  { date: "June 3, 2026", isNew: true, tag: "response", text: "You need to purchase at current price to be eligible for buyback. [official admin, June 3 00:13 UTC]" }
+  { date: "June 2, 2026", tag: "misleading", text: "🚨 SELL BDAG FOR $0.01 - FINAL 24 HOURS. After this phase, the planned buyback price moves to $0.005. DOUBLE the buyback value is available right now! [official channel, June 2 17:01 UTC — buyback price halving phase by phase]" },
+  { date: "June 2, 2026", tag: "response", text: "Toy was limited offer for $0.02. Now, it is $0.01 per BDAG. [official admin, June 2 22:32 UTC]" },
+  { date: "June 2, 2026", tag: "community", text: "Attention, Blockdag team. The Blockdag buyback value is calculated at a final rate of half a US dollar ($0.01), half of what you are advertising. Do the math. [community member Adriano Toledo, June 2 14:02 UTC]" },
+  { date: "June 2, 2026", tag: "community", text: "My prediction is that if I sell BDAG assets, I will receive BDUSD instead of USDT. This team is very smart. Early investors will only be guinea pigs. [community member Szetto Raind, June 2 14:13 UTC]" },
+  { date: "June 2, 2026", tag: "community", text: "This buy back seems like another scenario where you'll buy back bdag from people who used real money to buy it in the first place then give them another worthless token, just so you can keep this presale going. [community member Jamie, June 2 14:36 UTC]" },
+  { date: "June 2, 2026", tag: "community", text: "Wtf man, what is this new bdusd and how can I sell what I already bought during presale? Who is managing this nonsense. [community member Aklis Company, June 2 12:11 UTC]" },
+  { date: "June 2, 2026", tag: "community", text: "Most of us have left after being deceived so many times. The buyback at 0.01 (and 0.005) is enticing. But I don't trust the project anymore and I will not participate. [community member Gerard Lafeur, June 2 15:14 UTC]" },
+  { date: "June 2, 2026", tag: "community", text: "One thing I begging you bdag team, please don't buyback with BDUSD, please give us back as USDT. [community member Noy, June 2 15:29 UTC]" },
+  { date: "June 3, 2026", tag: "response", text: "You cannot sell as of now. [official admin, June 3 10:00 UTC — three days after the 'June 1 buyback']" },
+  { date: "June 3, 2026", tag: "response", text: "You need to purchase at current price to be eligible for buyback. [official admin, June 3 00:13 UTC]" },
+  { date: "June 3, 2026", isNew: true, tag: "misleading", text: "🏛️ THE BLOCKDAG LEGACY SALE IS OFFICIALLY LIVE. Buy BDAG at just $0.00000044. Participate in the Buyback Program at $0.001 per BDAG. No transfers required for Legacy Sale buyers. Uncapped daily sell limits. [official channel, June 3 21:03 UTC — 9th sales mechanism; existing holders routed to a $0.00025 tier instead]" },
+  { date: "June 3, 2026", isNew: true, tag: "response", text: "Buyback prices are with a special limited time offer. It is not a fixed price. [official admin, June 3 21:41 UTC — confirming the buyback price can change after registration]" },
+  { date: "June 3, 2026", isNew: true, tag: "community", text: "The dashboard has been updated, and the sell price has changed from $0.01 to $0.00025. [community member jeremy, June 3 20:35 UTC]" },
+  { date: "June 3, 2026", isNew: true, tag: "community", text: "You keep changing the terms, prices, timelines and conditions over and over again. First it was $0.01, then $0.005, then $0.001, and now suddenly $0.00025. From an investor perspective, this looks extremely unprofessional. [community member Sebi, June 3 20:55 UTC]" },
+  { date: "June 3, 2026", isNew: true, tag: "community", text: "The handover is in October and November, so why was the countdown 44 hours and not 4 months? You treat us as if we are stupid. [community member France аdola, June 3 20:46 UTC]" },
+  { date: "June 3, 2026", isNew: true, tag: "community", text: "We're supposed to send tokens that we've already claimed to a wallet that can disappear at anytime and then by sometime in October we will get USD sent back? [community member E K, June 3 21:02 UTC]" },
+  { date: "June 3, 2026", isNew: true, tag: "community", text: "How is this buy back payment start October 1 2026, this is another broken promise. [community member Edward Hernandez, June 3 20:59 UTC]" },
+  { date: "June 3, 2026", isNew: true, tag: "community", text: "Offer to buyback 25k for less than two grand after nearly 2 years, and have the stones to say send us your BDAG and you will receive payment in October. This is beyond crazy. [community member J J, June 3 21:24 UTC]" },
+  { date: "June 3, 2026", isNew: true, tag: "community", text: "Another sale, different name, LEGACY. [community member Jose Augusto, June 3 20:07 UTC]" },
+  { date: "June 4, 2026", isNew: true, tag: "response", text: "You will be notified once the sell window is open and you will see the allocations you registered with. Please wait and check your dashboard. [official admin, June 4 08:55 UTC]" }
 ];
 
