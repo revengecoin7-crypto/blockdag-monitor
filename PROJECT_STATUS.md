@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (95 promises, 87 broken)
+2. `tracker.html` — Promise Tracker (118 promises, 111 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -58,20 +58,28 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 4, 2026)
-- 116 promises tracked (109 broken/misleading, 94.0% failure rate)
-- Canonieke cijfers overal: 116 tracked, 109 broken, 94.0%, staking 105 dagen, 392,000+ berichten
-- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000044**
-- Timeline events bijgewerkt t/m June 4
-- Notable quotes bijgewerkt t/m June 4 (isNew op nieuwste June 3-4 quotes)
+## Data (data.js) — Huidige staat (June 5, 2026)
+- 118 promises tracked (111 broken/misleading, 94.1% failure rate)
+- Canonieke cijfers overal: 118 tracked, 111 broken, 94.1%, staking 106 dagen, 395,000+ berichten
+- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000088** (verdubbeld van $0.00000044 op June 5)
+- Timeline events bijgewerkt t/m June 5 (173 events)
+- Notable quotes bijgewerkt t/m June 5 (isNew op nieuwste June 5 quotes; oude isNew weggehaald)
 - 20 bronnen
-- Laatste artikelen: **article-legacy-sale.html (June 4)**, article-buyback-bait-switch.html (June 2, UPDATED June 3), article-june1-runup.html (June 1), article-ecosystem-casino.html (May 29)
+- Laatste artikelen: **article-buyback-circular.html (June 5)**, article-legacy-sale.html (June 4), article-buyback-bait-switch.html (June 2, UPDATED June 3), article-june1-runup.html (June 1)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **4 juni 2026 10:12 UTC** (export: ChatExport_2026-06-04)
-- Periode: 18 februari t/m 4 juni 2026
-- Totaal berichten: 392,000+ (4,271 nieuw sinds laatste export op 3 juni)
+- Geanalyseerd t/m: **5 juni 2026 10:26 UTC** (export: ChatExport_2026-06-05)
+- Periode: 18 februari t/m 5 juni 2026
+- Totaal berichten: 395,000+ (942 nieuw op 5 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 4-5): de CIRCULAIRE buyback + verdubbelde Legacy prijs
+- **Buyback koopt alleen NIEUW gekochte tokens terug**. Om te kwalificeren moet je min. 10% van je oude balans in NIEUWE BDAG kopen, en alleen die nieuwe coins zijn verkoopbaar. Je oude presale BDAG kwalificeert NIET. Crypto Rich: "I purchased 107m BDAG yesterday to make me eligible, then the 107m I purchased was eligible to be sold right away."
+- **Legacy Sale prijs VERDUBBELD in 24u**: $0.00000044 → $0.00000088 (June 5 00:29 UTC), nu gemarket als "56X ROI, 6 MONTHS." Nieuwe kopers buyback $0.01, bestaande houders $0.00025.
+- **Dashboard toont NUL**: tientallen houders kochten specifiek voor de buyback en zien 0 eligible balance. Hillbilly Hitman: "Bought $250 today to try out the .01 buyback. It isn't working."
+- **Kwalificatiedatum 3x verschoven**: eerst voor June 1, toen June 1+, nu alleen na June 3. Elke verschuiving maakt eerdere aankopen ongeldig → koop opnieuw.
+- **De rekensom klopt niet**: STAS: 56M BDAG voor 42 USDT, buyback op 0.01 = 560,000 USDT. "Even a huge bank doesn't give you a profit like this for the 4 months period." Mark: "it's a complete lose for you, how will you give so much money to everyone?"
+- Promises #117 (verdubbelde prijs/56X ROI, misleading) en #118 (circulaire buyback, broken) toegevoegd
 
 ## NIEUW (June 3-4): de buyback PRICE CUT bait-and-switch
 - **LEGACY SALE + BUYBACK PROGRAM gelanceerd** (June 3 21:03 UTC). 9e distinct sales mechanism. Entry $0.00000044.
@@ -166,14 +174,16 @@
 - BlockDAG heeft @blockdagmonitor geblokkeerd op X (May 19)
 - Trader (May 24): "This group has already lost over 5,000 members"
 
-## 7 sales mechanisms sinds 2024 (KRITIEKE LIJST)
+## 9 sales mechanisms sinds 2024 (KRITIEKE LIJST)
 1. Original presale (Batches 1-5) — March 2024
 2. Aftersale — na "no sale after May 7" belofte
 3. Live Swap — May 1, 2026 (closed May 20)
 4. x10swap — May 6, 2026 (admin: "not a swap")
 5. Utility Presale — May 8, 2026
 6. BDAG Sparks (incl. chests) — May 14 (closed May 20, reopened May 23)
-7. **BlockDAG TURBO** — May 25, 2026 (CURRENTLY LIVE)
+7. BlockDAG TURBO — May 25, 2026
+8. Batch 6 — eind mei 2026
+9. **Legacy Sale** — June 3, 2026, entry $0.00000044 → $0.00000088 (June 5). CURRENTLY LIVE
 
 ## Belangrijke correcties gedaan
 - BingX en Gate.io stonden als KEPT maar listings zijn NOOIT gebeurd → gecorrigeerd naar BROKEN (May 4, 2026)
