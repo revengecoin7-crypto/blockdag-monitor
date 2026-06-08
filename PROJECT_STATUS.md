@@ -78,7 +78,7 @@
 - **Wallet bevat een fractie van wat hij schuldig is**: Nada: "If i sell the minimum 10m at 0.01 its 100 thousand dollars. The liquidity wallets have 70 thousand." Eén minimum-verkoper is meer schuldig dan de wallet bevat.
 - **10 MILJOEN BDAG minimum** voor direct-send buyback — de meeste houders kunnen dat niet claimen. Bert Weekley: "Is anyone holding 10mil or more released? Only the ones that started this do." Wat met sub-minimum bedragen gebeurt: onbeantwoord (xnick: "Refunded or lost?").
 - **"Robbing Peter to pay Paul"**: John Lombard: team neemt claim coins van de één, geeft ze aan de ander als claim.
-- **BTSE volledig opgeschort, LBANK deposits/withdrawals opgeschort** (Homer Sm June 6).
+- **BTSE/LBANK friction** (Homer Sm June 6: "BTSE has completely suspended trading, LBANK suspended deposits/withdrawals") — NIET geverifieerd, alleen community-bericht; web toont juist hervattingen eerder in 2026. Overal als "community-reported, unverified" geframed.
 - **June 30 = "final TGE" / Public Trading Launch** (admin June 7) — zoveelste finale datum; juni-aankopen nog niet claimbaar.
 - **DOUBLE JACKPOT casino-event** (100M TURBO jackpot, 2x odds) gepusht naast de buyback.
 - Promises #119 ("1 billion sold"/lege wallet, broken) en #120 (10M minimum + June 30 final TGE, broken) toegevoegd
