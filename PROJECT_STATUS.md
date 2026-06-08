@@ -73,15 +73,18 @@
 - Totaal berichten: 400,000+ (~4,700 nieuw op 6-8 juni)
 - Gap: 20–30 april ontbreekt nog
 
-## NIEUW (June 6-8): "1 miljard verkocht" maar lege buyback-wallet
+## NIEUW (June 6-8): ~$68M in de buyback-wallets, maar geen contract en niemand betaald
 - **"OVER 1 BILLION COINS SOLD IN THE BUYBACK PROGRAM"** (officieel kanaal June 6 16:42) — maar dat telt NIEUWE aankopen op $0.00000088, geen uitbetalingen. Niemand heeft gedocumenteerd betaald te zijn.
-- **Wallet bevat een fractie van wat hij schuldig is**: Nada: "If i sell the minimum 10m at 0.01 its 100 thousand dollars. The liquidity wallets have 70 thousand." Eén minimum-verkoper is meer schuldig dan de wallet bevat.
-- **10 MILJOEN BDAG minimum** voor direct-send buyback — de meeste houders kunnen dat niet claimen. Bert Weekley: "Is anyone holding 10mil or more released? Only the ones that started this do." Wat met sub-minimum bedragen gebeurt: onbeantwoord (xnick: "Refunded or lost?").
+- **CORRECTIE (belangrijk)**: eerst stond op de site "wallet bevat ~$70k" (Nada's schatting). SilentAlfa (betrouwbare bron, corrigeerde eerder MEXC) traceerde de echte buyback-wallets op TronScan: **~$68M** over 4 adressen (TL1pfd...P8z $17.99M; TV8yRw...REU $15.51M; TXVDnR...y1C $19.98M; THKzqN...r2f $14.99M = $68.47M). Overal aangepast. De "$70k lege wallet" claim is VERWIJDERD.
+- **Het echte verhaal (scherper)**: het geld staat er wél en is on-chain zichtbaar, MAAR er is GEEN smart contract, de keys zijn bij het team, custody is centraal, en ze betalen NU niet uit. SilentAlfa: "this does not guarantee anything since there is no smart contract and the control is centralized by the team and they have the keys. Why are they not paying now?" Zichtbaar ≠ veilig. Vraag verschuift van "kunnen ze betalen?" naar "waarom betalen ze niet?".
+- **10 MILJOEN BDAG minimum** voor direct-send buyback — de meeste houders kunnen dat niet claimen. Bert Weekley: "Is anyone holding 10mil or more released? Only the ones that started this do."
 - **"Robbing Peter to pay Paul"**: John Lombard: team neemt claim coins van de één, geeft ze aan de ander als claim.
-- **BTSE/LBANK friction** (Homer Sm June 6: "BTSE has completely suspended trading, LBANK suspended deposits/withdrawals") — NIET geverifieerd, alleen community-bericht; web toont juist hervattingen eerder in 2026. Overal als "community-reported, unverified" geframed.
+- **Nieuw feit van SilentAlfa**: legacy buyback rekende effectief $0.00005 af (niet $0.01) of 200x compressie; direct-send 10M route was wél $0.01 zoals geadverteerd. (nog niet als losse promise, bewaren/overwegen)
+- **BTSE/LBANK friction** (Homer Sm June 6) — NIET geverifieerd, alleen community-bericht; web toont juist hervattingen eerder in 2026. Overal als "community-reported, unverified" geframed.
 - **June 30 = "final TGE" / Public Trading Launch** (admin June 7) — zoveelste finale datum; juni-aankopen nog niet claimbaar.
-- **DOUBLE JACKPOT casino-event** (100M TURBO jackpot, 2x odds) gepusht naast de buyback.
-- Promises #119 ("1 billion sold"/lege wallet, broken) en #120 (10M minimum + June 30 final TGE, broken) toegevoegd
+- **Casino API gooit 404** (CryptoTalkRadio, June): /casino/game-integration/open-game NotFoundException — mogelijk onbetaalde white-label vendor (niet bevestigd).
+- Promises #119 ($68M wallets, geen contract, geen payout, broken) en #120 (10M minimum + June 30 final TGE, broken) toegevoegd
+- **Artikel hernoemd-qua-inhoud**: article-buyback-empty-wallet.html (slug ongewijzigd) nu titel "buyback wallets hold $68 million... no smart contract, nobody paid"
 
 ## NIEUW (June 4-5): de CIRCULAIRE buyback + verdubbelde Legacy prijs
 - **Buyback koopt alleen NIEUW gekochte tokens terug**. Om te kwalificeren moet je min. 10% van je oude balans in NIEUWE BDAG kopen, en alleen die nieuwe coins zijn verkoopbaar. Je oude presale BDAG kwalificeert NIET. Crypto Rich: "I purchased 107m BDAG yesterday to make me eligible, then the 107m I purchased was eligible to be sold right away."
