@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (118 promises, 111 broken)
+2. `tracker.html` — Promise Tracker (120 promises, 113 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -58,20 +58,30 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 5, 2026)
-- 118 promises tracked (111 broken/misleading, 94.1% failure rate)
-- Canonieke cijfers overal: 118 tracked, 111 broken, 94.1%, staking 106 dagen, 395,000+ berichten
-- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000088** (verdubbeld van $0.00000044 op June 5)
-- Timeline events bijgewerkt t/m June 5 (173 events)
-- Notable quotes bijgewerkt t/m June 5 (isNew op nieuwste June 5 quotes; oude isNew weggehaald)
+## Data (data.js) — Huidige staat (June 8, 2026)
+- 120 promises tracked (113 broken/misleading, 94.2% failure rate)
+- Canonieke cijfers overal: 120 tracked, 113 broken, 94.2%, staking 109 dagen, 400,000+ berichten
+- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000088**
+- Timeline events bijgewerkt t/m June 8 (176 events)
+- Notable quotes bijgewerkt t/m June 8 (isNew op nieuwste June 6-8 quotes; oude isNew weggehaald)
 - 20 bronnen
-- Laatste artikelen: **article-buyback-circular.html (June 5)**, article-legacy-sale.html (June 4), article-buyback-bait-switch.html (June 2, UPDATED June 3), article-june1-runup.html (June 1)
+- Laatste artikelen: **article-buyback-empty-wallet.html (June 8)**, article-buyback-circular.html (June 5), article-legacy-sale.html (June 4), article-buyback-bait-switch.html (June 2, UPDATED June 3)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **5 juni 2026 10:26 UTC** (export: ChatExport_2026-06-05)
-- Periode: 18 februari t/m 5 juni 2026
-- Totaal berichten: 395,000+ (942 nieuw op 5 juni)
+- Geanalyseerd t/m: **8 juni 2026 10:20 UTC** (export: ChatExport_2026-06-08)
+- Periode: 18 februari t/m 8 juni 2026
+- Totaal berichten: 400,000+ (~4,700 nieuw op 6-8 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 6-8): "1 miljard verkocht" maar lege buyback-wallet
+- **"OVER 1 BILLION COINS SOLD IN THE BUYBACK PROGRAM"** (officieel kanaal June 6 16:42) — maar dat telt NIEUWE aankopen op $0.00000088, geen uitbetalingen. Niemand heeft gedocumenteerd betaald te zijn.
+- **Wallet bevat een fractie van wat hij schuldig is**: Nada: "If i sell the minimum 10m at 0.01 its 100 thousand dollars. The liquidity wallets have 70 thousand." Eén minimum-verkoper is meer schuldig dan de wallet bevat.
+- **10 MILJOEN BDAG minimum** voor direct-send buyback — de meeste houders kunnen dat niet claimen. Bert Weekley: "Is anyone holding 10mil or more released? Only the ones that started this do." Wat met sub-minimum bedragen gebeurt: onbeantwoord (xnick: "Refunded or lost?").
+- **"Robbing Peter to pay Paul"**: John Lombard: team neemt claim coins van de één, geeft ze aan de ander als claim.
+- **BTSE volledig opgeschort, LBANK deposits/withdrawals opgeschort** (Homer Sm June 6).
+- **June 30 = "final TGE" / Public Trading Launch** (admin June 7) — zoveelste finale datum; juni-aankopen nog niet claimbaar.
+- **DOUBLE JACKPOT casino-event** (100M TURBO jackpot, 2x odds) gepusht naast de buyback.
+- Promises #119 ("1 billion sold"/lege wallet, broken) en #120 (10M minimum + June 30 final TGE, broken) toegevoegd
 
 ## NIEUW (June 4-5): de CIRCULAIRE buyback + verdubbelde Legacy prijs
 - **Buyback koopt alleen NIEUW gekochte tokens terug**. Om te kwalificeren moet je min. 10% van je oude balans in NIEUWE BDAG kopen, en alleen die nieuwe coins zijn verkoopbaar. Je oude presale BDAG kwalificeert NIET. Crypto Rich: "I purchased 107m BDAG yesterday to make me eligible, then the 107m I purchased was eligible to be sold right away."
