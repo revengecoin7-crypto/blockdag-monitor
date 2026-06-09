@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (120 promises, 113 broken)
+2. `tracker.html` — Promise Tracker (121 promises, 114 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -58,20 +58,36 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 8, 2026)
-- 120 promises tracked (113 broken/misleading, 94.2% failure rate)
-- Canonieke cijfers overal: 120 tracked, 113 broken, 94.2%, staking 109 dagen, 400,000+ berichten
+## Data (data.js) — Huidige staat (June 9, 2026)
+- 121 promises tracked (114 broken/misleading, 94.2% failure rate)
+- Canonieke cijfers overal: 121 tracked, 114 broken, 94.2%, staking 110 dagen, 403,000+ berichten
 - Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000088**
-- Timeline events bijgewerkt t/m June 8 (176 events)
-- Notable quotes bijgewerkt t/m June 8 (isNew op nieuwste June 6-8 quotes; oude isNew weggehaald)
+- Timeline events bijgewerkt t/m June 9 (178 events)
+- Notable quotes bijgewerkt t/m June 9 (isNew op nieuwste June 8-9 quotes; oude isNew weggehaald)
 - 20 bronnen
-- Laatste artikelen: **article-buyback-empty-wallet.html (June 8)**, article-buyback-circular.html (June 5), article-legacy-sale.html (June 4), article-buyback-bait-switch.html (June 2, UPDATED June 3)
+- Laatste artikelen: **article-claim-failed.html (June 9)**, article-buyback-empty-wallet.html (June 8), article-buyback-circular.html (June 5), article-legacy-sale.html (June 4)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **8 juni 2026 10:20 UTC** (export: ChatExport_2026-06-08)
-- Periode: 18 februari t/m 8 juni 2026
-- Totaal berichten: 400,000+ (~4,700 nieuw op 6-8 juni)
+- Geanalyseerd t/m: **9 juni 2026 10:23 UTC** (export: ChatExport_2026-06-09)
+- Periode: 18 februari t/m 9 juni 2026
+- Totaal berichten: 403,000+ (783 nieuw op 9 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 9): claimen faalt breed — "transaction failed" (GEVERIFIEERD)
+- **Claimen faalt over batches 1 t/m 6**: "Transaction likely to revert" / "Transaction failed". ~41 mislukkingsmeldingen in 2 dagen tegen een handvol bevestigde successen.
+- **Regressie**: Jordan Romero claimde succesvol op de 6e, faalt nu (zelfde wallet) → wijst op contract-kant, niet wallet-setup.
+- **Kova7 (verdediger!) postte zélf de fout**: "The problem persists in the claim for Batch 3" met het error-scherm. Sterkste bewijs.
+- **De foutmelding lekt een developer debug-instructie naar eindgebruikers**: "Run node scripts/test-relayer-claim.js with a single address to debug" + verifieer merkle root / vesting contract balance.
+- **BlockDAG's verweer**: "clear cache, RPC setup, many users have successfully claimed" — maar regressie + breedte + contract-checklist spreken dat tegen. Eerlijk benoemd in artikel.
+- **Geclaimde coins zijn zwaar gecomprimeerd** (Clark): dashboard ≠ wallet ≠ verkoopbaar.
+- Promise #121 toegevoegd (claim failure, broken). Nieuw artikel: article-claim-failed.html.
+
+## GEVERIFIEERD deze ronde (extra zorgvuldig, na gezeik van gisteren)
+- **10M minimum nu OFFICIEEL bevestigd** door admin (June 8 06:54: "if it states 10M is the minimum, transactions below may not qualify"). Was eerder alleen community.
+- **LBank-storing was ECHT en is OPGELOST**: admin erkende ("we are working on LBank concern", June 8), community bevestigt fix (Homer Sm June 9: "working normally at LBANK"). Eerlijk als opgelost genoteerd (timeline note), niet als doorlopende freeze.
+- **$68.5M wallet onafhankelijk gecorroboreerd** (P C en anderen noemen nu ook $68.5M).
+- **Buyback receiving-wallet (BlockDAG chain) = 0x558999486d976ec2ddc18da9a97c7ccb78d9bd18**, ~4.6B BDAG ontvangen (SilentAlfa, bdagscan). Verplichting ~$34M aan $0.01 vs ~$68M op Tron.
+- **Officiële RPC**: Chain ID 1404, rpc.bdagscan.com, explorer bdagscan.com.
 
 ## NIEUW (June 6-8): ~$68M in de buyback-wallets, maar geen contract en niemand betaald
 - **"OVER 1 BILLION COINS SOLD IN THE BUYBACK PROGRAM"** (officieel kanaal June 6 16:42) — maar dat telt NIEUWE aankopen op $0.00000088, geen uitbetalingen. Niemand heeft gedocumenteerd betaald te zijn.

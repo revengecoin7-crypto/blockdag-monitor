@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5YT0HDKHY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J5YT0HDKHY');</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BlockDAG Holders Cannot Claim Their Coins. The Error: "Transaction Failed."</title>
+<meta name="description" content="On June 9, 2026 BlockDAG holders across multiple batches report claim transactions failing with 'Transaction likely to revert' and 'Transaction failed.' It is a regression from days earlier, the error tells retail users to run a developer debug script, and even an account defending the project posted the same failure.">
+<meta name="keywords" content="BlockDAG claim failed, BDAG transaction failed, BlockDAG transaction would revert, BDAG cannot claim, BlockDAG claim batch 3, BDAG claiming broken">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://blockdagexposed.com/article-claim-failed.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BlockDAG Exposed">
+<meta property="og:url" content="https://blockdagexposed.com/article-claim-failed.html">
+<meta property="og:title" content="BlockDAG holders cannot claim their coins. The error: 'Transaction failed.'">
+<meta property="og:description" content="June 9: claim transactions fail across batches with 'would revert.' A regression from days earlier. The error tells holders to run a developer debug script, and even an account defending the project posted the same failure.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@blockdagmonitor">
+<meta name="twitter:title" content="BlockDAG holders cannot claim their coins. The error: 'Transaction failed.'">
+<meta name="twitter:description" content="June 9: claim transactions fail across batches. A regression from days earlier. The error tells holders to run a node debug script, and even a defender of the project posted it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css?v=16">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"BlockDAG holders cannot claim their coins. The error: Transaction failed.","description":"On June 9, 2026 BlockDAG holders across multiple batches report claim transactions failing with 'Transaction likely to revert' and 'Transaction failed.' A regression from days earlier.","datePublished":"2026-06-09T00:00:00Z","dateModified":"2026-06-09T00:00:00Z","url":"https://blockdagexposed.com/article-claim-failed.html","author":{"@type":"Organization","name":"BlockDAG Exposed","url":"https://blockdagexposed.com"},"publisher":{"@type":"Organization","name":"BlockDAG Exposed","url":"https://blockdagexposed.com","logo":{"@type":"ImageObject","url":"https://blockdagexposed.com/favicon.svg"}},"keywords":"BlockDAG claim failed, transaction would revert, cannot claim","inLanguage":"en"}</script>
+<style>
+.share-row{display:flex;gap:10px;flex-wrap:wrap;margin:32px 0 24px;padding-top:28px;border-top:1px solid var(--rule)}
+.shr{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;font-size:12.5px;font-weight:600;letter-spacing:.03em;border:1px solid var(--rule);color:var(--ink);cursor:pointer;font-family:'DM Sans',sans-serif;background:#fff;text-decoration:none}
+.shr:hover{border-color:var(--ink)}
+.cmt-section{margin-top:40px;padding-top:32px;border-top:2px solid var(--ink)}
+.cmt-section h3{font-family:'Newsreader',serif;font-size:22px;font-weight:700;margin:0 0 24px}
+.cmt-item{padding:16px 0;border-bottom:1px solid var(--rule)}
+.cmt-name{font-weight:700;font-size:13px;color:var(--ink)}
+.cmt-date{font-size:11px;color:var(--muted);margin-top:2px}
+.cmt-text{font-family:'Newsreader',serif;font-size:16px;line-height:1.5;margin-top:8px;color:#1a2333}
+.cmt-empty{font-size:13px;color:var(--muted);font-style:italic;padding:16px 0}
+.cmt-form{display:flex;flex-direction:column;gap:12px;margin-bottom:36px}
+.cmt-form textarea{width:100%;padding:14px 16px;border:1px solid var(--rule);font:inherit;font-size:14px;resize:vertical;outline:none;font-family:'DM Sans',sans-serif}
+.cmt-form-row{display:flex;gap:12px}
+.cmt-form input{flex:1;padding:10px 14px;border:1px solid var(--rule);font:inherit;font-size:14px;outline:none;font-family:'DM Sans',sans-serif}
+.cmt-form button{padding:10px 20px;background:var(--ink);color:#fff;border:0;font:inherit;font-weight:600;font-size:13px;cursor:pointer;letter-spacing:.04em}
+.errbox{background:#10172a;border:1px solid #2a3a5c;border-radius:6px;padding:16px 18px;margin:8px 0 4px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.6;color:#cdd6e6}
+.errbox b{color:#ff6b6b}
+</style>
+</head>
+<body>
+<div class="ticker"><div class="ticker-track">
+<span class="tick alarm"><b>"Transaction failed"</b> claiming fails across batches, June 9</span><span class="tick alarm"><b>A regression</b> wallets that claimed on June 6 fail now</span><span class="tick alarm"><b>Even a defender</b> posted the same Batch 3 error</span><span class="tick"><b>promises broken</b> 114 / 121 <span class="neg">94.2%</span></span><span class="tick alarm">·</span>
+</div></div>
+<header class="site"><div class="site-inner">
+<div class="site-top"><a href="index.html" class="brand"><div class="brand-mark">B</div><div><div class="brand-name">BlockDAG <em>Exposed</em></div><div class="brand-tag">INDEPENDENT · INVESTIGATIVE · CRYPTO</div></div></a>
+<div class="site-actions"><a href="index.html#newsletter" class="btn">Newsletter</a><a href="petition.html" class="btn solid">Sign Petition</a></div></div>
+<nav class="site-nav"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="articles.html" class="active">Investigations</a></li>
+<li><a href="tracker.html">Promise Tracker</a></li>
+<li><a href="timeline.html">Timeline</a></li>
+<li><a href="evidence.html">Evidence</a></li>
+<li><a href="people.html">The People</a></li>
+<li><a href="categories.html">Categories</a></li>
+<li class="sep"></li>
+<li><a href="trust.html">Trust Score</a></li>
+<li><a href="about.html">About</a></li>
+</ul></nav></div></header>
+<main>
+<div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><a href="articles.html">Investigations</a><span class="sep">/</span><span>The Claim That Fails</span></div>
+<article class="page-head" style="border-bottom:1px solid var(--rule);padding-bottom:0">
+<div class="eyebrow red">Breaking · Investigation · Claiming</div>
+<h1>BlockDAG holders cannot claim their coins. The error: "Transaction failed."</h1>
+<p class="dek">On June 9, 2026 holder after holder reported the same thing: trying to claim their BDAG returns "Transaction likely to revert" or simply "Transaction failed." It spans batches one through six, it is a regression from earlier in the week, and the error screen tells ordinary investors to run a developer debug script. The detail that makes it undeniable: the same failure was posted by an account that spent the previous day defending the project and calling its critics liars.</p>
+<div class="meta-row">
+<span><b>BlockDAG Exposed</b> · Investigations Desk</span><span>·</span>
+<span>Published <b>9 June 2026</b></span><span>·</span>
+<span>Based on 403,000+ Telegram messages through June 9 morning UTC</span>
+</div>
+</article>
+<div class="article-wrap">
+<div class="article-body">
+
+<p class="lede">A token you cannot move is not an asset, it is a screenshot. On June 9 a large share of BlockDAG holders discovered that the coins their dashboard says are "available to claim" will not actually leave the contract. The button is there. The transaction is not.</p>
+
+<h2>The error everyone is seeing</h2>
+<p class="first">The failure is specific and repeatable. When a holder tries to claim, the wallet returns a revert. The message, shown to ordinary users, reads:</p>
+
+<div class="errbox">
+<b>Transaction Failed</b><br>
+Transaction likely to revert: Transaction would revert but the RPC did not return the reason. Verify: TGE is set, merkle root is set, vesting contract has sufficient balance, and proof matches this contract. Run `node scripts/test-relayer-claim.js` with a single address to debug.
+</div>
+
+<p>Read who that message is written for. "Run node scripts/test-relayer-claim.js with a single address to debug" is an instruction for a developer with the project's codebase on their machine. It is being shown to retail investors who clicked a "Claim" button. A finished product does not hand its users an internal debug command when something breaks. That alone tells you the claim system is not production ready.</p>
+
+<h2>It is widespread, and it is a regression</h2>
+<p>This is not one unlucky wallet. Across June 8 and 9 the group carried roughly forty separate claim-failure reports against only a handful of confirmed successes. A sample from June 9 alone:</p>
+
+<blockquote>
+"Can't claim my token allocation Batch 1, 2, 3, saying transaction likely to revert?"
+<cite>— Community member Jmilli, June 9, 2026, 02:17 UTC.</cite>
+</blockquote>
+
+<p>The most telling report is a regression. The same holder, the same wallet, claimed successfully days earlier and cannot now. Jordan Romero, June 9 at 03:33 UTC:</p>
+
+<blockquote>
+"Why can't I claim my coins, it keeps saying transaction failed? I was able to claim them the last 2 times on the 6th, but now it's not working this time."
+<cite>— Community member Jordan Romero, June 9, 2026, 03:33 UTC.</cite>
+</blockquote>
+
+<p>If the cause were the holder's own wallet setup, the same wallet would not have worked on June 6 and failed on June 9 with nothing changed on their end. Darryl Laird and Claude Villa reported the identical "transaction failed" loop the same morning. Whatever changed, changed on the contract side, not in the users' browsers.</p>
+
+<h2>The detail that ends the argument</h2>
+<p>For two days, accounts defending BlockDAG called this site a "paid fudder" for documenting broken claiming and staking. Then one of them, Kova7, posted this:</p>
+
+<blockquote>
+"The problem persists in the claim for Batch 3."
+<cite>— Kova7 (@Kova77), posting the "Transaction Failed" error screen on X, June 9, 2026.</cite>
+</blockquote>
+
+<p>That is the whole case in one post. The same account insisting the system works published a screenshot of it not working. When the people defending a project are themselves locked out of their coins, the question of who is "spreading FUD" answers itself.</p>
+
+<h2>In fairness: what BlockDAG says</h2>
+<p>We try to give the project's side, and here it is. BlockDAG attributes the failures to the user's environment. The standing fix from admins is: "Clear your browser cache, close all tabs, disconnect wallet from all dapps and try again," along with instructions to add the correct network (Chain ID 1404, RPC rpc.bdagscan.com). Admins also state that "many users have successfully claimed their coins." Some clearly have.</p>
+
+<p>But two things cut against the cache-and-RPC explanation. First, the regression: a wallet that claimed on June 6 with that same network already configured should not fail on June 9. Second, the error itself points at the contract, not the browser: it asks you to verify the merkle root, the proof, and whether the "vesting contract has sufficient balance." Those are server-side and contract-side conditions a user cannot set or fix by clearing a cache.</p>
+
+<h2>And the coins that do claim are compressed</h2>
+<p>Even for holders who get a claim through, the amount that lands is a fraction of the dashboard figure. Clark put it plainly on June 8:</p>
+
+<blockquote>
+"Coin being on your dash and coin being in your wallet and sendible are not the same thing. You'll find the coins are very compressed."
+<cite>— Community member Clark, June 8, 2026.</cite>
+</blockquote>
+
+<p>So the path from "dashboard balance" to "tokens you can actually use" has two gates, and both are failing for many: the claim itself reverts, and what gets through is heavily compressed. This is the same wall holders hit when they try to reach the buyback's 10 million minimum, the tokens they would need are stuck behind a claim that will not execute.</p>
+
+<h2>What we are watching next</h2>
+<p>Two things, both checkable. First: whether BlockDAG acknowledges a contract-side claim issue and ships a fix, rather than repeating "clear your cache." Second: whether the claim failures clear before the next batch is released, or stack on top of the unclaimed batches 4, 5 and 6 that holders were already waiting on. We will update this story the moment either happens.</p>
+
+<p>Our advice is narrow and practical here. If your claim fails, do not keep paying gas to retry blindly, and never share your seed phrase with anyone offering to "fix" it. Screenshot the error with its timestamp. A documented, repeatable failure is worth more than a dozen retries.</p>
+
+<div style="border-top:2px solid var(--ink);padding-top:20px;margin-top:36px;font-family:'Newsreader',serif;font-size:14px;color:var(--muted);font-style:italic">
+We update every story when new evidence lands. <a href="article-buyback-empty-wallet.html" style="color:var(--red);font-style:normal;font-weight:600">The $68M buyback wallets</a> · <a href="article-buyback-circular.html" style="color:var(--red);font-style:normal;font-weight:600">The circular buyback</a> · <a href="article-staking.html" style="color:var(--red);font-style:normal;font-weight:600">Staking, still broken</a> · <a href="is-blockdag-a-scam.html" style="color:var(--red);font-style:normal;font-weight:600">Is BlockDAG a scam?</a></div>
+
+<div class="share-row">
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fblockdagexposed.com%2Farticle-claim-failed.html&text=BlockDAG%20holders%20cannot%20claim%20their%20coins.%20The%20error%20is%20%22Transaction%20failed.%22%20It%20spans%20batches%2C%20it%20is%20a%20regression%20from%20days%20earlier%2C%20and%20even%20an%20account%20defending%20the%20project%20posted%20the%20same%20failure." target="_blank" rel="noopener" class="shr"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X</a>
+<a href="https://t.me/share/url?url=https%3A%2F%2Fblockdagexposed.com%2Farticle-claim-failed.html&text=BlockDAG%20holders%20cannot%20claim%20their%20coins.%20The%20error%3A%20Transaction%20failed.%20A%20regression%2C%20and%20even%20a%20defender%20of%20the%20project%20posted%20it." target="_blank" rel="noopener" class="shr">Telegram</a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fblockdagexposed.com%2Farticle-claim-failed.html&title=BlockDAG%20holders%20cannot%20claim%20their%20coins.%20The%20error%3A%20Transaction%20failed." target="_blank" rel="noopener" class="shr">Reddit</a>
+<button class="shr" onclick="copyLink(this,'https://blockdagexposed.com/article-claim-failed.html')">Copy link</button>
+</div>
+
+<div class="cmt-section">
+<h3>Community discussion</h3>
+<div class="cmt-form">
+<textarea id="c-text" placeholder="Share your thoughts..." maxlength="1000" rows="3"></textarea>
+<div class="cmt-form-row">
+<input type="text" id="c-name" placeholder="Your name (optional)" maxlength="60">
+<button onclick="postComment()">Post</button>
+</div>
+</div>
+<div id="comments-list"></div>
+</div>
+</div>
+
+<aside class="article-side">
+<div class="facts">
+<h4>The failure</h4>
+<div class="row"><span>Error</span><b class="neg">"Transaction failed"</b></div>
+<div class="row"><span>Batches affected</span><b class="neg">1 through 6</b></div>
+<div class="row"><span>Reports in 2 days</span><b class="neg">~41 vs few wins</b></div>
+<div class="row"><span>Regression</span><b class="neg">worked June 6</b></div>
+<div class="row"><span>Posted by a defender</span><b class="neg">yes (Kova7)</b></div>
+</div>
+<div class="facts">
+<h4>The tell</h4>
+<div class="row"><span>Error tells users to</span><b class="neg">run a node script</b></div>
+<div class="row"><span>Points at</span><b class="neg">merkle root, vesting</b></div>
+<div class="row"><span>Admin blames</span><b class="neg">cache &amp; RPC</b></div>
+<div class="row"><span>Claimed coins</span><b class="neg">heavily compressed</b></div>
+</div>
+<div class="facts">
+<h4>June 9 snapshot</h4>
+<div class="row"><span>Promises broken</span><b class="neg">114 / 121</b></div>
+<div class="row"><span>Failure rate</span><b class="neg">94.2%</b></div>
+<div class="row"><span>Staking broken</span><b class="neg">110 days</b></div>
+<div class="row"><span>Buyback wallets</span><b>~$68M, 0 payouts</b></div>
+<div class="row"><span>Messages indexed</span><b>403,000+</b></div>
+</div>
+<div class="facts">
+<h4>Related</h4>
+<div class="row"><a href="article-buyback-empty-wallet.html" style="color:var(--ink)">The $68M buyback wallets</a><span style="color:var(--muted);font-size:11px">→</span></div>
+<div class="row"><a href="article-buyback-circular.html" style="color:var(--ink)">The circular buyback</a><span style="color:var(--muted);font-size:11px">→</span></div>
+<div class="row"><a href="article-staking.html" style="color:var(--ink)">Staking, still broken</a><span style="color:var(--muted);font-size:11px">→</span></div>
+<div class="row"><a href="is-blockdag-a-scam.html" style="color:var(--ink)">Is BlockDAG a scam?</a><span style="color:var(--muted);font-size:11px">→</span></div>
+<div class="row"><a href="tracker.html" style="color:var(--ink)">Promise tracker</a><span style="color:var(--muted);font-size:11px">→</span></div>
+</div>
+<div style="background:var(--red-soft);border:1px solid rgba(198,40,40,0.2);padding:22px;text-align:center;">
+<div style="font-family:'Newsreader',serif;font-size:18px;font-weight:700;color:var(--ink);margin-bottom:8px;">Claim keeps failing?</div>
+<div style="font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.5;">Screenshot the error with its timestamp. Never share your seed phrase with anyone offering to "fix" it. Register what happened.</div>
+<a href="petition.html" style="display:inline-block;background:var(--red);color:#fff;font-size:13px;font-weight:700;padding:12px 20px;text-decoration:none;letter-spacing:.04em;">Register the Loss</a>
+</div>
+</aside>
+</div>
+</main>
+<footer class="site"><div class="footer-inner"><div class="footer-top">
+<div><div class="brand-name serif">BlockDAG <em>Exposed</em></div><p class="about" style="margin-top:14px">Independent investigative tracker of BlockDAG Network. 403,000+ messages analyzed · 121 promises tracked · 114 broken. We publish what we can verify and cite every source.</p></div>
+<div><h4>Investigations</h4><ul>
+<li><a href="articles.html">All articles</a></li>
+<li><a href="tracker.html">Promise tracker</a></li>
+<li><a href="timeline.html">Timeline</a></li>
+<li><a href="evidence.html">Evidence library</a></li></ul></div>
+<div><h4>The case</h4><ul>
+<li><a href="trust.html">Trust score breakdown</a></li>
+<li><a href="people.html">People &amp; roles</a></li>
+<li><a href="petition.html">Sign the petition</a></li></ul></div>
+<div><h4>About</h4><ul>
+<li><a href="methodology.html">Methodology</a></li>
+<li><a href="tips.html">Submit a tip</a></li>
+<li><a href="contact.html">Contact us</a></li></ul></div>
+</div><div class="footer-bot">
+<div>© 2026 BlockDAG Exposed · Independent · Not financial advice · Last updated June 9, 2026</div>
+<div class="socials"><a href="https://x.com/blockdagmonitor">X</a><a href="https://t.me/blockdagexposed">Telegram</a></div>
+</div></div></footer>
+<script>
+function copyLink(btn,url){navigator.clipboard.writeText(url).then(()=>{btn.textContent='Copied!';setTimeout(()=>{btn.textContent='Copy link'},2000)});}
+</script>
+<script type="module">
+import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import{getFirestore,collection,addDoc,query,where,onSnapshot,serverTimestamp}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+const app=initializeApp({apiKey:"AIzaSyBkFwzdib2ewXvNf6YmgKvmfhMWt-8k6uw",authDomain:"blockdag-exposed.firebaseapp.com",projectId:"blockdag-exposed",storageBucket:"blockdag-exposed.firebasestorage.app",messagingSenderId:"867203959601",appId:"1:867203959601:web:e31c472057f118f9aa3e10"});
+const db=getFirestore(app);const col=collection(db,'comments');const ARTICLE_ID='article-claim-failed';
+onSnapshot(query(col,where('article_id','==',ARTICLE_ID)),snap=>{const list=document.getElementById('comments-list');if(!list)return;const docs=snap.docs.slice().sort((a,b)=>(b.data().timestamp?.seconds||0)-(a.data().timestamp?.seconds||0));if(!docs.length){list.innerHTML='<p class="cmt-empty">No comments yet. Be the first.</p>';return;}list.innerHTML=docs.map(d=>{const data=d.data();const date=data.timestamp?new Date(data.timestamp.toDate()).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}):'';const text=(data.text||'').replace(/</g,'&lt;').replace(/>/g,'&gt;');return'<div class="cmt-item"><div class="cmt-name">'+(data.name||'Anonymous')+'</div><div class="cmt-date">'+date+'</div><div class="cmt-text">'+text+'</div></div>'}).join('');},()=>{});
+window.postComment=async function(){const text=document.getElementById('c-text').value.trim();if(!text)return;const name=document.getElementById('c-name').value.trim()||'Anonymous';const btn=event.target;btn.disabled=true;btn.textContent='Posting...';await addDoc(col,{article_id:ARTICLE_ID,name,text,timestamp:serverTimestamp()});document.getElementById('c-text').value='';document.getElementById('c-name').value='';btn.disabled=false;btn.textContent='Post';};
+</script>
+</body>
+</html>
