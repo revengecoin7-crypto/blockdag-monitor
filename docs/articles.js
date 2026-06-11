@@ -2,9 +2,9 @@ const ARTICLES = [
   {
     id: 'article-buyback-math',
     title: 'BlockDAG advertises a $0.03 buyback. Holders say the dashboard pays $0.00015.',
-    date: '2026-06-10',
-    dateDisplay: 'June 10, 2026',
-    excerpt: 'On June 10, 2026 BlockDAG ran another "FINAL 24 HOURS" sale headlined "SELL at $0.03." But holders comparing the banner to their own dashboards report a number roughly 200x smaller, closer to $0.00015 per BDAG. At the same time, community members say the deposits sent into the buyback have now passed the project\'s own published liquidity of about $68.5 million. We mark clearly what is verifiable and what is community calculation.',
+    date: '2026-06-11',
+    dateDisplay: 'June 10, updated June 11, 2026',
+    excerpt: 'BlockDAG headlined a sale "SELL at $0.03," then raised it again to "$0.05" on June 11, but holders comparing the banner to their own dashboards report a number hundreds of times smaller, closer to $0.0001 to $0.0002 per BDAG. Community members say the committed buyback volume has now passed the project\'s own published ~$68.5M liquidity, and one holder reported a sale deducted with no payment and no hash. We mark clearly what is verifiable and what is community calculation.',
     url: 'article-buyback-math.html',
     tags: [{ label: 'Breaking', style: 'red' }, { label: 'Buyback', style: 'orange' }],
     isNew: true,

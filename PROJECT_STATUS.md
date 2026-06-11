@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (122 promises, 115 broken)
+2. `tracker.html` — Promise Tracker (123 promises, 116 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -58,20 +58,29 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 10, 2026)
-- 122 promises tracked (115 broken/misleading, 94.3% failure rate)
-- Canonieke cijfers overal: 122 tracked, 115 broken, 94.3%, staking 111 dagen, 404,000+ berichten
-- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000044** (bounce), sell-tier nu **$0.03**
-- Timeline events bijgewerkt t/m June 10 (180 events)
-- Notable quotes bijgewerkt t/m June 10 (isNew op nieuwste June 10 quotes; oude isNew weggehaald)
+## Data (data.js) — Huidige staat (June 11, 2026)
+- 123 promises tracked (116 broken/misleading, 94.3% failure rate)
+- Canonieke cijfers overal: 123 tracked, 116 broken, 94.3%, staking 112 dagen, 405,000+ berichten
+- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000044**, sell-tier nu **$0.05** (was $0.03 op 10 juni)
+- Timeline events bijgewerkt t/m June 11 (182 events)
+- Notable quotes bijgewerkt t/m June 11 (isNew op nieuwste June 11 quotes; oude isNew weggehaald)
 - 20 bronnen
-- Laatste artikelen: **article-buyback-math.html (June 10)**, article-claim-failed.html (June 9), article-buyback-empty-wallet.html (June 8), article-buyback-circular.html (June 5)
+- Laatste artikelen: **article-buyback-math.html (June 10, UPDATED June 11)**, article-claim-failed.html (June 9), article-buyback-empty-wallet.html (June 8), article-buyback-circular.html (June 5)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **10 juni 2026 10:15 UTC** (export: ChatExport_2026-06-10)
-- Periode: 18 februari t/m 10 juni 2026
-- Totaal berichten: 404,000+ (543 nieuw op 10 juni)
+- Geanalyseerd t/m: **11 juni 2026 10:52 UTC** (export: ChatExport_2026-06-11)
+- Periode: 18 februari t/m 11 juni 2026
+- Totaal berichten: 405,000+ (668 nieuw op 11 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 11): sell-prijs naar $0.05, dashboard betaalt nog steeds een fractie
+- **Sell-prijs nu $0.05** (was $0.03). Officiële FAQ: "Payout Currency: USDT, Single USDT Payment, offer ends Monday 6PM UTC". Prijsladder nu: $0.001→$0.01→$0.02→$0.005→$0.00025→$0.01→$0.03→**$0.05**.
+- **Gat met dashboard groter**: Steven Boswell 283.8M → $56.77k (i.p.v. $11.3m, ~$0.0002); Thomas 130M → $32k (i.p.v. $5m). Effectieve prijs ~$0.0001-$0.0002.
+- **Verkoop afgetrokken, niets betaald, geen hash**: één houder (05:46): "I received the confirmation. It didn't arrive at its destination. It didn't generate a hash and was deducted from my balance." → ernstige escalatie.
+- **Community noemt het openlijk Ponzi** (Jeremy, Kurt: "where's that money coming from? 56x is not realistic").
+- **Admin herschrijft geschiedenis**: "There was no fixed date for the launch" (09:56) — tegen het gedocumenteerde "100% guaranteed" record.
+- **Verifieerbare marktdata** (CMC via community): market cap ~$3.14M, circulating ~79B van 102.7B minted, max supply 150B.
+- Promise #123 toegevoegd. Artikel buyback-math KREEG GEDATEERD UPDATE-BLOK (geen duplicaat, conform [[feedback_verify_before_publish]]).
 
 ## NIEUW (June 10): geadverteerde $0.03 buyback vs dashboard ~$0.00015 + obligations > liquiditeit
 - **Sell-prijs nu officieel $0.03** (buy $0.00000044), zoveelste "FINAL 24 HOURS" countdown. Prijsladder: $0.001→$0.01→$0.02→$0.005→$0.00025→$0.01→**$0.03**.
