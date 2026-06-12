@@ -58,20 +58,29 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 11, 2026)
-- 123 promises tracked (116 broken/misleading, 94.3% failure rate)
-- Canonieke cijfers overal: 123 tracked, 116 broken, 94.3%, staking 112 dagen, 405,000+ berichten
-- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000044**, sell-tier nu **$0.05** (was $0.03 op 10 juni)
-- Timeline events bijgewerkt t/m June 11 (182 events)
-- Notable quotes bijgewerkt t/m June 11 (isNew op nieuwste June 11 quotes; oude isNew weggehaald)
+## Data (data.js) — Huidige staat (June 12, 2026)
+- 123 promises tracked (116 broken/misleading, 94.3% failure rate) — GEEN nieuwe promise op 12 juni (Etherscan-flag is indicator, geen belofte; count eerlijk gehouden)
+- Canonieke cijfers overal: 123 tracked, 116 broken, 94.3%, staking 113 dagen, 406,000+ berichten
+- Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000044**, sell-tier **$0.05**
+- Timeline events bijgewerkt t/m June 12 (185 events)
+- Notable quotes bijgewerkt t/m June 12 (isNew op nieuwste June 12 quotes; oude isNew weggehaald)
 - 20 bronnen
-- Laatste artikelen: **article-buyback-math.html (June 10, UPDATED June 11)**, article-claim-failed.html (June 9), article-buyback-empty-wallet.html (June 8), article-buyback-circular.html (June 5)
+- Laatste artikelen: **article-presale-phish-flag.html (June 12)**, article-buyback-math.html (June 10, UPDATED June 11), article-claim-failed.html (June 9), article-buyback-empty-wallet.html (June 8)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **11 juni 2026 10:52 UTC** (export: ChatExport_2026-06-11)
-- Periode: 18 februari t/m 11 juni 2026
-- Totaal berichten: 405,000+ (668 nieuw op 11 juni)
+- Geanalyseerd t/m: **12 juni 2026 10:18 UTC** (export: ChatExport_2026-06-12)
+- Periode: 18 februari t/m 12 juni 2026
+- Totaal berichten: 406,000+ (496 nieuw op 12 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 12): Etherscan PHISH/HACK flag op presale-deposit adres (GEVERIFIEERD, extern)
+- **Adres 0x4C39Ed0438D5e8913aCF423db6d56CCe78B2d367** is op Etherscan getagd **"Blockdag Presale"** ÉN **"Phish / Hack"**, met waarschuwing "reports that this address was used in a Phishing scam. Reported by MetaMask."
+- **Geverifieerd door mij** via WebFetch (etherscan toont het live) + onafhankelijk onderzoek (Jerry O'Callaghan, Medium nov 2025) dat dit adres door BlockDAG's EIGEN website als ETH deposit-adres werd gegeven. Saldo nu ~$175 (leeggehaald).
+- **Eerlijke framing**: MetaMask's exacte rede is niet publiek; we claimen NIET dat het team zelf een phishing-scam runde, alleen dat het adres geflagd is. Iedereen kan het op Etherscan checken.
+- **GEEN promise** (indicator), wel nieuw artikel **article-presale-phish-flag.html** + timeline + quote.
+- **Compressie ontcijferd**: valus: "compress eligible BDAG to 99.5%, multiply result (0.5%) by buyback value = USDT shown." → payout ≈ 0.5% × headline-prijs.
+- **15B coins teruggekocht vs $68M liquiditeit** (Rajesh: "do the math").
+- **Staking weer DOWN** (113 dagen): "staking page not working", "error page", admin "up soon".
 
 ## NIEUW (June 11): sell-prijs naar $0.05, dashboard betaalt nog steeds een fractie
 - **Sell-prijs nu $0.05** (was $0.03). Officiële FAQ: "Payout Currency: USDT, Single USDT Payment, offer ends Monday 6PM UTC". Prijsladder nu: $0.001→$0.01→$0.02→$0.005→$0.00025→$0.01→$0.03→**$0.05**.
