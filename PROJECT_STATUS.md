@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (123 promises, 116 broken)
+2. `tracker.html` — Promise Tracker (124 promises, 117 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -58,20 +58,28 @@
 ## Google Analytics
 - Tag ID: G-J5YT0HDKHY (op alle pagina's)
 
-## Data (data.js) — Huidige staat (June 12, 2026)
-- 123 promises tracked (116 broken/misleading, 94.3% failure rate) — GEEN nieuwe promise op 12 juni (Etherscan-flag is indicator, geen belofte; count eerlijk gehouden)
-- Canonieke cijfers overal: 123 tracked, 116 broken, 94.3%, staking 113 dagen, 406,000+ berichten
+## Data (data.js) — Huidige staat (June 16, 2026)
+- 124 promises tracked (117 broken/misleading, 94.4% failure rate)
+- Canonieke cijfers overal: 124 tracked, 117 broken, 94.4%, staking 117 dagen, 410,000+ berichten
 - Aftersale price: **$0.00000012**. Legacy Sale price: **$0.00000044**, sell-tier **$0.05**
-- Timeline events bijgewerkt t/m June 12 (185 events)
-- Notable quotes bijgewerkt t/m June 12 (isNew op nieuwste June 12 quotes; oude isNew weggehaald)
+- Timeline events bijgewerkt t/m June 16 (188 events)
+- Notable quotes bijgewerkt t/m June 16 (isNew op nieuwste June 13-16 quotes; oude isNew weggehaald)
 - 20 bronnen
-- Laatste artikelen: **article-presale-phish-flag.html (June 12)**, article-buyback-math.html (June 10, UPDATED June 11), article-claim-failed.html (June 9), article-buyback-empty-wallet.html (June 8)
+- Laatste artikelen: **article-network-down.html (June 16)**, article-presale-phish-flag.html (June 12), article-buyback-math.html (June 10, UPD June 11), article-claim-failed.html (June 9)
 
 ## Telegram analyse
-- Geanalyseerd t/m: **12 juni 2026 10:18 UTC** (export: ChatExport_2026-06-12)
-- Periode: 18 februari t/m 12 juni 2026
-- Totaal berichten: 406,000+ (496 nieuw op 12 juni)
+- Geanalyseerd t/m: **16 juni 2026 10:26 UTC** (export: ChatExport_2026-06-16)
+- Periode: 18 februari t/m 16 juni 2026
+- Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 13-16): NETWERK LAG DAGEN PLAT tijdens buyback-deadline (GEVERIFIEERD)
+- **BlockDAG-netwerk/RPC down ~13-15 juni**. Admin-bevestigd: "RPC is down until Tuesday, the BDAG network is down at the moment", "maintenance until Tuesday". Houders konden niet claimen/transferren/verkopen.
+- **Botst met buyback-deadline**: officieel kanaal bleef "SELL AT $0.05, FINAL 72H/48H" pushen terwijl het netwerk plat lag. Maximilian Hänel: "rpc finished Tuesday but offer ends Monday. That's not great."
+- **Coins verdwijnen uit wallets** (community): Honk Honk "the bdag I claimed to my binance wallet is gone"; Crypto King dashboard $23K→$5K. (community-reported)
+- **Daarna**: "CHAIN UPGRADE COMPLETE: 5,000 TPS LIVE" (15 juni) — ironie: chain die 5.000 TPS adverteert lag dagen volledig onbereikbaar.
+- Promise #124 toegevoegd (network outage, broken). Nieuw artikel: article-network-down.html.
+- June 30 = zoveelste "final TGE" opnieuw bevestigd (14 juni). Miners "shipped in June" opnieuw.
 
 ## NIEUW (June 12): Etherscan PHISH/HACK flag op presale-deposit adres (GEVERIFIEERD, extern)
 - **Adres 0x4C39Ed0438D5e8913aCF423db6d56CCe78B2d367** is op Etherscan getagd **"Blockdag Presale"** ÉN **"Phish / Hack"**, met waarschuwing "reports that this address was used in a Phishing scam. Reported by MetaMask."
