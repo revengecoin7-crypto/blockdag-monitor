@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (124 promises, 117 broken)
+2. `tracker.html` — Promise Tracker (125 promises, 118 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,13 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 17): "$0.05 FINAL" sell-prijs werd "$0.10" met nieuwe countdown + explorer plat (GEVERIFIEERD)
+- **Bewegende "final" prijs**: 15 juni "SELL at $0.05, FINAL 72H" → 16 juni "24 HOURS ONLY: SELL AT $0.10 • TEST THE NEW 5,000 TPS LIVE" → 17 juni "FINAL 48 HOURS: $0.10 SELL OPTION CLOSING". Een "final" deadline die niet sluit maar terugkomt op een hoger getal met een verse klok. Allemaal uit hun eigen officiële kanaal.
+- **Zelfde ~0.5% compressie**: hoger headline-getal verandert vrijwel niets. Tim Mc testte: 120M BDAG verkocht → dashboard $60.10K (= 0.5% van $0.10 × 120M = $12M). RCSoeiro: "before it was one price reduction after another; now it's one sell price increase after another."
+- **Block explorer PLAT (admin-bevestigd, 17 juni)**: "I just checked and confirmed that it's not working... the team will fix the explorer asap." Houders (sahir, Vilphy, Jose Tirado) zien hun transfers/swaps niet op de explorer — vlak na de "5,000 TPS LIVE" claim, dus coins niet te verifiëren.
+- **Koopprijs-mismatch**: berekend op $0.000088 i.p.v. geadverteerde $0.00000044. Admin: "a technical glitch... but the current price on your dashboard is the real price."
+- Promise #125 toegevoegd (broken). Nieuw artikel: article-final-price-moves.html. Telling nu 125 tracked, 118 broken (94.4%). Staking 118 dagen.
 
 ## NIEUW (June 13-16): NETWERK LAG DAGEN PLAT tijdens buyback-deadline (GEVERIFIEERD)
 - **BlockDAG-netwerk/RPC down ~13-15 juni**. Admin-bevestigd: "RPC is down until Tuesday, the BDAG network is down at the moment", "maintenance until Tuesday". Houders konden niet claimen/transferren/verkopen.

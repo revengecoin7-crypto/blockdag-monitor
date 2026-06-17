@@ -1628,7 +1628,6 @@ const PROMISES = [
     id: 124,
     category: "Technical",
     status: "broken",
-    isNew: true,
     title: "The network went offline for days during the buyback deadline — holders could not claim or sell while the '$0.05 FINAL' clock ran out",
     promised: "June 15: 'CHAIN UPGRADE COMPLETE: 5,000 TPS LIVE. Faster Transactions. Built for real-world utility.'",
     reality: "From roughly June 13 to 15, 2026 the BlockDAG network was down. Admins confirmed it directly: 'RPC is down until Tuesday, the BDAG network is down at the moment' (June 14) and 'maintenance until Tuesday.' Holders could not claim, transfer or sell. ppss (June 14 00:43): 'How do you buy and sell when the blockchain network is down?' Andy (03:50): 'The bdag network is down, worryingly with zero comms.' The outage collided with the buyback deadline. Maximilian Hänel (12:44): 'The rpc will be finished on Tuesday but the offer is ending on Monday. That's not great.' So the project kept pushing 'BUY at $0.00000044, SELL at $0.05, FINAL 72 HOURS' while the network needed to sell was offline. Some holders reported claimed coins vanishing: Honk Honk (10:28): 'The bdag I claimed to my binance wallet is gone and I cant claim any more.' Crypto King: a dashboard that read $23K now shows $5K. On June 15 the project announced 'CHAIN UPGRADE COMPLETE: 5,000 TPS LIVE,' a high-throughput claim from a chain that had just spent days completely unreachable.",
@@ -1637,6 +1636,21 @@ const PROMISES = [
       { date: "June 14, 2026", text: "The rpc will be finished on tuesday but the offer is ending on monday. That's not great. [community member Maximilian Hänel, 12:44 UTC]" },
       { date: "June 14, 2026", text: "The bdag network is down, worryingly with zero comms. [community member Andy, 03:50 UTC]" },
       { date: "June 15, 2026", text: "🚀 CHAIN UPGRADE COMPLETE: 5,000 TPS LIVE. Faster transactions. Built for real-world utility. [official channel, 13:19 UTC — after days fully offline]" }
+    ]
+  },
+  {
+    id: 125,
+    category: "Buyback",
+    status: "broken",
+    isNew: true,
+    title: "The '$0.05 FINAL' sell price became '$0.10' overnight with a brand new countdown, while the explorer for the new '5,000 TPS' chain was down",
+    promised: "June 15: 'SELL at $0.05, FINAL 72 HOURS.' June 16: '24 HOURS ONLY: BUY AT $0.00000044 • SELL AT $0.10 • TEST THE NEW 5,000 TPS LIVE NOW.' June 17: 'FINAL 48 HOURS: LEGACY SALE & $0.10 SELL OPTION CLOSING.'",
+    reality: "A deadline marketed as 'FINAL' at $0.05 did not close the offer. Within a day the official channel reopened it at $0.10 under a '24 HOURS ONLY' banner, then a 'FINAL 48 HOURS' banner, tying the higher price to 'the successful launch of our new 5,000 TPS network upgrade.' Doubling the headline changes almost nothing: the dashboard still compresses payout to roughly 0.5% of the nominal value. Tim Mc (June 17, 01:38 UTC): 'I sold 120M BDAG in the buyback offer and it says my sale is worth $60.10K' — 120M at $0.10 is $12M, and $60,100 is 0.5% of that. Meanwhile the BlockDAG explorer for the just-announced 5,000 TPS chain was not loading transactions. An admin confirmed it directly (June 17): 'I just checked and confirmed that it's not working. I'll inform the team... the team will fix the explorer asap.' Holders (sahir, Vilphy, Jose Tirado) reported transfers and swaps not appearing on the explorer at all. Separately, holders reported the buy price was calculated at $0.000088 rather than the advertised $0.00000044; an admin called it 'a technical glitch' while insisting 'the current price on your dashboard is the real price.'",
+    quotes: [
+      { date: "June 16, 2026", text: "🚨 24 HOURS ONLY: BUY AT $0.00000044 • SELL AT $0.10 • TEST THE NEW 5,000 TPS LIVE NOW. To celebrate the successful launch of our new 5,000 TPS network upgrade... [official channel, 00:27 UTC]" },
+      { date: "June 17, 2026", text: "🚨 FINAL 48 HOURS: LEGACY SALE & $0.10 SELL OPTION CLOSING — BUY BDAG AT $0.00000044 NOW! [official channel, 04:37 UTC]" },
+      { date: "June 17, 2026", text: "I just checked and confirmed that it's not working. I'll inform the team... Rest assured that the team will fix the explorer asap. [official admin, on the BDAG explorer]" },
+      { date: "June 17, 2026", text: "Before, it was one price reduction after another; now it's one sell price increase after another. I don't understand anything anymore. [community member RCSoeiro, 01:37 UTC]" }
     ]
   }
 ];
@@ -1829,7 +1843,9 @@ const TIMELINE_EVENTS = [
   { date: "June 12, 2026", type: "broken", text: "Staking goes down again. Holders report the staking page erroring out across June 12 (Hiromi 04:55 UTC: 'the staking page is not working now'; Noah Martinez 05:43 UTC: 'keep getting an error page'). Joseph_V 06:09 UTC framed it as 'shutting down staking forcing us to join their buyback program and sell without any assurance of receiving payment.' Admin: 'Staking is being worked on, have you seen the new interface?' (staking.blockdag.engineering) and 'It will be up soon.' Staking has now been unreliable for 113 days since the February 19 launch promise." },
   { date: "June 13, 2026", type: "broken", text: "The BlockDAG network goes down for an 'upgrade.' Admins begin telling holders 'maintenance is ongoing', 'the network appears to be congested', and that an upgrade will be 'complete Tuesday 6PM GMT.' Claiming, transfers and selling stop working. The outage runs straight through the most heavily marketed buyback window, while the official channel keeps posting 'FINAL 72H, SELL AT $0.05' countdowns." },
   { date: "June 14, 2026", type: "broken", text: "The outage is now explicit: admin states 'RPC is down until Tuesday, the BDAG network is down at the moment' and 'maintenance until Tuesday.' Holders cannot sell while the $0.05 offer expires Monday. Maximilian Hänel 12:44 UTC: 'The rpc will be finished on Tuesday but the offer is ending on Monday. That's not great.' Andy 03:50 UTC: 'The bdag network is down, worryingly with zero comms.' Several report claimed coins vanishing from wallets (Honk Honk 10:28 UTC: 'the bdag I claimed to my binance wallet is gone and I cant claim any more'; Crypto King: a dashboard that read $23K now shows $5K)." },
-  { date: "June 15, 2026", type: "misleading", text: "BlockDAG announces 'CHAIN UPGRADE COMPLETE: 5,000 TPS LIVE, ~2 second consensus, built for real-world utility' (13:19 UTC), a high-throughput boast from a chain that had just spent roughly two days completely unreachable. The $0.05 'FINAL 48H' buyback push continued throughout. 124 promises tracked, 117 broken (94.4%). Staking and now the base network have both been offline in the same week." }
+  { date: "June 15, 2026", type: "misleading", text: "BlockDAG announces 'CHAIN UPGRADE COMPLETE: 5,000 TPS LIVE, ~2 second consensus, built for real-world utility' (13:19 UTC), a high-throughput boast from a chain that had just spent roughly two days completely unreachable. The $0.05 'FINAL 48H' buyback push continued throughout. 124 promises tracked, 117 broken (94.4%). Staking and now the base network have both been offline in the same week." },
+  { date: "June 16, 2026", type: "misleading", text: "Hours after the network came back, the official channel doubled the buyback headline: '24 HOURS ONLY: BUY AT $0.00000044 • SELL AT $0.10 • TEST THE NEW 5,000 TPS LIVE NOW' (00:27 UTC), framing the higher price as a celebration of 'the successful launch of our new 5,000 TPS network upgrade.' The same $0.05 'FINAL' deadline that expired during the outage simply reopened at a higher number." },
+  { date: "June 17, 2026", type: "broken", text: "The 'final' price kept moving: 'FINAL 48 HOURS: LEGACY SALE & $0.10 SELL OPTION CLOSING' (04:37 UTC). Meanwhile admins confirmed the block explorer for the new 5,000 TPS chain was down: 'I just checked and confirmed that it's not working... the team will fix the explorer asap.' Holders could not verify their own transfers on chain. Tim Mc tested the buyback: 120M BDAG sold returned a dashboard value of $60.10K, exactly 0.5% of the $0.10 headline, the same compression as before. 125 promises tracked, 118 broken (94.4%)." }
 ];
 
 const SOURCES = [
@@ -2366,12 +2382,17 @@ const NOTABLE_QUOTES = [
   { date: "June 12, 2026", tag: "community", text: "Shutting down staking forcing us to join their buyback program and sell without any assurance of receiving payment. [community member Joseph_V, June 12 06:09 UTC]" },
   { date: "June 12, 2026", tag: "misleading", text: "🚨 FINAL OPPORTUNITY: Allocations Shrinking. Sell BDAG at $0.05, buy at $0.00000044. Receive your approved USDT payment on October 1. Offer ends Monday 6PM UTC. [official channel, June 12 00:14 UTC]" },
   { date: "June 12, 2026", tag: "community", text: "I would sell my 30 million coins for 0.0002 immediately but i can not claim a single coin. [community member, responding on X, June 12]" },
-  { date: "June 14, 2026", isNew: true, tag: "response", text: "RPC is down until Tuesday. The project team is working on the RPC, meaning the BDAG network is down at the moment. [official admin, June 14]" },
-  { date: "June 14, 2026", isNew: true, tag: "community", text: "How do you buy and sell when the blockchain network is down? [community member ppss, June 14 00:43 UTC]" },
-  { date: "June 14, 2026", isNew: true, tag: "community", text: "The rpc will be finished on tuesday but the offer is ending on monday. That's not great. [community member Maximilian Hänel, June 14 12:44 UTC]" },
-  { date: "June 14, 2026", isNew: true, tag: "community", text: "The bdag network is down, worryingly with zero comms. [community member Andy, June 14 03:50 UTC]" },
-  { date: "June 14, 2026", isNew: true, tag: "community", text: "The bdag I claimed to my binance wallet is gone and I cant claim any more. [community member Honk Honk, June 14 10:28 UTC]" },
-  { date: "June 15, 2026", isNew: true, tag: "misleading", text: "🚀 CHAIN UPGRADE COMPLETE: 5,000 TPS LIVE. ~2 second consensus. Faster transactions. Built for real-world utility. [official channel, June 15 13:19 UTC — after roughly two days fully offline]" },
-  { date: "June 13, 2026", isNew: true, tag: "response", text: "If you're having trouble claiming, give it some time and try again later, the network appears to be congested at the moment. [official admin, June 13 13:05 UTC]" }
+  { date: "June 14, 2026", tag: "response", text: "RPC is down until Tuesday. The project team is working on the RPC, meaning the BDAG network is down at the moment. [official admin, June 14]" },
+  { date: "June 14, 2026", tag: "community", text: "How do you buy and sell when the blockchain network is down? [community member ppss, June 14 00:43 UTC]" },
+  { date: "June 14, 2026", tag: "community", text: "The rpc will be finished on tuesday but the offer is ending on monday. That's not great. [community member Maximilian Hänel, June 14 12:44 UTC]" },
+  { date: "June 14, 2026", tag: "community", text: "The bdag network is down, worryingly with zero comms. [community member Andy, June 14 03:50 UTC]" },
+  { date: "June 14, 2026", tag: "community", text: "The bdag I claimed to my binance wallet is gone and I cant claim any more. [community member Honk Honk, June 14 10:28 UTC]" },
+  { date: "June 15, 2026", tag: "misleading", text: "🚀 CHAIN UPGRADE COMPLETE: 5,000 TPS LIVE. ~2 second consensus. Faster transactions. Built for real-world utility. [official channel, June 15 13:19 UTC — after roughly two days fully offline]" },
+  { date: "June 13, 2026", tag: "response", text: "If you're having trouble claiming, give it some time and try again later, the network appears to be congested at the moment. [official admin, June 13 13:05 UTC]" },
+  { date: "June 16, 2026", isNew: true, tag: "misleading", text: "🚨 24 HOURS ONLY: BUY AT $0.00000044 • SELL AT $0.10 • TEST THE NEW 5,000 TPS LIVE NOW. To celebrate the successful launch of our new 5,000 TPS network upgrade... [official channel, June 16 00:27 UTC]" },
+  { date: "June 17, 2026", isNew: true, tag: "misleading", text: "🚨 FINAL 48 HOURS: LEGACY SALE & $0.10 SELL OPTION CLOSING — BUY BDAG AT $0.00000044 NOW! [official channel, June 17 04:37 UTC]" },
+  { date: "June 17, 2026", isNew: true, tag: "response", text: "I just checked and confirmed that it's not working. I'll inform the team... Rest assured that the team will fix the explorer asap. [official admin, on the BDAG explorer being down, June 17]" },
+  { date: "June 17, 2026", isNew: true, tag: "community", text: "Before, it was one price reduction after another; now it's one sell price increase after another. I don't understand anything anymore. [community member RCSoeiro, June 17 01:37 UTC]" },
+  { date: "June 17, 2026", isNew: true, tag: "community", text: "I sold 120M BDAG in the buyback offer and it says my sale is worth $60.10K. [community member Tim Mc testing the compression, June 17 01:38 UTC]" }
 ];
 
