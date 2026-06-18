@@ -73,6 +73,12 @@
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
 
+## NIEUW (June 18): de "FINAL 48 HOURS" countdown telt NIET af + admin noemt het zelf "marketing" (GEVERIFIEERD)
+- **Countdown telt niet af**: exact dezelfde "FINAL 48 HOURS: $0.10 SELL OPTION CLOSING" post op 17 juni 04:37 én 18 juni 00:29 (vol etmaal later, nog steeds "48 hours"). Hercules M: "Final 48 hours should be till June 18, but on dashboard it says 20th of June." Thomas Peterfaj: "FINAL 24 / 48 / 72 / FINAL FINAL FINAL."
+- **Admin noemt het zelf marketing**: "Marketing was good today, we are trying to build something sustainable." (18 juni 01:32)
+- **Claimen/support/explorer nog stuk**: admin "keep trying until you successfully claim", "it should be rcp glitch, please keep trying", "website link to support is currently down."
+- Verwerkt als **gedateerd UPDATE-blok** op article-final-price-moves.html (zelfde story als 17 juni, geen bijna-duplicaat). **Geen nieuwe promise** toegevoegd: telling blijft eerlijk op 125 tracked, 118 broken (94.4%). Staking 119 dagen. 2 timeline-events (17+18 juni nu compleet), 5 nieuwe quotes.
+
 ## NIEUW (June 17): "$0.05 FINAL" sell-prijs werd "$0.10" met nieuwe countdown + explorer plat (GEVERIFIEERD)
 - **Bewegende "final" prijs**: 15 juni "SELL at $0.05, FINAL 72H" → 16 juni "24 HOURS ONLY: SELL AT $0.10 • TEST THE NEW 5,000 TPS LIVE" → 17 juni "FINAL 48 HOURS: $0.10 SELL OPTION CLOSING". Een "final" deadline die niet sluit maar terugkomt op een hoger getal met een verse klok. Allemaal uit hun eigen officiële kanaal.
 - **Zelfde ~0.5% compressie**: hoger headline-getal verandert vrijwel niets. Tim Mc testte: 120M BDAG verkocht → dashboard $60.10K (= 0.5% van $0.10 × 120M = $12M). RCSoeiro: "before it was one price reduction after another; now it's one sell price increase after another."
