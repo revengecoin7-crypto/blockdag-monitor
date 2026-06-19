@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (125 promises, 118 broken)
+2. `tracker.html` — Promise Tracker (126 promises, 119 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,13 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 19): de "$0.10 FINAL" sell verdween vóór de eigen deadline, vervangen door "Ultimate Sale" sell $0.0005 (GEVERIFIEERD)
+- **Bait-and-switch**: de dagenlang gepushte "SELL AT $0.10, FINAL 48 HOURS" (deadline 20 juni) werd op 19 juni geschrapt en vervangen door een nieuwe "Ultimate Sale": "BUY AT $0.000024. SELL AT $0.0005 = 21X ROI! IT'S THAT SIMPLE." Geadverteerde sell-prijs stortte van $0.10 naar $0.0005 = 200x lager, overnight.
+- **S P (00:15)**: "this morning buy at 0.00000044 and sell at 0.10 until 06-20-26... Now buying at 0.000024 and selling at 0.0005."
+- **Wie al via $0.10 verkocht weet niet of hij betaald wordt**: pinned message verwijst nu alleen naar Ultimate Sale. Mr Gred: "is it mandatory to purchase the Ultimate Sale [to receive USDT]?" Maximilian Hänel + Paul: verwarring of legacy nog meetelt voor 1 oktober.
+- **Nieuwe deadlines erbij gestapeld**: Super App "August 20th", miner deliveries "within the next 20 days" (Nde keer), BlockDAG Turbo listing "October 1st".
+- Promise #126 toegevoegd (broken). Nieuw artikel: article-ultimate-sale.html. Telling nu 126 tracked, 119 broken (94.4%). Staking 120 dagen. Censuur gaat door: admin "if found fudding, the user will be banned permanently."
 
 ## NIEUW (June 18): de "FINAL 48 HOURS" countdown telt NIET af + admin noemt het zelf "marketing" (GEVERIFIEERD)
 - **Countdown telt niet af**: exact dezelfde "FINAL 48 HOURS: $0.10 SELL OPTION CLOSING" post op 17 juni 04:37 én 18 juni 00:29 (vol etmaal later, nog steeds "48 hours"). Hercules M: "Final 48 hours should be till June 18, but on dashboard it says 20th of June." Thomas Peterfaj: "FINAL 24 / 48 / 72 / FINAL FINAL FINAL."
