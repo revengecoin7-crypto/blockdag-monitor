@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (126 promises, 119 broken)
+2. `tracker.html` — Promise Tracker (127 promises, 120 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,13 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 20-22): drie verschillende sell-prijzen in 72 uur + "total invested" van dashboard verwijderd (GEVERIFIEERD)
+- **Prijs-chaos**: officieel kanaal adverteerde in 72 uur minstens drie tegenstrijdige buyback sell-prijzen, soms dezelfde dag: "SELL AT $0.02" (buy $0.00000021), "SELL $0.01 / 30X ROI" (buy $0.00000044), én "SELL AT $0.0005" (buy $0.000024). Houders wisten niet welke gold.
+- **Echte uitbetaling blijft fractie**: Ghost Buster verkocht 100M BDAG "voor 0.01" → dashboard $1.320 (~0,13%). Homer Sm: "the buyback price isn't 0.02, it's 0.000009."
+- **"Total invested" van dashboard verwijderd** (admin-bevestigd, 20 juni): "the removal of certain dashboard information... the visibility of the total sales amount in the dashboard have been noted." Houders (valus, Yeshiwas) zagen transacties/miner-aankopen verdwijnen. İbrahim: "deliberate tactic... buy back at the lowest possible price."
+- **Plus**: TPS-claim naar "5,500 TPS LIVE", "Regulated Exchange next month", "Batch 7 claims 23rd", Super App "August 20" alweer "postponed", Oct 1 payout via Super App (withdrawable onduidelijk).
+- Promise #127 toegevoegd (misleading). Nieuw artikel: article-price-chaos.html. Telling nu **127 tracked, 120 broken = 94.5%** (rate van 94.4% naar 94.5%). Staking 123 dagen, 430.000+ berichten. (Inhaalslag: dekte 20, 21 én 22 juni; 19 juni was al gedaan.)
 
 ## NIEUW (June 19): de "$0.10 FINAL" sell verdween vóór de eigen deadline, vervangen door "Ultimate Sale" sell $0.0005 (GEVERIFIEERD)
 - **Bait-and-switch**: de dagenlang gepushte "SELL AT $0.10, FINAL 48 HOURS" (deadline 20 juni) werd op 19 juni geschrapt en vervangen door een nieuwe "Ultimate Sale": "BUY AT $0.000024. SELL AT $0.0005 = 21X ROI! IT'S THAT SIMPLE." Geadverteerde sell-prijs stortte van $0.10 naar $0.0005 = 200x lager, overnight.
