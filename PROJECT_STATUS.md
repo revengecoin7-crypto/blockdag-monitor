@@ -73,6 +73,13 @@
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
 
+## NIEUW (June 23): admin geeft toe dashboard-berekeningen "niet te kunnen verifieren of garanderen" (GEVERIFIEERD)
+- Voortzetting van de price-chaos story, dus verwerkt als **gedateerd UPDATE-blok** op article-price-chaos.html, **geen nieuwe promise** (telling blijft 127/120 = 94.5%).
+- **Admin-citaat (23 juni 05:38)**: "For Direct Buyback purchases, the team has emphasized a simpler structure with no compression. However, we are not in a position to independently verify or guarantee individual dashboard calculations." Dus de pagina die ze "the official source of record" noemen, staan ze zelf niet achter.
+- **$0.05 prijs**: admin (06:17): "no specific dates have been confirmed." Batch 6 claims nog steeds "not confirmed".
+- **Variabele tarief-nuance toegevoegd** aan het artikel + dashboard-bewijsbox: effectieve prijs verschilt per houder ($0.00025, $0.00005, $0.0000092 per coin), allemaal onder de geadverteerde prijs. (Belangrijk voor accuratesse: niet één vast "echte prijs" claimen.)
+- Staking 124 dagen, 433.000+ berichten. 2 nieuwe quotes, 1 timeline-event (23 juni).
+
 ## NIEUW (June 20-22): drie verschillende sell-prijzen in 72 uur + "total invested" van dashboard verwijderd (GEVERIFIEERD)
 - **Prijs-chaos**: officieel kanaal adverteerde in 72 uur minstens drie tegenstrijdige buyback sell-prijzen, soms dezelfde dag: "SELL AT $0.02" (buy $0.00000021), "SELL $0.01 / 30X ROI" (buy $0.00000044), én "SELL AT $0.0005" (buy $0.000024). Houders wisten niet welke gold.
 - **Echte uitbetaling blijft fractie**: Ghost Buster verkocht 100M BDAG "voor 0.01" → dashboard $1.320 (~0,13%). Homer Sm: "the buyback price isn't 0.02, it's 0.000009."
