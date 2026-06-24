@@ -73,6 +73,14 @@
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
 
+## NIEUW (June 24): buyback wordt "World Cup Bonus" gimmick + nog steeds geen buyback-cijfers (GEVERIFIEERD)
+- Voortzetting van de price-chaos story, dus **gedateerd UPDATE-blok** op article-price-chaos.html, **geen nieuwe promise** (telling blijft 127/120 = 94.5%).
+- **Nieuwe promo (01:27)**: "24H ONLY WORLD CUP BONUS LIVE: 50% EXTRA BDAG + 45X ROI, BUY AT $0.00000044, SELL FOR $0.01." Landcode invoeren = bonus coins + dashboard-thema. Zelfde gecomprimeerde buyback, meer uitgifte + groter ROI-getal (45X). Officiële foto: photo_40605 (World Cup trophy graphic).
+- **Nog steeds geen buyback-cijfers (02:53)**: admin "compiling and reviewing the relevant data... amounts completed and remaining will be provided shortly." Na weken nog geen bedrag.
+- **Batch 7 claims "start tomorrow"** (alweer verschoven); miners weer "within the next 20 days".
+- Community-feed vol bijna-identieke "World Cup hype" berichten (mogelijk astroturfing). Echte reactie (Mm): "change $0.00000044 to $0.00000022 and then discount football 50%."
+- Staking 125 dagen, 436.000+ berichten. 3 nieuwe quotes, 1 timeline-event (24 juni).
+
 ## NIEUW (June 23): admin geeft toe dashboard-berekeningen "niet te kunnen verifieren of garanderen" (GEVERIFIEERD)
 - Voortzetting van de price-chaos story, dus verwerkt als **gedateerd UPDATE-blok** op article-price-chaos.html, **geen nieuwe promise** (telling blijft 127/120 = 94.5%).
 - **Admin-citaat (23 juni 05:38)**: "For Direct Buyback purchases, the team has emphasized a simpler structure with no compression. However, we are not in a position to independently verify or guarantee individual dashboard calculations." Dus de pagina die ze "the official source of record" noemen, staan ze zelf niet achter.
