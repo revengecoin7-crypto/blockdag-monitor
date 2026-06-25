@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (127 promises, 120 broken)
+2. `tracker.html` — Promise Tracker (128 promises, 121 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,15 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 25): BlockDAG claimt ChatGPT/Claude-concurrent LLM binnen 48 uur te lanceren (GEVERIFIEERD)
+- Distinct nieuw event → **nieuw artikel (article-llm-48h.html) + promise #128** (misleading). Telling nu **128 tracked, 121 broken = 94.5%** (percentage ongewijzigd).
+- **Aankondiging (02:26)**: "BlockDAG Launching ChatGPT & Claude Competitor LLM Mode in 48H... a Large Language Model designed to compete with the biggest names in AI." Van een project dat nog geen miner, werkende explorer, staking-withdrawal of buyback-uitbetaling heeft geleverd.
+- **Admin draait terug (08:11)**: "doesn't mean BlockDAG is suddenly trying to replace ChatGPT or Claude overnight... maybe simply another ecosystem feature."
+- **5 updates totaal**: (1) LLM 48u, (2) World Cup Bonus "EXTENDED" (was "24H ONLY"), (3) miner "factory photos" (community: nep/komt niet overeen met sample X10), (4) Batch 7 "tomorrow" (alweer), (5) MiCA clarification.
+- **Verificatie-discipline**: NIET geclaimd dat de factory-foto's nep zijn (kan niet bewijzen); gemeld dat community + admin ze niet onderschrijven, en "assembly ≠ shipping". Harde thesis = de LLM-48u claim zelf.
+- Foto bruikbaar: photo_40644 ("MINER SHIPMENTS ARE STARTING · factory photos"). Nieuwe social card: social-llm-48h.svg + og:image.
+- Staking 126 dagen, 440.000+ berichten. 3 nieuwe quotes, 1 timeline-event (25 juni).
 
 ## NIEUW (June 24): buyback wordt "World Cup Bonus" gimmick + nog steeds geen buyback-cijfers (GEVERIFIEERD)
 - Voortzetting van de price-chaos story, dus **gedateerd UPDATE-blok** op article-price-chaos.html, **geen nieuwe promise** (telling blijft 127/120 = 94.5%).

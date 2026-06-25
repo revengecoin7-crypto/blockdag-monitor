@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c3870" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#06183a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#g)" opacity="0.5"/>
+  <text x="118" y="64" font-family="DM Sans,Segoe UI,sans-serif" font-size="26" font-weight="800" fill="#fff">BlockDAG <tspan fill="#ff6b6b" font-style="italic">Exposed</tspan></text>
+  <text x="600" y="150" text-anchor="middle" font-family="DM Sans,Segoe UI,sans-serif" font-size="22" fill="#fff" opacity="0.6" letter-spacing="4">THE 48-HOUR AI</text>
+  <text x="600" y="232" text-anchor="middle" font-family="Georgia,'Newsreader',serif" font-size="56" font-weight="800" font-style="italic" fill="#fff">"LLM to rival ChatGPT</text>
+  <text x="600" y="296" text-anchor="middle" font-family="Georgia,'Newsreader',serif" font-size="56" font-weight="800" font-style="italic" fill="#fff">and Claude in 48 hours"</text>
+  <text x="600" y="350" text-anchor="middle" font-family="JetBrains Mono,Consolas,monospace" font-size="22" fill="#6b8acf">from a project that still has not delivered:</text>
+  <g font-family="DM Sans,Segoe UI,sans-serif" text-anchor="middle">
+    <g transform="translate(165,388)"><rect width="200" height="92" rx="8" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/><text x="100" y="40" font-size="30" font-weight="800" fill="#ff6b6b">0 miners</text><text x="100" y="68" font-size="15" fill="#ffd9d9">shipped</text></g>
+    <g transform="translate(390,388)"><rect width="200" height="92" rx="8" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/><text x="100" y="40" font-size="30" font-weight="800" fill="#ff6b6b">126 days</text><text x="100" y="68" font-size="15" fill="#ffd9d9">staking broken</text></g>
+    <g transform="translate(615,388)"><rect width="200" height="92" rx="8" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/><text x="100" y="40" font-size="30" font-weight="800" fill="#ff6b6b">0 payouts</text><text x="100" y="68" font-size="15" fill="#ffd9d9">buyback documented</text></g>
+    <g transform="translate(840,388)"><rect width="200" height="92" rx="8" fill="#2a0808" stroke="#c62828" stroke-width="1.5"/><text x="100" y="40" font-size="26" font-weight="800" fill="#ff6b6b">explorer</text><text x="100" y="68" font-size="15" fill="#ffd9d9">was down</text></g>
+  </g>
+  <text x="600" y="528" text-anchor="middle" font-family="JetBrains Mono,Consolas,monospace" font-size="19" fill="#ff8a7a">an admin walked it back the same day: "maybe simply another ecosystem feature"</text>
+  <rect x="0" y="560" width="1200" height="70" fill="#c62828"/>
+  <text x="600" y="605" text-anchor="middle" font-family="DM Sans,Segoe UI,sans-serif" font-size="24" fill="#fff" letter-spacing="2" font-weight="800">JUDGE IT BY WHAT SHIPS, NOT WHAT IT ANNOUNCES</text>
+</svg>
