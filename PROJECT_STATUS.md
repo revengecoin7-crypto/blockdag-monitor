@@ -73,6 +73,14 @@
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
 
+## NIEUW (June 26): geen LLM, miners van "factory photos" naar "customs clearance" (GEVERIFIEERD)
+- Voortzettingsdag → **gedateerd UPDATE-blok** op article-llm-48h.html, **geen nieuwe promise** (telling blijft 128/121 = 94.5%).
+- **LLM**: de "48H"-aankondiging werd op 25 juni alleen maar herhaald; op 26 juni nog steeds geen LLM.
+- **Miners schuiven weer**: 25 juni "official factory assembly photos" → 26 juni (08:46) "Miners are on the way. They're currently in customs clearance." Verzending nog steeds zonder datum; houders gepromised sinds okt 2025.
+- **Buyback herverpakt**: "BATCH 7 CLOSING IN 24H + PRICE INCREASING" + dezelfde World Cup Bonus ($0.00000044 / $0.01 / 45X).
+- Community (Vikram): "Miners are in hands of delivery boys... and then there's one more promo begins, and this happens again and again." Tap Miner-punten nog steeds niet geconverteerd (klachten N, Ibra).
+- Staking 127 dagen, 443.000+ berichten. 3 nieuwe quotes, 1 timeline-event (26 juni).
+
 ## NIEUW (June 25): BlockDAG claimt ChatGPT/Claude-concurrent LLM binnen 48 uur te lanceren (GEVERIFIEERD)
 - Distinct nieuw event → **nieuw artikel (article-llm-48h.html) + promise #128** (misleading). Telling nu **128 tracked, 121 broken = 94.5%** (percentage ongewijzigd).
 - **Aankondiging (02:26)**: "BlockDAG Launching ChatGPT & Claude Competitor LLM Mode in 48H... a Large Language Model designed to compete with the biggest names in AI." Van een project dat nog geen miner, werkende explorer, staking-withdrawal of buyback-uitbetaling heeft geleverd.
