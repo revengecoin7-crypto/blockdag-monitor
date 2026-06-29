@@ -73,6 +73,13 @@
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
 
+## NIEUW (June 27-29): sell-prijs loopt rond naar "$0.05 closes FOREVER" + RPC weer plat (GEVERIFIEERD)
+- Inhaalslag (27, 28, 29 juni) → **gedateerd UPDATE-blok** op article-price-chaos.html, **geen nieuwe promise** ("$0.05 ends forever"-deadline is 30 juni, nog niet verstreken; rest is herhaling). Telling blijft 128/121 = 94.5%.
+- **Volledige prijs-loop**: na $0.10 → $0.0005 → $0.02 → $0.01 nu terug op **$0.05**, geframed als "LESS THAN 72H: $0.05 BUYBACKS & SWAP END FOREVER on Monday" (30 juni). "24 HOUR COUNTDOWN" op 28 juni was op 29 juni nog steeds "24 HOUR COUNTDOWN".
+- **RPC weer dagen plat** tijdens de sluitende deadline (net als 13-15 juni): admin "RPC is down, the team is working on updates". Houders konden niet claimen/verkopen; coins verdwijnen (Jordan: "Only blockdag miraculously vanished"). Cini18: "50Mio for $0.05 → only $458" (~0,018%).
+- **LLM 48u (25 juni) BEVESTIGD GEBROKEN**: na 27 juni nooit meer genoemd, geen launch. #128 reality aangevuld.
+- Staking 130 dagen, 452.000+ berichten. 4 nieuwe quotes, 1 timeline-event (27-29 juni).
+
 ## NIEUW (June 26): geen LLM, miners van "factory photos" naar "customs clearance" (GEVERIFIEERD)
 - Voortzettingsdag → **gedateerd UPDATE-blok** op article-llm-48h.html, **geen nieuwe promise** (telling blijft 128/121 = 94.5%).
 - **LLM**: de "48H"-aankondiging werd op 25 juni alleen maar herhaald; op 26 juni nog steeds geen LLM.
