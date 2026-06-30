@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (128 promises, 121 broken)
+2. `tracker.html` — Promise Tracker (129 promises, 122 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,14 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (June 30): "$0.05 closes FOREVER Monday" werd OPNIEUW met 48u verlengd + dode LLM herrezen + beloofde 30-juni listing kwam niet (GEVERIFIEERD)
+- Maandag (30 juni) was de "$0.05 closes FOREVER"-deadline. Sloot niets. Officieel kanaal postte om 01:37 (herhaald 06:50, 06:59, 09:56) "🚨 BlockDAG LLM MODEL LAUNCHING & 48H $0.05 BUYBACK EXTENSION ALERT" → zelfde buyback weer in een nieuwe 48u-countdown. **Zesde framing van één offer in twee weken** ($0.10 → $0.0005 → $0.02 → $0.01 → $0.05 "forever" → $0.05 "+48H").
+- **Dode LLM herrezen**: de 25-juni "48u" ChatGPT/Claude-concurrent die nooit kwam staat nu als "BLOCKDAG AI LLM MODEL IS ALMOST HERE... final stage of preparation". Zelfde product, nieuwe "almost". #128 reality aangevuld met June 30-update.
+- **30 juni was de beloofde listing/TGE datum** ($0.05). Geen listing, geen TGE, geen exchange-deposits (Paul: "The TGE is not happening today"). Op P2B "withdrawals still suspended after a week". Yuva vroeg expliciet naar de belofte, kreeg geen antwoord.
+- **Direct Swap CLOSED** aangekondigd, terwijl de buyback-ad "BUY BDAG NOW" pusht ($0.00000044, "45X ROI").
+- **RPC/staking 72u+ plat**: balances op nul in Trust Wallet/MetaMask, coins verdwenen. Officiële regel onveranderd.
+- **Nieuwe promise #129** (broken). Telling nu **129/122 = 94,6%** (was 128/121/94,5%). Nieuw artikel **article-forever-extended.html** + **social-forever-extended.svg** (og:image), eerste+isNew in articles.js. 4 nieuwe quotes, 1 timeline-event (30 juni). Staking 131 dagen.
 
 ## NIEUW (June 27-29): sell-prijs loopt rond naar "$0.05 closes FOREVER" + RPC weer plat (GEVERIFIEERD)
 - Inhaalslag (27, 28, 29 juni). **NIEUW BELEID: elke Dewi Schep krijgt voortaan een eigen los artikel** (zie [[feedback_daily_article]]). Vandaag: nieuw artikel **article-price-loop.html** (eigen hero-SVG + social-price-loop.svg + og:image) PLUS een gedateerd UPDATE-blok op article-price-chaos.html. **Geen nieuwe promise** ("$0.05 ends forever"-deadline is 30 juni, nog niet verstreken; rest is herhaling). Telling blijft 128/121 = 94.5%.
