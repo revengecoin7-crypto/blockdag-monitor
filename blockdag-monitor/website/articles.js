@@ -4,7 +4,7 @@ const ARTICLES = [
     title: '"$0.05 closes FOREVER Monday." Monday came. They extended it another 48 hours, revived their dead AI, and the promised June 30 listing never happened.',
     date: '2026-06-30',
     dateDisplay: 'June 30, 2026',
-    excerpt: 'For three days the official channel told holders the $0.05 buyback would "close FOREVER on Monday." Monday was June 30. Instead of closing, the channel posted a fresh "48H $0.05 buyback extension," resetting the same countdown again, the sixth framing of one offer in two weeks. The same ad revived the AI "LLM" that was promised "within 48 hours" on June 25 and never appeared, now relabelled "ALMOST HERE." It also closed Direct Swap. And June 30 was the date holders had been told BDAG would list at $0.05. There was no listing, no TGE, no deposits, while the RPC and staking stayed down for 72+ hours.',
+    excerpt: 'For three days the official channel told holders the $0.05 buyback would "close FOREVER on Monday." Monday was June 29. It came and went, and nothing closed. The next day, June 30, the channel posted a fresh "48H $0.05 buyback extension," resetting the same countdown again, the sixth framing of one offer in two weeks. The same ad revived the AI "LLM" that was promised "within 48 hours" on June 25 and never appeared, now relabelled "ALMOST HERE." It also closed Direct Swap. And June 30 was the date holders had been told BDAG would list at $0.05. There was no listing, no TGE, no deposits, while the RPC and staking stayed down for 72+ hours.',
     url: 'article-forever-extended.html',
     tags: [{ label: 'Breaking', style: 'red' }, { label: 'Buyback', style: 'orange' }],
     isNew: true,
