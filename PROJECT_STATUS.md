@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (129 promises, 122 broken)
+2. `tracker.html` — Promise Tracker (130 promises, 123 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,15 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (July 1): "BDAG AI IS NOW LIVE" + zelfverzonnen "+$500M valuation", terwijl 12 min later "AI is almost here" en de AI zelf BDAG een risico-microcap noemt (GEVERIFIEERD)
+- Officieel kanaal 00:13: "🚀 BDAG AI Launched, valuation just jumped $500M USD! ... 1) BDAG AI IS NOW LIVE ... 2) 7,000 TPS upgrades ... 3) FINAL 24 HOURS $0.05 Buyback ends tomorrow ... 4) Coming in 2 weeks: BlockDAG Futures & Spot Exchange."
+- **Directe tegenspraak**: 00:25 (12 min later) postte hetzelfde kanaal weer "BLOCKDAG AI LLM MODEL IS ALMOST HERE... final stage of preparation". Live én almost-here tegelijk.
+- **De "AI" = chatbot op bdagai.io** ("Deep Think"). Gevraagd naar BDAG geeft hij een WAARSCHUWING: "micro-cap token with extreme price volatility, an uncapped supply structure, and limited liquidity", "not listed on major Tier-1", "a massive spread". Waarschijnlijk generieke LLM-wrapper. Foto: photo_41170@00-49.
+- **$500M valuation is self-proclaimed**, niets erachter; markt daalde juist (CMC 24u en 1 week omlaag). William Griggs: "if valuation truly +$500M the price would be ~$0.005 not $0.00004, you overstate and under deliver." Paul: "self acclaimed valuation, nothing to back it up." Kevin K/Himayoon/Salty vroegen om bewijs, kregen niets.
+- **TPS opgeblazen** 5.000 → 7.000. **Buyback nu "FINAL 24 HOURS ends tomorrow"** = zevende framing in 2 weken. **Eigen Futures + Spot Exchange "in 2 weken"** (STANS: "11 days") na de mislukte 30-juni listing.
+- **RPC/staking "for weeks" plat**: nog steeds niet claimen/verkopen (Raja Dundi: Batch 5 claim RPC error). Jorge: "if you're not fixing RPC there's no way to close the buyback."
+- **Nieuwe promise #130** (misleading). Telling nu **130/123 = 94,6%** (was 129/122). Nieuw artikel **article-ai-live-500m.html** + **social-ai-live-500m.svg** (og:image), eerste+isNew in articles.js. #128 reality aangevuld met July 1-twist. 4 nieuwe quotes, 1 timeline-event. Staking 132 dagen. Timeline 60 events/23 escalations.
 
 ## NIEUW (June 30): "$0.05 closes FOREVER Monday" werd OPNIEUW met 48u verlengd + dode LLM herrezen + beloofde 30-juni listing kwam niet (GEVERIFIEERD)
 - Maandag (30 juni) was de "$0.05 closes FOREVER"-deadline. Sloot niets. Officieel kanaal postte om 01:37 (herhaald 06:50, 06:59, 09:56) "🚨 BlockDAG LLM MODEL LAUNCHING & 48H $0.05 BUYBACK EXTENSION ALERT" → zelfde buyback weer in een nieuwe 48u-countdown. **Zesde framing van één offer in twee weken** ($0.10 → $0.0005 → $0.02 → $0.01 → $0.05 "forever" → $0.05 "+48H").
