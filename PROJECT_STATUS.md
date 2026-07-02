@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (130 promises, 123 broken)
+2. `tracker.html` — Promise Tracker (131 promises, 124 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,14 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (July 2): "$500M valuation" gevierd bij ~$3M marktkap, "final $0.05" buyback werd $0.03, buy-prijs omhoog, en 504 op elke transactie (GEVERIFIEERD)
+- Officieel 04:29: "🚨 100% WORLD CUP BONUS ACTIVE: BUY BDAG AT $0.00000066 • SELL FOR $0.03! ... This week has been HUGE ... ✅ BDAG AI is LIVE ✅ +$500M Valuation Increase ✅ Fully Regulated Crypto Exchange & App Announced ... BONUS DOUBLED TO 100% EXTRA BDAG."
+- **$500M vs $3M**: Albert: "why is the 500M not reflecting on the price? There's only 3M MC." Zelfverzonnen halve-miljard-waardering op een ~$3M coin (~167x gat).
+- **Buyback $0.05 → $0.03** (achtste framing: 0.10→0.0005→0.02→0.01→0.05→0.05→0.05→0.03). Buy-prijs OMHOOG $0.00000044→$0.00000066 (~50% duurder). Bonus verdubbeld naar 100%. $0.03 betaalt alsnog ~$0.0001 (Albert).
+- **"Fully Regulated Exchange & App" = aankondiging van aankondiging** (geen venue/regulator/datum). Alex CC: "no actual improvement for holders."
+- **504 op elke transactie**: bewijs-screenshot "Relayer nonce failed: 500, 504 Gateway Timeout, rpc.bdagscan.com, code=SERVER_ERROR" (foto_41257). Officieel 05:05: "staked balances, custom network, and X1 Miner login" onder maintenance. Stanzin: staked coins/balance niet zichtbaar + kan niet inloggen X1 miner. Dalton: "GIVE ME MY MONEY BACK."
+- **Nieuwe promise #131** (broken). Telling nu **131/124 = 94,7%** (was 130/123/94,6%, rate omhoog). Nieuw artikel **article-500m-3m.html** + **social-500m-3m.svg** (og:image), eerste+isNew. #130 reality aangevuld met July 2. 4 nieuwe quotes, 1 timeline-event. Staking 133 dagen. Timeline 61 events/24 escalations.
 
 ## NIEUW (July 1): "BDAG AI IS NOW LIVE" + zelfverzonnen "+$500M valuation", terwijl 12 min later "AI is almost here" en de AI zelf BDAG een risico-microcap noemt (GEVERIFIEERD)
 - Officieel kanaal 00:13: "🚀 BDAG AI Launched, valuation just jumped $500M USD! ... 1) BDAG AI IS NOW LIVE ... 2) 7,000 TPS upgrades ... 3) FINAL 24 HOURS $0.05 Buyback ends tomorrow ... 4) Coming in 2 weeks: BlockDAG Futures & Spot Exchange."
