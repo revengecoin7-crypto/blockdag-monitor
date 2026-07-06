@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (131 promises, 124 broken)
+2. `tracker.html` — Promise Tracker (132 promises, 125 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,18 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## BELANGRIJK (July 2026): Telegram-monitoring gestopt — account uit officiële groep verwijderd
+- Het monitoring-account (452.000+ berichten gearchiveerd t/m 2 juli) is begin juli uit de officiële BlockDAG-groep verwijderd. Reden onbekend, niet speculeren in publicaties.
+- **Nieuwe bronnen per 6 juli**: (1) officiële BlockDAG e-mails (gebruiker staat op de mailinglijst, mails staan in Downloads als .eml/.msg), (2) blockdag.network live site (WebFetch), (3) Medium @BlockDAGNetwork1, (4) gesponsorde persartikelen (TechBullion, AnalyticsInsight, MEXC News, coingabbar etc.), (5) X/@blockdagnetwork, (6) CoinGecko/CMC prijsdata. Publieke t.me preview toont geen posts.
+- Elke Dewi Schep begint nu met: Downloads scannen op nieuwe .eml + WebFetch homepage + Medium + WebSearch.
+
+## NIEUW (July 5-6): eigen e-mail geeft toe dat de USDT buyback pas 1 september uitbetaalt + eigen gesponsorde pers noemt $0.00025 als echte rate (GEVERIFIEERD)
+- **E-mail 5 juli 17:57 UTC** (noreply@blockdag.network): "Code EARLY expires very soon. No extensions. Once it's gone, it's gone for good... ✅ USDT Buyback fast-tracked to September 1 (instead of Oct 1)... Buy at $0.00000066... **Target** buyback price: $0.03."
+- **De onthulling**: drie weken "sell in 24H / closes FOREVER" countdowns wezen naar een uitbetaling die pas 1 september komt (en daarvoor op 1 oktober stond). Homepage draait beide naast elkaar: "24H Left for $0.03 Buyback" + "USE CODE EARLY TO RECEIVE YOUR USDT BUYBACK ON SEPTEMBER 1ST".
+- **Kleine lettertjes uit hun eigen gesponsorde pers** (TechBullion 4 juni): "$0.001 redemption" (nieuwe kopers) en "guaranteed payout of $0.00025 per token" (bestaande holders), betaald 1 oktober, cap 250M BDAG/dag. $0.00025 = 1/120e van de $0.03-banner. Dashboard betaalde (2 juli) ~$0.0001. Banner → pers → dashboard: elke laag een orde van grootte slechter.
+- E-mail claimt ook: "we dropped BDAG AI, expanded the miner network, opened exchange pre-signups, launched Super Explorer, rolled out the developer platform" + Medium "EMPIRE IN THE MAKING". Homepage zegt intussen weer "5,000 TPS" (7.000 van 1 juli stilletjes weg).
+- **Nieuwe promise #132** (misleading). Telling nu **132/125 = 94,7%**. Nieuw artikel **article-sept1-buyback.html** + **social-sept1-buyback.svg** (og:image), eerste+isNew. #131 reality aangevuld. 4 nieuwe quotes, 1 timeline-event (Jul 5-6). Staking 137 dagen. Timeline 62 events/25 escalations. Sourcing-note in artikel + timeline over Telegram-verwijdering.
 
 ## NIEUW (July 2): "$500M valuation" gevierd bij ~$3M marktkap, "final $0.05" buyback werd $0.03, buy-prijs omhoog, en 504 op elke transactie (GEVERIFIEERD)
 - Officieel 04:29: "🚨 100% WORLD CUP BONUS ACTIVE: BUY BDAG AT $0.00000066 • SELL FOR $0.03! ... This week has been HUGE ... ✅ BDAG AI is LIVE ✅ +$500M Valuation Increase ✅ Fully Regulated Crypto Exchange & App Announced ... BONUS DOUBLED TO 100% EXTRA BDAG."

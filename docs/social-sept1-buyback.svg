@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c3870" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0C2956"/>
+      <stop offset="100%" stop-color="#06183a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#g)" opacity="0.5"/>
+  <text x="118" y="60" font-family="DM Sans,Segoe UI,sans-serif" font-size="26" font-weight="800" fill="#fff">BlockDAG <tspan fill="#ff6b6b" font-style="italic">Exposed</tspan></text>
+  <text x="600" y="118" text-anchor="middle" font-family="DM Sans,Segoe UI,sans-serif" font-size="20" fill="#fff" opacity="0.6" letter-spacing="3">FROM THEIR OWN EMAIL AND HOMEPAGE · JULY 5-6</text>
+  <g>
+    <rect x="90" y="146" width="480" height="140" rx="12" fill="#2a0808" stroke="#c62828" stroke-width="2"/>
+    <text x="330" y="186" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="15" fill="#ff8a7a" letter-spacing="1">THE PRESSURE</text>
+    <text x="330" y="234" text-anchor="middle" font-family="Georgia,'Newsreader',serif" font-size="34" font-weight="800" font-style="italic" fill="#fff">"24H Left to sell"</text>
+    <text x="330" y="266" text-anchor="middle" font-family="DM Sans,Segoe UI,sans-serif" font-size="16" fill="#ffd9d9">"FINAL CALL" · "No extensions"</text>
+    <rect x="630" y="146" width="480" height="140" rx="12" fill="#10172a" stroke="#2a3a5c" stroke-width="1.5"/>
+    <text x="870" y="186" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="15" fill="#8aa0c6" letter-spacing="1">THE ACTUAL PAYOUT</text>
+    <text x="870" y="234" text-anchor="middle" font-family="Georgia,'Newsreader',serif" font-size="34" font-weight="800" font-style="italic" fill="#e6a23c">September 1</text>
+    <text x="870" y="266" text-anchor="middle" font-family="DM Sans,Segoe UI,sans-serif" font-size="16" fill="#8aa0c6">"fast-tracked... instead of Oct 1"</text>
+  </g>
+  <text x="600" y="336" text-anchor="middle" font-family="DM Sans,Segoe UI,sans-serif" font-size="19" fill="#8aa0c6">a 24 hour countdown to accept an IOU that matures in two months</text>
+  <rect x="120" y="366" width="960" height="150" rx="12" fill="#0f1830" stroke="#c62828" stroke-width="2"/>
+  <text x="150" y="402" font-family="JetBrains Mono,monospace" font-size="13" fill="#ff8a7a" letter-spacing="1">BANNER vs THEIR OWN PROMOTED ARTICLES vs DASHBOARD</text>
+  <g font-family="Georgia,'Newsreader',serif" text-anchor="middle">
+    <text x="310" y="466" font-size="40" font-weight="800" font-style="italic" fill="#fff">$0.03</text>
+    <text x="310" y="496" font-family="DM Sans,Segoe UI,sans-serif" font-size="14" fill="#8aa0c6">the banner</text>
+    <text x="600" y="466" font-size="40" font-weight="800" font-style="italic" fill="#e6a23c">$0.00025</text>
+    <text x="600" y="496" font-family="DM Sans,Segoe UI,sans-serif" font-size="14" fill="#8aa0c6">their promoted press</text>
+    <text x="890" y="466" font-size="40" font-weight="800" font-style="italic" fill="#ff6b6b">~$0.0001</text>
+    <text x="890" y="496" font-family="DM Sans,Segoe UI,sans-serif" font-size="14" fill="#8aa0c6">what dashboards paid</text>
+  </g>
+  <rect x="0" y="560" width="1200" height="70" fill="#c62828"/>
+  <text x="600" y="605" text-anchor="middle" font-family="DM Sans,Segoe UI,sans-serif" font-size="23" fill="#fff" letter-spacing="1.5" font-weight="800">THE COUNTDOWN ISN'T MEASURING THE OFFER. IT'S MEASURING YOU.</text>
+</svg>
