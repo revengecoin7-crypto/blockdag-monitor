@@ -17,7 +17,7 @@
 
 ## Alle pagina's
 1. `index.html` — Homepage (incl. About BlockDAG sectie met oprichters, presale, sponsorships)
-2. `tracker.html` — Promise Tracker (132 promises, 125 broken)
+2. `tracker.html` — Promise Tracker (133 promises, 126 broken)
 3. `timeline.html` — Tijdlijn (incl. May 14–26 events)
 4. `evidence.html` — directe quotes (uitgebreid t/m May 26)
 5. `categories.html` — Categorieoverzicht
@@ -72,6 +72,15 @@
 - Periode: 18 februari t/m 16 juni 2026
 - Totaal berichten: 410,000+ (~5.400 nieuw op 13-16 juni)
 - Gap: 20–30 april ontbreekt nog
+
+## NIEUW (July 6-7): beloofde "fully regulated exchange" is een aanmeldformulier met "$1.000 credit" voor een platform dat nog niet bestaat + "no extensions" code binnen 24u verlengd (GEVERIFIEERD via e-mail + pers)
+- **E-mail 6 juli 17:06 UTC** (noreply@blockdag.network, .msg in Downloads): "FINAL 24H For Code EARLY — Get Rewarded Twice: 100% BONUS BDAG + Priority September 1 Buybacks... BUY $0.00000066 + SELL $0.03 + GET PRIORITY SEP.1 BUYBACKS. **STILL OVERTHINKING? DON'T.** You've watched BlockDAG deliver milestone after milestone."
+- **"No extensions" binnen 24u gebroken**: 5 juli "Code EARLY... No extensions. Once it's gone, it's gone for good" → 6 juli "FINAL 24H For Code EARLY".
+- **De "exchange" = aanmeldformulier**: BlockDAG X pre-registratie op BlockDAGX.io, 14-dagen countdown, niets te traden. Hook: "Early participants are positioned to receive $1,000 in trading credit once the exchange activates" (Portugal News, gesponsord). Credit, geen cash, alleen bruikbaar in een platform dat nog niet live is.
+- **Buyback nu two-speed queue**: code EARLY "unlocks Priority Buyback Access and shifts payout timing to September 1 instead of October 1". September = promo-code perk; rest = oktober.
+- **Cijfers los**: gesponsorde pers hedget zelf: payout $0.001 t/m $0.10, settlement sept/okt/nov, "self-reported, not audited". Valuation van "+$500M" (1 juli) naar "close to $1B" (X-post) op ~$3M marktkap. Homepage weer 5.000 TPS.
+- **Nieuwe promise #133** (misleading, category Exchange Listing). Telling nu **133/126 = 94,7%**. Nieuw artikel **article-exchange-signup.html** + **social-exchange-signup.svg** (og:image), eerste+isNew. 4 nieuwe quotes, 1 timeline-event (Jul 6-7). Staking 138 dagen. Timeline 63 events/26 escalations.
+- **Let op (.msg parsen)**: nieuwe mails komen soms als .msg (Outlook). Body zit als UTF-16LE stream; headline/toplijn eruit te halen met `data.decode('utf-16-le')` + regex. Vraag desnoods om de .eml-versie voor volledige body.
 
 ## BELANGRIJK (July 2026): Telegram-monitoring gestopt — account uit officiële groep verwijderd
 - Het monitoring-account (452.000+ berichten gearchiveerd t/m 2 juli) is begin juli uit de officiële BlockDAG-groep verwijderd. Reden onbekend, niet speculeren in publicaties.
